@@ -374,61 +374,106 @@ En esta sección se definen las convenciones de nombres y codificación adoptada
 * **Nombres semánticos:**  
   * Sustantivos para clases y componentes.  
   * Verbos para funciones y métodos.
-* **Indentación:**  
-  * 2 espacios para HTML, CSS y JavaScript.  
-  * 4 espacios para C#.
-
+  
 ---
 
 ### HTML
 
-- Los archivos terminan en `.html`.
-- Se utilizan etiquetas semánticas como:
-  - `<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`.
-- Se emplean atributos descriptivos para mejorar la accesibilidad (`alt`, `aria-*`).
-- Uso de comillas dobles (`"`) en atributos.
-- Estructura clara y ordenada para facilitar mantenimiento.
+* Los archivos terminan en `.html`.
+* Se utilizan etiquetas semánticas como:
+  * `<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`.
+* Se emplean atributos descriptivos para mejorar la accesibilidad (`alt`, `aria-*`).
+* Estructura clara y ordenada para facilitar mantenimiento.
 
 ---
 
 ### CSS
 
-- Los archivos terminan en `.css`.
-- Las clases se nombran en **kebab-case**:
-  - `.main-header`, `.route-card`, `.student-list`.
-- Se agrupan estilos relacionados y se separan mediante comentarios.
-- Se mantiene consistencia visual mediante estilos reutilizables.
-- Se evita la sobreespecificación de selectores para mejorar la escalabilidad.
+* Los archivos terminan en `.css`.
+* Las clases se nombran en **kebab-case**:
+  * `.main-header`, `.route-card`, `.student-list`.
+* Se mantiene consistencia visual mediante estilos reutilizables.
 
 ---
 
 ### JavaScript (Vue.js)
 
-- Los archivos terminan en `.js`.
-- Se utiliza **camelCase** para variables y funciones:
-  - `getRoutes`, `calculateDistance`.
-- Se prioriza el uso de `const` y `let`, evitando `var`.
-- Los componentes de Vue siguen una estructura modular y reutilizable.
-- Se mantiene separación clara entre lógica, presentación y datos.
-- Se utilizan nombres descriptivos para props, métodos y eventos.
+* Los archivos terminan en `.js`.
+* Se utiliza **camelCase** para variables y funciones:
+  * `getRoutes`, `calculateDistance`.
+* Se prioriza el uso de `const` y `let`, evitando `var`.
+* Los componentes de Vue siguen una estructura modular y reutilizable.
+* Se mantiene separación clara entre lógica, presentación y datos.
+* Se utilizan nombres descriptivos para props, métodos y eventos.
 
 ---
 
 ### C#
 
-- Se sigue la convención estándar de **PascalCase**:
-  - Clases: `StudentService`, `RouteController`.
-  - Métodos: `GetStudents()`, `CreateRoute()`.
-- Variables locales en **camelCase**:
-  - `studentList`, `routeId`.
-- Uso de sufijos por responsabilidad:
-  - `Controller`, `Service`, `Repository`.
-- Se mantiene una arquitectura organizada por capas (por ejemplo: Controllers, Services, Models).
-- Se aplican buenas prácticas como separación de responsabilidades y reutilización de código.
+* Se sigue la convención estándar de **PascalCase**:
+  * Clases: `StudentService`, `RouteController`.
+  * Métodos: `GetStudents()`, `CreateRoute()`.
+* Variables locales en **camelCase**:
+  * `studentList`, `routeId`.
+* Uso de sufijos por responsabilidad:
+  * `Controller`, `Service`, `Repository`.
+* Se mantiene una arquitectura organizada por capas (por ejemplo: Controllers, Services, Models).
+* Se aplican buenas prácticas como separación de responsabilidades y reutilización de código.
 
 ---
 
 #### 5.1.4. Software Deployment Configuration
+
+En esta sección se describe la configuración necesaria para el despliegue de los principales componentes del proyecto: Landing Page, Frontend Web Application y Backend.
+
+##### Despliegue de Landing Page
+
+La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript, y será desplegada mediante GitHub Pages, un servicio de hosting para sitios estáticos.
+
+###### Pasos de despliegue
+
+1. Crear un repositorio en GitHub destinado a la landing page.
+2. Subir el código fuente (HTML, CSS, JS y recursos estáticos) al repositorio.
+3. Asegurar que el archivo principal se denomine `index.html` y se encuentre en la raíz del proyecto.
+4. Acceder a la sección **Settings > Pages** del repositorio.
+5. Seleccionar la rama `main` (o `master`) y la carpeta raíz (`/`) como fuente.
+6. GitHub generará automáticamente una URL pública para acceder a la landing page.
+
+**URL desplegada:** Pendiente
+
+---
+
+##### Despliegue de Frontend Web Application
+
+El frontend de la aplicación, desarrollado con Vue.js, será desplegado utilizando la plataforma Vercel, la cual permite integración continua y despliegue automatizado.
+
+###### Pasos de despliegue
+
+1. Crear o seleccionar el repositorio del frontend en GitHub.
+2. Vincular el repositorio con la plataforma Vercel.
+3. Configurar el entorno de despliegue (framework Vue.js).
+4. Ejecutar el despliegue automático desde Vercel.
+5. Obtener la URL pública generada para el acceso a la aplicación.
+ 
+**URL desplegada:** Pendiente
+
+---
+
+### Despliegue de Backend Services
+
+El backend del sistema, desarrollado en C#, será desplegado utilizando Railway, una plataforma que permite exponer servicios y APIs en la nube.
+
+#### Pasos de despliegue:
+
+1. Crear el repositorio del backend en GitHub.
+2. Vincular el repositorio con Railway.
+3. Configurar las variables de entorno necesarias para la ejecución del backend.
+4. Configurar el servicio para exponer endpoints API.
+5. Desplegar el servicio y obtener la URL pública del backend.
+
+**URL desplegada:** Pendiente
+
+---
 
 ### 5.2. Landing Page, Services & Applications Implementation
 
