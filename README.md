@@ -287,9 +287,146 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 
 #### 5.1.1. Software Development Environment Configuration
 
+En esta sección se describen las herramientas y tecnologías utilizadas para el desarrollo del proyecto.
+
+##### UX/UI Design
+
+* **Figma**  
+  Herramienta de diseño colaborativo utilizada para la creación de wireframes, mockups, prototipos y diseño de interfaces de usuario. Permite trabajar en equipo en tiempo real, facilitando la validación temprana de la experiencia del usuario.
+
+---
+
+##### Software Development
+
+* **JetBrains Rider**  
+  Entorno de desarrollo integrado (IDE) utilizado para el desarrollo del backend en C#.
+
+* **Visual Studio Code**  
+  Editor de código ligero utilizado como herramienta complementaria para el desarrollo frontend y edición de archivos del proyecto.
+
+* **GitHub**  
+  Plataforma de control de versiones utilizada para la gestión del código fuente y colaboración del equipo, implementando la metodología GitFlow para la organización del desarrollo.
+
+* **HTML**  
+  Lenguaje de marcado utilizado para la estructura de las interfaces web.
+
+* **CSS**  
+  Lenguaje de estilos utilizado para la presentación visual de la aplicación.
+
+* **JavaScript (Vue.js)**  
+  Framework utilizado para el desarrollo del frontend, permitiendo la creación de interfaces dinámicas e interactivas.
+
+* **C#**  
+  Lenguaje de programación utilizado para el desarrollo del backend de la aplicación.
+
+---
+
+### Software Deployment
+
+* **GitHub Pages**  
+  Servicio utilizado para el despliegue de la landing page del proyecto.
+
+* **Vercel**  
+  Plataforma utilizada para el despliegue del frontend desarrollado en Vue.js, permitiendo una integración continua y despliegue automatizado.
+
+* **Railway**  
+  Plataforma utilizada para el despliegue de servicios backend y APIs, facilitando la conexión entre frontend y backend en un entorno accesible en la nube.
+
 #### 5.1.2. Source Code Management
 
+Para el manejo del código fuente, utilizamos GitHub para colaborar entre miembros de equipo en multiples repositorios. A continuación se listan los enlaces de cada repositorio utilizado.
+
+* Organización: <https://github.com/PowerTech-NRC12053>
+* Repositorio de Landing Page: <https://github.com/PowerTech-NRC12053/safedrive-landing-page>
+* Repositorio del informe: <https://github.com/PowerTech-NRC12053/safedrive-report>
+* Repositorio del frontend: <https://github.com/PowerTech-NRC12053/safedrive-frontend-applications>
+* Repositorio del backend: <https://github.com/PowerTech-NRC12053/safedrive-web-services>
+
+En el repositorio del informe se seguirá un esquema de trabajo basado en GitFlow. La rama main almacenará la versión estable del informe correspondiente a cada entregable del trabajo, mientras que la rama develop concentrará la integración de avances validados por cada integrante antes de su consolidación final. A partir de develop, cada integrante creará ramas feature de trabajo para las secciones asignadas. Las ramas feature seguirán una nomenclatura asociada al capítulo o bloque trabajado, por ejemplo: feature/chapter-1-introduction-and-lean-ux, o feature/chapter-5-software-configuration-management. Esta convención permite identificar con claridad qué parte del informe está siendo desarrollada y reduce el riesgo de conflictos entre los miembros del equipo.
+
+En los repositorios del Landing Page, Frontend y Backend también se utilizará GitFlow. En cada uno de ellos, la rama main contendrá las versiones estables del producto y la rama develop servirá como rama de integración del trabajo colaborativo. A partir de develop, se crearán ramas feature/... para el desarrollo de funcionalidades específicas. A diferencia del informe, en estos repositorios las ramas no estarán organizadas por capítulos, sino por funcionalidades o componentes del sistema. Algunos ejemplos de nomenclatura son: feature/home-page, feature/dashboard o feature/route-management. Esta convención nos permite que las ramas reflejen de manera directa el alcance funcional del producto en desarrollo.
+
+No se realizarán cambios directos sobre la rama main, ya que esta representará únicamente versiones estables y listas para consolidarse como parte de un entregable. Del mismo modo, se evitará que los integrantes trabajen de forma continua directamente sobre la rama develop, ya que el flujo previsto consiste en desarrollar primero en ramas feature, integrar luego en develop y finalmente consolidar en main cuando el avance haya sido revisado y validado. Por tanto, el flujo general de trabajo será de la siguiente forma: feature → develop → main. Este esquema se alinea con la exigencia del curso de explicar la implementación de GitFlow mediante ramas principales, ramas de features, y convenciones para releases y hotfixes.
+
+Asimismo, si se requiere corregir errores críticos sobre una versión estable, se podrán crear ramas hotfix/..., y si se decide preparar una versión de cierre antes de una entrega, se utilizarán ramas release/... de acuerdo con el flujo definido por GitFlow.
+
+En relación con los mensajes de cada commit, el equipo aplicará Conventional Commits para mantener un historial más legible, consistente y profesional. Esta convención facilitará la revisión de avances y permitirá identificar rápidamente el propósito de cada uno de los cambios. Algunos prefijos que se utilizarán son:
+
+* feat: incorporación de una nueva funcionalidad
+* fix: corrección de errores
+* docs: cambios en documentación
+* style: cambios de formato o estilo sin alterar lógica
+* refactor: reorganización interna sin agregar funcionalidad nueva
+* test: incorporación o ajuste de pruebas
+* chore: tareas de mantenimiento o configuración
+
+Para el repositorio del informe se emplearán mensajes como docs(report): add project cover page o docs: add startup profile and lean ux process for chapter 1. Para los repositorios de software se utilizarán mensajes como feat: add school route registration, feat: implement student assignment to route o fix: correct login validation. Esta práctica contribuye a que la evidencia de commits sea coherente con el trabajo realizado por cada miembro
+
 #### 5.1.3. Source Code Style Guide & Conventions
+
+En esta sección se definen las convenciones de nombres y codificación adoptadas por el equipo para los lenguajes utilizados en el proyecto: HTML, CSS, JavaScript (Vue.js) y C#.
+
+### Principios generales
+
+* **Idioma estándar:** Todo el código fuente se desarrolla en inglés, incluyendo nombres de variables, funciones, clases, archivos y la documentación del código.
+* **Legibilidad:** Se prioriza el uso de nombres descriptivos y claros, evitando abreviaciones innecesarias.
+* **Consistencia:** Se mantiene un estilo uniforme en todo el proyecto para facilitar el trabajo colaborativo.
+* **Nombres semánticos:**  
+  * Sustantivos para clases y componentes.  
+  * Verbos para funciones y métodos.
+* **Indentación:**  
+  * 2 espacios para HTML, CSS y JavaScript.  
+  * 4 espacios para C#.
+
+---
+
+### HTML
+
+- Los archivos terminan en `.html`.
+- Se utilizan etiquetas semánticas como:
+  - `<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`.
+- Se emplean atributos descriptivos para mejorar la accesibilidad (`alt`, `aria-*`).
+- Uso de comillas dobles (`"`) en atributos.
+- Estructura clara y ordenada para facilitar mantenimiento.
+
+---
+
+### CSS
+
+- Los archivos terminan en `.css`.
+- Las clases se nombran en **kebab-case**:
+  - `.main-header`, `.route-card`, `.student-list`.
+- Se agrupan estilos relacionados y se separan mediante comentarios.
+- Se mantiene consistencia visual mediante estilos reutilizables.
+- Se evita la sobreespecificación de selectores para mejorar la escalabilidad.
+
+---
+
+### JavaScript (Vue.js)
+
+- Los archivos terminan en `.js`.
+- Se utiliza **camelCase** para variables y funciones:
+  - `getRoutes`, `calculateDistance`.
+- Se prioriza el uso de `const` y `let`, evitando `var`.
+- Los componentes de Vue siguen una estructura modular y reutilizable.
+- Se mantiene separación clara entre lógica, presentación y datos.
+- Se utilizan nombres descriptivos para props, métodos y eventos.
+
+---
+
+### C#
+
+- Se sigue la convención estándar de **PascalCase**:
+  - Clases: `StudentService`, `RouteController`.
+  - Métodos: `GetStudents()`, `CreateRoute()`.
+- Variables locales en **camelCase**:
+  - `studentList`, `routeId`.
+- Uso de sufijos por responsabilidad:
+  - `Controller`, `Service`, `Repository`.
+- Se mantiene una arquitectura organizada por capas (por ejemplo: Controllers, Services, Models).
+- Se aplican buenas prácticas como separación de responsabilidades y reutilización de código.
+
+---
 
 #### 5.1.4. Software Deployment Configuration
 
