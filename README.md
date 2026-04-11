@@ -1,6 +1,6 @@
 ![Logo UPC](assets/images/LogoUpc.png)
 
-**Nombre de la Universidad:** Universidad Peruana de Ciencias Aplicadas  
+**Nombre de la Universidad:** Universidad Peruana de Ciencias Aplicadas
 **Facultad:** Ingeniería  
 **Carrera:** Ingeniería de Software
 **Ciclo:** 2026-10  
@@ -15,18 +15,19 @@
 **Nombre del producto:** SafeDrive  
 
 **Relación de integrantes:**
-* U201717085 - [Apellidos, Nombres]
-* U202315968 - [Apellidos, Nombres]
-* U202424059 - [Apellidos, Nombres]
-* U202316852 -
+
+* U202424059 - De La Cruz De Los Santos, Mathias Marcelo
+* U202316852 - Ortega Quintana, Jose Zacarias
 * U20241D922 - Quispe Serrano, Julio Frank
+* U202415551 - Ramirez Ruiz, Nickolas
+* U20211D989 - Vallejo Trujillo, Fabio Cesar
 
-
-**Abril, 2026**
+##### Abril, 2026
 
 ---
 
 ## Registro de Versiones del Informe
+
 | Avance | Fecha | Autor | Descripción de Modificación |
 | :--- | :--- | :--- | :--- |
 | AV1 | --/04/2026 | "-" | "-" |
@@ -34,11 +35,13 @@
 ---
 
 ## Project Report Collaboration Insights
+
 El equipo ha utilizado un flujo de trabajo en github: [safedrive-report](https://github.com/FiveTech-NRC11896/safedrive-report)
 
 ---
 
 ## Contenido
+
 1. [Student Outcome](#student-outcome)
 2. [Capítulo I: Introducción](#capítulo-i-introducción)
 3. [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
@@ -47,9 +50,11 @@ El equipo ha utilizado un flujo de trabajo en github: [safedrive-report](https:/
 6. [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
 7. [Conclusiones](#conclusiones)
 8. [Bibliografía](#bibliografía)
+
 ---
 
 ## Student Outcome
+
 **ABET - EAC - Student Outcome 5:** Capacidad de funcionar efectivamente en un equipo.
 
 ---
@@ -105,7 +110,6 @@ Respecto a la seguridad, la Superintendencia de Transporte Terrestre de Personas
 ![CensoEstudiantil](/assets/images/CensoEstudiantil.png)
 *Nota.* Adaptado de Resultados del Censo Educativo 2022 (p. 12), por Ministerio de Educación, 2023.
 
-
 #### 1.2.2 Lean UX Process
 
 ##### 1.2.2.1. Lean UX Problem Statements
@@ -115,6 +119,7 @@ Hemos observado un factor crítico que afecta a este ecosistema, los padres de f
 ¿Cómo podemos desarrollar una plataforma que permita a los transportistas escolares gestionar su operación de forma digital, mientras ofrece simultáneamente a los padres de familia la visibilidad y tranquilidad que necesitan sobre el traslado de sus hijos?
 
 ##### 1.2.2.2. Lean UX Assumptions
+
 **Business Assumptions**
 - Creemos que existe demanda suficiente para digitalizar el transporte escolar privado en Lima Metropolitana, dado que opera mayoritariamente de forma tradicional y sin soporte tecnológico.
 - Creemos que los padres de familia adoptarán la plataforma si el proceso de incorporación es simple y la información que reciben sobre el trayecto de sus hijos es clara y confiable.
@@ -138,6 +143,7 @@ Registro de abordaje por alumno, visualización de ruta y paradas, reporte de in
 Interfaz limpia, responsiva, rápida y accesible (a11y), disponible en español e inglés (i18n), e intuitiva para usuarios con distintos niveles de familiaridad tecnológica.
 
 ##### 1.2.2.3. Lean UX Hypothesis Statements
+
 - Hipótesis 1: "Creemos que lograremos que los padres de familia reduzcan su incertidumbre durante el traslado escolar si ofrecemos a los padres registrados en SafeRoute una vista del estado del trayecto con marcación de abordaje por alumno y visualización de paradas.
 Sabremos que esto es verdad cuando veamos que al menos el 70% de los padres activos consulten el estado del trayecto al menos una vez por día durante las primeras 4 semanas de uso."
 
@@ -149,6 +155,7 @@ Sabremos que esto es verdad cuando veamos que el 80% de los trayectos registrado
 - Hipótesis 4: "Creemos que lograremos que los administradores escalen su plan de suscripción si demostramos a los administradores de los planes inferiores que las funcionalidades de los plan superiores reducen significativamente el tiempo de coordinación del servicio. Sabremos que esto es verdad cuando veamos que al menos el 20% de los administradores de los planes Básico o Intermedio actualicen al algun plan superior dentro de los primeros 3 meses de uso."
 
 ##### 1.2.2.4. Lean UX Canvas
+
 | Sección | Contenido |
 | :----- | :--------- |
 | 1. Business Problem | El transporte escolar privado en el Perú opera de forma tradicional y sin soporte tecnológico. Los padres no tienen visibilidad sobre el trayecto de sus hijos y los transportistas gestionan su operación con llamadas, WhatsApp y hojas privadas, lo que genera errores, ineficiencia y una experiencia de servicio poco confiable.|
@@ -202,6 +209,7 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 
 ### 2.5. Ubiquitous Language
 
+
 ---
 
 ## Capítulo III: Requirements Specification
@@ -211,6 +219,7 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 ### 3.2. Impact Mapping
 
 ### 3.3. Product Backlog
+
 
 ---
 
@@ -286,23 +295,23 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 
 ### 5.2. Landing Page, Services & Applications Implementation
 
-#### 5.2.X. Sprint n
+#### 5.2.1. Sprint 1
 
-##### 5.2.X.1. Sprint Planning n
+##### 5.2.1.1. Sprint Planning 1
 
-##### 5.2.X.2. Aspect Leaders and Collaborators
+##### 5.2.1.2. Aspect Leaders and Collaborators
 
-##### 5.2.X.3. Sprint Backlog n
+##### 5.2.1.3. Sprint Backlog 1
 
-##### 5.2.X.4. Development Evidence for Sprint Review
+##### 5.2.1.4. Development Evidence for Sprint Review
 
-##### 5.2.X.5. Execution Evidence for Sprint Review
+##### 5.2.1.5. Execution Evidence for Sprint Review
 
-##### 5.2.X.6. Services Documentation Evidence for Sprint Review
+##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-##### 5.2.X.7. Software Deployment Evidence for Sprint Review
+##### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-##### 5.2.X.8. Team Collaboration Insights during Sprint
+##### 5.2.1.8. Team Collaboration Insights during Sprint
 
 ---
 
@@ -313,6 +322,7 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 ### Video About-the-Team
 
 ## Bibliografía
+
 - Autoridad de Transporte Urbano para Lima y Callao. (2024). *Cifra de movilidades escolares autorizadas disminuyó en 25% en un año*. El Comercio. Recuperado el 9 de abril de 2026, de https://elcomercio.pe/lima/cifra-de-movilidades-escolares-autorizadas-disminuyo-en-25-en-un-ano-a-que-se-debe-esta-reduccion-informe-movilidad-escolar-noticia/
 
 - Ministerio de Educación. (2023). *Resultados del Censo Educativo 2022*. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
