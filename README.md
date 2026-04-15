@@ -341,7 +341,7 @@ En esta sección se presentan los arquetipos de usuario diseñados para represen
 La elaboración de estas fichas es el resultado de una síntesis detallada entre el análisis de la competencia y el proceso de Needfinding. Se han identificado características críticas como la alta dependencia de herramientas informales (WhatsApp/Llamadas), la ansiedad generada por la incertidumbre del tráfico en Lima y la necesidad de profesionalizar un sector mayoritariamente no estructurado.
 
 ###### **Segmento Objetivo 1: Conductor **
-![UserPersona1](./assets/images/UserPerson1.png)
+![UserPersona1](./assets/images/UserPersona1.png)
 
 ---
 ###### **Segmento Objetivo 2: Padre de Familia**
