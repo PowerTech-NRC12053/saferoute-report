@@ -267,39 +267,30 @@ En base al análisis competitivo y SWOT realizado, SafeRoute plantea las siguien
 
 ###### **Segmento Objetivo 1: Conductor**
 
-**Fase 1: Contexto del Usuario**
 1. ¿Cuál es tu nombre?
 2. ¿Cuál es tu edad?
 3. ¿Podrías contarme un poco sobre tu entorno familiar? Por ejemplo, si vives con una familia o tienes hijos.
 4. ¿En qué distrito o zona sueles trabajar?
 5. ¿Podrías contarme un poco sobre tu trabajo como conductor de transporte escolar?
 6. ¿Trabajas de manera independiente o en coordinación con otro grupo de personas o empresa?
-7. En tu día a día, ¿qué herramientas o medios utilizas para organizar tu trabajo?
-
-**Fase 2: Exploración del Problema**
-
-8. Cuéntame cómo realizas normalmente el proceso de recoger y dejar a los alumnos.
-9. Durante el recorrido, ¿cómo llevas el control de los alumnos?
-10. ¿Qué suele pasar cuando ocurre algún cambio o imprevisto en la ruta?
-11. ¿Cómo te comunicas con los padres durante el servicio?
-12. ¿Qué partes de tu trabajo sientes que requieren más atención o te generan mayor carga?
-13. ¿Qué tan organizado sientes que es tu proceso actual de trabajo?
-
-**Fase 3: Exploración de Oportunidades**
-> **Contexto:** Nuestro proyecto es una aplicación web que ayude a organizar y dar mayor visibilidad al servicio de transporte escolar, centralizando la información y comunicación.
-
-14. Si pudieras mejorar algún aspecto de tu trabajo diario, ¿cuál sería y por qué?
-15. ¿Qué tipo de información te ayudaría a sentir mayor control durante el recorrido?
-16. ¿Qué preocupaciones tendrías al usar algún tipo de sistema durante el trayecto?
-17. ¿Cómo te gustaría que fuera la comunicación con los padres para que no interfiera con tu conducción?
-18. ¿Qué tendría que tener una herramienta así para que realmente la uses?
-19. ¿Qué tan dispuesto estarías a usar una herramienta que te ayude a organizar y monitorear tu trabajo? ¿Por qué?
+ 
+7. Durante el recorrido, ¿cómo llevas el control de los alumnos?
+8. ¿Qué suele pasar cuando ocurre algún cambio o imprevisto en la ruta?
+9. ¿Cómo te comunicas con los padres durante el servicio?
+10. ¿Qué partes de tu trabajo sientes que requieren más atención o te generan mayor carga?
+11. ¿Qué tan organizado sientes que es tu proceso actual de trabajo?
+12. Si pudieras mejorar algún aspecto de tu trabajo diario, ¿cuál sería y por qué?
+    
+13. ¿Qué tipo de información te ayudaría a sentir mayor control durante el recorrido?
+14. ¿Qué preocupaciones tendrías al usar algún tipo de sistema durante el trayecto?
+15. ¿Cómo te gustaría que fuera la comunicación con los padres para que no interfiera con tu conducción?
+16. ¿Qué tendría que tener una herramienta así para que realmente la uses?
+17. ¿Qué tan dispuesto estarías a usar una herramienta que te ayude a organizar y monitorear tu trabajo? ¿Por qué?
 
 ---
 
 ###### **Segmento Objetivo 2: Padre de Familia**
 
-**Fase 1: Contexto del Usuario**
 1. Para comenzar, ¿podrías indicarme tu nombre?
 2. ¿Cuál es tu edad?
 3. ¿En qué distrito o zona resides?
@@ -308,17 +299,12 @@ En base al análisis competitivo y SWOT realizado, SafeRoute plantea las siguien
 6. ¿Qué rol cumple el transporte escolar dentro de tu día a día?
 7. ¿Qué tan cómodo(a) te sientes utilizando tecnología en tu vida diaria?
 
-**Fase 2: Exploración del Problema**
-
 8. Cuéntame cómo haces actualmente para saber que tu hijo llegó bien a su destino.
 9. ¿Qué es lo que más te preocupa cuando tu hijo está en el transporte escolar?
 10. ¿Cómo te comunicas normalmente con el conductor o responsable del transporte?
 11. ¿Recuerdas alguna situación en la que hayas sentido preocupación o falta de información? ¿Qué ocurrió?
 12. ¿Qué tipo de información sientes que hoy no tienes y te gustaría tener?
 13. ¿Qué aspectos del servicio de transporte actual te generan más desconfianza o incomodidad?
-
-**Fase 3: Exploración de Oportunidades**
-> **Contexto:** Nuestro proyecto es una aplicación web que ayude a organizar y dar mayor visibilidad al servicio de transporte escolar, centralizando la información y comunicación.
 
 14. Si pudieras mejorar alguna parte del servicio de transporte escolar, ¿cuál sería y por qué?
 15. ¿Qué opinas de una herramienta que te permita tener mayor visibilidad del transporte escolar de tu hijo?
