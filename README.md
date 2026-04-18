@@ -391,6 +391,12 @@ Segmento Objetivo 2: Padre de familia
 ![EmpathyMapping2](./assets/images/EmpathyMapping-Rosita.png)
 
 ### 2.4. Big Picture Event Storming
+En esta sección, se presenta el desarrollo y los resultados de la sesión de Big Picture Event Storming realizada por el equipo para el proyecto SafeRoute. Este proceso consistió en una sesión colaborativa de modelado dirigida al dominio, donde el equipo se enfocó en comprender el ecosistema del negocio de movilidad escolar de manera integral.
+
+A través de esta dinámica, se logró plasmar los eventos significativos y sus interrelaciones, construyendo una primera aproximación visual de alto nivel que explora el landscape completo del negocio.
+
+![BigPictureEventStorming](./assets/images/BigPictureEventStorming.jpg)
+* **URL:** [[https://miro.com/](https://miro.com/app/board/uXjVGg_8JKU=/?share_link_id=308871936592)]
 
 ### 2.5. Ubiquitous Language
 
