@@ -324,6 +324,31 @@ Respecto a los esquemas de categorización, no se utilizan organizaciones alfab�
 
 #### 4.2.2. Labeling Systems
 
+El sistema de etiquetado de SafeRoute ha sido desarrollado bajo un criterio de funcionalidad operativa, buscando que cada término actúe como una señal clara que reduzca el esfuerzo cognitivo de los usuarios. Se han seleccionado etiquetas descriptivas que permiten una navegación intuitiva tanto en el proceso de descubrimiento (Landing Page) como en el uso crítico de la aplicación (Web Application).
+
+**Landing Page**
+
+  - **Funciones**: Agrupa las capacidades técnicas y herramientas de gestión de la plataforma.
+  - **Roles**: Define los accesos y beneficios específicos para los dos perfiles del sistema.
+  - **Planes**: Estructura la oferta comercial basándose en la escala de la flota de transporte.
+  - **¿Cómo funciona?**: Etiqueta de apoyo que resuelve dudas sobre la implementación del servicio.
+  - **Comenzar**: Botón de acción principal diseñado para motivar la conversión inmediata.
+
+**Aplicación Web – Conductores**
+
+  - **Mis Rutas**: Vista principal donde se gestionan los trayectos diarios asignados.
+  - **Lista de Alumnos**: Relación detallada de estudiantes por paradas, optimizando el tiempo de recogida.
+  - **Estado de Abordaje**: Sistema de etiquetas rápidas ("Abordado", "Ausente", "En espera") que permite al conductor registrar la asistencia con un solo toque.
+  - **Iniciar Ruta**: Etiqueta de alta visibilidad que dispara el envío de alertas GPS a los padres.
+  - **Botón de Incidencia**: Acceso directo para reportar eventos imprevistos (tráfico, accidentes) de forma estandarizada.
+
+**Aplicación Web – Padres de Familia**
+
+  - **Monitoreo**: Sección central que integra el mapa en tiempo real y la ubicación de la unidad.
+  - **Historial de Viajes**: Registro cronológico de las horas de recogida y entrega de sus hijos.
+  - **Alertas**: Centro de notificaciones sobre la proximidad del bus o confirmaciones de llegada.
+  - **Datos del Bus**: Información transparente sobre el vehículo y el conductor asignado para generar confianza.
+
 #### 4.2.3. SEO Tags and Meta Tags
 
 #### 4.2.4. Searching Systems
