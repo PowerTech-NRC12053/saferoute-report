@@ -469,13 +469,13 @@ Dentro de la aplicación web, la navegación principal se organiza mediante una 
 
 La experiencia de navegación también se adapta dinámicamente según el tipo de usuario. Los Padres de Familia acceden a una vista simplificada centrada en el mapa y las notificaciones de sus hijos, mientras que los Conductores disponen de controles operativos más robustos. El uso de pestañas (tabs) y botones de acción rápida dentro de cada módulo asegura que el usuario pueda ejecutar tareas específicas, como marcar la asistencia o llamar a un apoderado, sin perder el contexto de la ruta activa, garantizando un flujo de trabajo coherente con la naturaleza crítica del servicio.
 
-### 4.3. Landing Page UI Design
+## 4.3. Landing Page UI Design
 
 #### 4.3.1. Landing Page Wireframe
 
 #### 4.3.2. Landing Page Mock-up
 
-### 4.4. Web Applications UX/UI Design
+## 4.4. Web Applications UX/UI Design
 
 #### 4.4.1. Web Applications Wireframes
 
@@ -485,9 +485,9 @@ La experiencia de navegación también se adapta dinámicamente según el tipo d
 
 #### 4.4.3. Web Applications User Flow Diagrams
 
-### 4.5. Web Applications Prototyping
+## 4.5. Web Applications Prototyping
 
-### 4.6. Domain-Driven Software Architecture
+## 4.6. Domain-Driven Software Architecture
 
 #### 4.6.1. Design-Level Event Storming
 
