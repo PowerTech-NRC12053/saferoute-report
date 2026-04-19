@@ -227,7 +227,7 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 
 ## 4.1. Style Guidelines
 
-#### 4.1.1. General Style Guidelines
+### 4.1.1. General Style Guidelines
 
 El diseño de SafeRoute se fundamenta en decisiones visuales estratégicas destinadas a proyectar seguridad, fiabilidad y modernidad. El objetivo principal es construir una experiencia de usuario que genere confianza inmediata, tanto en los padres de familia que buscan tranquilidad como en los transportistas que necesitan eficiencia.
 
@@ -306,15 +306,23 @@ Por último, el principio de **proximidad** agrupa de manera lógica los element
 
 Estos elementos y principios no se aplican de forma aislada, sino como parte integral de un sistema visual que busca ser funcional, estético y coherente con la misión de SafeRoute: digitalizar y dar seguridad al transporte escolar a través de una experiencia clara, confiable y eficiente.
 
-#### 4.1.2. Web Style Guidelines
+### 4.1.2. Web Style Guidelines
 
-El diseño web de **SafeRoute** está optimizado para proporcionar una experiencia fluida y segura en dispositivos de diversos formatos, garantizando que tanto administradores en escritorio como conductores en móviles operen sin fricciones. Se han implementado diseños de grillas flexibles que pasan de múltiples columnas en desktop a una sola columna en dispositivos móviles, priorizando la legibilidad y el acceso rápido a botones de acción.
+El diseño web de **SafeRoute** está optimizado para proporcionar una experiencia de usuario fluida y profesional, centrada en la legibilidad y la facilidad de navegación. Se emplean estructuras de contenedores flexibles que permiten que el contenido se organice de manera clara, utilizando amplios espacios en blanco para evitar la saturación visual y garantizar la accesibilidad de la información crítica sobre seguridad. Los elementos visuales, como tarjetas de planes y secciones de roles, mantienen proporciones equilibradas para guiar la vista del usuario de forma jerárquica.
 
-En cuanto a la interactividad, los elementos táctiles en la versión móvil presentan áreas de contacto amplias, cumpliendo con estándares de accesibilidad. Se han definido estados visuales (hover, active) para ofrecer retroalimentación inmediata, y la navegación se transforma en un menú lateral (sidebar) en resoluciones menores a 768px, manteniendo el flujo de trabajo despejado.
+En cuanto a la interactividad, la plataforma utiliza una lógica de componentes claramente identificables. Los botones de acción (CTAs) emplean colores contrastantes y estados visuales (como hover y active) que ofrecen una retroalimentación inmediata, reforzando la confianza del usuario al interactuar con el sistema. La navegación se apoya en transiciones suaves y menús persistentes que aseguran que las herramientas principales, como el sistema de internacionalización (i18n), estén siempre al alcance del usuario, facilitando un flujo de trabajo intuitivo y eficiente dentro de la landing page.
+
+![Mockup Landing Page](assets/images/mockup_landingPage.png)
+
+![Mockup Planes](assets/images/mockup_planes.png)
+
+![Mockup footer](assets/images/mockup_footer.png)
+
+_Nota_: Elaboración propia.
 
 ## 4.2. Information Architecture
 
-#### 4.2.1. Organization Systems
+### 4.2.1. Organization Systems
 
 En el sistema SafeRoute, se emplea la organización jerárquica (visual hierarchy) para destacar información crítica, como el mapa de monitoreo en tiempo real, las alertas de emergencia y las notificaciones de abordaje de los alumnos en los dashboards principales. Esta jerarquía visual permite que tanto padres como conductores identifiquen de forma inmediata los datos más relevantes según el contexto operativo, relegando datos secundarios del perfil a niveles inferiores.
 
@@ -322,7 +330,7 @@ Asimismo, se aplica una organización secuencial (step-by-step) en procesos que 
 
 Respecto a los esquemas de categorización, no se utilizan organizaciones alfabéticas o matriciales complejas. En su lugar, se emplea una organización cronológica para la visualización de datos históricos, permitiendo que los padres de familia revisen los registros pasados de asistencias y llegadas de sus hijos de manera ordenada por fecha y hora. Además, el contenido se clasifica según audiencia, segmentando las interfaces y funcionalidades de acuerdo con los dos User Personas identificados: Conductores, enfocados en la gestión de ruta y paradas, y Padres de Familia, orientados al monitoreo y recepción de avisos de seguridad.
 
-#### 4.2.2. Labeling Systems
+### 4.2.2. Labeling Systems
 
 El sistema de etiquetado de SafeRoute ha sido desarrollado bajo un criterio de funcionalidad operativa, buscando que cada término actúe como una señal clara que reduzca el esfuerzo cognitivo de los usuarios. Se han seleccionado etiquetas descriptivas que permiten una navegación intuitiva tanto en el proceso de descubrimiento (Landing Page) como en el uso crítico de la aplicación (Web Application).
 
@@ -349,7 +357,7 @@ El sistema de etiquetado de SafeRoute ha sido desarrollado bajo un criterio de f
   - **Alertas**: Centro de notificaciones sobre la proximidad del bus o confirmaciones de llegada.
   - **Datos del Bus**: Información transparente sobre el vehículo y el conductor asignado para generar confianza.
 
-#### 4.2.3. SEO Tags and Meta Tags
+### 4.2.3. SEO Tags and Meta Tags
 
 1. **Landing Page**
 
@@ -406,7 +414,7 @@ Instruye a los motores de búsqueda sobre cómo tratar el sitio. Su función es 
 
 Declara el idioma principal de la estructura del sitio. Su función es informar a los navegadores y buscadores que el texto base está en ingles, mejorando la segmentación del público objetivo internacionalmente.
 
-#### 4.2.4. Searching Systems
+### 4.2.4. Searching Systems
 
 En esta sección se describen los mecanismos de asistencia y recuperación de información diseñados para SafeRoute. El objetivo primordial es evitar la desorientación del usuario ante el flujo constante de datos logísticos, garantizando que la información sobre rutas y alumnos sea accesible de manera inmediata.
 
@@ -461,7 +469,7 @@ En esta sección se describen los mecanismos de asistencia y recuperación de in
 
       - Círculo Gris: Registro de inasistencia justificada.
 
-#### 4.2.5. Navigation Systems
+### 4.2.5. Navigation Systems
 
 La navegación en SafeRoute ha sido diseñada para ser intuitiva y guiada mediante componentes de interfaz que permiten a los usuarios gestionar la seguridad del transporte de forma fluida y sin fricciones. En la landing page, se utiliza un sistema de desplazamiento vertical (smooth scroll) que permite explorar de forma narrativa los beneficios, los roles de usuario y los planes de suscripción, guiando al visitante estratégicamente hacia los llamados a la acción (CTAs) para el contacto. Esta navegación se apoya en una barra superior persistente (Sticky Nav) que incluye un selector de idioma (i18n), permitiendo cambiar el contexto lingüístico en cualquier punto del recorrido.
 
@@ -471,39 +479,39 @@ La experiencia de navegación también se adapta dinámicamente según el tipo d
 
 ## 4.3. Landing Page UI Design
 
-#### 4.3.1. Landing Page Wireframe
+### 4.3.1. Landing Page Wireframe
 
-#### 4.3.2. Landing Page Mock-up
+### 4.3.2. Landing Page Mock-up
 
 ## 4.4. Web Applications UX/UI Design
 
-#### 4.4.1. Web Applications Wireframes
+### 4.4.1. Web Applications Wireframes
 
-#### 4.4.2. Web Applications Wireflow Diagrams
+### 4.4.2. Web Applications Wireflow Diagrams
 
-#### 4.4.2. Web Applications Mock-ups
+### 4.4.2. Web Applications Mock-ups
 
-#### 4.4.3. Web Applications User Flow Diagrams
+### 4.4.3. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
 
-#### 4.6.1. Design-Level Event Storming
+### 4.6.1. Design-Level Event Storming
 
-#### 4.6.2. Software Architecture Context Diagram
+### 4.6.2. Software Architecture Context Diagram
 
-#### 4.6.3. Software Architecture Container Diagrams
+### 4.6.3. Software Architecture Container Diagrams
 
-#### 4.6.4. Software Architecture Components Diagrams
+### 4.6.4. Software Architecture Components Diagrams
 
-### 4.7. Software Object-Oriented Design
+## 4.7. Software Object-Oriented Design
 
-#### 4.7.1. Class Diagrams
+### 4.7.1. Class Diagrams
 
-### 4.8. Database Design
+## 4.8. Database Design
 
-#### 4.8.1. Database Diagrams
+### 4.8.1. Database Diagrams
 
 ---
 
