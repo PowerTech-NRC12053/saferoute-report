@@ -225,7 +225,7 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 
 ## Capítulo IV: Product Design
 
-### 4.1. Style Guidelines
+## 4.1. Style Guidelines
 
 #### 4.1.1. General Style Guidelines
 
@@ -312,7 +312,7 @@ El diseño web de **SafeRoute** está optimizado para proporcionar una experienc
 
 En cuanto a la interactividad, los elementos táctiles en la versión móvil presentan áreas de contacto amplias, cumpliendo con estándares de accesibilidad. Se han definido estados visuales (hover, active) para ofrecer retroalimentación inmediata, y la navegación se transforma en un menú lateral (sidebar) en resoluciones menores a 768px, manteniendo el flujo de trabajo despejado.
 
-### 4.2. Information Architecture
+## 4.2. Information Architecture
 
 #### 4.2.1. Organization Systems
 
