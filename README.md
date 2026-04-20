@@ -501,7 +501,7 @@ En esta primera sección se presenta la pantalla Home de la landing page, donde 
 
 <img src="assets/images/wireframe-LP1.png" alt="Home SafeRoute" width="900px">
 
-A continuación, se muestra la Sección de Características, donde se detallan los pilares de seguridad y eficiencia que sustentan la plataforma SafeRoute, utilizando iconos y textos breves para una lectura rápida.
+A continuación, se muestra la Sección de Características, donde se detallan los pilares y eficiencia que sustentan la plataforma SafeRoute, utilizando iconos y textos breves para una lectura rápida.
 
 <img src="assets/images/wireframe-LP2.png" alt="Características SafeRoute" width="900px">
 
@@ -509,11 +509,11 @@ Se presenta la sección de Funcionalidades, la cual profundiza en las capacidade
 
 <img src="assets/images/wireframe-LP3.png" alt="Funcionalidades" width="900px">
 
-Los siguientes frames corresponden a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
+El siguiente frame corresponde a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
 
 <img src="assets/images/wireframe-LP4.png" alt="Roles SafeRoute" width="900px">
 
-Se presenta la sección de Planes, donde se muestra la estructura de precios y niveles de servicio, diseñada de forma escaneable para facilitar la toma de decisiones comerciales.
+Se presenta la sección de Planes, donde se muestra la estructura de precios y niveles de servicio, diseñada de forma escaneable para facilitar la toma de decisiones.
 
 <img src="assets/images/wireframe-LP5.png" alt="Planes SafeRoute" width="900px">
 
@@ -545,7 +545,7 @@ Se adapta la segmentación de beneficios para padres y conductores mediante un f
 <img src="assets/images/wireframe-mobile-3.png" alt="Roles Mobile" width="700px">
 
 Planes, Tutorial y Footer Móvil:
-La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los botones de contacto y los créditos de PowerTech de manera compacta y accesible al final del recorrido del usuario.
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los créditos de PowerTech de manera compacta al final del recorrido del usuario.
 
 <img src="assets/images/wireframe-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
 
@@ -557,7 +557,7 @@ En esta primera sección se presenta la pantalla Home de la landing page, donde 
 
 <img src="assets/images/mockup-LP1.png" alt="Home SafeRoute" width="900px">
 
-A continuación, se muestra la Sección de Características, donde se detallan los pilares de seguridad y eficiencia que sustentan la plataforma SafeRoute, utilizando iconos y textos breves para una lectura rápida.
+A continuación, se muestra la Sección de Características, donde se detallan los pilares y eficiencia que sustentan la plataforma SafeRoute, utilizando iconos y textos breves para una lectura rápida.
 
 <img src="assets/images/mockup-LP2.png" alt="Características SafeRoute" width="900px">
 
@@ -565,7 +565,7 @@ Se presenta la sección de Funcionalidades, la cual profundiza en las capacidade
 
 <img src="assets/images/mockup-LP3.png" alt="Funcionalidades" width="900px">
 
-Los siguientes frames corresponden a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
+El siguiente frame corresponde a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
 
 <img src="assets/images/mockup-LP4.png" alt="Roles SafeRoute" width="900px">
 
@@ -577,7 +577,7 @@ A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo 
 
 <img src="assets/images/mockup-LP6.png" alt="Tutorial SafeRoute" width="900px">
 
-Finalmente, se presenta la sección de Contacto y Footer, la cual incluye el cierre de la página con los datos de comunicación directa y los créditos correspondientes al equipo de desarrollo de PowerTech.
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de FiveTech.
 
 <img src="assets/images/mockup-LP7.png" alt="Footer SafeRoute" width="900px">
 
