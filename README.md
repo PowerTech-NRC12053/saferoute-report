@@ -521,7 +521,7 @@ A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo 
 
 <img src="assets/images/wireframe-LP6.png" alt="Tutorial SafeRoute" width="900px">
 
-Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de FiveTech.
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de PowerTech.
 
 <img src="assets/images/wireframe-LP7.png" alt="Footer SafeRoute" width="900px">
 
@@ -577,7 +577,7 @@ A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo 
 
 <img src="assets/images/mockup-LP6.png" alt="Tutorial SafeRoute" width="900px">
 
-Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de FiveTech.
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de PowerTech.
 
 <img src="assets/images/mockup-LP7.png" alt="Footer SafeRoute" width="900px">
 
