@@ -581,6 +581,30 @@ Finalmente, se presenta la sección de Contacto y Footer, la cual incluye el cie
 
 <img src="assets/images/mockup-LP7.png" alt="Footer SafeRoute" width="900px">
 
+#### Versión Mobile Web Browser
+
+A continuación, se presentan los mock-ups de la versión móvil de la aplicación. Cada imagen muestra la adaptación responsiva de las principales funcionalidades y secciones diseñadas para ofrecer una experiencia de usuario optimizada en dispositivos móviles.
+
+Pantalla Home y Menú Lateral (Sidebar):
+Se muestra la adaptación del Hero Section y el funcionamiento del menú hamburguesa, el cual despliega una barra lateral para facilitar la navegación en pantallas pequeñas sin obstruir el contenido.
+
+<img src="assets/images/mockup-mobile-1.png" alt="Home Mobile" width="700px">
+
+Secciones de Características y Funcionalidades en Móvil:
+Los pilares de seguridad y las capacidades tecnológicas del sistema se reorganizan en una sola columna. Esto permite que los iconos y textos descriptivos mantengan un tamaño adecuado para la lectura táctil, evitando que el usuario deba realizar zoom para comprender las funciones de monitoreo y alertas.
+
+<img src="assets/images/mockup-mobile-2.png" alt="Características y Funcionalidades Mobile" width="800px">
+
+Sección de Roles del Sistema en Móvil:
+Se adapta la segmentación de beneficios para padres y conductores mediante un flujo vertical. Cada rol se presenta de forma independiente para asegurar que el impacto visual de los beneficios específicos no se pierda en pantallas de dimensiones reducidas.
+ 
+<img src="assets/images/mockup-mobile-3.png" alt="Roles Mobile" width="700px">
+
+Planes, Tutorial y Footer Móvil:
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los botones de contacto y los créditos de PowerTech de manera compacta y accesible al final del recorrido del usuario.
+
+<img src="assets/images/mockup-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
+
 ## 4.4. Web Applications UX/UI Design
 
 ### 4.4.1. Web Applications Wireframes
