@@ -1,4 +1,4 @@
-![Logo UPC](assets/images/Banner-UPC.png)
+![Logo UPC](assets/images/Upc/Banner-UPC.png)
 
 **Nombre de la Universidad:** Universidad Peruana de Ciencias Aplicadas
 **Facultad:** Ingeniería  
@@ -74,7 +74,7 @@ Nuestra propuesta de valor se materializa en SafeRoute, una plataforma web de mo
 | :--------------------------------: | :-------------------------- | :-----------: | :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |              ![foto]               | [Apellido 1], [Nombre 1]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
 |              ![foto]               | [Apellido 2], [Nombre 2]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
-| ![foto](assets/images/FrankFT.png) | Quispe Serrano, Julio Frank | [U20241D922]  | Ingeniería de Software | Mi nombre es Julio Frank Quispe Serrano, tengo 20 años,actualmente estoy cursando el 5to ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Soy un apasionado por la programación, el gym y explorador de música en distintos géneros. Mi aporte en este grupo será el de brindar soluciones prácticas y eficientes ante situaciones de adversidad que estanquen la fluidez de la elaboración del trabajo. |
+| ![foto](assets/images/Team/frankFT.png) | Quispe Serrano, Julio Frank | [U20241D922]  | Ingeniería de Software | Mi nombre es Julio Frank Quispe Serrano, tengo 20 años,actualmente estoy cursando el 5to ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Soy un apasionado por la programación, el gym y explorador de música en distintos géneros. Mi aporte en este grupo será el de brindar soluciones prácticas y eficientes ante situaciones de adversidad que estanquen la fluidez de la elaboración del trabajo. |
 |              ![foto]               | [Apellido 4], [Nombre 4]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
 |              ![foto]               | [Apellido 5], [Nombre 5]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
 
@@ -461,39 +461,39 @@ Los contextos delimitados organizan los agregados en dominios de negocio indepen
 ![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-subscription.puml)
 
 - Stakeholder & Asset Management: 
-![saferoute-stakeholder](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-stakeholder.puml)
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-stakeholder.puml)
 
 - Fleet & Route Planning: 
-![saferoute-fleet](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-fleet.puml)
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-fleet.puml)
 
 - Trip Execution & Monitoring: 
-![saferoute-trip](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-trip.puml)
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-trip.puml)
 
 - Notifications & Communication:
-![saferoute-notifications](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-notifications.puml)
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-notifications.puml)
 
 - Shared:
-![saferoute-shared](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-shared.puml)
+![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-shared.puml)
 
 
 **FrontEnd**
 - Identity and Access Management:
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/saferoute-frontend-iam.puml)
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-iam.puml)
 
 - Subscription & Plan Management: 
-![saferoute-subscription](https://github.com/PowerTech-NRC12053/saferoute-webapp/blob/main/saferoute/docs/saferoute-frontend-subscription.puml)
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-subscription.puml)
 
 - Stakeholder & Asset Management: 
-![saferoute-stakeholder](https://github.com/PowerTech-NRC12053/saferoute-webapp/blob/main/saferoute/docs/saferoute-frontend-stakeholder.puml)
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-stakeholder.puml)
 
 - Fleet & Route Planning: 
-![saferoute-fleet](https://github.com/PowerTech-NRC12053/saferoute-webapp/blob/main/saferoute/docs/saferoute-frontend-fleet.puml)
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-fleet.puml)
 
 - Trip Execution & Monitoring: 
-![saferoute-trip](https://github.com/PowerTech-NRC12053/saferoute-webapp/blob/main/saferoute/docs/saferoute-frontend-trip.puml)
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-trip.puml)
 
 - Notifications & Communication:
-![saferoute-notifications](https://github.com/PowerTech-NRC12053/saferoute-webapp/blob/main/saferoute/docs/saferoute-frontend-notifications.puml)
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-notifications.puml)
 
 
 
