@@ -455,10 +455,10 @@ Los contextos delimitados organizan los agregados en dominios de negocio indepen
 
 **BackEnd**
 - Identity and Access Management:
-![saferoute-iam](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-iam.puml)
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-iam.puml)
 
 - Subscription & Plan Management: 
-![saferoute-subscription](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-subscription.puml)
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-subscription.puml)
 
 - Stakeholder & Asset Management: 
 ![saferoute-stakeholder](https://github.com/PowerTech-NRC12053/saferoute-platform/blob/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-stakeholder.puml)
@@ -478,7 +478,7 @@ Los contextos delimitados organizan los agregados en dominios de negocio indepen
 
 **FrontEnd**
 - Identity and Access Management:
-![saferoute-iam](https://github.com/PowerTech-NRC12053/saferoute-webapp/blob/main/saferoute/docs/saferoute-frontend-iam.puml)
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/saferoute-frontend-iam.puml)
 
 - Subscription & Plan Management: 
 ![saferoute-subscription](https://github.com/PowerTech-NRC12053/saferoute-webapp/blob/main/saferoute/docs/saferoute-frontend-subscription.puml)
