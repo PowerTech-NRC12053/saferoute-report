@@ -391,12 +391,12 @@ Especifica palabras clave relevantes para la temática de la página. Su funció
 
 **Meta Author**
 
-  `<meta name="author" content="FiveTech Team">`
-Identifica formalmente a los creadores de la plataforma. Su función es atribuir la autoría del proyecto al equipo de FiveTech, vinculando el desarrollo técnico con el startup responsable.
+  `<meta name="author" content="PowerTech Team">`
+Identifica formalmente a los creadores de la plataforma. Su función es atribuir la autoría del proyecto al equipo de PowerTech, vinculando el desarrollo técnico con el startup responsable.
 
 **Meta Copyright**
 
-  `<meta name="copyright" content="FiveTech 2026">`
+  `<meta name="copyright" content="PowerTech 2026">`
 
 Esta línea establece legalmente la propiedad intelectual de la página. Su función es indicar la titularidad de los derechos de autor y el año de vigencia, protegiendo el contenido y diseño del sitio.
 
@@ -518,7 +518,7 @@ A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo 
 
 <img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP6.png" alt="Tutorial SafeRoute" width="900px">
 
-Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de FiveTech.
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de PowerTech.
 
 <img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP7.png" alt="Footer SafeRoute" width="900px">
 
@@ -542,7 +542,7 @@ Se adapta la segmentación de beneficios para padres y conductores mediante un f
 <img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-mobile-3.png" alt="Roles Mobile" width="700px">
 
 Planes, Tutorial y Footer Móvil:
-La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los créditos de FiveTech de manera compacta al final del recorrido del usuario.
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los créditos de PowerTech de manera compacta al final del recorrido del usuario.
 
 <img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
 
@@ -574,7 +574,7 @@ A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo 
 
 <img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP6.png" alt="Tutorial SafeRoute" width="900px">
 
-Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de FiveTech.
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de PowerTech.
 
 <img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP7.png" alt="Footer SafeRoute" width="900px">
 
@@ -598,7 +598,7 @@ Se adapta la segmentación de beneficios para padres y conductores mediante un f
 <img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-mobile-3.png" alt="Roles Mobile" width="700px">
 
 Planes, Tutorial y Footer Móvil:
-La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los botones de contacto y los créditos de FiveTech de manera compacta y accesible al final del recorrido del usuario.
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los botones de contacto y los créditos de PowerTech de manera compacta y accesible al final del recorrido del usuario.
 
 <img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
 
