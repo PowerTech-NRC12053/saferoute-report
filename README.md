@@ -392,6 +392,7 @@ Especifica palabras clave relevantes para la temática de la página. Su funció
 **Meta Author**
 
   `<meta name="author" content="PowerTech Team">`
+  
 Identifica formalmente a los creadores de la plataforma. Su función es atribuir la autoría del proyecto al equipo de PowerTech, vinculando el desarrollo técnico con el startup responsable.
 
 **Meta Copyright**
