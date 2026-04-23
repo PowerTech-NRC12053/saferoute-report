@@ -516,7 +516,7 @@ Value Objects propios: SubscriptionState (active/expired/cancelled), PlanTier (b
 
 - Stakeholder & Asset Management: 
 
-![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
+![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
 
 
 Modela a los actores humanos del sistema: padres, conductores, hijos y grupos de estudiantes.
