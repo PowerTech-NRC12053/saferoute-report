@@ -516,7 +516,8 @@ Value Objects propios: SubscriptionState (active/expired/cancelled), PlanTier (b
 
 - Stakeholder & Asset Management: 
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-stakeholder.puml)
+![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
+
 
 Modela a los actores humanos del sistema: padres, conductores, hijos y grupos de estudiantes.
 Parent (AggregateRoot) — Atributos privados: id, organizationId, userId, fullName, email, phoneNumber y -children: List<Child>. Métodos públicos: AddChild(), RemoveChild(), GetChildren(). Composición 1:1..* con Child (has): un Parent debe tener al menos un hijo.
