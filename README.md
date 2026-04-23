@@ -455,12 +455,15 @@ Este diagrama proporciona una vista de alto nivel de SafeRoute y su entorno. Ilu
 #### 4.6.3. Software Architecture Container Diagrams
 Aquí se detallan las unidades de despliegue principales del sistema. El diagrama muestra cómo SafeRoute se divide en una Landing Page, una aplicación interactiva en el cliente (SPA desarrollada en Vue 3), una API backend modularizada (Web Service en ASP.NET Core) y un repositorio persistente central (Base de Datos MySQL).
 
-![ContainerDiagram](/assets/images/ChapterIV/C4/ContainerDiagram.png)
+![ContainerDiagram](/assets/images/ChapterIV/C4/ContainerDiagram-dark.png)
 
 #### 4.6.4. Software Architecture Components Diagrams
-Este diagrama ofrece la visión macro del backend. Demuestra cómo el monolito de ASP.NET Core está organizado lógicamente en siete Bounded Contexts independientes y un Shared Kernel (núcleo compartido de Value Objects), asegurando una separación clara de responsabilidades a nivel de dominio.
+
+**BackEnd**
 
 ![WebServices](/assets/images/ChapterIV/C4/WebServiceComponents.png)
+Este diagrama ofrece la visión macro del backend. Demuestra cómo el monolito de ASP.NET Core está organizado lógicamente en siete Bounded Contexts independientes y un Shared Kernel (núcleo compartido de Value Objects), asegurando una separación clara de responsabilidades a nivel de dominio.
+
 
 - Identity & Access Management:
 Desglosa el módulo de identidad en su arquitectura interna de 4 capas (API, Application, Domain, Infrastructure). Ilustra cómo se maneja la autenticación de usuarios, la provisión de cuentas y la emisión de tokens de seguridad de forma aislada.
@@ -489,6 +492,12 @@ Ilustra el núcleo operativo del sistema en sus 4 capas. Muestra cómo se proces
 - Shared Kernel:
 Este diagrama expone las 4 capas transversales (Building Blocks) que fundamentan la arquitectura limpia del monolito. Detalla cómo se proveen clases base y utilidades compartidas: Middlewares en la capa API, interfaces y DTOs base en Application, Value Objects globales (TripId, StudentId) en Domain, y repositorios genéricos en Infrastructure, evitando la duplicidad de código en el resto de los Bounded Contexts.
 ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_SharedKernel-dark.png)
+
+**BackEnd**
+
+- Single Page Application
+![SPA](/assets/images/ChapterIV/C4/ComponentDiagram_SharedKernel-dark.png)
+La SPA está desarrollada con Vue 3, PrimeVue y JavaScript, organizada en módulos por bounded context. Cada módulo encapsula cuatro capas: Model (clases JavaScript del dominio), Assembler (transforma respuestas del API), API Service (consume el backend vía Axios), y Store (estado reactivo con Pinia). La Navigation Bar del módulo Shared gestiona la navegación por roles, el HTTP Service centraliza las llamadas REST y el Map Service integra Leaflet para la visualización de rutas.
 
 ### 4.7. Software Object-Oriented Design
 
