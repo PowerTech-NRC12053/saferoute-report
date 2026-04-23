@@ -480,6 +480,11 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 #### 5.2.1. Sprint 1
 
 ##### 5.2.1.1. Sprint Planning 1
+En la reunión de planificación para el **Sprint 1**, el equipo estableció como objetivo principal la consolidación de la identidad digital de **SafeRoute** y la base técnica del ecosistema. Se priorizaron las User Stories del **Epic 4 (Landing Page)** para asegurar la captación de clientes y la configuración del **Shared Kernel** en el backend para garantizar la consistencia de los datos en futuros Sprints.
+
+Sprint Goal: El objetivo central de este Sprint es establecer la presencia digital de SafeRoute mediante el despliegue de una Landing Page funcional e inclusiva, además de configurar la arquitectura base del sistema bajo un enfoque de Domain-Driven Design (DDD).
+
+Métrica de cumplimiento: El éxito se confirmará cuando la Landing Page sea accesible públicamente, soporte internacionalización (i18n) y los visitantes puedan visualizar la propuesta de valor y planes de servicio.Resumen de planificación: El equipo acordó una velocidad de 25 Story Points, priorizando los componentes visuales de cara al cliente y los fundamentos del backend en ASP.NET Core.
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 
