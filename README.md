@@ -544,7 +544,34 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 <td>Vallejo Trujillo, Fabio Cesar</td><td>fabiovallejo</td><td>C</td><td>L</td><td>C</td><td>C</td>
 </tr><tr><td>Ramirez Ruiz, Nickolas</td><td>Bynickram02</td><td>C</td><td>C</td><td>C</td><td>L</td></tr></table>
 
-##### 5.2.1.3. Sprint Backlog 1
+
+### **5.2.1.3. Sprint Backlog 1**
+
+**Objetivo del Sprint:**
+Establecer la infraestructura base de SafeRoute mediante el desarrollo de una Landing Page bilingüe que comunique la propuesta de valor, la implementación del sistema de gestión de usuarios (padres, conductores y alumnos) y la configuración de los servicios de geolocalización esenciales para el monitoreo de rutas.
+
+**Board de Trello :**
+*( captura )*
+
+**URL del Board:** [ enlace ]
+
+| US Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| US19 | Visualización de Hero | T01 | Maquetación Hero | Diseñar y codificar la sección principal de la Landing Page. | 4 | Fabio | To-do |
+| US20 | Navegación de Funciones | T02 | Menú dinámico | Implementar la navegación y el scroll entre secciones. | 4 | Mathias | To-do |
+| US21 | Detalle de Roles | T03 | Cards Informativas | Crear componentes visuales para explicar los roles. | 3 | Fabio | To-do |
+| US22 | Consulta de Precios | T04 | Landing: Precios | Implementar la sección de planes responsiva. | 3 | Chris | To-do |
+| US23 | Sección ¿Cómo funciona? | T05 | Flujo de Usuario | Desarrollar guía visual de pasos del servicio. | 3 | Nickolas | To-do |
+| US30 | Implementación i18n | T06 | Multiidioma | Configurar soporte ES/EN en el frontend. | 6 | Mathias | To-do |
+| US1 | Contratar Plan | T07 | API Suscripción | Lógica de backend para la selección de planes. | 6 | Nickolas | To-do |
+| US2 | Registro de Conductores | T08 | CRUD Conductores | Implementar gestión de perfiles de conductores. | 8 | Chris | To-do |
+| US3 | Registro de Padres | T09 | CRUD Padres | Implementar gestión de perfiles de apoderados. | 6 | Renzo | To-do |
+| US4 | Alta de Alumnos | T10 | CRUD Alumnos | Crear registro de estudiantes vinculados a padres. | 5 | Nickolas | To-do |
+| US5 | Creación de Rutas | T11 | Lógica de Ruta | Servicio para definir paradas y trayectos. | 8 | Nickolas | To-do |
+| US8 | Inicio de Trayecto | T12 | Trigger de Viaje | Activación de estados de viaje en tiempo real. | 5 | Fabio | To-do |
+| US25 | API: Registro GPS | T13 | Ingesta de Datos | Endpoint para recibir coordenadas GPS. | 10 | Fabio | To-do |
+| US14 | Rastreo Tiempo Real | T14 | Mapa en vivo | Integración de mapas para ubicación del bus. | 12 | Renzo | To-do |
+| --- | Constraint General | T15 | Base de Datos | Diseño y despliegue del esquema SQL. | 8 | Chris | To-do |
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
