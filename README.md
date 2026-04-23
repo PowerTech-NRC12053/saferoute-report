@@ -480,14 +480,62 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 #### 5.2.1. Sprint 1
 
 ##### 5.2.1.1. Sprint Planning 1
-En la reunión de planificación para el **Sprint 1**, el equipo estableció como objetivo principal la consolidación de la identidad digital de **SafeRoute** y la base técnica del ecosistema. Se priorizaron las User Stories del **Epic 4 (Landing Page)** para asegurar la captación de clientes y la configuración del **Shared Kernel** en el backend para garantizar la consistencia de los datos en futuros Sprints.
+En la reunión de planificación del Sprint 1, el equipo definió como objetivo principal establecer la presencia digital de SafeRoute y la estructura base del sistema.
 
-Sprint Goal: El objetivo central de este Sprint es establecer la presencia digital de SafeRoute mediante el despliegue de una Landing Page funcional e inclusiva, además de configurar la arquitectura base del sistema bajo un enfoque de Domain-Driven Design (DDD).
-
-Métrica de cumplimiento: El éxito se confirmará cuando la Landing Page sea accesible públicamente, soporte internacionalización (i18n) y los visitantes puedan visualizar la propuesta de valor y planes de servicio.Resumen de planificación: El equipo acordó una velocidad de 25 Story Points, priorizando los componentes visuales de cara al cliente y los fundamentos del backend en ASP.NET Core.
+<table>
+<tr>
+<th>Sprint #</th>
+<th>Sprint 1</th>
+</tr>
+<tr>
+<td colspan="2"><strong>Sprint Planning Background</strong></td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>2026-04-06</td>
+</tr>
+<tr>
+<td><strong>Time</strong></td>
+<td>14:30 PM (GMT-5)</td>
+</tr>
+<tr>
+<td><strong>Location</strong></td>
+<td>Modalidad remota mediante la plataforma Discord</td>
+</tr>
+<tr>
+<td><strong>Prepared By</strong></td>
+<td>Ramirez Ruiz, Nickolas</td>
+</tr>
+<tr>
+<td><strong>Attendees (to planning meeting)</strong></td>
+<td>De La Cruz, Mathias / Ortega, José / Quispe, Julio / Ramirez, Nickolas / Vallejo, Fabio</td>
+</tr>
+<tr>
+<td><strong>Sprint 0 Review Summary</strong></td>
+<td>N/A - Sprint inicial enfocado en la definición del modelo de negocio y perfiles de usuario.</td>
+</tr>
+<tr>
+<td><strong>Sprint 0 Retrospective Summary</strong></td>
+<td>N/A - Configuración inicial de la organización en GitHub y Trello.</td>
+</tr>
+<tr>
+<td colspan="2"><strong>Sprint Goal & User Stories</strong></td>
+</tr>
+<tr>
+<td><strong>Sprint 1 Goal</strong></td>
+<td><strong>Nuestro propósito es</strong> diseñar y desplegar la versión inicial de la Landing Page de SafeRoute e implementar la estructura base del backend bajo DDD. <strong>Creemos que esto aportará</strong> visibilidad clara de nuestra solución a padres y transportistas. <strong>Esto se confirmará cuando</strong> la Landing Page sea accesible públicamente y se valide el primer endpoint del Shared Kernel.</td>
+</tr>
+<tr>
+<td><strong>Sprint 1 Velocity</strong></td>
+<td>22 Story Points</td>
+</tr>
+<tr>
+<td><strong>Sum of Story Points</strong></td>
+<td>22 Story Points</td>
+</tr>
+</table>
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
-
 ##### 5.2.1.3. Sprint Backlog 1
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
