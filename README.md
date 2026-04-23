@@ -493,10 +493,10 @@ Ilustra el núcleo operativo del sistema en sus 4 capas. Muestra cómo se proces
 Este diagrama expone las 4 capas transversales (Building Blocks) que fundamentan la arquitectura limpia del monolito. Detalla cómo se proveen clases base y utilidades compartidas: Middlewares en la capa API, interfaces y DTOs base en Application, Value Objects globales (TripId, StudentId) en Domain, y repositorios genéricos en Infrastructure, evitando la duplicidad de código en el resto de los Bounded Contexts.
 ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_SharedKernel-dark.png)
 
-**BackEnd**
+**FrontEnd**
 
 - Single Page Application
-![SPA](/assets/images/ChapterIV/C4/ComponentDiagram_SharedKernel-dark.png)
+![SPA](/assets/images/ChapterIV/C4/ComponentDiagram_SPA-dark.png)
 La SPA está desarrollada con Vue 3, PrimeVue y JavaScript, organizada en módulos por bounded context. Cada módulo encapsula cuatro capas: Model (clases JavaScript del dominio), Assembler (transforma respuestas del API), API Service (consume el backend vía Axios), y Store (estado reactivo con Pinia). La Navigation Bar del módulo Shared gestiona la navegación por roles, el HTTP Service centraliza las llamadas REST y el Map Service integra Leaflet para la visualización de rutas.
 
 ### 4.7. Software Object-Oriented Design
