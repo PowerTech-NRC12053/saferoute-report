@@ -562,43 +562,76 @@ Value Objects propios: NotificationCategory (boarding/arrival/incident/panic), N
 Este módulo no pertenece a un bounded context específico sino que actúa como kernel compartido. Contiene exclusivamente Value Objects reutilizables a lo largo de toda la aplicación: OrganizationId, UserId, ParentId, DriverId, ChildId, RouteId, TripId, SubscriptionId, PlanId, FullName y Coordinates. Todos son inmutables, encapsulan un valor primitivo (Guid, string o double) con scope privado, y exponen métodos públicos como New(), Equals() y ToString(). FullName es el único con dos atributos (firstName, lastName) y agrega GetFullName() e IsValid(). Coordinates encapsula latitude y longitude como double con validación geoespacial.
 
 **FrontEnd**
-En todos los diagramas el componente raíz App actúa como contenedor principal: tiene composición (contains) con todos los componentes de cada bounded context, y recibe sus eventos mediante emisiones (emits).
 
 - Identity and Access Management:
 
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-iam.puml)
+![vue-saferoute-iam](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-iam.puml)
 
-App compone cinco componentes: AdminLoginForm, AdminRegisterForm y UserLoginForm gestionan autenticación con atributos de formulario privados (email, password, errorMessage) y emiten eventos como admin-logged-in o login-failed hacia App. OrganizationForm y OrganizationProfile manejan la creación y visualización de la organización, emitiendo organization-created y edit-requested respectivamente. Los modelos User y Organization son usados directamente por los componentes correspondientes, con User asociado a Organization (belongs to).
+Gestiona la autenticación de usuarios y la configuración de la organización.
+
+Presentation & Domain: El Layout compone los formularios de inicio de sesión (AdminLoginForm, UserLoginForm), registro (AdminRegisterForm) y gestión (OrganizationForm, OrganizationProfile). Estos componentes consumen directamente los modelos de dominio puros (User, Organization) para reflejar la información en la UI y comunican las interacciones del usuario hacia arriba mediante eventos (ej. adminLoggedIn(), organizationCreated()).
+
+Application & Infrastructure: IamStore centraliza el estado reactivo (currentUser, organization). Utiliza IamApi para operaciones como signIn() o createOrganization(), y los UserAssembler/OrganizationAssembler para mapear los recursos crudos del backend hacia las entidades limpias del dominio.
 
 - Subscription & Plan Management: 
 
-![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-subscription.puml)
+![vue-saferoute-subscription](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-subscription.puml)
 
-App compone PlanSelector y SubscriptionStatus. PlanSelector permite elegir un plan de la lista disponible, emitiendo plan-selected. SubscriptionStatus muestra el estado actual de la suscripción con métodos getRemainingDays() e isActive(), emitiendo upgrade-requested y cancel-requested. SubModel se asocia a PlanModel (has) con multiplicidad 1:1.
+Maneja la visualización y selección de planes para la organización.
+
+Presentation & Domain: El Layout compone PlanSelector y SubscriptionStatus. Estos componentes utilizan directamente los modelos de dominio (Subscription y Plan) como fuente de verdad para renderizar límites y cuotas, emitiendo eventos como planSelected() o upgradeRequested() sin acoplarse a lógicas externas.
+
+Application & Infrastructure: SubscriptionStore maneja el estado de subscription y plans. Se comunica con SubscriptionApi para cargar o modificar datos, transformando las respuestas en entidades del dominio a través de sus respectivos Assemblers.
 
 - Stakeholder & Asset Management: 
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-stakeholder.puml)
+![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-stakeholder.puml)
 
-App compone cuatro listas: ParentList, DriverList, ChildList y StudentGroupList. Cada una tiene atributos -searchQuery y métodos de filtrado, selección y eliminación, emitiendo eventos *-selected y *-deleted hacia App. Los modelos Parent, Driver, Child y StudentGroup son DTOs planos. ParentModel tiene composición con ChildModel (has), reflejando que un padre agrupa sus hijos.
+Controla las vistas de listado y gestión de los actores operativos del sistema.
+
+Presentation & Domain: El Layout compone las listas interactivas (ParentList, DriverList, ChildList, StudentGroupList). Estas vistas dependen exclusivamente de los modelos de dominio (Parent, Driver, Child, StudentGroup) para renderizar los datos y exponen eventos como parentDeleted() o groupFinalized() para interactuar con el Store.
+
+Application & Infrastructure: StakeholderStore centraliza las listas de actores. Delega las operaciones CRUD a la StakeholderApi y convierte los recursos asíncronos en modelos puros utilizando las clases *Assembler correspondientes.
 
 - Fleet & Route Planning: 
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-fleet.puml)
+![vue-saferoute-fleet](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-fleet.puml)
 
-App compone RouteForm, StopList, VehicleList y AssignmentForm. RouteForm gestiona creación/edición de rutas incluyendo paradas dinámicas (addStop, removeStop), emitiendo route-created. StopList permite reordenar paradas con reorderStops() emitiendo stops-reordered. VehicleList soporta búsqueda y selección. AssignmentForm gestiona la asignación de conductor e hijos a una ruta. RouteModel tiene composición con StopModel (has).
+Interfaz para armar la logística de rutas, vehículos y asignaciones.
+
+Presentation & Domain: El Layout compone RouteForm, StopList, VehicleList y AssignmentForm. La interfaz gráfica se alimenta estrictamente de las entidades de dominio (Route, Stop, Vehicle, Assignment) para garantizar la precisión de los datos logísticos, emitiendo eventos clave como routeCreated() o stopsReordered().
+
+Application & Infrastructure: FleetStore orquesta el estado de rutas, vehículos y paradas. Las peticiones pasan por FleetApi y son transformadas por los Assemblers para que la aplicación solo trabaje con modelos de negocio limpios.
 
 - Trip Execution & Monitoring: 
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-trip.puml)
+![vue-saferoute-trip](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-trip.puml)
 
-App compone TripDashboard, AttendanceChecklist e IncidentForm. TripDashboard controla el ciclo de vida del viaje (startTrip, completeTrip) emitiendo trip-started y trip-completed. AttendanceChecklist maneja el estado de embarque por niño (updateBoardingState, isAllBoarded), emitiendo boarding-updated. IncidentForm registra incidentes con validación, emitiendo incident-reported. TripModel tiene composición con AttendanceModel (tracks) e IncidentModel (records).
+Pantallas operativas para el control en tiempo real de los viajes.
+
+Presentation & Domain: El Layout compone TripDashboard, AttendanceChecklist e IncidentForm. Estos componentes renderizan el estado de la operación basándose en los modelos centrales del dominio (Trip, Attendance, Incident) y notifican cambios en tiempo real mediante eventos como boardingUpdated() o incidentReported().
+
+Application & Infrastructure: TripStore centraliza el viaje en curso, asistencias e incidentes. Delega la sincronización al backend mediante TripApi y transforma las respuestas en entidades del dominio usando los Assemblers.
 
 - Notifications & Communication:
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-notifications.puml)
+![vue-saferoute-notifications](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-notifications.puml)
 
-App compone NotificationList, AlertPanel y AnnouncementForm. NotificationList filtra y marca notificaciones como leídas, emitiendo notification-read. AlertPanel gestiona alertas activas con soporte de pánico (triggerPanic, dismissAlert), emitiendo panic-triggered. AnnouncementForm publica comunicados asociados a una ruta, emitiendo announcement-published. NotificationModel tiene composición con AlertModel (triggers) y AnnouncementModel (includes).
+Centraliza la visualización y envío de notificaciones y alertas.
+
+Presentation & Domain: El Layout compone NotificationList, AlertPanel y AnnouncementForm. Las vistas consumen exclusivamente los modelos de dominio (Notification, Alert, Announcement) para mostrar los mensajes y alertas a los usuarios, gestionando interacciones mediante eventos como notificationRead() o panicTriggered().
+
+Application & Infrastructure: NotificationsStore maneja los arreglos reactivos de notificaciones y alertas. Utiliza NotificationsApi para las operaciones HTTP y sus respectivos Assemblers para mantener el dominio libre de dependencias de infraestructura.
+
+- Shared:
+
+![vue-saferoute-shared](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-shared.puml)
+
+Actúa como el núcleo común de infraestructura y componentes base para toda la aplicación Vue.
+
+Presentation & Domain: Contiene los identificadores y objetos de valor inmutables del dominio (ej. OrganizationId, FullName, Coordinates). Además, a nivel de presentación, el componente raíz App utiliza el Layout maestro, el cual encapsula elementos de navegación globales como NavBar, LanguageSwitcher y Footer.
+
+Application & Infrastructure: Provee el cliente HTTP genérico (ApiClient) que utilizan los demás módulos para centralizar la configuración de red (get, post, put, delete).
 
 
 ### 4.8. Database Design
