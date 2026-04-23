@@ -557,21 +557,21 @@ Establecer la infraestructura base de SafeRoute mediante el desarrollo de una La
 
 | US Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| US19 | Visualización de Hero | T01 | Maquetación Hero | Diseñar y codificar la sección principal de la Landing Page. | 4 | Fabio | To-do |
-| US20 | Navegación de Funciones | T02 | Menú dinámico | Implementar la navegación y el scroll entre secciones. | 4 | Mathias | To-do |
-| US21 | Detalle de Roles | T03 | Cards Informativas | Crear componentes visuales para explicar los roles. | 3 | Fabio | To-do |
-| US22 | Consulta de Precios | T04 | Landing: Precios | Implementar la sección de planes responsiva. | 3 | Chris | To-do |
-| US23 | Sección ¿Cómo funciona? | T05 | Flujo de Usuario | Desarrollar guía visual de pasos del servicio. | 3 | Nickolas | To-do |
-| US30 | Implementación i18n | T06 | Multiidioma | Configurar soporte ES/EN en el frontend. | 6 | Mathias | To-do |
-| US1 | Contratar Plan | T07 | API Suscripción | Lógica de backend para la selección de planes. | 6 | Nickolas | To-do |
-| US2 | Registro de Conductores | T08 | CRUD Conductores | Implementar gestión de perfiles de conductores. | 8 | Chris | To-do |
-| US3 | Registro de Padres | T09 | CRUD Padres | Implementar gestión de perfiles de apoderados. | 6 | Renzo | To-do |
-| US4 | Alta de Alumnos | T10 | CRUD Alumnos | Crear registro de estudiantes vinculados a padres. | 5 | Nickolas | To-do |
-| US5 | Creación de Rutas | T11 | Lógica de Ruta | Servicio para definir paradas y trayectos. | 8 | Nickolas | To-do |
-| US8 | Inicio de Trayecto | T12 | Trigger de Viaje | Activación de estados de viaje en tiempo real. | 5 | Fabio | To-do |
-| US25 | API: Registro GPS | T13 | Ingesta de Datos | Endpoint para recibir coordenadas GPS. | 10 | Fabio | To-do |
-| US14 | Rastreo Tiempo Real | T14 | Mapa en vivo | Integración de mapas para ubicación del bus. | 12 | Renzo | To-do |
-| --- | Constraint General | T15 | Base de Datos | Diseño y despliegue del esquema SQL. | 8 | Chris | To-do |
+| **US25** | Visualización de Hero | T01 | Setup de Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | To-do |
+| **US30** | Implementación i18n | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 12 | Mathias | To-do |
+| **US19** | Alerta de Proximidad | T03 | Lógica de Geofencing | Desarrollar el algoritmo de proximidad (500m) en el backend. | 14 | Mathias | To-do |
+| **US1** | Contratar Plan | T04 | API de Suscripciones | Crear endpoints para selección de planes y validación de límites. | 12 | Nickolas | To-do |
+| **US5** | Creación de Rutas | T05 | Módulo de Trazado | Implementar lógica para definir puntos A/B y paradas intermedias. | 16 | Nickolas | To-do |
+| **US6** | Asignación de Roles | T06 | Gestión de Permisos | Desarrollar la lógica de vinculación Conductor-Ruta-Vehículo. | 10 | Nickolas | To-do |
+| **US23** | Sección ¿Cómo funciona? | T07 | Onboarding Visual | Crear el componente de infografía interactiva en la Landing. | 6 | Nickolas | To-do |
+| **US4** | Alta de Alumnos | T08 | CRUD Alumnos | Implementar el registro de menores y almacenamiento de fotos. | 10 | Nickolas | To-do |
+| **US22** | Consulta de Precios | T09 | Tabla de Planes | Maquetar la sección de costos y descuentos anuales en la web. | 8 | Chris | To-do |
+| **US2** | Registro de Conductores | T10 | Registro de Flota | Desarrollar validaciones de licencia y creación de cuentas driver. | 12 | Chris | To-do |
+| **US3** | Registro de Padres | T11 | Gestión de Apoderados | Implementar el flujo de invitaciones y registro de padres. | 10 | Renzo | To-do |
+| **US14** | Finalización de Ruta | T12 | Cierre de Sesión Operativa | Lógica para detener GPS y validar que el bus esté vacío al finalizar. | 8 | Renzo | To-do |
+| **US25** | API: Registro GPS | T13 | Ingesta de Coordenadas | Desarrollar el endpoint de alta frecuencia para recibir datos GPS. | 15 | Fabio | To-do |
+| **US8** | Inicio de Trayecto | T14 | Activación de Ruta | Implementar el trigger que notifica el inicio del viaje a los padres. | 8 | Fabio | To-do |
+| **---** | **Constraint General** | T15 | Setup Arquitectónico | Configuración de BD SQL Server y estructura modular en C#. | 12 | Chris | To-do |
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
