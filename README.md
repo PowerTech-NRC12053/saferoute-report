@@ -284,789 +284,1033 @@ Segmento Objetivo 2: Rosita Nery, padre de familia
 ---
 
 ## Capítulo IV: Product Design
-### 4.1. Style Guidelines
-#### 4.1.1. General Style Guidelines
-#### 4.1.2. Web Style Guidelines
-### 4.2. Information Architecture
-#### 4.2.1. Organization Systems
-#### 4.2.2. Labeling Systems
-#### 4.2.3. SEO Tags and Meta Tags
-#### 4.2.4. Searching Systems
-#### 4.2.5. Navigation Systems
-### 4.3. Landing Page UI Design
-#### 4.3.1. Landing Page Wireframe
-#### 4.3.2. Landing Page Mock-up
-### 4.4. Web Applications UX/UI Design
-#### 4.4.1. Web Applications Wireframes
-#### 4.4.2. Web Applications Wireflow Diagrams
-#### 4.4.2. Web Applications Mock-ups
-#### 4.4.3. Web Applications User Flow Diagrams
-### 4.5. Web Applications Prototyping
-### 4.6. Domain-Driven Software Architecture
-#### 4.6.1. Design-Level Event Storming
 
-Plantilla de colores:
-![Plantilla](assets/images/ChapterIV/EventStorming/ColorPosit.png)
+## 4.1. Style Guidelines
 
-1. Unstructured Exploration
-   ![BigPicture](assets/images/ChapterIV/EventStorming/BigPicture.png)
+### 4.1.1. General Style Guidelines
 
-En esta fase inicial, identificamos los eventos de dominio fundamentales para la movilidad escolar. El objetivo es capturar los hitos de negocio que permiten la interacción segura entre padres, conductores y administradores sin priorizar aún la cronología. Los eventos se organizan en seis ejes principales:
+El diseño de SafeRoute se fundamenta en decisiones visuales estratégicas destinadas a proyectar seguridad, fiabilidad y modernidad. El objetivo principal es construir una experiencia de usuario que genere confianza inmediata, tanto en los padres de familia que buscan tranquilidad como en los transportistas que necesitan eficiencia.
 
-- Identidad y Gestión de Accesos (IAM): Maneja la seguridad y autenticación de la plataforma. Incluye eventos como el inicio de sesión (Login), autenticación de usuarios (Authenticate User), emisión de tokens JWT para sesiones seguras y el registro de administradores.
+#### Colores
+La selección cromática de SafeRoute no es meramente estética; responde a una psicología del color aplicada a la seguridad y el entorno escolar, garantizando accesibilidad y jerarquía visual. Cada tono desempeña una función específica en la interfaz:
 
-- Gestión de Suscripciones y Planes: Controla el acceso comercial a las funcionalidades de la plataforma. Abarca la selección de planes, el procesamiento de pagos a través de pasarelas externas y la activación de funciones de gestión de rutas según el plan elegido (básico, intermedio o completo).
+![Foto de paleta de colores](assets/images/ChapterIV/paleta-colores.png)
 
-- Gestión de Stakeholders y Activos: Administra los perfiles de los actores involucrados y sus relaciones. Incluye el registro de conductores, padres y estudiantes, así como la creación de grupos y la vinculación de hijos a sus respectivos padres para el seguimiento personalizado.
+- Azul Noche Profundo - #1A1A2E: Este color transmite autoridad, seriedad máxima y seguridad corporativa. En SafeRoute, se utiliza estratégicamente en el texto principal del logotipo y como fondo en secciones críticas de cierre, como el CTA final y el footer, para anclar la percepción de una plataforma robusta y confiable.
 
-- Planificación de Flota y Rutas: Define la logística previa al viaje. Comprende la creación de geocercas para las rutas (RouteGeofenceCreated), la selección de puntos de parada (Pick Waypoints), la asignación de estudiantes a vehículos y la definición de horarios de salida.
+- Azul Marino - #1D3F6E y #16305a:Esta gama de azules medios y oscuros refuerza la percepción de una herramienta tecnológica, profesional y estable. Se emplean principalmente en títulos secundarios y elementos estructurales clave, estableciendo la jerarquía visual y la formalidad que el servicio requiere.
 
-- Ejecución y Monitoreo de Viajes: Es el núcleo operativo en tiempo real. Captura el inicio del trayecto por el conductor (TripStarted), el registro del estado de abordaje de cada estudiante (StudentStatus) y la consulta activa de la información de la ruta durante el recorrido.
+- Naranja Ámbar - #FFB74D: Este color funciona como el punto focal de acento y acción principal en SafeRoute, aportando vitalidad, energía y una conexión visual amigable con el entorno escolar. Se reserva exclusivamente para incentivar la acción en los botones de llamado a la acción principales y elementos destacados.
 
-2. Timelines
-   ![TimeLines](assets/images/ChapterIV/EventStorming/Timelines.png)
+- Verde Éxito - #22C55E: Este color se asocia directamente con estados positivos, confirmación y seguridad. Se emplea de forma sutil en indicadores de estado (como el check en el mockup del teléfono) para validar acciones exitosas y reforzar la tranquilidad del usuario.
 
-En este paso, los eventos se organizan en secuencias cronológicas para comprender el flujo natural de los procesos de negocio. Las líneas de tiempo clave incluyen:
+- Gris Neutro - #6B7280: Se ha seleccionado para el texto de cuerpo y párrafos largos. Ofrece una legibilidad excelente sobre fondos claros, reduciendo la fatiga visual y aportando un acabado limpio y moderno.
 
-- Flujo de Incorporación y Suscripción: Registro de administrador → Creación de organización → Selección de plan de suscripción → Procesamiento de pago → Activación de cuotas de servicios.
+- Gris Claro y Neutral - #F8F9FB y #F4F7FA: Estos tonos muy claros se utilizan como fondos alternos para delimitar secciones (como el Hero, Planes o ¿Cómo funciona?). Su función es estructurar la página, proporcionando descansos visuales y una sensación de limpieza tecnológica y amplitud.
 
-- Gestión de Stakeholders y Activos: Registro de conductores y padres → Vinculación de estudiante a padre → Creación de grupos de transporte → Registro de vehículos → Asignación de conductor a vehículo.
+#### Tipografía
 
-- Planificación de Rutas Institucionales: Definición de geocerca de la ruta → Selección de puntos de parada (waypoints) → Asignación de estudiantes a la ruta → Establecimiento de horarios de salida → Finalización de la activación de ruta.
+Se seleccionó la tipografía “Plus Jakarta Sans” como fuente principal para los títulos de la plataforma de SafeRoute por su estilo geométrico moderno y su capacidad para captar la atención del usuario con un toque tecnológico pero amigable. Se utiliza en pesos altos para asegurar que los encabezados sean visualmente impactantes, sólidos y de fácil lectura.
 
-- Ejecución de Viajes y Monitoreo: Inicio de viaje por el conductor → Consulta de información de ruta → Registro de abordaje del estudiante → Notificación automática al padre → Seguimiento de progreso en tiempo real.
+![Foto de ejemplo Jakarta Sans](assets/images/ChapterIV/ejemplo-jakarta.png)
 
-- Gestión de Comunicaciones e Incidentes: Detección de anomalía → Generación de alerta de pánico de alta prioridad → Despacho de alerta a administradores/padres → Difusión de mensajes de estado (broadcast) → Visualización en línea de tiempo.
+Asimismo, optamos por la tipografía “DM Sans” como fuente secundaria para los textos de cuerpo y navegación por su diseño extremadamente legible, limpio y neutro. Su apariencia estética y claridad garantizan una experiencia de uso accesible y agradable, reduciendo la fatiga visual del usuario al leer información detallada sobre funciones o planes.
 
-- Cierre de Operación: Llegada al destino final → Confirmación de descenso total de estudiantes → Finalización de viaje → Archivamiento de datos de ejecución → Liberación de recursos de flota.
+![Foto de ejemplo DM Sans](assets/images/ChapterIV/ejemplo-dm.png)
 
-Estas líneas de tiempo revelan las dependencias temporales y la naturaleza secuencial de las operaciones dentro del sistema, asegurando que el flujo de información viaje correctamente desde la base de datos hasta las notificaciones en el dispositivo del padre.
+En cuanto al tamaño, se utiliza jerárquicamente en toda la página para resaltar títulos principales, botones de acción y texto de soporte. Los tamaños más grandes en los encabezados guían al usuario rápidamente por los puntos clave del mensaje, mientras que los más pequeños en los párrafos aseguran la comprensión y la eficiencia en la lectura de detalles secundarios.
 
-3. Pain Points
-   ![PainPoints](assets/images/ChapterIV/EventStorming/PainPoints.png)
+#### Branding
 
-En esta etapa, se identifican las situaiciones en las que se generan los puntos de fricción, cuellos de botella y ciertos problemas que surgen durante los procesos operativos y administrativos. Los pain points detectados incluyen:
+El branding de SafeRoute está diseñado para reflejar simplicidad, confianza y profesionalismo. El logo y los íconos adoptan un enfoque minimalista, con líneas claras y formas simples que comunican el propósito de seguridad de la plataforma. El diseño incluye un símbolo que combina un escudo y un marcador de posición, representado de tal manera que simboliza protección y monitoreo con una apariencia limpia que es fácilmente reconocible, tanto en entornos web como móviles.
 
-- Sincronización de Notificaciones: Retrasos en la entrega de alertas push al padre cuando el estudiante aborda el vehículo, generando incertidumbre innecesaria.
+<img src="assets/images/ChapterIV/logo.jpeg" alt="Foto de logo" width="400px" />
 
-- Gestión de Errores en Abordaje: Fallos manuales del conductor al registrar el estado del estudiante (StudentStatus), lo que puede resultar en registros de asistencia incorrectos.
+#### Espaciado
 
-- Validaciones de Seguridad: Bloqueos o fallos en la generación de alertas de pánico de alta prioridad durante emergencias debido a pérdida de conectividad o errores del sistema.
+El diseño de SafeRoute utiliza una estrategia de espacios en blanco diseñada para transmitir orden y claridad, factores críticos en una herramienta de seguridad escolar. En lugar de saturar la vista, aprovechamos márgenes amplios en los laterales de cada sección para que el usuario pueda diferenciar rápidamente entre los beneficios para padres, conductores y colegios. El contenido se mantiene estructurado mediante el uso de Flexbox y CSS Grid, lo que evita que la información se disperse y mantiene una jerarquía visual equilibrada que facilita la lectura de las características del servicio. Además, los rellenos (padding) en elementos como las tarjetas de planes y funciones garantizan una distribución adecuada del contenido.
 
-- Asignación de Recursos: Errores en la vinculación manual de conductores a vehículos o rutas, impidiendo el inicio correcto del viaje en la plataforma.
+#### Dimensiones para el tono de comunicación y lenguaje aplicado
 
-- Fricción en el Pago y Suscripción: Interrupciones en el procesamiento de pagos que inhabilitan las cuotas de rutas y bloquean la operación diaria de la institución.
+En SafeRoute, definimos cuidadosamente el tono de nuestra comunicación para alinearlo con la misión de la plataforma: garantizar la seguridad y la tranquilidad en el transporte escolar para padres, conductores e instituciones educativas. Nuestro tono de voz busca proyectar confianza y control, combinando una comunicación clara, directa y altamente profesional.
 
-- Precisión de Geolocalización: Problemas de precisión en el GPS que confunden la ubicacion de checkpoints.
+Optamos por un tono formal pero empático, que permita a los padres de familia sentirse seguros al interactuar con funciones críticas como el monitoreo en vivo o las notificaciones de abordaje. Queremos que cada interacción refleje eficiencia para fomentar la puntualidad y el orden, pero también serenidad, asegurando que los usuarios sientan que el bienestar de los estudiantes es nuestra prioridad absoluta. Este equilibrio nos permite inspirar autoridad en la gestión logística, al tiempo que proyectamos cercanía y compromiso con la comunidad escolar.
 
-Identificar estos puntos críticos permite al equipo de SafeRoute priorizar el desarrollo de mecanismos de redundancia y mejorar la experiencia de usuario, asegurando que la comunicación entre el transporte y el hogar sea infalible.
+Además, se han considerado los siguientes aspectos clave en el diseño de SafeRoute:
 
-4. Pivotal Points
-   ![PivotalPoints](assets/images/ChapterIV/EventStorming/PivotalPoints.png)
+- Consistencia: La coherencia visual y textual es fundamental para brindar una experiencia confiable. Todos los elementos, desde los mensajes de estado hasta las etiquetas de los botones, mantienen una línea comunicativa uniforme. Esto facilita que los usuarios se familiaricen rápido con el sistema, algo vital en una operación diaria que requiere precisión.
+- Navegación: La estructura ha sido pensada para ser lógica y sin fricciones. Los usuarios pueden acceder rápidamente a la información relevante según su rol, ya sea para verificar una ruta o reportar una incidencia. Los menús son minimalistas para evitar confusiones y optimizar el tiempo de respuesta en entornos dinámicos.
+- Accesibilidad: La plataforma está optimizada para ser inclusiva y funcional en diversos contextos. Mediante el uso de etiquetas claras y un diseño responsivo, aseguramos que la información sea legible tanto para un administrador en una oficina como para un padre que revisa el celular en movimiento, garantizando una experiencia de uso fluida para todos.
 
-Los puntos pivotales son eventos determinantes que marcan transiciones críticas en el ciclo de vida del servicio. Estos incluyen:
+#### Elementos de diseño
 
-Activación de Suscripción: Este hito marca la transición de un estado de configuración restringida a uno operativo, habilitando las cuotas de rutas y conductores necesarias para funcionar.
+Además de los lineamientos generales sobre colores, tipografía y branding, en el diseño visual de SafeRoute se han aplicado de manera consciente diversos elementos fundamentales del diseño gráfico que enriquecen la experiencia del usuario y refuerzan la identidad de seguridad de la plataforma.
 
-Finalización de Definición de Ruta: Es el punto donde la planificación técnica termina y la ruta queda lista para ser asignada a un vehículo y un conductor.
+Uno de los elementos clave es la **línea**, utilizada sutilmente para separar secciones y delimitar las tarjetas de planes y roles, lo que organiza visualmente la interfaz y guía la lectura sin saturar al usuario. El **color** cumple un rol fundamental no solo en la identidad, sino en la comunicación funcional; la paleta incluye el azul noche para la autoridad, el naranja ámbar para la acción y el verde para confirmaciones, seleccionados por su capacidad para transmitir estados de seguridad y éxito.
 
-Inicio de Viaje: Este evento activa el monitoreo en tiempo real y permite que los padres comiencen a visualizar el progreso del transporte en sus aplicaciones.
+En cuanto al **tamaño**, se utiliza jerárquicamente para resaltar títulos, botones y texto de soporte. Los tamaños más grandes en los encabezados captan la atención en puntos clave como el Hero, mientras que los más pequeños se emplean para detalles secundarios en las tarjetas de características, mejorando la comprensión y la eficiencia. Por su parte, la **textura** es limpia y moderna, gracias al uso de fondos suaves y superficies blancas que aportan una sensación de amplitud tecnológica sin distraer de las funciones de monitoreo.
 
-Registro de Abordaje (Student Boarded): Es el evento pivotal de comunicación; confirma la seguridad del estudiante y dispara automáticamente la notificación push hacia el tutor legal.
+El **espacio** es uno de los elementos más destacados del diseño de SafeRoute. Se han implementado márgenes amplios y rellenos generosos entre secciones, lo que permite una interfaz despejada y cómoda para padres y conductores. A nivel de **brillo** (value), se aplican contrastes claros que diferencian los botones de acción del fondo, guiando al usuario de forma intuitiva hacia la conversión.
 
-Generación de Alerta de Pánico: Cambia el estado del viaje de "Normal" a "Emergencia", activando protocolos de respuesta inmediata y priorizando la comunicación de red de seguridad.
+Respecto a las **formas**, se ha optado por geometrías amigables con bordes redondeados en botones y tarjetas. Estos acabados suavizados no solo mejoran la estética profesional, sino que también transmiten una imagen de accesibilidad y cercanía, alineándose con una herramienta diseñada para el cuidado y protección escolar.
 
-Completación de Viaje: Marca el fin de la responsabilidad operativa del conductor sobre los estudiantes y archiva el registro para liberar los recursos de la flota.
+#### Principios de diseño
 
-Estos puntos son determinantes para la continuidad y el éxito de la movilidad escolar, ya que aseguran que cada fase del proceso se cumpla antes de pasar a la siguiente.
+En cuanto a los principios de diseño, el **contraste** se emplea para asegurar que los elementos críticos, como los llamados a la acción (CTA) de "Ver planes" o las etiquetas de "Sistema en vivo", sean claramente visibles y resalten sobre los fondos neutros. Este principio es fundamental para la accesibilidad visual, permitiendo que tanto padres como conductores identifiquen los puntos de interacción más importantes de la plataforma de manera inmediata.
 
-5. Commands
-   ![Commands](assets/images/ChapterIV/EventStorming/Commands.png)
+La **repetición** de colores como el azul noche y el naranja ámbar, junto con una iconografía coherente de escudos y mapas, refuerza la familiaridad y la consistencia del sistema visual. Al utilizar componentes visuales recurrentes en toda la landing, los usuarios comprenden rápidamente la función de cada sección, lo que reduce la curva de aprendizaje al interactuar con las herramientas de monitoreo.
 
-Los comandos representan las acciones o intenciones de los usuarios que desencadenan eventos en el sistema. Los principales comandos identificados son:
+La **alineación** contribuye a la profesionalidad y solidez del diseño: la estructura de la página, los listados de roles y las tarjetas de precios mantienen una disposición coherente lograda mediante el uso de Flexbox y CSS Grid. Esta organización clara y alineada facilita una navegación intuitiva, transmitiendo el orden necesario para una plataforma de gestión logística.
 
-- Gestión de Identidad y Acceso (IAM): Registrar administrador, iniciar sesión, autenticar usuario, asignar rol, revocar privilegios.
+Por último, el principio de **proximidad** agrupa de manera lógica los elementos relacionados, como los iconos de las funciones con sus respectivas descripciones o los beneficios específicos para cada rol. Al mantener los elementos vinculados cerca entre sí, se mejora significativamente la lectura y la comprensión de cada bloque de información, permitiendo que el usuario asocie rápidamente las soluciones de SafeRoute con sus necesidades específicas.
 
-- Gestión de Suscripciones y Planes: Seleccionar plan, iniciar proceso de pago, activar funciones de gestión, actualizar cuotas de conductores, cancelar servicio.
+Estos elementos y principios no se aplican de forma aislada, sino como parte integral de un sistema visual que busca ser funcional, estético y coherente con la misión de SafeRoute: digitalizar y dar seguridad al transporte escolar a través de una experiencia clara, confiable y eficiente.
 
-- Gestión de Stakeholders y Activos: Registrar conductor, registrar padre, vincular estudiante a pariente, registrar vehículo, crear grupo de transporte, asignar miembros al grupo.
+### 4.1.2. Web Style Guidelines
 
-- Gestión de Flota y Rutas: Definir geocerca, seleccionar puntos de parada (waypoints), asignar estudiantes a ruta, asignar vehículo a ruta, establecer horario de salida, finalizar activación de ruta.
+El diseño web de SafeRoute está optimizado para proporcionar una experiencia de usuario fluida y profesional, centrada en la legibilidad y la facilidad de navegación. Se emplean estructuras de contenedores flexibles que permiten que el contenido se organice de manera clara, utilizando amplios espacios en blanco para evitar la saturación visual y garantizar la accesibilidad de la información crítica sobre seguridad. Los elementos visuales, como tarjetas de planes y secciones de roles, mantienen proporciones equilibradas para guiar la vista del usuario de forma jerárquica.
 
-- Ejecución de Viajes y Monitoreo: Iniciar viaje, consultar información de ruta, registrar estado de abordaje del estudiante, reportar incidente (botón de pánico), finalizar viaje.
+En cuanto a la interactividad, la plataforma utiliza una lógica de componentes claramente identificables. Los botones de acción (CTAs) emplean colores contrastantes y estados visuales (como hover y active) que ofrecen una retroalimentación inmediata, reforzando la confianza del usuario al interactuar con el sistema. La navegación se apoya en transiciones suaves y menús persistentes que aseguran que las herramientas principales, como el sistema de internacionalización (i18n), estén siempre al alcance del usuario, facilitando un flujo de trabajo intuitivo y eficiente dentro de la landing page.
 
-- Comunicación y Notificaciones: Preparar notificación push, despachar alerta a padres, publicar mensaje de difusión (broadcast), mostrar mensaje en línea de tiempo.
+![Mockup Landing Page](assets/images/ChapterIV/Landing/Mock-ups/mockup_landingPage.png)
+![Mockup Planes](assets/images/ChapterIV/Landing/Mock-ups//mockup_planes.png)
+![Mockup footer](assets/images/ChapterIV/Landing/Mock-ups//mockup_footer.png)
 
-6. Policies
-   ![Policies](assets/images/ChapterIV/EventStorming/Polices.png)
+_Nota_: Elaboración propia.
 
-Las políticas automatizan la lógica de negocio y aseguran la coherencia del sistema ante eventos críticos. Las políticas clave incluyen:
+## 4.2. Information Architecture
 
-- Cuando el pago es exitoso → Activar suscripción y habilitar cuotas de rutas/conductores automáticamente.
+### 4.2.1. Organization Systems
 
-- Cuando el conductor inicia un viaje → Notificar a todos los padres vinculados a esa ruta sobre el inicio del monitoreo en tiempo real.
+En el sistema SafeRoute, se emplea la organización jerárquica (visual hierarchy) para destacar información crítica, como el mapa de monitoreo en tiempo real, las alertas de emergencia y las notificaciones de abordaje de los alumnos en los dashboards principales. Esta jerarquía visual permite que tanto padres como conductores identifiquen de forma inmediata los datos más relevantes según el contexto operativo, relegando datos secundarios del perfil a niveles inferiores.
 
-- Cuando se registra el abordaje del estudiante → Despachar notificación push inmediata al dispositivo del padre correspondiente.
+Asimismo, se aplica una organización secuencial (step-by-step) en procesos que requieren una guía estructurada. En la landing page, este sistema se evidencia en la sección "¿Cómo funciona?", donde se orienta al visitante a través de 5 pasos para la adopción del servicio. En la Web Application, este esquema se utilizará para el flujo de registro de paradas y asistencia que el conductor debe seguir durante su ruta, asegurando una progresión lógica que minimice errores de registro.
 
-- Cuando se reporta un incidente (pánico) → Generar alerta de alta prioridad y transmitirla instantáneamente a los administradores y padres del grupo.
+Respecto a los esquemas de categorización, no se utilizan organizaciones alfabéticas o matriciales complejas. En su lugar, se emplea una organización cronológica para la visualización de datos históricos, permitiendo que los padres de familia revisen los registros pasados de asistencias y llegadas de sus hijos de manera ordenada por fecha y hora. Además, el contenido se clasifica según audiencia, segmentando las interfaces y funcionalidades de acuerdo con los dos User Personas identificados: Conductores, enfocados en la gestión de ruta y paradas, y Padres de Familia, orientados al monitoreo y recepción de avisos de seguridad.
 
-- Cuando se publica un mensaje de difusión → Mostrar el mensaje en la línea de tiempo de todos los miembros del grupo seleccionado.
+### 4.2.2. Labeling Systems
 
-- Cuando se confirma el descenso total de estudiantes → Marcar el viaje como completado y archivar los datos de ejecución.
+El sistema de etiquetado de SafeRoute ha sido desarrollado bajo un criterio de funcionalidad operativa, buscando que cada término actúe como una señal clara que reduzca el esfuerzo cognitivo de los usuarios. Se han seleccionado etiquetas descriptivas que permiten una navegación intuitiva tanto en el proceso de descubrimiento (Landing Page) como en el uso crítico de la aplicación (Web Application).
 
-- Cuando falla el registro de un stakeholder → Enviar una notificación de error con los detalles de validación al administrador.
+**Landing Page**
 
-7. Read Models
-   ![ReadModels](assets/images/ChapterIV/EventStorming/ReadModels.png)
+  - **Funciones**: Agrupa las capacidades técnicas y herramientas de gestión de la plataforma.
+  - **Roles**: Define los accesos y beneficios específicos para los dos perfiles del sistema.
+  - **Planes**: Estructura la oferta comercial basándose en la escala de la flota de transporte.
+  - **¿Cómo funciona?**: Etiqueta de apoyo que resuelve dudas sobre la implementación del servicio.
+  - **Comenzar**: Botón de acción principal diseñado para motivar la conversión inmediata.
 
-Los principales modelos de lectura identificados para garantizar la visibilidad del sistema son:
+**Aplicación Web – Conductores**
 
-- Dashboard del Conductor: Vista detallada de la ruta asignada, lista de estudiantes por recoger, puntos de parada (waypoints) y estado de abordaje en tiempo real.
+  - **Mis Rutas**: Vista principal donde se gestionan los trayectos diarios asignados.
+  - **Lista de Alumnos**: Relación detallada de estudiantes por paradas, optimizando el tiempo de recogida.
+  - **Estado de Abordaje**: Sistema de etiquetas rápidas ("Abordado", "Ausente", "En espera") que permite al conductor registrar la asistencia con un solo toque.
+  - **Iniciar Ruta**: Etiqueta de alta visibilidad que dispara el envío de alertas GPS a los padres.
+  - **Botón de Incidencia**: Acceso directo para reportar eventos imprevistos (tráfico, accidentes) de forma estandarizada.
 
-- Panel de Monitoreo para Padres: Visualización en tiempo real de la ubicación del vehículo, estado de seguridad del estudiante y línea de tiempo de eventos del viaje.
+**Aplicación Web – Padres de Familia**
 
-- Vista de Gestión de Grupos: Listado de estudiantes agrupados por ruta, vinculación con sus respectivos padres y estado de asistencia mensual.
+  - **Monitoreo**: Sección central que integra el mapa en tiempo real y la ubicación de la unidad.
+  - **Historial de Viajes**: Registro cronológico de las horas de recogida y entrega de sus hijos.
+  - **Alertas**: Centro de notificaciones sobre la proximidad del bus o confirmaciones de llegada.
+  - **Datos del Bus**: Información transparente sobre el vehículo y el conductor asignado para generar confianza.
 
-- Estado de la Flota: Registro de vehículos activos, conductores asignados a cada unidad y disponibilidad de recursos para nuevas rutas.
+### 4.2.3. SEO Tags and Meta Tags
 
-- Historial de Incidentes: Registro cronológico de alertas de pánico, mensajes de difusión enviados y resoluciones de eventos de seguridad.
+1. **Landing Page**
 
-- Panel de Suscripción y Cuotas: Información sobre el plan activo, estado de los pagos y uso de las cuotas de rutas y conductores contratados.
+**Charset**
 
-- Directorio de Stakeholders: Lista completa de perfiles de usuarios (padres, conductores y administradores) con sus respectivos roles y privilegios de acceso.
+  `<meta charset="UTF-8" />`
 
-8. External Systems
-   ![ExternalSystems](assets/images/ChapterIV/EventStorming/ExternalSystems.png)
+Esta línea establece la codificación universal de caracteres. Su función es garantizar que el navegador interprete correctamente los textos del sistema i18n, asegurando que tildes, la letra "ñ" y símbolos especiales se visualicen sin errores en español e inglés, evitando una mala experiencia de lectura.
 
-Las integraciones identificadas para la solución incluyen:
+**Viewport (Responsive)**
 
-- Leaflet (Proveedor de Mapas): Se encarga de la visualización interactiva de las rutas, el trazado de geocercas (geofencing) y la gestión de coordenadas geográficas para el monitoreo en tiempo real.
+  `<meta name="viewport" content="width=device-width, initial-scale=1.0"/>`
 
-- Resend (Servicio de Email): Utilizado para el envío de notificaciones transaccionales y correos electrónicos automáticos, como mensajes de bienvenida, confirmaciones de registro y alertas administrativas.
+Controla el escalado de la página en diferentes dispositivos. Su función es hacer que la landing sea responsiva, ajustando el ancho del contenido al tamaño de la pantalla. Esto es vital para que los padres de familia visualicen la información de manera legible desde sus smartphones.
 
-- PayPal (Pasarela de Pago): Servicio encargado de procesar de forma segura las transacciones financieras para la activación, renovación y actualización de los planes de suscripción institucional.
+**Title (SEO)**
+  
+  `<title>SafeRoute — Transporte Escolar Seguro</title>`
 
-- MySQL (Gestión de Base de Datos): Actúa como el sistema externo de persistencia relacional encargado de almacenar y organizar toda la estructura de usuarios, rutas, vehículos y registros operativos.
+Define el título que aparece en la pestaña del navegador y en los resultados de búsqueda. Su función es proporcionar una identificación inmediata de la marca y su propósito principal, siendo un factor crítico para el posicionamiento orgánico.
 
-9. Aggregates
-   ![Aggregates](assets/images/ChapterIV/EventStorming/Aggregates.png)
+**Meta Description (SEO)**
 
-Basado en los dominios operativos identificados, los agregados son:
+  `<meta name="description" content="Plataforma integral para el monitoreo en tiempo real, control de asistencia y comunicación segura entre conductores y padres de familia.">`
 
-User (Raíz): Gestiona la identidad del usuario, incluyendo credenciales de autenticación, roles asignados (Administrador, Padre, Conductor) y privilegios de acceso al panel de control.
+Provee un resumen conciso del contenido del sitio. Su función es aparecer como el fragmento de texto (snippet) en Google, atrayendo a los usuarios al explicar claramente cómo SafeRoute resuelve la inseguridad en el transporte escolar.
 
-Organization (Raíz): Controla la configuración de la institución, la gestión de miembros y la vinculación de la cuenta con los parámetros base del sistema institucional.
+**Meta Keywords (SEO)**
 
-Subscription (Raíz): Administra el ciclo de vida del plan de servicios, integrando el procesamiento de pagos a través de PayPal para habilitar o restringir las cuotas de rutas y conductores disponibles.
+  `<meta name="keywords" content="transporte escolar, monitoreo GPS, seguridad, SafeRoute, logística escolar, app bilingüe">`
 
-Stakeholder (Raíz): Encapsula la información de padres y conductores, gestionando la vinculación crítica entre el tutor (padre) y el estudiante para asegurar el flujo de notificaciones.
+Especifica palabras clave relevantes para la temática de la página. Su función es ayudar a los algoritmos de indexación a clasificar el sitio dentro del nicho de tecnología de transporte y seguridad educativa.
 
-Vehicle (Raíz): Maneja el registro de las unidades de transporte, sus especificaciones técnicas y los cambios de estado (activo/inactivo) dentro de la flota.
+**Meta Author**
 
-Route (Raíz): Coordina la definición logística del recorrido, incluyendo la creación de geocercas, la selección de paraderos (waypoints) y la asignación previa de estudiantes a la ruta.
+  `<meta name="author" content="PowerTech Team">`
+  
+Identifica formalmente a los creadores de la plataforma. Su función es atribuir la autoría del proyecto al equipo de PowerTech, vinculando el desarrollo técnico con el startup responsable.
 
-Trip (Raíz): Controla la ejecución operativa en tiempo real, registrando el inicio del trayecto, los cambios en el estado de abordaje de los estudiantes y el log de incidentes generados durante el viaje.
+**Meta Copyright**
 
-10. Bounded Contexts
-    ![BoundedContexts](assets/images/ChapterIV/EventStorming/BoundedContexts.png)
+  `<meta name="copyright" content="PowerTech 2026">`
 
-Los contextos delimitados organizan los agregados en dominios de negocio independientes, permitiendo que cada uno evolucione de manera autónoma para facilitar la escalabilidad del sistema:
+Esta línea establece legalmente la propiedad intelectual de la página. Su función es indicar la titularidad de los derechos de autor y el año de vigencia, protegiendo el contenido y diseño del sitio.
 
-- Identity & Access Management: Este contexto gestiona la seguridad perimetral, incluyendo la autenticación de usuarios, la creación de organizaciones, y la asignación de roles y privilegios para administradores, padres y conductores. Agregados: User, Organization.
+**Meta Robots**
 
-- Subscription & Plan Management: Administra el ciclo de vida comercial del servicio. Se encarga de la selección de planes, el procesamiento de pagos mediante la integración con PayPal y la activación de las cuotas operativas de rutas y conductores contratados. Agregados: Subscription.
+  `<meta name="robots" content="index, follow">`
 
-- Stakeholder & Asset Management: Maneja los perfiles de los actores críticos y los recursos físicos de la institución. Incluye el registro de conductores y padres, la vinculación esencial entre padres e hijos (estudiantes), y la gestión de la flota de vehículos. Agregados: Stakeholder, Vehicle.
+Instruye a los motores de búsqueda sobre cómo tratar el sitio. Su función es permitir que los "robots" incluyan la página en sus índices y sigan los enlaces internos, lo cual es fundamental para el crecimiento del tráfico hacia la plataforma.
 
-- Route Planning & Execution: Coordina la logística integral, desde la planificación técnica hasta la operación en tiempo real. Cubre la definición de geocercas, la selección de paraderos, el monitoreo del abordaje de estudiantes y la gestión de incidentes durante el trayecto. Agregados: Route, Trip.
+**Meta Language**
 
-- Notifications & Communication: Actúa como el eje de interacción inmediata entre el transporte y el hogar. Orquesta el envío de notificaciones push (como el estado de abordaje del estudiante), alertas de pánico y mensajes de difusión general para mantener informados a los padres y administradores.
+  `<html lang="en">`
 
-- Trip Execution & Monitoring: Es el núcleo operativo donde el conductor inicia el viaje, se registra el abordaje de estudiantes y se activa el log de incidentes. Coordina la ejecución y el seguimiento en tiempo real, permitiendo el registro exacto del estado de cada estudiante y la respuesta inmediata ante emergencias mediante alertas de pánico.
+Declara el idioma principal de la estructura del sitio. Su función es informar a los navegadores y buscadores que el texto base está en ingles, mejorando la segmentación del público objetivo internacionalmente.
 
+### 4.2.4. Searching Systems
 
-#### 4.6.2. Software Architecture Context Diagram
-Este diagrama proporciona una vista de alto nivel de SafeRoute y su entorno. Ilustra cómo los actores principales (Administrador, Conductor, Padre/Tutor) y los sistemas externos (como PayPal para pagos, Leaflet para mapas y Resend para correos) interactúan lógicamente con la plataforma de gestión de transporte escolar.
+En esta sección se describen los mecanismos de asistencia y recuperación de información diseñados para SafeRoute. El objetivo primordial es evitar la desorientación del usuario ante el flujo constante de datos logísticos, garantizando que la información sobre rutas y alumnos sea accesible de manera inmediata.
 
-![ContextDiagram](/assets/images/ChapterIV/C4/SystemContext.png)
+**Vista del Conductor / Dueño de Unidad**
 
-#### 4.6.3. Software Architecture Container Diagrams
-Aquí se detallan las unidades de despliegue principales del sistema. El diagrama muestra cómo SafeRoute se divide en una Landing Page, una aplicación interactiva en el cliente (SPA desarrollada en Vue 3), una API backend modularizada (Web Service en ASP.NET Core) y un repositorio persistente central (Base de Datos MySQL).
+**1. Medios de ayuda para la búsqueda de datos**
 
-![ContainerDiagram](/assets/images/ChapterIV/C4/ContainerDiagram.png)
+  - Barra de búsqueda operativa: Ubicada en los módulos de "Rutas" y "Lista de Alumnos" para acceso rápido.
+  - Autocompletado inteligente: Sugiere nombres de alumnos o puntos de parada conforme el conductor escribe, facilitando la operación en dispositivos móviles.
+  - Mensajes contextuales: En caso de no hallar un registro, el sistema ofrece opciones como "¿Desea registrar un nuevo alumno en esta parada?".
+  - Búsqueda por proximidad: Sugerencia automática de la siguiente parada basada en la ubicación GPS actual.
 
-#### 4.6.4. Software Architecture Components Diagrams
-Este diagrama ofrece la visión macro del backend. Demuestra cómo el monolito de ASP.NET Core está organizado lógicamente en siete Bounded Contexts independientes y un Shared Kernel (núcleo compartido de Value Objects), asegurando una separación clara de responsabilidades a nivel de dominio.
+**2. Filtros y opciones**
 
-![WebServices](/assets/images/ChapterIV/C4/WebServiceComponents.png)
+  - Por Nombre del Alumno: Localización directa de la ficha de contacto y datos de emergencia.
+  - Por Estado de Asistencia: Filtrado rápido de alumnos "Abordados", "Pendientes" o "Ausentes".
+  - Por Punto de Parada: Visualización de todos los estudiantes vinculados a un hito específico de la ruta.
+  - Por Turno: Filtrado entre rutas de "Recojo" (mañana) y "Retorno" (tarde).
 
-- Identity & Access Management:
-Desglosa el módulo de identidad en su arquitectura interna de 4 capas (API, Application, Domain, Infrastructure). Ilustra cómo se maneja la autenticación de usuarios, la provisión de cuentas y la emisión de tokens de seguridad de forma aislada.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_IAM-dark.png)
+**3. Visualización de resultados**
 
-- Subscription & Plan Management:
-Muestra la estructura interna de 4 capas del contexto encargado de la monetización. Detalla el flujo desde el controlador REST hasta la infraestructura que se integra con PayPal para gestionar el ciclo de vida de los planes y pagos.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Subscription-dark.png)
+  - Tarjetas de Alumno (Cards): Incluyen foto, nombre, grado y una etiqueta de estado de alta visibilidad.
+  - Indicadores de Color:
+      - Amarillo: Alumno en espera.
+      - Verde: Alumno ya abordó la unidad.
+      - Rojo: Alumno reportado como ausente.
+  - Acciones rápidas: Botones directos para "Marcar Asistencia", "Llamar a Apoderado" o "Reportar Incidencia".
 
-- Stakeholder & Asset Management:
-Representa las capas internas del dominio que administra la información core del negocio: la creación y vinculación de perfiles para conductores, padres de familia y estudiantes.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Stakeholder-dark.png)
+**Vista del Padre de Familia**
 
-- Route Planning & Execution:
-Detalla la arquitectura modular (Controlador, Servicio, Dominio, Repositorio) encargada de la logística. Maneja toda la configuración previa al viaje, como la definición de paradas, asignación de vehículos y diseño de rutas mediante coordenadas GPS.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Route-dark.png)
+**1. Medios de ayuda para la búsqueda de datos**
 
-- Notifications & Communication:
-Describe el módulo dedicado a la comunicación asíncrona en sus 4 capas. Orquesta la recepción de eventos internos (como un estudiante abordando) y utiliza su capa de infraestructura para emitir alertas y correos mediante el proveedor externo Resend.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Notification-dark.png)
+  - Buscador de historial: Permite localizar eventos específicos dentro de la bitácora de viajes del alumno.
+  - Sugerencias por fecha: Calendario interactivo para seleccionar días específicos de consulta.
+  - Acceso directo a Unidad: Buscador para identificar los datos del bus asignado mediante la placa o nombre del conductor.
 
-- Trip Execution & Monitoring:
-Ilustra el núcleo operativo del sistema en sus 4 capas. Muestra cómo se procesa la lógica en tiempo real durante la ejecución del viaje, gestionando el registro de abordajes y el estado de la ruta del transporte escolar.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Trip-dark.png)
+**2. Filtros y opciones**
 
-- Shared Kernel:
-Este diagrama expone las 4 capas transversales (Building Blocks) que fundamentan la arquitectura limpia del monolito. Detalla cómo se proveen clases base y utilidades compartidas: Middlewares en la capa API, interfaces y DTOs base en Application, Value Objects globales (TripId, StudentId) en Domain, y repositorios genéricos en Infrastructure, evitando la duplicidad de código en el resto de los Bounded Contexts.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_SharedKernel-dark.png)
+  - Por Fecha: Consulta de registros de asistencia de días o meses anteriores.
+  - Por Tipo de Evento: Filtrado entre "Notificaciones de Proximidad", "Confirmación de Abordaje" y "Llegada al Destino".
+  - Por Estado del Viaje: Filtrado entre rutas "Completadas", "En curso" o "Canceladas".
 
-### 4.7. Software Object-Oriented Design
-#### 4.7.1. Class Diagrams
+**3. Visualización de resultados**
 
-**BackEnd**
-- Identity and Access Management:
+  - Timeline de Eventos: Lista cronológica detallada con la hora exacta de cada suceso.
+  - Mapa de Resultados: Al buscar un historial, se muestra el trazado que siguió la unidad en esa fecha específica.
+  - Colores de Estado:
 
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-iam.puml)
+      - Check Verde: Evento completado con éxito.
+      - Reloj Naranja: Retraso reportado en el punto de entrega.
+      - Círculo Rojo: Registro de inasistencia justificada.
 
-Gestiona organizaciones, usuarios y roles. Contiene dos Aggregate Roots y una Entity:
-Organization (AggregateRoot) — Tiene -id: OrganizationId, -name: OrganizationName, -status: OrganizationStatus y -createdAt: DateTime. Expone métodos públicos para su ciclo de vida: Create(), Activate(), Suspend() e IsActive(). Se relaciona 1:1 con OrganizationId (identified by), OrganizationName (has) y OrganizationStatus (has).
-User (AggregateRoot) — Tiene -id: UserId, -organizationId: OrganizationId, -fullName: FullName, -email: Email, -passwordHash: PasswordHash y -role: Role. Expone Register(), Authenticate(password), ChangeRole(role). Se asocia 1:1 con todos sus value objects y con la entidad Role (has). Pertenece a una organización vía OrganizationId compartido.
-Role (Entity) — Referenciada desde User, tiene -id: int y -roleTier: RoleTier, con métodos IsAdmin(), IsDriver(), IsParent(). Se asocia 1:1 con RoleTier (categorized by).
-Los Value Objects propios (OrganizationName, OrganizationStatus, Email, PasswordHash, RoleTier) encapsulan strings privados con validaciones y métodos de consulta públicos. PasswordHash es especial: expone Hash() y Verify().
 
-- Subscription & Plan Management: 
+### 4.2.5. Navigation Systems
 
-![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-subscription.puml)
+La navegación en SafeRoute ha sido diseñada para ser intuitiva y guiada mediante componentes de interfaz que permiten a los usuarios gestionar la seguridad del transporte de forma fluida y sin fricciones. En la landing page, se utiliza un sistema de desplazamiento vertical (smooth scroll) que permite explorar de forma narrativa los beneficios, los roles de usuario y los planes de suscripción, guiando al visitante estratégicamente hacia los llamados a la acción (CTAs) para el contacto. Esta navegación se apoya en una barra superior persistente (Sticky Nav) que incluye un selector de idioma (i18n), permitiendo cambiar el contexto lingüístico en cualquier punto del recorrido.
 
-Gestiona los planes y suscripciones de cada organización.
-Subscription (AggregateRoot) — Atributos: id, organizationId, planId, -state: SubscriptionState, startDate, endDate. Métodos: Activate(), Upgrade(planId), Cancel(), IsActive(), GetRemainingDays(). Se asocia 1:1 con User del bounded context IAM (owned by), indicando dependencia entre contextos.
-Plan (AggregateRoot) — Atributos: id, -planTier: PlanTier, -routeQuota: RouteQuota, -driverQuota: DriverQuota, price: decimal. Métodos: GetPlanName(), GetRouteLimit(), GetDriverLimit(), IsWithinRouteQuota(), IsWithinDriverQuota(). Asociado 1:1 con PlanTier, RouteQuota y DriverQuota.
-Value Objects propios: SubscriptionState (active/expired/cancelled), PlanTier (basic/intermediate/complete), RouteQuota y DriverQuota (encapsulan límites enteros con validación de cuota).
+Dentro de la aplicación web, la navegación principal se organiza mediante una barra lateral fija (Sidebar) que otorga acceso inmediato a las secciones críticas: Monitoreo en Tiempo Real, Lista de Alumnos, Historial de Rutas, Alertas de Seguridad y Configuración de Perfil. Este diseño permite que, por ejemplo, un conductor pueda alternar entre su hoja de ruta y el reporte de incidencias con un solo toque, manteniendo siempre la visibilidad del estado del viaje.
 
-- Stakeholder & Asset Management: 
+La experiencia de navegación también se adapta dinámicamente según el tipo de usuario. Los Padres de Familia acceden a una vista simplificada centrada en el mapa y las notificaciones de sus hijos, mientras que los Conductores disponen de controles operativos más robustos. El uso de pestañas (tabs) y botones de acción rápida dentro de cada módulo asegura que el usuario pueda ejecutar tareas específicas, como marcar la asistencia o llamar a un apoderado, sin perder el contexto de la ruta activa, garantizando un flujo de trabajo coherente con la naturaleza crítica del servicio.
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-stakeholder.puml)
+## 4.3. Landing Page UI Design
 
-Modela a los actores humanos del sistema: padres, conductores, hijos y grupos de estudiantes.
-Parent (AggregateRoot) — Atributos privados: id, organizationId, userId, fullName, email, phoneNumber y -children: List<Child>. Métodos públicos: AddChild(), RemoveChild(), GetChildren(). Composición 1:1..* con Child (has): un Parent debe tener al menos un hijo.
-Driver (Entity) — Similar a Parent pero agrega -licenseNumber: LicenseNumber. Métodos: IsAvailable(), GetLicenseNumber(), UpdatePhoneNumber(). Sin composición propia, referenciado desde otros contextos vía DriverId compartido.
-Child (Entity, compuesta dentro de Parent) — Atributos: id, fullName, age: int y -enrollmentState: ChildEnrollmentState. Métodos: Enroll(), Unenroll(), IsEnrolled().
-StudentGroup (Entity) — Agrupa referencias a hijos (-children: List<ChildId>) sin poseerlos directamente. Métodos: AddChild(), RemoveChild(), Finalize(), IsFinalized(). Relación 1:1..* con ChildId compartido (groups).
+### 4.3.1. Landing Page Wireframe
 
-- Fleet & Route Planning: 
+A continuación, se presentan los wireframes de las principales secciones de la landing page. Cada imagen ilustra el diseño propuesto para las diferentes funcionalidades, flujos de navegación y elementos de interacción de la plataforma.
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-fleet.puml)
+**Principios Aplicados**
 
-Gestiona rutas, vehículos, paradas y asignaciones.
-Route (AggregateRoot) — Atributos: id, organizationId, name, routeState, departureTime, serviceDays, vehicle, assignment y -stops: List<Stop>. Métodos: DefineRoute(), AddStop(), RemoveStop(), Activate(), Deactivate(), GetStopSequence(). Tiene composición 1:1..* con Stop (has): una ruta requiere al menos una parada. Se relaciona 1:1 con Vehicle y Assignment.
-Stop (Entity) — Atributos: id, name, coordinates: Coordinates, -stopOrder: StopOrder. Métodos: GetNextStop(), IsFirst(), IsLast(), UpdateCoordinates(). Asociada a Coordinates del shared kernel.
-Vehicle (Entity) — Atributos: id, organizationId, plate, model, capacity: int, brand. Métodos: IsAvailable(), GetPlate(), GetCapacity(), UpdateDetails().
-Assignment (Entity) — Atributos: id, -driverId: DriverId, -children: List<ChildId>. Métodos: AssignDriver(), AssignChild(), RemoveChild(). Referencia 1:1..* a ChildId compartido (includes).
-Value Objects propios: RouteState (draft/active/inactive), StopOrder (posición entera), DepartureTime (TimeSpan), ServiceDays (lista de días).
+- **Jerarquía visual clara:** Los contenidos se ordenan priorizando la información de confianza en el Hero Section (Seguridad y Gestión). Se guía al usuario progresivamente a través de las estadísticas de impacto, los beneficios específicos para padres y conductores, la tabla comparativa de planes y, finalmente, el tutorial operativo.
 
-- Trip Execution & Monitoring: 
+- **Consistencia visual:** Se mantuvieron patrones uniformes utilizando la tipografía Plus Jakarta Sans para títulos impactantes y DM Sans para la legibilidad del cuerpo. Se aplicó la paleta institucional (azul marino para seguridad y ámbar para alertas) de manera coherente en todos los componentes.
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-trip.puml)
+- **Contraste y accesibilidad:** Se garantizó un contraste elevado entre el texto y los fondos para facilitar la lectura en condiciones de luz exterior (común para conductores y padres en ruta). Los botones de acción cuentan con estados visuales claros para confirmar la interacción del usuario.
 
-Gestiona la ejecución de viajes, asistencia e incidentes.
-Trip (AggregateRoot) — Atributos: id, organizationId, routeId, driverId, tripState, startTime, endTime, -attendances: List<Attendance> e -incidents: List<Incident>. Métodos: Start(), Complete(), RecordBoarding(childId, state), ReportIncident(description), GetAttendanceSummary(), GetIncidentLog(). Composición 1:0..* con ambas entidades hijas.
-Attendance (Entity) — Atributos: id, childId, -boardingState: BoardingState, boardedAt. Métodos: UpdateBoardingState(), IsBoarded(), GetBoardingTime(). Referencia al ChildId compartido (tracks) con multiplicidad 1:1.
-Incident (Entity) — Atributos: id, -description: IncidentDescription, reportedAt. Métodos: Report(), GetDescription(), GetReportedAt(). Asociada 1:1 con IncidentDescription (described by).
-Value Objects propios: TripState (pending/inProgress/completed), BoardingState (boarded/missing/omitted), IncidentDescription (con validación).
+- **Optimización para dispositivos móviles:** Los wireframes y el diseño final contemplan una navegación móvil dedicada. Se implementó un menú lateral (sidebar) activado por un botón hamburguesa para ahorrar espacio, se ajustaron las cuadrículas (grids) a una sola columna para evitar el desplazamiento horizontal y se optimizaron las áreas de contacto en botones para una interacción táctil precisa.
 
-- Notifications & Communication:
+- **Diseño inclusivo:** La estructura es totalmente compatible con el sistema i18n, permitiendo que el diseño se adapte dinámicamente al largo de las palabras en español e inglés. Además, se aseguró que la navegación sea lógica y accesible mediante teclado y lectores de pantalla, facilitando el uso para cualquier tipo de usuario.
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-notifications.puml)
+##### Versión Desktop Web Browser:
 
-Gestiona el envío de notificaciones hacia padres de familia.
-Notification (AggregateRoot) — Atributos: id, organizationId, parentId, tripId, -category: NotificationCategory, -deliveryState: NotificationDeliveryState, -message: NotificationMessage, sentAt, -alerts: List<Alert> y -announcements: List<Announcement>. Métodos: Queue(), Dispatch(), MarkDelivered(), IsDelivered(), GetCategory(), GetMessage(). Composición 1:0..* con Alert y 1:0..* con Announcement.
-Alert (Entity) — Atributos: id, triggeredAt. Métodos: Trigger(), GetTriggeredAt(), IsPanic(). Representa un evento de alerta puntual dentro de una notificación.
-Announcement (Entity) — Atributos: id, routeId, -message: NotificationMessage, publishedAt. Métodos: Publish(), GetMessage(), GetPublishedAt(). Referencia RouteId del shared kernel (belongs to) con multiplicidad 1:1.
-Value Objects propios: NotificationCategory (boarding/arrival/incident/panic), NotificationDeliveryState (queued/dispatched/delivered), NotificationMessage (encapsula contenido con validación).
+En esta primera sección se presenta la pantalla Home de la landing page, donde se observa el encabezado principal con la propuesta de valor y el acceso al sistema de internacionalización (i18n). Se aprecia un botón call-to-action principal diseñado para captar el interés de los padres de familia y conductores independientes.
 
-- Shared:
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP1.png" alt="Home SafeRoute" width="900px">
 
-![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-shared.puml)
+A continuación, se muestra la Sección de Características, donde se detallan los pilares y eficiencia que sustentan la plataforma SafeRoute, utilizando iconos y textos breves para una lectura rápida.
 
-Este módulo no pertenece a un bounded context específico sino que actúa como kernel compartido. Contiene exclusivamente Value Objects reutilizables a lo largo de toda la aplicación: OrganizationId, UserId, ParentId, DriverId, ChildId, RouteId, TripId, SubscriptionId, PlanId, FullName y Coordinates. Todos son inmutables, encapsulan un valor primitivo (Guid, string o double) con scope privado, y exponen métodos públicos como New(), Equals() y ToString(). FullName es el único con dos atributos (firstName, lastName) y agrega GetFullName() e IsValid(). Coordinates encapsula latitude y longitude como double con validación geoespacial.
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP2.png" alt="Características SafeRoute" width="900px">
 
-**FrontEnd**
-En todos los diagramas el componente raíz App actúa como contenedor principal: tiene composición (contains) con todos los componentes de cada bounded context, y recibe sus eventos mediante emisiones (emits).
+Se presenta la sección de Funcionalidades, la cual profundiza en las capacidades tecnológicas del sistema, como el monitoreo en tiempo real y las notificaciones automáticas.
 
-- Identity and Access Management:
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP3.png" alt="Funcionalidades" width="900px">
 
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-iam.puml)
+El siguiente frame corresponde a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
 
-App compone cinco componentes: AdminLoginForm, AdminRegisterForm y UserLoginForm gestionan autenticación con atributos de formulario privados (email, password, errorMessage) y emiten eventos como admin-logged-in o login-failed hacia App. OrganizationForm y OrganizationProfile manejan la creación y visualización de la organización, emitiendo organization-created y edit-requested respectivamente. Los modelos User y Organization son usados directamente por los componentes correspondientes, con User asociado a Organization (belongs to).
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP4.png" alt="Roles SafeRoute" width="900px">
 
-- Subscription & Plan Management: 
+Se presenta la sección de Planes, donde se muestra la estructura de precios y niveles de servicio, diseñada de forma escaneable para facilitar la toma de decisiones.
 
-![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-subscription.puml)
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP5.png" alt="Planes SafeRoute" width="900px">
 
-App compone PlanSelector y SubscriptionStatus. PlanSelector permite elegir un plan de la lista disponible, emitiendo plan-selected. SubscriptionStatus muestra el estado actual de la suscripción con métodos getRemainingDays() e isActive(), emitiendo upgrade-requested y cancel-requested. SubModel se asocia a PlanModel (has) con multiplicidad 1:1.
+A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo funciona?". Este tutorial visual guía al nuevo usuario a través de los pasos necesarios para implementar la plataforma con éxito.
 
-- Stakeholder & Asset Management: 
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP6.png" alt="Tutorial SafeRoute" width="900px">
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-stakeholder.puml)
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de PowerTech.
 
-App compone cuatro listas: ParentList, DriverList, ChildList y StudentGroupList. Cada una tiene atributos -searchQuery y métodos de filtrado, selección y eliminación, emitiendo eventos *-selected y *-deleted hacia App. Los modelos Parent, Driver, Child y StudentGroup son DTOs planos. ParentModel tiene composición con ChildModel (has), reflejando que un padre agrupa sus hijos.
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-LP7.png" alt="Footer SafeRoute" width="900px">
 
-- Fleet & Route Planning: 
+#### Versión Mobile Web Browser
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-fleet.puml)
+A continuación, se presenta la adaptación responsiva de SafeRoute para dispositivos móviles. En estas vistas se observa la reorganización de los elementos en una estructura vertical y el uso de componentes optimizados para la interacción táctil.
 
-App compone RouteForm, StopList, VehicleList y AssignmentForm. RouteForm gestiona creación/edición de rutas incluyendo paradas dinámicas (addStop, removeStop), emitiendo route-created. StopList permite reordenar paradas con reorderStops() emitiendo stops-reordered. VehicleList soporta búsqueda y selección. AssignmentForm gestiona la asignación de conductor e hijos a una ruta. RouteModel tiene composición con StopModel (has).
+Pantalla Home y Menú Lateral (Sidebar):
+Se muestra la adaptación del Hero Section y el funcionamiento del menú hamburguesa, el cual despliega una barra lateral para facilitar la navegación en pantallas pequeñas sin obstruir el contenido.
 
-- Trip Execution & Monitoring: 
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-mobile-1.png" alt="Home Mobile" width="700px">
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-trip.puml)
+Secciones de Características y Funcionalidades en Móvil:
+Los pilares de seguridad y las capacidades tecnológicas del sistema se reorganizan en una sola columna. Esto permite que los iconos y textos descriptivos mantengan un tamaño adecuado para la lectura táctil, evitando que el usuario deba realizar zoom para comprender las funciones de monitoreo y alertas.
 
-App compone TripDashboard, AttendanceChecklist e IncidentForm. TripDashboard controla el ciclo de vida del viaje (startTrip, completeTrip) emitiendo trip-started y trip-completed. AttendanceChecklist maneja el estado de embarque por niño (updateBoardingState, isAllBoarded), emitiendo boarding-updated. IncidentForm registra incidentes con validación, emitiendo incident-reported. TripModel tiene composición con AttendanceModel (tracks) e IncidentModel (records).
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-mobile-2.png" alt="Características y Funcionalidades Mobile" width="800px">
 
-- Notifications & Communication:
+Sección de Roles del Sistema en Móvil:
+Se adapta la segmentación de beneficios para padres y conductores mediante un flujo vertical. Cada rol se presenta de forma independiente para asegurar que el impacto visual de los beneficios específicos no se pierda en pantallas de dimensiones reducidas.
+ 
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-mobile-3.png" alt="Roles Mobile" width="700px">
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/saferoute-frontend-notifications.puml)
+Planes, Tutorial y Footer Móvil:
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los créditos de PowerTech de manera compacta al final del recorrido del usuario.
 
-App compone NotificationList, AlertPanel y AnnouncementForm. NotificationList filtra y marca notificaciones como leídas, emitiendo notification-read. AlertPanel gestiona alertas activas con soporte de pánico (triggerPanic, dismissAlert), emitiendo panic-triggered. AnnouncementForm publica comunicados asociados a una ruta, emitiendo announcement-published. NotificationModel tiene composición con AlertModel (triggers) y AnnouncementModel (includes).
+<img src="assets/images/ChapterIV/Landing/Wireframes/wireframe-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
 
+### 4.3.2. Landing Page Mock-up
 
-### 4.8. Database Design
-**- Identity & Access Management**
+A continuación, se presentan los mock-ups de las principales secciones de la landing page. Cada imagen ilustra el diseño propuesto para las diferentes funcionalidades, flujos de navegación y elementos de interacción de la plataforma.
 
-Este bounded context gestiona la seguridad perimetral del sistema. La tabla `organizations` actúa como raíz estructural, siendo referenciada por prácticamente todos los demás contextos. `users` centraliza las credenciales de autenticación (`email` UNIQUE, `password_hash`) y se vincula a `organizations` y `roles` mediante FK. `roles` es una tabla de catálogo con clave `INT` que define los niveles de acceso disponibles: administrador, conductor y padre de familia.
+En esta primera sección se presenta la pantalla Home de la landing page, donde se observa el encabezado principal con la propuesta de valor y el acceso al sistema de internacionalización (i18n). Se aprecia un botón call-to-action principal diseñado para captar el interés de los padres de familia y conductores independientes.
 
-**Tabla: organizations**
-| Atributo   | Tipo         |
-|------------|--------------|
-| id         | CHAR(36) (PK)|
-| name       | VARCHAR(100) |
-| status     | VARCHAR(20)  |
-| created_at | DATETIME     |
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP1.png" alt="Home SafeRoute" width="900px">
 
-**Métodos**
-| Método        | Descripción                          |
-|---------------|--------------------------------------|
-| Create()      | Crea una nueva organización.         |
-| Activate()    | Activa la organización.              |
-| Suspend()     | Suspende la organización.            |
-| IsActive()    | Verifica si la organización está activa. |
+A continuación, se muestra la Sección de Características, donde se detallan los pilares y eficiencia que sustentan la plataforma SafeRoute, utilizando iconos y textos breves para una lectura rápida.
 
----
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP2.png" alt="Características SafeRoute" width="900px">
 
-**Tabla: roles**
-| Atributo | Tipo        |
-|----------|-------------|
-| id       | INT (PK)    |
-| name     | VARCHAR(20) |
+Se presenta la sección de Funcionalidades, la cual profundiza en las capacidades tecnológicas del sistema, como el monitoreo en tiempo real y las notificaciones automáticas.
 
-**Métodos**
-| Método         | Descripción                        |
-|----------------|------------------------------------|
-| GetRoleName()  | Retorna el nombre del rol.         |
-| IsAdmin()      | Verifica si el rol es administrador.|
-| IsDriver()     | Verifica si el rol es conductor.   |
-| IsParent()     | Verifica si el rol es padre.       |
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP3.png" alt="Funcionalidades" width="900px">
 
----
+El siguiente frame corresponde a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
 
-**Tabla: users**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| role_id         | INT (FK)     |
-| first_name      | VARCHAR(100) |
-| last_name       | VARCHAR(100) |
-| email           | VARCHAR(255) |
-| password_hash   | VARCHAR(255) |
-| created_at      | DATETIME     |
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP4.png" alt="Roles SafeRoute" width="900px">
 
-**Métodos**
-| Método                      | Descripción                              |
-|-----------------------------|------------------------------------------|
-| Register()                  | Registra un nuevo usuario.               |
-| Authenticate(password)      | Autentica al usuario con su contraseña.  |
-| ChangeRole(role)            | Cambia el rol asignado al usuario.       |
-| GetEmail()                  | Retorna el email del usuario.            |
+Se presenta la sección de Planes, donde se muestra la estructura de precios y niveles de servicio, diseñada de forma escaneable para facilitar la toma de decisiones comerciales.
 
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP5.png" alt="Planes SafeRoute" width="900px">
 
----
+A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo funciona?". Este tutorial visual guía al nuevo usuario a través de los pasos necesarios para implementar la plataforma con éxito.
 
-**- Subscription & Plan Management**
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP6.png" alt="Tutorial SafeRoute" width="900px">
 
-Este bounded context administra el ciclo de vida comercial del servicio. La tabla `plans` es un catálogo que define los tiers disponibles y sus cuotas operativas. La tabla `subscriptions` vincula una organización a un plan y registra su estado, fecha de inicio y fecha de fin nullable, ya que una suscripción activa no tiene fecha de término definida.
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de PowerTech.
 
-**Tabla: plans**
-| Atributo    | Tipo          |
-|-------------|---------------|
-| id          | INT (PK)      |
-| plan_tier   | VARCHAR(20)   |
-| max_routes  | INT           |
-| max_drivers | INT           |
-| price       | DECIMAL(10,2) |
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-LP7.png" alt="Footer SafeRoute" width="900px">
 
-**Métodos**
-| Método                    | Descripción                                  |
-|---------------------------|----------------------------------------------|
-| GetPlanName()             | Retorna el nombre del tier del plan.         |
-| GetRouteLimit()           | Retorna el límite de rutas del plan.         |
-| IsWithinRouteQuota(n)     | Verifica si el valor está dentro de la cuota de rutas. |
-| IsWithinDriverQuota(n)    | Verifica si el valor está dentro de la cuota de conductores. |
+#### Versión Mobile Web Browser
 
----
+A continuación, se presentan los mock-ups de la versión móvil de la aplicación. Cada imagen muestra la adaptación responsiva de las principales funcionalidades y secciones diseñadas para ofrecer una experiencia de usuario optimizada en dispositivos móviles.
 
-**Tabla: subscriptions**
-| Atributo        | Tipo        |
-|-----------------|-------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| plan_id         | INT (FK)    |
-| state           | VARCHAR(20) |
-| start_date      | DATETIME    |
-| end_date        | DATETIME    |
+Pantalla Home y Menú Lateral (Sidebar):
+Se muestra la adaptación del Hero Section y el funcionamiento del menú hamburguesa, el cual despliega una barra lateral para facilitar la navegación en pantallas pequeñas sin obstruir el contenido.
 
-**Métodos**
-| Método            | Descripción                                  |
-|-------------------|----------------------------------------------|
-| Activate()        | Activa la suscripción.                       |
-| Upgrade(planId)   | Cambia el plan de la suscripción.            |
-| Cancel()          | Cancela la suscripción.                      |
-| GetRemainingDays()| Retorna los días restantes de la suscripción.|
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-mobile-1.png" alt="Home Mobile" width="700px">
 
+Secciones de Características y Funcionalidades en Móvil:
+Los pilares de seguridad y las capacidades tecnológicas del sistema se reorganizan en una sola columna. Esto permite que los iconos y textos descriptivos mantengan un tamaño adecuado para la lectura táctil, evitando que el usuario deba realizar zoom para comprender las funciones de monitoreo y alertas.
 
----
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-mobile-2.png" alt="Características y Funcionalidades Mobile" width="800px">
 
-**- Stakeholder & Asset Management**
+Sección de Roles del Sistema en Móvil:
+Se adapta la segmentación de beneficios para padres y conductores mediante un flujo vertical. Cada rol se presenta de forma independiente para asegurar que el impacto visual de los beneficios específicos no se pierda en pantallas de dimensiones reducidas.
+ 
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-mobile-3.png" alt="Roles Mobile" width="700px">
 
-Este bounded context maneja los perfiles de los actores críticos y los recursos físicos de la institución. Las tablas `parents` y `drivers` referencian tanto `organization_id` como `user_id` (FK hacia IAM), separando los datos de perfil de las credenciales de acceso. `children` pertenece exclusivamente a un padre mediante `parent_id` FK. `student_groups` agrupa referencias lógicas a hijos mediante la tabla de unión `student_group_children`. `vehicles` registra la flota de transporte disponible por organización.
+Planes, Tutorial y Footer Móvil:
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los botones de contacto y los créditos de PowerTech de manera compacta y accesible al final del recorrido del usuario.
 
-**Tabla: parents**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| user_id         | CHAR(36) (FK)|
-| first_name      | VARCHAR(100) |
-| last_name       | VARCHAR(100) |
-| email           | VARCHAR(255) |
-| phone_number    | VARCHAR(20)  |
+<img src="assets/images/ChapterIV/Landing/Mock-ups/mockup-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
 
-**Métodos**
-| Método                  | Descripción                              |
-|-------------------------|------------------------------------------|
-| AddChild(child)         | Agrega un hijo al padre.                 |
-| RemoveChild(childId)    | Elimina un hijo del padre.               |
-| GetChildren()           | Retorna la lista de hijos del padre.     |
-| GetEmail()              | Retorna el email del padre.              |
+## 4.4. Web Applications UX/UI Design
 
----
+### 4.4.1. Web Applications Wireframes
 
-**Tabla: drivers**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| user_id         | CHAR(36) (FK)|
-| first_name      | VARCHAR(100) |
-| last_name       | VARCHAR(100) |
-| email           | VARCHAR(255) |
-| phone_number    | VARCHAR(20)  |
-| license_number  | VARCHAR(50)  |
+Los siguientes wireframes representan la arquitectura visual de la aplicación web de SafeRoute, diseñada para centralizar la gestión de seguridad y logística del transporte escolar.
 
-**Métodos**
-| Método                       | Descripción                                 |
-|------------------------------|---------------------------------------------|
-| IsAvailable()                | Verifica si el conductor está disponible.   |
-| GetLicenseNumber()           | Retorna el número de licencia.              |
-| UpdatePhoneNumber(phone)     | Actualiza el número de teléfono.            |
-| GetFullName()                | Retorna el nombre completo del conductor.   |
+#### Principios aplicados
 
----
+- Jerarquía funcional clara: El flujo de navegación prioriza las acciones críticas para la seguridad, como el acceso al mapa de rastreo en vivo y la gestión de alertas de pánico.
 
-**Tabla: children**
-| Atributo         | Tipo         |
-|------------------|--------------|
-| id               | CHAR(36) (PK)|
-| parent_id        | CHAR(36) (FK)|
-| first_name       | VARCHAR(100) |
-| last_name        | VARCHAR(100) |
-| age              | INT          |
-| enrollment_state | VARCHAR(20)  |
+- Consistencia y patrones de diseño: Se mantiene la uniformidad visual en componentes de formularios y tablas de datos, asegurando una curva de aprendizaje mínima para todos los usuarios.
 
-**Métodos**
-| Método         | Descripción                                    |
-|----------------|------------------------------------------------|
-| Enroll()       | Matricula al estudiante en el servicio.        |
-| Unenroll()     | Retira la matrícula del estudiante.            |
-| IsEnrolled()   | Verifica si el estudiante está matriculado.    |
-| GetFullName()  | Retorna el nombre completo del estudiante.     |
+- Accesibilidad en interfaces: Se implementaron contrastes elevados y fuentes legibles (Plus Jakarta Sans), facilitando el uso en dispositivos móviles y de escritorio.
 
----
+- Diseño adaptativo: El diseño es responsivo, permitiendo que la plataforma sea funcional tanto en estaciones de monitoreo (Desktop) como en tablets de conductores.
 
-**Tabla: student_groups**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| name            | VARCHAR(100) |
-| is_finalized    | BOOLEAN      |
+#### Versión Desktop Wireframes - Acceso y Configuración (Universal)
 
-**Métodos**
-| Método              | Descripción                                   |
-|---------------------|-----------------------------------------------|
-| AddChild(childId)   | Agrega un estudiante al grupo.                |
-| RemoveChild(childId)| Elimina un estudiante del grupo.              |
-| Finalize()          | Marca el grupo como finalizado.               |
-| GetChildCount()     | Retorna la cantidad de estudiantes del grupo. |
+##### Autenticación y Acceso
 
----
+Registro de Cuenta
+Pantalla unificada de registro donde el usuario selecciona su rol (Padre, Conductor o Administrador) y completa sus datos básicos. Es el punto de partida para que cualquier actor del sistema pueda interactuar con la plataforma.
 
-**Tabla: student_group_children**
-| Atributo         | Tipo         |
-|------------------|--------------|
-| student_group_id | CHAR(36) (FK)|
-| child_id         | CHAR(36) (FK)|
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/universalregister.png" width="900px" alt="register">
 
-**Métodos**
-| Método           | Descripción                                        |
-|------------------|----------------------------------------------------|
-| AssignChild()    | Asocia un estudiante a un grupo.                   |
-| RemoveChild()    | Desvincula un estudiante de un grupo.              |
+Inicio de Sesión (Login) Interfaz de acceso donde los usuarios ingresan sus credenciales. El sistema valida el rol del usuario y lo redirige automáticamente a su panel de control correspondiente.
 
----
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/universallogin.png" width="900px" alt="login">
 
-**Tabla: vehicles**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| plate           | VARCHAR(20)  |
-| model           | VARCHAR(100) |
-| brand           | VARCHAR(100) |
-| capacity        | INT          |
+Cambio de Contraseña Formulario de seguridad que permite restablecer el acceso mediante la verificación de identidad tras un código, garantizando que solo el propietario de la cuenta pueda modificar sus credenciales.
 
-**Métodos**
-| Método                        | Descripción                              |
-|-------------------------------|------------------------------------------|
-| IsAvailable()                 | Verifica si el vehículo está disponible. |
-| GetPlate()                    | Retorna la placa del vehículo.           |
-| GetCapacity()                 | Retorna la capacidad del vehículo.       |
-| UpdateDetails(model, brand)   | Actualiza los datos del vehículo.        |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/password-change1.png" width="900px" alt="password-change">
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/password-change2.png" width="900px" alt="password-change">
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/password-change3.png" width="900px" alt="password-change">
 
+#### Versión Desktop Wireframes - Administradores 
 
----
+##### Configuración y Gestión Administrativa
 
-**- Route Planning & Execution**
+Panel de Inicio y Navegación (US20)
 
-Este bounded context coordina la planificación técnica de las rutas de transporte escolar. La tabla `routes` define cada ruta con su vehículo asignado, horario de salida y días de servicio. `stops` almacena los paraderos georreferenciados con coordenadas de alta precisión y orden de parada. `assignments` vincula una ruta con un conductor en cardinalidad 1:1, y `assignment_children` resuelve la relación muchos a muchos entre asignaciones y estudiantes.
+Dashboard central que organiza todos los módulos del sistema a través de un sidebar lateral, facilitando el salto entre la gestión de rutas, alumnos y reportes.
 
-**Tabla: routes**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| vehicle_id      | CHAR(36) (FK)|
-| name            | VARCHAR(100) |
-| route_state     | VARCHAR(20)  |
-| departure_time  | TIME         |
-| service_days    | VARCHAR(100) |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/home-dashboard.png" width="900px" alt="home-dashboard">
 
-**Métodos**
-| Método              | Descripción                                  |
-|---------------------|----------------------------------------------|
-| Activate()          | Activa la ruta para operación.               |
-| Deactivate()        | Desactiva la ruta.                           |
-| AddStop(stop)       | Agrega un paradero a la ruta.                |
-| GetStopSequence()   | Retorna la secuencia ordenada de paraderos.  |
+Asignación de Roles (US6)
 
----
+Módulo exclusivo para el administrador donde se definen los permisos específicos de cada usuario registrado, garantizando la integridad de los datos.
 
-**Tabla: stops**
-| Atributo   | Tipo          |
-|------------|---------------|
-| id         | CHAR(36) (PK) |
-| route_id   | CHAR(36) (FK) |
-| name       | VARCHAR(100)  |
-| latitude   | DECIMAL(10,8) |
-| longitude  | DECIMAL(11,8) |
-| stop_order | INT           |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/role-assignment.png" width="900px" alt="role-assignment">
 
-**Métodos**
-| Método                       | Descripción                                  |
-|------------------------------|----------------------------------------------|
-| IsFirst()                    | Verifica si es el primer paradero.           |
-| IsLast()                     | Verifica si es el último paradero.           |
-| UpdateCoordinates(coords)    | Actualiza las coordenadas del paradero.      |
-| GetPosition()                | Retorna la posición del paradero en la ruta. |
+##### Gestión Comercial y Planes
 
----
+Contratación de Planes (US1)
 
-**Tabla: assignments**
-| Atributo  | Tipo         |
-|-----------|--------------|
-| id        | CHAR(36) (PK)|
-| route_id  | CHAR(36) (FK)|
-| driver_id | CHAR(36) (FK)|
+Vista comercial que permite al dueño de la unidad o institución seleccionar y contratar el nivel de servicio adecuado según la cantidad de buses y alumnos.
 
-**Métodos**
-| Método                  | Descripción                                   |
-|-------------------------|-----------------------------------------------|
-| AssignDriver(driverId)  | Asigna un conductor a la ruta.                |
-| AssignChild(childId)    | Agrega un estudiante a la asignación.         |
-| RemoveChild(childId)    | Elimina un estudiante de la asignación.       |
-| GetChildCount()         | Retorna la cantidad de estudiantes asignados. |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/hire-plan.png" width="900px" alt="hire-plan">
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/hire-plan2.png" width="900px" alt="hire-plan">
 
----
+Consulta de Precios y Tarifas (US22)
 
-**Tabla: assignment_children**
-| Atributo      | Tipo         |
-|---------------|--------------|
-| assignment_id | CHAR(36) (FK)|
-| child_id      | CHAR(36) (FK)|
+Sección informativa donde se detallan los costos operativos y las tarifas vigentes para la gestión del transporte escolar.
 
-**Métodos**
-| Método         | Descripción                                          |
-|----------------|------------------------------------------------------|
-| AssignChild()  | Asocia un estudiante a una asignación de ruta.       |
-| RemoveChild()  | Desvincula un estudiante de una asignación de ruta.  |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/pricing-query.png" width="900px" alt="pricing-query">
 
+##### Gestión de Logística y Alumnos
+Alta y Gestión de Alumnos (US4, US24)
 
----
+Interfaz conectada a la API que permite visualizar la lista completa de estudiantes, agregar nuevos registros o actualizar la información de los existentes.
 
-**- Trip Execution & Monitoring**
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/student-management.png" width="900px" alt="student-management">
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/student-management2.png" width="900px" alt="student-management">
 
-Este bounded context es el núcleo operativo del servicio. La tabla `trips` registra cada ejecución real de una ruta, con `start_time` y `end_time` nullable dado que el viaje puede estar en curso. `attendances` captura el estado de abordaje de cada estudiante por viaje, con `boarded_at` nullable para casos de ausencia. `incidents` referencia tanto `trip_id` como `route_id`, permitiendo trazabilidad del evento al viaje específico y a la ruta afectada.
+Registro de Conductores (US2)
 
-**Tabla: trips**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| route_id        | CHAR(36) (FK)|
-| driver_id       | CHAR(36) (FK)|
-| trip_state      | VARCHAR(20)  |
-| start_time      | DATETIME     |
-| end_time        | DATETIME     |
+Formulario dedicado a la creación del perfil del conductor, donde se almacenan sus datos personales, licencias y contacto de emergencia.
 
-**Métodos**
-| Método                          | Descripción                                       |
-|---------------------------------|---------------------------------------------------|
-| Start()                         | Inicia el viaje.                                  |
-| Complete()                      | Completa el viaje.                                |
-| RecordBoarding(childId, state)  | Registra el estado de abordaje de un estudiante.  |
-| IsInProgress()                  | Verifica si el viaje está en curso.               |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/driver-registration1.png" width="900px" alt="driver-registration">
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/driver-registration2.png" width="900px" alt="driver-registration">
 
----
+Registro de Padres (US3)
 
-**Tabla: attendances**
-| Atributo       | Tipo         |
-|----------------|--------------|
-| id             | CHAR(36) (PK)|
-| trip_id        | CHAR(36) (FK)|
-| child_id       | CHAR(36) (FK)|
-| boarding_state | VARCHAR(20)  |
-| boarded_at     | DATETIME     |
+Formulario dedicado a la creación del perfil del padre de familia, donde se almacenan sus datos personales y estudiante del cual es apoderado.
 
-**Métodos**
-| Método                       | Descripción                                     |
-|------------------------------|-------------------------------------------------|
-| UpdateBoardingState(state)   | Actualiza el estado de abordaje del estudiante. |
-| IsBoarded()                  | Verifica si el estudiante abordó.               |
-| GetBoardingTime()            | Retorna la hora de abordaje.                    |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/parent-registration.png" width="900px" alt="driver-registration">
 
----
+Creación y Edición de Rutas (US5)
 
-**Tabla: incidents**
-| Atributo    | Tipo         |
-|-------------|--------------|
-| id          | CHAR(36) (PK)|
-| trip_id     | CHAR(36) (FK)|
-| route_id    | CHAR(36) (FK)|
-| description | TEXT         |
-| reported_at | DATETIME     |
+Herramienta de diseño logístico donde el administrador traza los recorridos, define paradas clave y asigna los tiempos estimados de viaje.
 
-**Métodos**
-| Método             | Descripción                             |
-|--------------------|-----------------------------------------|
-| Report()           | Registra el incidente.                  |
-| GetDescription()   | Retorna la descripción del incidente.   |
-| GetReportedAt()    | Retorna la fecha de reporte.            |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/route-creation.png" width="900px" alt="route-creation">
 
+#### Versión Desktop Wireframes - Conductores
 
----
+##### Operación de Viaje
 
-**- Notifications & Communication**
+Inicio de Trayecto (US8)
 
-**Tabla: notifications**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| parent_id       | CHAR(36) (FK)|
-| trip_id         | CHAR(36) (FK)|
-| category        | VARCHAR(20)  |
-| delivery_state  | VARCHAR(20)  |
-| message         | TEXT         |
-| sent_at         | DATETIME     |
+Pantalla de activación donde el conductor confirma que está listo para empezar el recorrido. Al hacer clic en "Iniciar Viaje", se dispara el rastreo GPS para los padres.
 
-**Métodos**
-| Método           | Descripción                                        |
-|------------------|----------------------------------------------------|
-| Queue()          | Encola la notificación para su envío.              |
-| Dispatch()       | Despacha la notificación al destinatario.          |
-| MarkDelivered()  | Marca la notificación como entregada.              |
-| GetCategory()    | Retorna la categoría de la notificación.           |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/trip-start.png" width="900px" alt="start-trip">
 
----
+Marcación de Abordaje (US9)
 
-**Tabla: alerts**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| notification_id | CHAR(36) (FK)|
-| triggered_at    | DATETIME     |
+Lista interactiva de alumnos por parada. El conductor marca con un solo toque quién ha subido al bus, actualizando el estado de asistencia en tiempo real.
 
-**Métodos**
-| Método            | Descripción                            |
-|-------------------|----------------------------------------|
-| Trigger()         | Activa la alerta.                      |
-| IsPanic()         | Verifica si la alerta es de pánico.    |
-| GetTriggeredAt()  | Retorna la hora en que se activó.      |
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/boarding-check.png" width="900px" alt="boarding-check">
 
----
+Finalización de Ruta (US12)
 
-**Tabla: announcements**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| notification_id | CHAR(36) (FK)|
-| route_id        | CHAR(36) (FK)|
-| message         | TEXT         |
-| published_at    | DATETIME     |
+Vista de cierre donde el conductor reporta el término del trayecto, asegurando que todos los alumnos hayan descendido en sus destinos correspondientes.
 
-**Métodos**
-| Método            | Descripción                                   |
-|-------------------|-----------------------------------------------|
-| Publish()         | Publica el comunicado.                        |
-| GetMessage()      | Retorna el contenido del comunicado.          |
-| GetPublishedAt()  | Retorna la fecha de publicación.              |
-#### 4.8.1. Database Diagrams
-Esta sección presenta y explica los Database Diagrams para cada bounded context de SafeRoute. Los diagramas modelan la persistencia relacional del sistema, especificando tablas, columnas, tipos de dato, constraints (PK, FK, NOT NULL, UNIQUE) y las relaciones entre tablas con su cardinalidad. Todos los identificadores primarios utilizan `CHAR(36)` para soportar UUIDs, a excepción de catálogos fijos como `roles` y `plans` que usan `INT`. Las relaciones entre bounded contexts se materializan mediante columnas FK que referencian los IDs del contexto origen.
-![DataBase](/assets/images/ChapterIV/DataBase/SafeRoute-DataBase.png)
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/route-end.png" width="900px" alt="route-end">
 
-**Identity and Access Management**
+Bitácora de Viajes Histórica (US13)
 
-El bounded context de IAM persiste las entidades centrales de identidad y acceso. La tabla `organizations` actúa como raíz del sistema, siendo referenciada por prácticamente todos los demás contextos. `users` centraliza las credenciales de autenticación (`email` UNIQUE, `password_hash`) y se vincula a `organizations` y `roles` mediante FK. `roles` es una tabla de catálogo con clave `INT` que define los niveles de acceso disponibles en el sistema.
+Resumen diario de los trayectos realizados, permitiendo al conductor revisar las horas de inicio, fin e incidencias ocurridas durante sus turnos.
 
-![DataBase](/assets/images/ChapterIV/DataBase/DbIAM.png)
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/trip-log.png" width="900px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta (US10)
+
+Módulo para notificar eventos imprevistos como tráfico pesado, accidentes o fallas mecánicas, enviando una alerta automática a la central y a los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/incident-report.png" width="900px" alt="incident-report">
+
+Botón de Pánico (US11)
+
+Funcionalidad de emergencia de un solo clic que envía una señal de auxilio inmediata a los administradores con la ubicación exacta del vehículo.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/panic-button.png" width="900px" alt="panic-button">
+
+#### Versión Desktop Wireframes - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real (US14)
+
+Vista de mapa interactivo que permite al padre seguir el movimiento del bus y ver el tiempo estimado para que llegue a su parada.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/real-time-tracking.png" width="900px" alt="real-time-tracking">
+
+Acceso a Cámara Interna (US17)
+
+Funcionalidad que permite visualizar el interior de la unidad mediante streaming de video, proporcionando una capa adicional de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/camera-access.png" width="900px" alt="camera-access">
+
+Alerta de Proximidad (US15)
+
+Interfaz de notificación que avisa visualmente cuando el bus entra en un radio cercano al hogar (ej. 500 metros), indicando que es momento de salir a la parada.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/proximity-alert.png" width="900px" alt="proximity-alert">
+
+Confirmación de Llegada (US16)
+
+Aviso automático que recibe el padre cuando la unidad llega satisfactoriamente al colegio o al punto de destino final.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/arrival-confirmation.png" width="900px" alt="arrival-confirmation">
+
+Historial de Asistencia (US18)
+
+Calendario detallado donde el padre puede revisar los días asistidos, las horas de abordaje y cualquier incidencia registrada en viajes pasados.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/attendance-history.png" width="900px" alt="attendance-history">
+
+#### Versión Mobile Wireframes - Acceso y Configuración (Universal)
+
+##### Autenticación y Acceso
+
+Registro de Cuenta
+Pantalla unificada de registro donde el usuario selecciona su rol (Padre, Conductor o Administrador) y completa sus datos básicos. Es el punto de partida para que cualquier actor del sistema pueda interactuar con la plataforma.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/universalregister.png" width="400px" alt="register">
+
+Inicio de Sesión (Login) Interfaz de acceso donde los usuarios ingresan sus credenciales. El sistema valida el rol del usuario y lo redirige automáticamente a su panel de control correspondiente.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/universallogin.png" width="400px" alt="login">
+
+Cambio de Contraseña Formulario de seguridad que permite restablecer el acceso mediante la verificación de identidad tras un código, garantizando que solo el propietario de la cuenta pueda modificar sus credenciales.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/password-change.png" width="900px" alt="password-change">
+
+#### Versión Mobile Wireframes - Administradores 
+
+##### Configuración y Gestión Administrativa
+
+Panel de Inicio y Navegación (US20)
+
+Dashboard central que organiza todos los módulos del sistema a través de un sidebar lateral, facilitando el salto entre la gestión de rutas, alumnos y reportes.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/home-dashboard.png" width="600px" alt="home-dashboard"> 
+
+Asignación de Roles (US6)
+
+Módulo exclusivo para el administrador donde se definen los permisos específicos de cada usuario registrado, garantizando la integridad de los datos.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/role-assignment.png" width="400px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+
+Contratación de Planes (US1)
+
+Vista comercial que permite al dueño de la unidad o institución seleccionar y contratar el nivel de servicio adecuado según la cantidad de buses y alumnos.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/hire-plan.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas (US22)
+
+Sección informativa donde se detallan los costos operativos y las tarifas vigentes para la gestión del transporte escolar.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+Alta y Gestión de Alumnos (US4, US24)
+
+Interfaz conectada a la API que permite visualizar la lista completa de estudiantes, agregar nuevos registros o actualizar la información de los existentes.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/student-managament.png" width="900px" alt="student-management">
+
+Registro de Conductores (US2)
+
+Formulario dedicado a la creación del perfil del conductor, donde se almacenan sus datos personales, licencias y contacto de emergencia.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/driver-registration.png" width="900px" alt="driver-registration">
+
+Registro de Padres (US3)
+
+Formulario dedicado a la creación del perfil del padre de familia, donde se almacenan sus datos personales y estudiante del cual es apoderado.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/parent-registration.png" width="400px" alt="driver-registration">
+
+Creación y Edición de Rutas (US5)
+
+Herramienta de diseño logístico donde el administrador traza los recorridos, define paradas clave y asigna los tiempos estimados de viaje.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/route-creation.png" width="400px" alt="route-creation">
+
+#### Versión Mobile Wireframes - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto (US8)
+
+Pantalla de activación donde el conductor confirma que está listo para empezar el recorrido. Al hacer clic en "Iniciar Viaje", se dispara el rastreo GPS para los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Desktop/trip-start.png" width="900px" alt="start-trip">
+
+Marcación de Abordaje (US9)
+
+Lista interactiva de alumnos por parada. El conductor marca con un solo toque quién ha subido al bus, actualizando el estado de asistencia en tiempo real.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/boarding-check.png" width="400px" alt="boarding-check">
+
+Finalización de Ruta (US12)
+
+Vista de cierre donde el conductor reporta el término del trayecto, asegurando que todos los alumnos hayan descendido en sus destinos correspondientes.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/route-end.png" width="400px" alt="route-end">
+
+Bitácora de Viajes Histórica (US13)
+
+Resumen diario de los trayectos realizados, permitiendo al conductor revisar las horas de inicio, fin e incidencias ocurridas durante sus turnos.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/trip-log.png" width="400px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta (US10)
+
+Módulo para notificar eventos imprevistos como tráfico pesado, accidentes o fallas mecánicas, enviando una alerta automática a la central y a los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/incident-report.png" width="400px" alt="incident-report">
+
+Botón de Pánico (US11)
+
+Funcionalidad de emergencia de un solo clic que envía una señal de auxilio inmediata a los administradores con la ubicación exacta del vehículo.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/panic-button.png" width="400px" alt="panic-button">
+
+#### Versión Mobile Wireframes - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real (US14)
+
+Vista de mapa interactivo que permite al padre seguir el movimiento del bus y ver el tiempo estimado para que llegue a su parada.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/real-time-tracking.png" width="400px" alt="real-time-tracking">
+
+Acceso a Cámara Interna (US17)
+
+Funcionalidad que permite visualizar el interior de la unidad mediante streaming de video, proporcionando una capa adicional de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/camera-access.png" width="400px" alt="camera-access">
+
+Alerta de Proximidad (US15)
+
+Interfaz de notificación que avisa visualmente cuando el bus entra en un radio cercano al hogar (ej. 500 metros), indicando que es momento de salir a la parada.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/proximity-alert.png" width="400px" alt="proximity-alert">
+
+Confirmación de Llegada (US16)
+
+Aviso automático que recibe el padre cuando la unidad llega satisfactoriamente al colegio o al punto de destino final.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/arrival-confirmation.png" width="400px" alt="arrival-confirmation">
+
+Historial de Asistencia (US18)
+
+Calendario detallado donde el padre puede revisar los días asistidos, las horas de abordaje y cualquier incidencia registrada en viajes pasados.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/attendance-history.png" width="400px" alt="attendance-history">
+
+### 4.4.2. Web Applications Wireflow Diagrams
+
+
+
+### 4.4.2. Web Applications Mock-ups
+
+#### Versión Desktop Mockups - Acceso y Configuración (Universal)
+
+##### Autenticación y Acceso
+
+Registro de Cuenta
+Pantalla unificada de registro donde el usuario selecciona su rol (Padre, Conductor o Administrador) y completa sus datos básicos. Es el punto de partida para que cualquier actor del sistema pueda interactuar con la plataforma.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/universalregister.png" width="900px" alt="register">
+
+Inicio de Sesión (Login) Interfaz de acceso donde los usuarios ingresan sus credenciales. El sistema valida el rol del usuario y lo redirige automáticamente a su panel de control correspondiente.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/universallogin.png" width="900px" alt="login">
+
+Cambio de Contraseña Formulario de seguridad que permite restablecer el acceso mediante la verificación de identidad tras un código, garantizando que solo el propietario de la cuenta pueda modificar sus credenciales.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/password-change1.png" width="900px" alt="password-change">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/password-change2.png" width="900px" alt="password-change">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/password-change3.png" width="900px" alt="password-change">
+
+#### Versión Desktop Mockups - Administradores 
+
+##### Configuración y Gestión Administrativa
+
+Panel de Inicio y Navegación (US20)
+
+Dashboard central que organiza todos los módulos del sistema a través de un sidebar lateral, facilitando el salto entre la gestión de rutas, alumnos y reportes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/home-dashboard.png" width="900px" alt="home-dashboard">
+
+Asignación de Roles (US6)
+
+Módulo exclusivo para el administrador donde se definen los permisos específicos de cada usuario registrado, garantizando la integridad de los datos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/role-assignment.png" width="900px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+
+Contratación de Planes (US1)
+
+Vista comercial que permite al dueño de la unidad o institución seleccionar y contratar el nivel de servicio adecuado según la cantidad de buses y alumnos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/hire-plan.png" width="900px" alt="hire-plan">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/hire-plan2.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas (US22)
+
+Sección informativa donde se detallan los costos operativos y las tarifas vigentes para la gestión del transporte escolar.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+Alta y Gestión de Alumnos (US4, US24)
+
+Interfaz conectada a la API que permite visualizar la lista completa de estudiantes, agregar nuevos registros o actualizar la información de los existentes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/student-management.png" width="900px" alt="student-management">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/student-management2.png" width="900px" alt="student-management">
+
+Registro de Conductores (US2)
+
+Formulario dedicado a la creación del perfil del conductor, donde se almacenan sus datos personales, licencias y contacto de emergencia.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/driver-registration1.png" width="900px" alt="driver-registration">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/driver-registration2.png" width="900px" alt="driver-registration">
+
+Registro de Padres (US3)
+
+Formulario dedicado a la creación del perfil del padre de familia, donde se almacenan sus datos personales y estudiante del cual es apoderado.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/parent-registration.png" width="900px" alt="driver-registration">
+
+Creación y Edición de Rutas (US5)
+
+Herramienta de diseño logístico donde el administrador traza los recorridos, define paradas clave y asigna los tiempos estimados de viaje.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/route-creation.png" width="900px" alt="route-creation">
+
+#### Versión Desktop Mockups - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto (US8)
+
+Pantalla de activación donde el conductor confirma que está listo para empezar el recorrido. Al hacer clic en "Iniciar Viaje", se dispara el rastreo GPS para los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/start.png" width="900px" alt="start-trip">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/start-trip.png" width="900px" alt="start-trip">
+
+Marcación de Abordaje (US9)
+
+Lista interactiva de alumnos por parada. El conductor marca con un solo toque quién ha subido al bus, actualizando el estado de asistencia en tiempo real.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/boarding-check.png" width="900px" alt="boarding-check">
+
+Finalización de Ruta (US12)
+
+Vista de cierre donde el conductor reporta el término del trayecto, asegurando que todos los alumnos hayan descendido en sus destinos correspondientes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/route-end.png" width="900px" alt="route-end">
+
+Bitácora de Viajes Histórica (US13)
+
+Resumen diario de los trayectos realizados, permitiendo al conductor revisar las horas de inicio, fin e incidencias ocurridas durante sus turnos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/trip-log.png" width="900px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta (US10)
+
+Módulo para notificar eventos imprevistos como tráfico pesado, accidentes o fallas mecánicas, enviando una alerta automática a la central y a los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/incident-report.png" width="900px" alt="incident-report">
+
+Botón de Pánico (US11)
+
+Funcionalidad de emergencia de un solo clic que envía una señal de auxilio inmediata a los administradores con la ubicación exacta del vehículo.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/panic-button.png" width="900px" alt="panic-button">
+
+#### Versión Desktop Wireframes - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real (US14)
+
+Vista de mapa interactivo que permite al padre seguir el movimiento del bus y ver el tiempo estimado para que llegue a su parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/real-time-tracking.png" width="900px" alt="real-time-tracking">
+
+Acceso a Cámara Interna (US17)
+
+Funcionalidad que permite visualizar el interior de la unidad mediante streaming de video, proporcionando una capa adicional de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/camera-access.png" width="900px" alt="camera-access">
+
+Alerta de Proximidad (US15)
+
+Interfaz de notificación que avisa visualmente cuando el bus entra en un radio cercano al hogar (ej. 500 metros), indicando que es momento de salir a la parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/proximity-alert.png" width="900px" alt="proximity-alert">
+
+Confirmación de Llegada (US16)
+
+Aviso automático que recibe el padre cuando la unidad llega satisfactoriamente al colegio o al punto de destino final.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/arrival-confirmation.png" width="900px" alt="arrival-confirmation">
+
+Historial de Asistencia (US18)
+
+Calendario detallado donde el padre puede revisar los días asistidos, las horas de abordaje y cualquier incidencia registrada en viajes pasados.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/attendance-history.png" width="900px" alt="attendance-history">
+
+
+
+#### Versión Mobile Mockups - Acceso y Configuración (Universal)
+
+##### Autenticación y Acceso
+
+Registro de Cuenta
+Pantalla unificada de registro donde el usuario selecciona su rol (Padre, Conductor o Administrador) y completa sus datos básicos. Es el punto de partida para que cualquier actor del sistema pueda interactuar con la plataforma.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/universalregister.png" width="400px" alt="register">
+
+Inicio de Sesión (Login) Interfaz de acceso donde los usuarios ingresan sus credenciales. El sistema valida el rol del usuario y lo redirige automáticamente a su panel de control correspondiente.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/universallogin.png" width="400px" alt="login">
+
+Cambio de Contraseña Formulario de seguridad que permite restablecer el acceso mediante la verificación de identidad tras un código, garantizando que solo el propietario de la cuenta pueda modificar sus credenciales.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/password-change.png" width="900px" alt="password-change">
+
+#### Versión Mobile Mockups - Administradores 
+
+##### Configuración y Gestión Administrativa
+
+Panel de Inicio y Navegación (US20)
+
+Dashboard central que organiza todos los módulos del sistema a través de un sidebar lateral, facilitando el salto entre la gestión de rutas, alumnos y reportes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/home-dashboard.png" width="900px" alt="home-dashboard"> 
+
+Asignación de Roles (US6)
+
+Módulo exclusivo para el administrador donde se definen los permisos específicos de cada usuario registrado, garantizando la integridad de los datos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/role-assignment.png" width="400px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+
+Contratación de Planes (US1)
+
+Vista comercial que permite al dueño de la unidad o institución seleccionar y contratar el nivel de servicio adecuado según la cantidad de buses y alumnos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/hire-plan.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas (US22)
+
+Sección informativa donde se detallan los costos operativos y las tarifas vigentes para la gestión del transporte escolar.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+Alta y Gestión de Alumnos (US4, US24)
+
+Interfaz conectada a la API que permite visualizar la lista completa de estudiantes, agregar nuevos registros o actualizar la información de los existentes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/student-managament.png" width="900px" alt="student-management">
+
+Registro de Conductores (US2)
+
+Formulario dedicado a la creación del perfil del conductor, donde se almacenan sus datos personales, licencias y contacto de emergencia.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/driver-registration.png" width="900px" alt="driver-registration">
+
+Registro de Padres (US3)
+
+Formulario dedicado a la creación del perfil del padre de familia, donde se almacenan sus datos personales y estudiante del cual es apoderado.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/parent-registration.png" width="400px" alt="driver-registration">
+
+Creación y Edición de Rutas (US5)
+
+Herramienta de diseño logístico donde el administrador traza los recorridos, define paradas clave y asigna los tiempos estimados de viaje.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/route-creation.png" width="400px" alt="route-creation">
+
+#### Versión Mobile Mockups - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto (US8)
+
+Pantalla de activación donde el conductor confirma que está listo para empezar el recorrido. Al hacer clic en "Iniciar Viaje", se dispara el rastreo GPS para los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/start-trip.png" width="800px" alt="start-trip">
+
+Marcación de Abordaje (US9)
+
+Lista interactiva de alumnos por parada. El conductor marca con un solo toque quién ha subido al bus, actualizando el estado de asistencia en tiempo real.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/boarding-check.png" width="400px" alt="boarding-check">
+
+Finalización de Ruta (US12)
+
+Vista de cierre donde el conductor reporta el término del trayecto, asegurando que todos los alumnos hayan descendido en sus destinos correspondientes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/route-end.png" width="400px" alt="route-end">
+
+Bitácora de Viajes Histórica (US13)
+
+Resumen diario de los trayectos realizados, permitiendo al conductor revisar las horas de inicio, fin e incidencias ocurridas durante sus turnos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/trip-log.png" width="400px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta (US10)
+
+Módulo para notificar eventos imprevistos como tráfico pesado, accidentes o fallas mecánicas, enviando una alerta automática a la central y a los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/incident-report.png" width="400px" alt="incident-report">
+
+Botón de Pánico (US11)
+
+Funcionalidad de emergencia de un solo clic que envía una señal de auxilio inmediata a los administradores con la ubicación exacta del vehículo.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/panic-button.png" width="400px" alt="panic-button">
+
+#### Versión Mobile Mockups - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real (US14)
+
+Vista de mapa interactivo que permite al padre seguir el movimiento del bus y ver el tiempo estimado para que llegue a su parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/real-time-tracking.png" width="400px" alt="real-time-tracking">
+
+Acceso a Cámara Interna (US17)
+
+Funcionalidad que permite visualizar el interior de la unidad mediante streaming de video, proporcionando una capa adicional de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/camera-access.png" width="400px" alt="camera-access">
+
+Alerta de Proximidad (US15)
+
+Interfaz de notificación que avisa visualmente cuando el bus entra en un radio cercano al hogar (ej. 500 metros), indicando que es momento de salir a la parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/proximity-alert.png" width="400px" alt="proximity-alert">
+
+Confirmación de Llegada (US16)
+
+Aviso automático que recibe el padre cuando la unidad llega satisfactoriamente al colegio o al punto de destino final.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/arrival-confirmation.png" width="400px" alt="arrival-confirmation">
+
+Historial de Asistencia (US18)
+
+Calendario detallado donde el padre puede revisar los días asistidos, las horas de abordaje y cualquier incidencia registrada en viajes pasados.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/attendance-history.png" width="400px" alt="attendance-history">
+
+### 4.4.3. Web Applications User Flow Diagrams
+
+## 4.5. Web Applications Prototyping
+
+## 4.6. Domain-Driven Software Architecture
+
+### 4.6.1. Design-Level Event Storming
+
+### 4.6.2. Software Architecture Context Diagram
+
+### 4.6.3. Software Architecture Container Diagrams
+
+### 4.6.4. Software Architecture Components Diagrams
+
+## 4.7. Software Object-Oriented Design
+
+### 4.7.1. Class Diagrams
+
+## 4.8. Database Design
+
+### 4.8.1. Database Diagrams
 
 ---
 
