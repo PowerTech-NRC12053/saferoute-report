@@ -565,7 +565,8 @@ Este módulo no pertenece a un bounded context específico sino que actúa como 
 
 - Identity and Access Management:
 
-![vue-saferoute-iam](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-iam.puml)
+![vue-saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-iam.puml)
+
 
 Gestiona la autenticación de usuarios y la configuración de la organización.
 
@@ -575,7 +576,7 @@ Application & Infrastructure: IamStore centraliza el estado reactivo (currentUse
 
 - Subscription & Plan Management: 
 
-![vue-saferoute-subscription](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-subscription.puml)
+![vue-saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-subscription.puml)
 
 Maneja la visualización y selección de planes para la organización.
 
@@ -585,7 +586,7 @@ Application & Infrastructure: SubscriptionStore maneja el estado de subscription
 
 - Stakeholder & Asset Management: 
 
-![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-stakeholder.puml)
+![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
 
 Controla las vistas de listado y gestión de los actores operativos del sistema.
 
@@ -595,7 +596,7 @@ Application & Infrastructure: StakeholderStore centraliza las listas de actores.
 
 - Fleet & Route Planning: 
 
-![vue-saferoute-fleet](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-fleet.puml)
+![vue-saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-fleet.puml)
 
 Interfaz para armar la logística de rutas, vehículos y asignaciones.
 
@@ -605,7 +606,7 @@ Application & Infrastructure: FleetStore orquesta el estado de rutas, vehículos
 
 - Trip Execution & Monitoring: 
 
-![vue-saferoute-trip](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-trip.puml)
+![vue-saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-trip.puml)
 
 Pantallas operativas para el control en tiempo real de los viajes.
 
@@ -615,7 +616,7 @@ Application & Infrastructure: TripStore centraliza el viaje en curso, asistencia
 
 - Notifications & Communication:
 
-![vue-saferoute-notifications](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-notifications.puml)
+![vue-saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-notifications.puml)
 
 Centraliza la visualización y envío de notificaciones y alertas.
 
@@ -625,7 +626,7 @@ Application & Infrastructure: NotificationsStore maneja los arreglos reactivos d
 
 - Shared:
 
-![vue-saferoute-shared](https://www.plantuml.com/plantuml/svg/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/refs/heads/main/saferoute/docs/vue-saferoute-shared.puml)
+![vue-saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-shared.puml)
 
 Actúa como el núcleo común de infraestructura y componentes base para toda la aplicación Vue.
 
