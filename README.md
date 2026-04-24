@@ -628,7 +628,12 @@ Se implementó la sección "De la configuración al primer viaje", que presenta 
 ![Como Funciona Section](assets/images/Chapter-5/Sprint1/landing-como-funciona.png)
  
 ---
+**Sección Call to Action y Footer**
 
+Se implementó la sección final de cierre "¿Listo para digitalizar tu operación?", con botones de conversión hacia los planes y la sección de cómo funciona, junto con el footer de la plataforma.
+
+
+![CTA y Footer Section](assets/images/Chapter-5/Sprint1/landing-cta-footer.png)
 
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
