@@ -1034,6 +1034,112 @@ Sección informativa donde se detallan los costos operativos y las tarifas vigen
 
 <img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/pricing-query.png" width="900px" alt="pricing-query">
 
+##### Gestión de Logística y Alumnos
+Alta y Gestión de Alumnos (US4, US24)
+
+Interfaz conectada a la API que permite visualizar la lista completa de estudiantes, agregar nuevos registros o actualizar la información de los existentes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/student-management.png" width="900px" alt="student-management">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/student-management2.png" width="900px" alt="student-management">
+
+Registro de Conductores (US2)
+
+Formulario dedicado a la creación del perfil del conductor, donde se almacenan sus datos personales, licencias y contacto de emergencia.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/driver-registration1.png" width="900px" alt="driver-registration">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/driver-registration2.png" width="900px" alt="driver-registration">
+
+Registro de Padres (US3)
+
+Formulario dedicado a la creación del perfil del padre de familia, donde se almacenan sus datos personales y estudiante del cual es apoderado.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/parent-registration.png" width="900px" alt="driver-registration">
+
+Creación y Edición de Rutas (US5)
+
+Herramienta de diseño logístico donde el administrador traza los recorridos, define paradas clave y asigna los tiempos estimados de viaje.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/route-creation.png" width="900px" alt="route-creation">
+
+#### Versión Desktop Mockups - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto (US8)
+
+Pantalla de activación donde el conductor confirma que está listo para empezar el recorrido. Al hacer clic en "Iniciar Viaje", se dispara el rastreo GPS para los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/start.png" width="900px" alt="start-trip">
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/start-trip.png" width="900px" alt="start-trip">
+
+Marcación de Abordaje (US9)
+
+Lista interactiva de alumnos por parada. El conductor marca con un solo toque quién ha subido al bus, actualizando el estado de asistencia en tiempo real.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/boarding-check.png" width="900px" alt="boarding-check">
+
+Finalización de Ruta (US12)
+
+Vista de cierre donde el conductor reporta el término del trayecto, asegurando que todos los alumnos hayan descendido en sus destinos correspondientes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/route-end.png" width="900px" alt="route-end">
+
+Bitácora de Viajes Histórica (US13)
+
+Resumen diario de los trayectos realizados, permitiendo al conductor revisar las horas de inicio, fin e incidencias ocurridas durante sus turnos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/trip-log.png" width="900px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta (US10)
+
+Módulo para notificar eventos imprevistos como tráfico pesado, accidentes o fallas mecánicas, enviando una alerta automática a la central y a los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/incident-report.png" width="900px" alt="incident-report">
+
+Botón de Pánico (US11)
+
+Funcionalidad de emergencia de un solo clic que envía una señal de auxilio inmediata a los administradores con la ubicación exacta del vehículo.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/panic-button.png" width="900px" alt="panic-button">
+
+#### Versión Desktop Wireframes - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real (US14)
+
+Vista de mapa interactivo que permite al padre seguir el movimiento del bus y ver el tiempo estimado para que llegue a su parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/real-time-tracking.png" width="900px" alt="real-time-tracking">
+
+Acceso a Cámara Interna (US17)
+
+Funcionalidad que permite visualizar el interior de la unidad mediante streaming de video, proporcionando una capa adicional de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/camera-access.png" width="900px" alt="camera-access">
+
+Alerta de Proximidad (US15)
+
+Interfaz de notificación que avisa visualmente cuando el bus entra en un radio cercano al hogar (ej. 500 metros), indicando que es momento de salir a la parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/proximity-alert.png" width="900px" alt="proximity-alert">
+
+Confirmación de Llegada (US16)
+
+Aviso automático que recibe el padre cuando la unidad llega satisfactoriamente al colegio o al punto de destino final.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/arrival-confirmation.png" width="900px" alt="arrival-confirmation">
+
+Historial de Asistencia (US18)
+
+Calendario detallado donde el padre puede revisar los días asistidos, las horas de abordaje y cualquier incidencia registrada en viajes pasados.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Desktop/attendance-history.png" width="900px" alt="attendance-history">
+
+
+
 
 
 ### 4.4.3. Web Applications User Flow Diagrams
