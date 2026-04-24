@@ -1187,6 +1187,34 @@ Sección informativa donde se detallan los costos operativos y las tarifas vigen
 
 <img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/pricing-query.png" width="900px" alt="pricing-query">
 
+##### Gestión de Logística y Alumnos
+Alta y Gestión de Alumnos (US4, US24)
+
+Interfaz conectada a la API que permite visualizar la lista completa de estudiantes, agregar nuevos registros o actualizar la información de los existentes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/student-managament.png" width="900px" alt="student-management">
+
+Registro de Conductores (US2)
+
+Formulario dedicado a la creación del perfil del conductor, donde se almacenan sus datos personales, licencias y contacto de emergencia.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/driver-registration.png" width="900px" alt="driver-registration">
+
+Registro de Padres (US3)
+
+Formulario dedicado a la creación del perfil del padre de familia, donde se almacenan sus datos personales y estudiante del cual es apoderado.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/parent-registration.png" width="400px" alt="driver-registration">
+
+Creación y Edición de Rutas (US5)
+
+Herramienta de diseño logístico donde el administrador traza los recorridos, define paradas clave y asigna los tiempos estimados de viaje.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/route-creation.png" width="400px" alt="route-creation">
+
+
+
+
 ### 4.4.3. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
