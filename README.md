@@ -610,6 +610,15 @@ Se implementó la sección "Una plataforma, tres experiencias", que presenta las
 ![Roles Section](assets/images/Chapter-5/Sprint1/landing-roles.png)
 
 ---
+
+**Sección Planes**
+
+Se implementó la sección "Escala según tu operación", que presenta los tres planes de suscripción disponibles: Básico (9.99 dolares/mes), Intermedio (24.99 dolares/mes) y Completo (49.99 dolares/mes),
+con sus respectivas funcionalidades y botones de contratación.
+
+![Planes Section](assets/images/Chapter-5/Sprint1/landing-planes.png)
+ 
+---
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
