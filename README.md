@@ -482,58 +482,20 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 ##### 5.2.1.1. Sprint Planning 1
 En la reunión de planificación del Sprint 1, el equipo definió como objetivo principal establecer la presencia digital de SafeRoute y la estructura base del sistema.
 
-<table>
-<tr>
-<th>Sprint #</th>
-<th>Sprint 1</th>
-</tr>
-<tr>
-<td colspan="2"><strong>Sprint Planning Background</strong></td>
-</tr>
-<tr>
-<td><strong>Date</strong></td>
-<td>2026-04-06</td>
-</tr>
-<tr>
-<td><strong>Time</strong></td>
-<td>14:30 PM (GMT-5)</td>
-</tr>
-<tr>
-<td><strong>Location</strong></td>
-<td>Modalidad remota mediante la plataforma Discord</td>
-</tr>
-<tr>
-<td><strong>Prepared By</strong></td>
-<td>Ramirez Ruiz, Nickolas</td>
-</tr>
-<tr>
-<td><strong>Attendees (to planning meeting)</strong></td>
-<td>De La Cruz, Mathias / Ortega, José / Quispe, Julio / Ramirez, Nickolas / Vallejo, Fabio</td>
-</tr>
-<tr>
-<td><strong>Sprint 0 Review Summary</strong></td>
-<td>N/A - Sprint inicial enfocado en la definición del modelo de negocio y perfiles de usuario.</td>
-</tr>
-<tr>
-<td><strong>Sprint 0 Retrospective Summary</strong></td>
-<td>N/A - Configuración inicial de la organización en GitHub y Trello.</td>
-</tr>
-<tr>
-<td colspan="2"><strong>Sprint Goal & User Stories</strong></td>
-</tr>
-<tr>
-<td><strong>Sprint 1 Goal</strong></td>
-<td><strong>Nuestro propósito es</strong> diseñar y desplegar la versión inicial de la Landing Page de SafeRoute e implementar la estructura base del backend bajo DDD. <strong>Creemos que esto aportará</strong> visibilidad clara de nuestra solución a padres y transportistas. <strong>Esto se confirmará cuando</strong> la Landing Page sea accesible públicamente y se valide el primer endpoint del Shared Kernel.</td>
-</tr>
-<tr>
-<td><strong>Sprint 1 Velocity</strong></td>
-<td>22 Story Points</td>
-</tr>
-<tr>
-<td><strong>Sum of Story Points</strong></td>
-<td>22 Story Points</td>
-</tr>
-</table>
+| Sprint # | Sprint 1 |
+|----------|----------|
+| **Sprint Planning Background** | |
+| **Date** | 2026-04-06 |
+| **Time** | 14:30 PM (GMT-5) |
+| **Location** | Modalidad remota mediante la plataforma Discord |
+| **Prepared By** | Ramirez Ruiz, Nickolas |
+| **Attendees (to planning meeting)** | De La Cruz, Mathias / Ortega, José / Quispe, Julio / Ramirez, Nickolas / Vallejo, Fabio |
+| **Sprint 0 Review Summary** | N/A - Sprint inicial enfocado en la definición del modelo de negocio y perfiles de usuario. |
+| **Sprint 0 Retrospective Summary** | N/A - Configuración inicial de la organización en GitHub y Trello. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 1 Goal** | **Nuestro propósito es** diseñar y desplegar la versión inicial de la Landing Page de SafeRoute e implementar la estructura base del backend bajo DDD. **Creemos que esto aportará** visibilidad clara de nuestra solución a padres y transportistas. **Esto se confirmará cuando** la Landing Page sea accesible públicamente y se valide el primer endpoint del Shared Kernel. |
+| **Sprint 1 Velocity** | 22 Story Points |
+| **Sum of Story Points** | 22 Story Points |
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
@@ -555,23 +517,23 @@ Establecer la infraestructura base de SafeRoute mediante el desarrollo de una La
 
 **URL del Board:** [ enlace ]
 
-| US Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **US25** | Visualización de Hero | T01 | Setup de Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | To-do |
-| **US30** | Implementación i18n | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 12 | Mathias | To-do |
-| **US19** | Alerta de Proximidad | T03 | Lógica de Geofencing | Desarrollar el algoritmo de proximidad (500m) en el backend. | 14 | Mathias | To-do |
-| **US1** | Contratar Plan | T04 | API de Suscripciones | Crear endpoints para selección de planes y validación de límites. | 12 | Nickolas | To-do |
-| **US5** | Creación de Rutas | T05 | Módulo de Trazado | Implementar lógica para definir puntos A/B y paradas intermedias. | 16 | Nickolas | To-do |
-| **US6** | Asignación de Roles | T06 | Gestión de Permisos | Desarrollar la lógica de vinculación Conductor-Ruta-Vehículo. | 10 | Nickolas | To-do |
+| US Id | User Story Title        | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| :--- |:------------------------| :--- | :--- | :--- | :--- | :--- | :--- |
+| **US25** | Visualización de Hero   | T01 | Setup de Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | To-do |
+| **US30** | Implementación i18n     | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 12 | Mathias | To-do |
+| **US19** | Alerta de Proximidad    | T03 | Lógica de Geofencing | Desarrollar el algoritmo de proximidad (500m) en el backend. | 14 | Mathias | To-do |
+| **US1** | Contratar Plan          | T04 | API de Suscripciones | Crear endpoints para selección de planes y validación de límites. | 12 | Nickolas | To-do |
+| **US5** | Creación de Rutas       | T05 | Módulo de Trazado | Implementar lógica para definir puntos A/B y paradas intermedias. | 16 | Nickolas | To-do |
+| **US6** | Asignación de Roles     | T06 | Gestión de Permisos | Desarrollar la lógica de vinculación Conductor-Ruta-Vehículo. | 10 | Nickolas | To-do |
 | **US23** | Sección ¿Cómo funciona? | T07 | Onboarding Visual | Crear el componente de infografía interactiva en la Landing. | 6 | Nickolas | To-do |
-| **US4** | Alta de Alumnos | T08 | CRUD Alumnos | Implementar el registro de menores y almacenamiento de fotos. | 10 | Nickolas | To-do |
-| **US22** | Consulta de Precios | T09 | Tabla de Planes | Maquetar la sección de costos y descuentos anuales en la web. | 8 | Chris | To-do |
+| **US4** | Alta de Alumnos         | T08 | CRUD Alumnos | Implementar el registro de menores y almacenamiento de fotos. | 10 | Nickolas | To-do |
+| **US22** | Consulta de Precios     | T09 | Tabla de Planes | Maquetar la sección de costos y descuentos anuales en la web. | 8 | Chris | To-do |
 | **US2** | Registro de Conductores | T10 | Registro de Flota | Desarrollar validaciones de licencia y creación de cuentas driver. | 12 | Chris | To-do |
-| **US3** | Registro de Padres | T11 | Gestión de Apoderados | Implementar el flujo de invitaciones y registro de padres. | 10 | Renzo | To-do |
-| **US14** | Finalización de Ruta | T12 | Cierre de Sesión Operativa | Lógica para detener GPS y validar que el bus esté vacío al finalizar. | 8 | Renzo | To-do |
-| **US25** | API: Registro GPS | T13 | Ingesta de Coordenadas | Desarrollar el endpoint de alta frecuencia para recibir datos GPS. | 15 | Fabio | To-do |
-| **US8** | Inicio de Trayecto | T14 | Activación de Ruta | Implementar el trigger que notifica el inicio del viaje a los padres. | 8 | Fabio | To-do |
-| **---** | **Constraint General** | T15 | Setup Arquitectónico | Configuración de BD SQL Server y estructura modular en C#. | 12 | Chris | To-do |
+| **US3** | Registro de Padres      | T11 | Gestión de Apoderados | Implementar el flujo de invitaciones y registro de padres. | 10 | Renzo | To-do |
+| **US14** | Finalización de Ruta    | T12 | Cierre de Sesión Operativa | Lógica para detener GPS y validar que el bus esté vacío al finalizar. | 8 | Renzo | To-do |
+| **US25** | API: Registro GPS       | T13 | Ingesta de Coordenadas | Desarrollar el endpoint de alta frecuencia para recibir datos GPS. | 15 | Fabio | To-do |
+| **US8** | Inicio de Trayecto      | T14 | Activación de Ruta | Implementar el trigger que notifica el inicio del viaje a los padres. | 8 | Fabio | To-do |
+| **---** | **Constraint General**  | T15 | Setup Arquitectónico | Configuración de BD SQL Server y estructura modular en C#. | 12 | Chris | To-do |
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
