@@ -905,6 +905,82 @@ Herramienta de diseño logístico donde el administrador traza los recorridos, d
 
 <img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/route-creation.png" width="400px" alt="route-creation">
 
+#### Versión Mobile Wireframes - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto (US8)
+
+Pantalla de activación donde el conductor confirma que está listo para empezar el recorrido. Al hacer clic en "Iniciar Viaje", se dispara el rastreo GPS para los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/trip-start.png" width="900px" alt="start-trip">
+
+Marcación de Abordaje (US9)
+
+Lista interactiva de alumnos por parada. El conductor marca con un solo toque quién ha subido al bus, actualizando el estado de asistencia en tiempo real.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/boarding-check.png" width="400px" alt="boarding-check">
+
+Finalización de Ruta (US12)
+
+Vista de cierre donde el conductor reporta el término del trayecto, asegurando que todos los alumnos hayan descendido en sus destinos correspondientes.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/route-end.png" width="400px" alt="route-end">
+
+Bitácora de Viajes Histórica (US13)
+
+Resumen diario de los trayectos realizados, permitiendo al conductor revisar las horas de inicio, fin e incidencias ocurridas durante sus turnos.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/trip-log.png" width="400px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta (US10)
+
+Módulo para notificar eventos imprevistos como tráfico pesado, accidentes o fallas mecánicas, enviando una alerta automática a la central y a los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/incident-report.png" width="400px" alt="incident-report">
+
+Botón de Pánico (US11)
+
+Funcionalidad de emergencia de un solo clic que envía una señal de auxilio inmediata a los administradores con la ubicación exacta del vehículo.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/panic-button.png" width="400px" alt="panic-button">
+
+#### Versión Mobile Wireframes - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real (US14)
+
+Vista de mapa interactivo que permite al padre seguir el movimiento del bus y ver el tiempo estimado para que llegue a su parada.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/real-time-tracking.png" width="400px" alt="real-time-tracking">
+
+Acceso a Cámara Interna (US17)
+
+Funcionalidad que permite visualizar el interior de la unidad mediante streaming de video, proporcionando una capa adicional de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/camera-access.png" width="400px" alt="camera-access">
+
+Alerta de Proximidad (US15)
+
+Interfaz de notificación que avisa visualmente cuando el bus entra en un radio cercano al hogar (ej. 500 metros), indicando que es momento de salir a la parada.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/proximity-alert.png" width="400px" alt="proximity-alert">
+
+Confirmación de Llegada (US16)
+
+Aviso automático que recibe el padre cuando la unidad llega satisfactoriamente al colegio o al punto de destino final.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/arrival-confirmation.png" width="400px" alt="arrival-confirmation">
+
+Historial de Asistencia (US18)
+
+Calendario detallado donde el padre puede revisar los días asistidos, las horas de abordaje y cualquier incidencia registrada en viajes pasados.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/attendance-history.png" width="400px" alt="attendance-history">
+
 ### 4.4.3. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
