@@ -1173,6 +1173,19 @@ Módulo exclusivo para el administrador donde se definen los permisos específic
 <img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/role-assignment.png" width="400px" alt="role-assignment">
 
 
+##### Gestión Comercial y Planes
+
+Contratación de Planes (US1)
+
+Vista comercial que permite al dueño de la unidad o institución seleccionar y contratar el nivel de servicio adecuado según la cantidad de buses y alumnos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/hire-plan.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas (US22)
+
+Sección informativa donde se detallan los costos operativos y las tarifas vigentes para la gestión del transporte escolar.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/pricing-query.png" width="900px" alt="pricing-query">
 
 ### 4.4.3. Web Applications User Flow Diagrams
 
