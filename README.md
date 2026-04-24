@@ -592,7 +592,14 @@ El navbar incluye navegación a las secciones principales y el selector de idiom
 
 ![Hero Section](assets/images/Chapter-5/landing-hero.png)
 
+---
 
+**Sección Funcionalidades**
+
+Se implementó la sección "Todo lo que necesitas para gestionar tu flota", presentando las seis funcionalidades principales de la plataforma mediante tarjetas con ícono y descripción: Gestión de rutas y paradas, Monitoreo en tiempo real, Control de abordaje, Reporte de incidencias, Historial y reportes, y Notificaciones de estado.
+
+
+![Funcionalidades Section](assets/images/Chapter-5/landing-funcionalidades.png)
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
