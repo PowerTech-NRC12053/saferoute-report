@@ -590,7 +590,7 @@ Se implementó la sección principal con el mensaje de valor "Transporte escolar
 El navbar incluye navegación a las secciones principales y el selector de idioma ES/EN.
 
 
-![Hero Section](assets/images/Chapter-5/landing-hero.png)
+![Hero Section](assets/images/Chapter-5/Sprint1/landing-hero.png)
 
 ---
 
@@ -599,8 +599,17 @@ El navbar incluye navegación a las secciones principales y el selector de idiom
 Se implementó la sección "Todo lo que necesitas para gestionar tu flota", presentando las seis funcionalidades principales de la plataforma mediante tarjetas con ícono y descripción: Gestión de rutas y paradas, Monitoreo en tiempo real, Control de abordaje, Reporte de incidencias, Historial y reportes, y Notificaciones de estado.
 
 
-![Funcionalidades Section](assets/images/Chapter-5/landing-funcionalidades.png)
+![Funcionalidades Section](assets/images/Chapter-5/Sprint1/landing-funcionalidades.png)
 
+---
+
+**Sección Roles del Sistema**
+
+Se implementó la sección "Una plataforma, tres experiencias", que presenta las vistas y permisos diferenciados para los tres perfiles del sistema: Administrador, Conductor y Padre de Familia, cada uno con su lista de funciones disponibles.
+
+![Roles Section](assets/images/Chapter-5/Sprint1/landing-roles.png)
+
+---
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
