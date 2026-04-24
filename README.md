@@ -1215,6 +1215,38 @@ Herramienta de diseño logístico donde el administrador traza los recorridos, d
 
 
 
+
+
+#### Versión Mobile Mockups - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto (US8)
+
+Pantalla de activación donde el conductor confirma que está listo para empezar el recorrido. Al hacer clic en "Iniciar Viaje", se dispara el rastreo GPS para los padres.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/start-trip.png" width="800px" alt="start-trip">
+
+Marcación de Abordaje (US9)
+
+Lista interactiva de alumnos por parada. El conductor marca con un solo toque quién ha subido al bus, actualizando el estado de asistencia en tiempo real.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/boarding-check.png" width="400px" alt="boarding-check">
+
+Finalización de Ruta (US12)
+
+Vista de cierre donde el conductor reporta el término del trayecto, asegurando que todos los alumnos hayan descendido en sus destinos correspondientes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/route-end.png" width="400px" alt="route-end">
+
+Bitácora de Viajes Histórica (US13)
+
+Resumen diario de los trayectos realizados, permitiendo al conductor revisar las horas de inicio, fin e incidencias ocurridas durante sus turnos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/trip-log.png" width="400px" alt="trip-log">
+
+
+
 ### 4.4.3. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
