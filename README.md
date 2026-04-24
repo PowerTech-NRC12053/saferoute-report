@@ -317,9 +317,10 @@ En base al análisis competitivo y SWOT realizado, SafeRoute plantea las siguien
 #### 2.2.2. Registro de entrevistas
 **PRIMER SEGMENTO OBJETIVO**
 
-<u>Entrevista 1:</u>
+Entrevista 1:
 
 Entrevistador:
+
 Datos del entrevistado
 
 - **Nombre:**
@@ -331,26 +332,10 @@ Datos del entrevistado
 <img src="assets/carpeta/nombre.png" width="500"/>
 
 **Resumen descriptivo:**
-<u>Entrevista 2:</u>
+Entrevista 2:
 
 Entrevistador:
-Datos del entrevistado
 
-- **Nombre:**
-- **Apellidos:**
-- **Edad:**
-- **Distrito:**
-- **Timing:**
-
-
-<img src="assets/carpeta/nombre.png" width="500"/>
-
-**Resumen descriptivo:**
-
-
-<u>Entrevista 3:</u>
-
-Entrevistador:
 Datos del entrevistado
 
 - **Nombre:**
@@ -363,6 +348,78 @@ Datos del entrevistado
 <img src="assets/carpeta/nombre.png" width="500"/>
 
 **Resumen descriptivo:**
+
+
+Entrevista 3:
+
+Entrevistador:
+
+Datos del entrevistado
+
+- **Nombre:**
+- **Apellidos:**
+- **Edad:**
+- **Distrito:**
+- **Timing:**
+
+
+<img src="assets/carpeta/nombre.png" width="500"/>
+
+---
+**SEGUNDO SEGMENTO OBJETIVO**
+
+Entrevista 1:
+
+Entrevistador:
+
+Datos del entrevistado
+
+- **Nombre:**
+- **Apellidos:**
+- **Edad:**
+- **Distrito:**
+- **Timing:**
+
+<img src="assets/carpeta/nombre.png" width="500"/>
+
+**Resumen descriptivo:**
+Entrevista 2:
+
+Entrevistador:
+
+Datos del entrevistado
+
+- **Nombre:**
+- **Apellidos:**
+- **Edad:**
+- **Distrito:**
+- **Timing:**
+
+
+<img src="assets/carpeta/nombre.png" width="500"/>
+
+**Resumen descriptivo:**
+
+
+Entrevista 3:
+
+Entrevistador:
+
+Datos del entrevistado
+
+- **Nombre:**
+- **Apellidos:**
+- **Edad:**
+- **Distrito:**
+- **Timing:**
+
+
+<img src="assets/carpeta/nombre.png" width="500"/>
+
+**Resumen descriptivo:**
+
+
+
 #### 2.2.3. Análisis de entrevistas
 
 ### 2.3. Needfinding
