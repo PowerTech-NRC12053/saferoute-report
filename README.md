@@ -499,12 +499,14 @@ En la reunión de planificación del Sprint 1, el equipo definió como objetivo 
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
-<tr><th>Team Member (Last Name, First Name)</th><th>GitHub Username</th><th>UX/UI Design (L/C)</th><th>Backend Architecture (L/C)</th><th>Landing Page (L/C)</th><th>Documentation (L/C)</th></tr>
-<tr><td>Quispe Serrano, Julio Frank</td><td>FraSe_JQ</td><td>C</td><td>C</td><td>L</td><td>C</td></tr>
-<tr><td>Ortega Quintana, José Zacarías</td><td>AgoxX61</td><td>L</td><td>C</td><td>C</td><td>C</td></tr>
-<tr><td>De La Cruz, Mathias Marcelo</td><td>Dela050406</td><td>C</td><td>C</td><td>L</td><td>C</td></tr><tr>
-<td>Vallejo Trujillo, Fabio Cesar</td><td>fabiovallejo</td><td>C</td><td>L</td><td>C</td><td>C</td>
-</tr><tr><td>Ramirez Ruiz, Nickolas</td><td>Bynickram02</td><td>C</td><td>C</td><td>C</td><td>L</td></tr></table>
+
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
+|-------------------------------------|-----------------|-------------------|---------------------------|-------------------|---------------------|
+| Quispe Serrano, Julio Frank | FraSe_JQ | C | C | L | C |
+| Ortega Quintana, José Zacarías | AgoxX61 | L | C | C | C |
+| De La Cruz, Mathias Marcelo | Dela050406 | C | C | L | C |
+| Vallejo Trujillo, Fabio Cesar | fabiovallejo | C | L | C | C |
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | C | C | L |
 
 
 ### **5.2.1.3. Sprint Backlog 1**
