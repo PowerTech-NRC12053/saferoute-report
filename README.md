@@ -656,6 +656,31 @@ pendiente(no se como hacer xd)
 
 ### Conclusiones y recomendaciones
 
+**Conclusiones**
+
+- El desarrollo del Sprint 1 permitió validar que la propuesta de valor de SafeRoute es comunicable y atractiva para los segmentos objetivo, al lograr desplegar una Landing Page funcional que presenta de forma clara las funcionalidades, 
+roles y planes de la plataforma, generando una primera impresión profesional del producto ante potenciales usuarios.
+
+
+- La adopción de Domain-Driven Design como enfoque arquitectónico del backend demostró ser adecuada para la complejidad del dominio de transporte escolar,
+permitiendo al equipo identificar y delimitar correctamente los bounded contexts (IAM, Subscriptions, Stakeholders, Fleet, Trip, Notifications) y establecer una base sólida para la implementación progresiva del sistema en los siguientes sprints.
+
+
+- La implementación de GitFlow como metodología de control de versiones facilitó la colaboración paralela entre los integrantes del equipo, permitiendo que cada miembro trabajara de forma independiente en su rama feature sin interferir con el trabajo de los demás,
+y asegurando que solo el contenido validado fuera integrado a la rama develop.
+
+**Recomendaciones**
+
+- Se recomienda priorizar en el Sprint 2 la implementación de los endpoints core del backend, 
+especialmente los relacionados con el módulo de IAM y la gestión de rutas, dado que estos son la base sobre la que se apoyan los demás bounded contexts y su ausencia representa el principal riesgo técnico del proyecto en este momento.
+
+
+- Se recomienda que el equipo establezca una rutina de revisión de pull requests entre pares antes de mergear cualquier rama feature a develop,
+con el objetivo de reducir errores de integración, mantener la consistencia del informe y asegurar que todos los integrantes estén alineados con el avance general del proyecto.
+
+
+- Se recomienda iniciar las entrevistas con usuarios reales del segmento objetivo (padres de familia y transportistas) a la brevedad, 
+con el fin de validar las hipótesis planteadas en el Lean UX Canvas y ajustar las funcionalidades del producto antes de invertir mayor esfuerzo de desarrollo en el frontend y backend.
 ### Video About-the-Team
 
 ## Bibliografía
