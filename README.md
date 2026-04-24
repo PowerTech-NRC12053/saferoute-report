@@ -850,6 +850,61 @@ Cambio de Contraseña Formulario de seguridad que permite restablecer el acceso 
 
 <img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/password-change.png" width="900px" alt="password-change">
 
+#### Versión Mobile Wireframes - Administradores 
+
+##### Configuración y Gestión Administrativa
+
+Panel de Inicio y Navegación (US20)
+
+Dashboard central que organiza todos los módulos del sistema a través de un sidebar lateral, facilitando el salto entre la gestión de rutas, alumnos y reportes.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/home-dashboard.png" width="600px" alt="home-dashboard"> 
+
+Asignación de Roles (US6)
+
+Módulo exclusivo para el administrador donde se definen los permisos específicos de cada usuario registrado, garantizando la integridad de los datos.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/role-assignment.png" width="400px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+
+Contratación de Planes (US1)
+
+Vista comercial que permite al dueño de la unidad o institución seleccionar y contratar el nivel de servicio adecuado según la cantidad de buses y alumnos.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/hire-plan.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas (US22)
+
+Sección informativa donde se detallan los costos operativos y las tarifas vigentes para la gestión del transporte escolar.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+Alta y Gestión de Alumnos (US4, US24)
+
+Interfaz conectada a la API que permite visualizar la lista completa de estudiantes, agregar nuevos registros o actualizar la información de los existentes.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/student-managament.png" width="900px" alt="student-management">
+
+Registro de Conductores (US2)
+
+Formulario dedicado a la creación del perfil del conductor, donde se almacenan sus datos personales, licencias y contacto de emergencia.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/driver-registration.png" width="900px" alt="driver-registration">
+
+Registro de Padres (US3)
+
+Formulario dedicado a la creación del perfil del padre de familia, donde se almacenan sus datos personales y estudiante del cual es apoderado.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/parent-registration.png" width="400px" alt="driver-registration">
+
+Creación y Edición de Rutas (US5)
+
+Herramienta de diseño logístico donde el administrador traza los recorridos, define paradas clave y asigna los tiempos estimados de viaje.
+
+<img src="assets/images/ChapterIV/WebApp/Wireframes/Mobile/route-creation.png" width="400px" alt="route-creation">
+
 ### 4.4.3. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
