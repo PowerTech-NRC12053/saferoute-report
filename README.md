@@ -619,6 +619,18 @@ con sus respectivas funcionalidades y botones de contratación.
 ![Planes Section](assets/images/Chapter-5/Sprint1/landing-planes.png)
  
 ---
+
+**Sección ¿Cómo funciona?**
+
+Se implementó la sección "De la configuración al primer viaje", que presenta en cinco pasos el flujo completo de uso de la plataforma: desde la contratación del plan por el administrador hasta el monitoreo en tiempo real por parte de los padres.
+
+
+![Como Funciona Section](assets/images/Chapter-5/Sprint1/landing-como-funciona.png)
+ 
+---
+
+
+
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
