@@ -1261,6 +1261,44 @@ Funcionalidad de emergencia de un solo clic que envía una señal de auxilio inm
 
 <img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/panic-button.png" width="400px" alt="panic-button">
 
+
+
+
+#### Versión Mobile Mockups - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real (US14)
+
+Vista de mapa interactivo que permite al padre seguir el movimiento del bus y ver el tiempo estimado para que llegue a su parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/real-time-tracking.png" width="400px" alt="real-time-tracking">
+
+Acceso a Cámara Interna (US17)
+
+Funcionalidad que permite visualizar el interior de la unidad mediante streaming de video, proporcionando una capa adicional de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/camera-access.png" width="400px" alt="camera-access">
+
+Alerta de Proximidad (US15)
+
+Interfaz de notificación que avisa visualmente cuando el bus entra en un radio cercano al hogar (ej. 500 metros), indicando que es momento de salir a la parada.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/proximity-alert.png" width="400px" alt="proximity-alert">
+
+Confirmación de Llegada (US16)
+
+Aviso automático que recibe el padre cuando la unidad llega satisfactoriamente al colegio o al punto de destino final.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/arrival-confirmation.png" width="400px" alt="arrival-confirmation">
+
+Historial de Asistencia (US18)
+
+Calendario detallado donde el padre puede revisar los días asistidos, las horas de abordaje y cualquier incidencia registrada en viajes pasados.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/attendance-history.png" width="400px" alt="attendance-history">
+
+
 ### 4.4.3. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
