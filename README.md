@@ -580,6 +580,18 @@ Durante el Sprint 1, el equipo realizó commits principalmente sobre el reposito
 
 ##### 5.2.1.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de SafeRoute, accesible en [https://powertech-nrc12053.github.io/saferoute-website/](https://powertech-nrc12053.github.io/saferoute-website/).
+
+La Landing Page presenta la propuesta de valor del producto, las funcionalidades principales, los roles del sistema, los planes de suscripción y el flujo de uso, con soporte de internacionalización (ES/EN). A continuación se presentan las capturas de las secciones implementadas.
+
+**Sección Hero**
+
+Se implementó la sección principal con el mensaje de valor "Transporte escolar seguro y digital", una ilustración del sistema en funcionamiento y dos botones de llamada a la acción: "Ver planes" y "¿Cómo funciona?". 
+El navbar incluye navegación a las secciones principales y el selector de idioma ES/EN.
+
+
+![Hero Section](assets/images/Chapter-5/landing-hero.png)
+
 
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
