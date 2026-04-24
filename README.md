@@ -658,16 +658,14 @@ pendiente(no se como hacer xd)
 
 **Conclusiones**
 
-- El desarrollo del Sprint 1 permitió validar que la propuesta de valor de SafeRoute es comunicable y atractiva para los segmentos objetivo, al lograr desplegar una Landing Page funcional que presenta de forma clara las funcionalidades, 
-roles y planes de la plataforma, generando una primera impresión profesional del producto ante potenciales usuarios.
+- El Sprint 1 permitió consolidar la identidad visual y comunicacional de SafeRoute mediante el despliegue de la Landing Page, logrando presentar de forma clara la propuesta de valor del producto a los segmentos objetivo. La implementación de secciones como Hero, Funcionalidades, Roles y Planes demostró que el equipo tiene una visión coherente del producto, alineada con los problemas identificados en el levantamiento de requerimientos.
 
 
-- La adopción de Domain-Driven Design como enfoque arquitectónico del backend demostró ser adecuada para la complejidad del dominio de transporte escolar,
-permitiendo al equipo identificar y delimitar correctamente los bounded contexts (IAM, Subscriptions, Stakeholders, Fleet, Trip, Notifications) y establecer una base sólida para la implementación progresiva del sistema en los siguientes sprints.
+- La elaboración de los wireframes y mockups tanto en versión desktop como mobile para los tres perfiles de usuario (Administrador, Conductor y Padre de Familia) evidencia un diseño centrado en el usuario que anticipa los flujos críticos del sistema. Este trabajo de diseño previo representa una base sólida que reducirá el tiempo de desarrollo del frontend en los siguientes sprints al tener ya definidas las interfaces y la lógica de navegación.
 
 
-- La implementación de GitFlow como metodología de control de versiones facilitó la colaboración paralela entre los integrantes del equipo, permitiendo que cada miembro trabajara de forma independiente en su rama feature sin interferir con el trabajo de los demás,
-y asegurando que solo el contenido validado fuera integrado a la rama develop.
+- La adopción de Domain-Driven Design como enfoque arquitectónico del backend permitió al equipo identificar y documentar correctamente los seis bounded contexts del sistema (IAM, Subscriptions, Stakeholders, Fleet, Trip y Notifications), estableciendo contratos claros entre dominios que facilitarán la implementación progresiva del backend en ASP.NET Core a partir del Sprint 2.
+
 
 **Recomendaciones**
 
