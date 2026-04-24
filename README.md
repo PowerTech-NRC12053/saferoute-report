@@ -646,9 +646,10 @@ La documentación de endpoints, contratos de API y evidencia de consumo de servi
 |--------------|-----------------------|-------------|------------|------------------------------------------------------------|
 | Landing Page | Visualización inicial | GET         |            | https://github.com/PowerTech-NRC12053/saferoute-report.git |
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
-
+pendiente(no se como hacer xd)
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
 
+![Pulse Insights](assets/images/Chapter-5/Sprint1/pulse.png)
 ---
 
 ## Conclusiones
