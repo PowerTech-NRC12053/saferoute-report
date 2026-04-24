@@ -638,6 +638,13 @@ Se implementó la sección final de cierre "¿Listo para digitalizar tu operaci�
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
+
+Durante el Sprint 1, el equipo se enfocó en el diseño y despliegue de la Landing Page de SafeRoute, así como en la documentación de la arquitectura base del sistema bajo el enfoque Domain-Driven Design (DDD). En consecuencia, no se implementaron ni desplegaron servicios web (Web Services / RESTful API) durante este sprint.
+La documentación de endpoints, contratos de API y evidencia de consumo de servicios será abordada a partir del Sprint 3, una vez que se inicie la implementación del backend en ASP.NET Core.
+
+| Recurso      | Acción implementada   | Método HTTP | URL / Endpoint | Link de repositorio                                        |
+|--------------|-----------------------|-------------|------------|------------------------------------------------------------|
+| Landing Page | Visualización inicial | GET         |            | https://github.com/PowerTech-NRC12053/saferoute-report.git |
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
