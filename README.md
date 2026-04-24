@@ -646,7 +646,26 @@ La documentación de endpoints, contratos de API y evidencia de consumo de servi
 |--------------|-----------------------|-------------|------------|------------------------------------------------------------|
 | Landing Page | Visualización inicial | GET         |            | https://github.com/PowerTech-NRC12053/saferoute-report.git |
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
-pendiente(no se como hacer xd)
+
+Durante el Sprint 1 se realizó el despliegue de la Landing Page de SafeRoute
+utilizando GitHub Pages como plataforma de hosting estático.
+
+1. Se activó GitHub Pages en el repositorio `saferoute-website`, configurando
+   la rama `main` como fuente de publicación.
+
+   ![GitHub Pages](assets/images/Chapter-5/Sprint1/public.png)
+
+
+2. Se verificó la accesibilidad pública de la Landing Page.
+   **URL:** 
+
+
+https://powertech-nrc12053.github.io/saferoute-website/
+
+
+   ![Landing Live](assets/images/Chapter-5/Sprint1/landing-hero.png)
+
+
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
 
 ![Pulse Insights](assets/images/Chapter-5/Sprint1/pulse.png)
