@@ -172,10 +172,10 @@ Sabremos que esto es verdad cuando veamos que el 80% de los trayectos registrado
 SafeRoute está dirigido a dos segmentos que forman parte del ecosistema del transporte escolar privado en Lima Metropolitana.
 
 - **Segmento 1: Padres de Familia**
-El primer segmento está conformado por padres de familia o apoderados con hijos en nivel inicial, kínder y primaria que utilizan un servicio de transporte escolar privado ya contratado. Se trata de personas que han delegado el traslado de sus hijos a un tercero y que, durante el trayecto, no cuentan con información estructurada sobre el estado del viaje. Este segmento no está delimitado por un nivel socioeconómico específico, sino por la condición de tener hijos en edad escolar que usan transporte privado y de contar con acceso a internet desde un dispositivo con navegador web. Su principal motivación al usar SafeRoute es, precisamente, reducir la incertidumbre que genera no saber si sus hijos abordaron con seguridad, en qué parte del recorrido se encuentran o si ocurrió alguna novedad durante el viaje.
+El primer segmento está conformado por padres de familia o apoderados con hijos en nivel inicial, kínder y primaria que utilizan un servicio de transporte escolar privado ya contratado. Se trata de personas que han delegado el traslado de sus hijos a un tercero y que, durante el trayecto, no cuentan con información estructurada sobre el estado del viaje. Este segmento no está delimitado por un nivel socioeconómico específico, sino por la condición de tener hijos en edad escolar que usan transporte privado y de contar con acceso a internet desde un dispositivo con navegador web. Su principal motivación al usar SafeRoute es, precisamente, reducir la incertidumbre que genera no saber si sus hijos abordaron con seguridad, en qué parte del recorrido se encuentran o si ocurrió alguna novedad durante el viaje. Para dimensionar este segmento, según el Censo Educativo 2022-2023, en Lima Metropolitana existen aproximadamente 1.9 millones de estudiantes distribuidos en cerca de 7,602 instituciones educativas, de las cuales el 74% son de gestión privada (Ministerio de Educación, 2023). Esta alta proporción de colegios privados implica que una parte significativa de las familias limeñas depende de servicios externos de transporte escolar, dado que pocas instituciones cuentan con flotas propias.
 
 - **Segmento 1: Transportistas Escolares**
-El segundo segmento está conformado por las personas o entidades que operan el servicio de transporte escolar privado. Dentro de este segmento conviven tres perfiles distintos. El primero corresponde a personas independientes que ofrecen el servicio de forma autónoma. El segundo agrupa a conductores que han sido asignados para operar una movilidad organizada por un conjunto de familias. El tercero engloba a los responsables de pequeñas empresas de transporte escolar que cuentan con una flota de vehículos y conductores a su cargo. A pesar de sus diferencias, todos comparten un factor común, pues operan sin herramientas digitales especializadas, apoyándose en métodos manuales e informales para gestionar una actividad que involucra directamente la seguridad de menores. Por ello, su principal motivación al usar SafeRoute es digitalizar y profesionalizar su operación, reducir los errores en la gestión de rutas y alumnos, y ofrecer a las familias que atienden una experiencia de servicio más confiable y transparente.
+El segundo segmento está conformado por las personas o entidades que operan el servicio de transporte escolar privado. Dentro de este segmento conviven tres perfiles distintos. El primero corresponde a personas independientes que ofrecen el servicio de forma autónoma. El segundo agrupa a conductores que han sido asignados para operar una movilidad organizada por un conjunto de familias. El tercero engloba a los responsables de pequeñas empresas de transporte escolar que cuentan con una flota de vehículos y conductores a su cargo. A pesar de sus diferencias, todos comparten un factor común, pues operan sin herramientas digitales especializadas, apoyándose en métodos manuales e informales para gestionar una actividad que involucra directamente la seguridad de menores. La relevancia de este segmento se ve reflejada en que la cantidad de movilidades escolares autorizadas en Lima disminuyó en un 25% en solo un año, lo que evidencia un incremento en la informalidad del sector y, con ello, una mayor ausencia de mecanismos de control y monitoreo sobre el servicio que reciben los menores (Autoridad de Transporte Urbano para Lima y Callao, 2024). Adicionalmente, la Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías ejecutó en 2024 campañas de sensibilización que alcanzaron a más de 47,000 escolares, lo que confirma que la seguridad en este sector continúa siendo una preocupación activa para las autoridades (SUTRAN, 2024). Por ello, la principal motivación de este segmento al usar SafeRoute es digitalizar y profesionalizar su operación, reducir los errores en la gestión de rutas y alumnos, y ofrecer a las familias que atienden una experiencia de servicio más confiable y transparente.
 
 ---
 
@@ -183,13 +183,136 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 
 ### 2.1. Competidores
 
-#### 2.1.1. Análisis competitivo
+### Identificación de Competidores
 
-#### 2.1.2. Estrategias y tácticas frente a competidores
+En esta sección se describen los principales competidores (directos e indirectos) con modelos de negocio basados en productos digitales similares o servicios complementarios de monitoreo.
+
+#### Life360
+**Descripción:** Es una aplicación de rastreo familiar líder a nivel global que permite compartir la ubicación en tiempo real entre miembros de un grupo, así como recibir alertas de llegada y salida de lugares definidos. Está orientada a mejorar la seguridad y comunicación entre familias mediante funciones de geolocalización avanzada.
+
+* **Enfoque:** Seguridad familiar general.
+* **URL:** [https://www.life360.com/](https://www.life360.com/)
+
+#### Find My Kids
+**Descripción:** Es una aplicación de monitoreo parental diseñada para que los padres conozcan la ubicación en tiempo real de sus hijos mediante GPS. Permite revisar el historial de movimientos, escuchar el entorno en caso de emergencia y recibir alertas. Se destaca por su integración con relojes inteligentes (smartwatches) para niños.
+
+* **Enfoque:** Monitoreo infantil y seguridad parental.
+* **URL:** [https://findmykids.org/](https://findmykids.org/)
+
+#### OnTrack School
+**Descripción:** Es un sistema digital integral enfocado específicamente en la gestión y monitoreo del transporte escolar. Permite el seguimiento de vehículos en tiempo real, envío de notificaciones automáticas a los padres y control administrativo de rutas y conductores. Está orientado principalmente a instituciones educativas y flotas de transporte escolar.
+
+* **Enfoque:** Gestión logística y transporte escolar corporativo.
+* **URL:** [https://ontrack.global/school/](https://ontrack.global/school/)
+
+---
+
+### 2.1.1 Análisis Competitivo - Landscape
+
+**¿Por qué llevar a cabo este análisis?**
+El objetivo es contrastar SafeRoute con soluciones líderes de geolocalización familiar y gestión escolar, identificando oportunidades para posicionarnos como la herramienta preferida de los transportistas independientes en Lima que buscan profesionalizar su servicio.
+
+| Categoría | Detalle | **SafeRoute** | **Life360** | **Find My Kids** | **OnTrack School** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Perfil** | **Overview** | Gestión y monitoreo especializado en transporte escolar. | App de seguridad familiar y rastreo GPS general. | App de monitoreo infantil enfocada en smartwatches. | Plataforma integral de logística para transporte escolar. |
+| **Perfil** | **Ventaja competitiva** | Roles específicos (Conductor/Padre) y flujo de abordaje manual. | Círculos familiares privados y detección de choques. | Escucha ambiental y compatibilidad con relojes GPS. | Optimización de rutas avanzada para flotas de colegios. |
+| **Marketing** | **Mercado objetivo** | Padres y conductores independientes en Lima. | Familias con adolescentes y adultos mayores. | Padres con niños pequeños (5-12 años). | Colegios privados y empresas de transporte masivo. |
+| **Marketing** | **Estrategias** | Seguridad digital y profesionalización del sector. | Marketing masivo de "Tranquilidad familiar". | Enfoque en seguridad infantil y prevención de extravíos. | Ventas corporativas (B2B) y eventos educativos. |
+| **Producto** | **Productos & Servicios** | App, Dashboard Web, Alertas IoT y API para devs. | App móvil, asistencia en carretera y alertas de velocidad. | App móvil, rastreadores físicos y notificaciones SOS. | Software de logística, portal para padres y conductores. |
+| **Producto** | **Precios & Costos** | Suscripción mensual ($9.99 - $49.99). | Freemium (Suscripciones Gold/Platinum desde $14.99). | Suscripción mensual o pago único de por vida. | Cotización personalizada por número de rutas/colegios. |
+| **Producto** | **Canales de distribución**| Web (Landing Page) y tiendas de apps. | App Store, Play Store y web global. | App Store, Play Store y fabricantes de smartwatches. | Web corporativa y equipo de ventas directas. |
+| **SWOT** | **Fortalezas** | Sistema especializado con control de abordaje y registro de incidencias para estructurar el servicio informal. | Alta precisión en rastreo en tiempo real . | Especialización en el segmento de niños pequeños. | Robustez técnica y algoritmos de optimización. |
+| **SWOT** | **Debilidades** | Marca nueva en un mercado con desconfianza. | No está diseñada para el flujo de transporte escolar. | Funcionalidades limitadas si el niño no tiene reloj. | Costo elevado y difícil implementación para independientes. |
+| **SWOT** | **Oportunidades** | Nicho desatendido de transportistas independientes en Perú que buscan organización y confianza. | Creciente preocupación por la seguridad familiar | Crecimiento del mercado de wearables infantiles. | Digitalización de colegios en mercados emergentes. |
+| **SWOT** | **Amenazas** | Informalidad que prefiere usar solo WhatsApp. | Mejoras en los sistemas nativos de Google/Apple. | Regulaciones estrictas de privacidad infantil (COPPA). | Nuevas startups locales con precios de introducción bajos. |
+
+---
+
+### 2.1.2 Estrategias y tácticas frente a competidores
+
+En base al análisis competitivo y SWOT realizado, SafeRoute plantea las siguientes estrategias y tácticas para diferenciarse aprovechando las debilidades de la competencia y el contexto local:
+
+#### Enfoque en especialización del problema
+- SafeRoute se posicionará como una solución especializada en transporte escolar, integrando funcionalidades específicas como control de abordaje, gestión de rutas y registro de incidencias.
+- Esto permitirá cubrir necesidades logísticas que las soluciones genéricas de GPS ignoran.
+
+#### Estrategia de digitalización del sector no estructurado
+- Enfoque en transportistas independientes que actualmente dependen de WhatsApp y procesos manuales.
+- Oferta de una plataforma simple e intuitiva para una transición digital sin fricciones técnicas.
+
+#### Diferenciación por simplicidad y accesibilidad
+- Priorización de facilidad de uso y costos accesibles frente a soluciones corporativas complejas como OnTrack School.
+- Experiencia de usuario optimizada para minimizar la carga operativa del conductor durante el trayecto.
+
+#### Estrategia de confianza y seguridad para padres
+- Reducción de la incertidumbre mediante notificaciones automáticas de abordaje y alertas en tiempo real.
+- Reemplazo de la comunicación informal por una estructura de datos confiable y profesional.
+
+#### Estrategia de crecimiento progresivo (escalabilidad)
+- Modelo de planes escalables (Básico, Intermedio, Completo) que acompaña el crecimiento de la flota del cliente.
+- Facilita la adopción inicial con un ticket de entrada bajo.
+
+#### Estrategia de posicionamiento local
+- Adaptación a las dinámicas operativas y geográficas de Lima Metropolitana antes de escalar a otras ciudades del Perú.
+
+#### Estrategia de preparación tecnológica futura
+- Arquitectura preparada para la integración de sensores y cámaras IoT en etapas posteriores, garantizando competitividad a largo plazo.
+
 
 ### 2.2. Entrevistas
 
 #### 2.2.1. Diseño de entrevistas
+
+##### Guion de Entrevistas - Proyecto SafeRoute
+
+###### **Segmento Objetivo 1: Conductor**
+
+1. ¿Cuál es tu nombre?
+2. ¿Cuál es tu edad?
+3. ¿Podrías contarme un poco sobre tu entorno familiar? Por ejemplo, si vives con una familia o tienes hijos.
+4. ¿En qué distrito o zona sueles trabajar?
+5. ¿Podrías contarme un poco sobre tu trabajo como conductor de transporte escolar?
+6. ¿Trabajas de manera independiente o en coordinación con otro grupo de personas o empresa?
+ 
+7. Durante el recorrido, ¿cómo llevas el control de los alumnos?
+8. ¿Qué suele pasar cuando ocurre algún cambio o imprevisto en la ruta?
+9. ¿Cómo te comunicas con los padres durante el servicio?
+10. ¿Qué partes de tu trabajo sientes que requieren más atención o te generan mayor carga?
+11. ¿Qué tan organizado sientes que es tu proceso actual de trabajo?
+12. Si pudieras mejorar algún aspecto de tu trabajo diario, ¿cuál sería y por qué?
+    
+13. ¿Qué tipo de información te ayudaría a sentir mayor control durante el recorrido?
+14. ¿Qué preocupaciones tendrías al usar algún tipo de sistema durante el trayecto?
+15. ¿Cómo te gustaría que fuera la comunicación con los padres para que no interfiera con tu conducción?
+16. ¿Qué tendría que tener una herramienta así para que realmente la uses?
+17. ¿Qué tan dispuesto estarías a usar una herramienta que te ayude a organizar y monitorear tu trabajo? ¿Por qué?
+
+---
+
+###### **Segmento Objetivo 2: Padre de Familia**
+
+1. Para comenzar, ¿podrías indicarme tu nombre?
+2. ¿Cuál es tu edad?
+3. ¿En qué distrito o zona resides?
+4. ¿Podrías contarme un poco sobre tu entorno familiar?
+5. ¿Qué edades tienen tus hijos que utilizan transporte escolar?
+6. ¿Qué rol cumple el transporte escolar dentro de tu día a día?
+7. ¿Qué tan cómodo(a) te sientes utilizando tecnología en tu vida diaria?
+
+8. Cuéntame cómo haces actualmente para saber que tu hijo llegó bien a su destino.
+9. ¿Qué es lo que más te preocupa cuando tu hijo está en el transporte escolar?
+10. ¿Cómo te comunicas normalmente con el conductor o responsable del transporte?
+11. ¿Recuerdas alguna situación en la que hayas sentido preocupación o falta de información? ¿Qué ocurrió?
+12. ¿Qué tipo de información sientes que hoy no tienes y te gustaría tener?
+13. ¿Qué aspectos del servicio de transporte actual te generan más desconfianza o incomodidad?
+
+14. Si pudieras mejorar alguna parte del servicio de transporte escolar, ¿cuál sería y por qué?
+15. ¿Qué opinas de una herramienta que te permita tener mayor visibilidad del transporte escolar de tu hijo?
+16. ¿En qué aspectos crees que una solución así podría ayudarte en tu día a día?
+17. ¿Qué preocupaciones tendrías al usar una herramienta digital para monitorear este servicio?
+18. Para finalizar, ¿qué consideras indispensable para sentirte tranquilo(a) con el transporte de tu hijo?
+
+
 
 #### 2.2.2. Registro de entrevistas
 
@@ -199,7 +322,51 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 
 #### 2.3.1. User Personas
 
+En esta sección se presentan los arquetipos de usuario diseñados para representar los segmentos objetivo de SafeRoute: el conductor de transporte escolar independiente y el padre de familia. 
+
+La elaboración de estas fichas es el resultado de una síntesis detallada entre el análisis de la competencia y el proceso de Needfinding. Se han identificado características críticas como la alta dependencia de herramientas informales (WhatsApp/Llamadas), la ansiedad generada por la incertidumbre del tráfico en Lima y la necesidad de profesionalizar un sector mayoritariamente no estructurado.
+
+###### **Segmento Objetivo 1: Conductor **
+![UserPersona1](./assets/images/UserPersona1.png)
+
+---
+###### **Segmento Objetivo 2: Padre de Familia**
+![UserPersona2](./assets/images/UserPersona2.png)
+
 #### 2.3.2. User Task Matrix
+
+En esta sección se presenta la matriz de tareas de usuario , la cual consolida las actividades fundamentales que tanto el conductor (Carlos Ramírez) como el padre de familia (Rosita Nery) ejecutan para asegurar un traslado escolar exitoso. 
+
+Es importante destacar que estas tareas representan necesidades y procesos intrínsecos del servicio que existen independientemente de la existencia de una solución de software; el objetivo de SafeRoute es optimizar y digitalizar estas interacciones para reducir la carga operativa y la incertidumbre.
+
+#### Cuadro: User Task Matrix
+
+| Tarea (User Task) | Conductor - Frecuencia | Conductor - Importancia | Padre - Frecuencia | Padre - Importancia |
+|:---|:---:|:---:|:---:|:---:|
+| Verificar lista de asistencia de alumnos | Alta | Alta | N/A | N/A |
+| Identificar alumnos en el punto de recojo | Alta | Alta | N/A | N/A |
+| Confirmar el abordaje seguro del alumno | Alta | Crítica | Alta | Crítica |
+| Gestionar comunicación entre conductores y padres | Alta | Alta | Alta | Alta |
+| Notificar retrasos o imprevistos en la ruta | Media | Alta | Alta | Crítica |
+| Monitorear el progreso del trayecto | Media | Media | Alta | Alta |
+| Confirmar llegada al destino final | Alta | Crítica | Alta | Crítica |
+| Registrar la entrega del alumno al responsable | Alta | Crítica | Alta | Crítica |
+| Coordinar cambios de último momento en el servicio | Baja | Media | Baja | Alta |
+| Reportar incidencias de seguridad o salud | Baja | Crítica | Baja | Crítica |
+| Consultar el estado actual del servicio | Media | Media | Alta | Alta |
+| Revisar historial de trayectos realizados | Baja | Media | Media | Media |
+| Organizar y optimizar rutas y paradas | Alta | Alta | N/A | N/A |
+
+---
+
+#### Análisis y Explicación de la Matriz
+
+Tras el análisis de la matriz, se desprenden las siguientes conclusiones clave sobre el comportamiento y necesidades de los segmentos:
+
+* **Coincidencias en Tareas Críticas:** Existe una convergencia total en las tareas de "Confirmar abordaje", "Confirmar llegada" y "Registrar entrega". Para ambos segmentos, estas acciones representan la columna vertebral de la confianza en el servicio, manteniendo una importancia **Crítica** debido a que involucran la seguridad directa del menor.
+* **Diferencias de Rol:** La carga operativa de planificación y ejecución (verificación de listas y organización de rutas) recae exclusivamente en el conductor. Por el contrario, el padre de familia se enfoca en tareas de supervisión pasiva como "Monitorear el progreso", que tiene una frecuencia alta debido a la ansiedad constante que genera el tráfico de la ciudad.
+* **Gestión de Incidencias:** Se observa que tareas como "Reportar incidencias" tienen una frecuencia baja, pero su importancia es crítica. Esto valida la necesidad de que SafeRoute ofrezca canales de comunicación prioritarios que garanticen que, ante un imprevisto, la información fluya sin errores.
+* **Fricción en la Comunicación:** La tarea de "Notificar retrasos" es de frecuencia media para el conductor pero de importancia crítica para el padre, lo que resalta el mayor punto de fricción actual: la necesidad de información en tiempo real para reducir el estrés parental.
 
 #### 2.3.3. User Journey Mapping
 
@@ -215,6 +382,41 @@ El segundo segmento está conformado por las personas o entidades que operan el 
 ## Capítulo III: Requirements Specification
 
 ### 3.1. User Stories
+Las siguientes User Stories representan los requisitos detallados del sistema **SafeRoute**, cubriendo la operación completa, la Landing Page y la API técnica.
+
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación (Gherkin) | Relacionado con |
+|:---|:---|:---|:---|:---|
+| **E1** | **Gestión Administrativa** | Control de planes, usuarios y flota | N/A | N/A |
+| US1 | Contratar Plan | Como administrador, quiero elegir un plan, para escalar mi operación | **Given** el administrador está en la sección de facturación<br>**When** selecciona un plan (Básico/Intermedio/Completo)<br>**Then** el sistema habilita los límites de rutas correspondientes | E1 |
+| US2 | Registro de Conductores | Como administrador, quiero crear cuentas de conductores, para asignar responsabilidades | **Given** el formulario de nuevo usuario<br>**When** se ingresan datos y licencia<br>**Then** el sistema genera un perfil de conductor activo | E1 |
+| US3 | Registro de Padres | Como administrador, quiero registrar a los padres, para habilitar el monitoreo | **Given** los datos de contacto del tutor<br>**When** se vincula con un alumno registrado<br>**Then** el sistema envía invitación por correo | E1 |
+| US4 | Alta de Alumnos | Como administrador, quiero registrar alumnos, para incluirlos en los recorridos | **Given** el panel de gestión de alumnos<br>**When** se registran sus datos y parada<br>**Then** el alumno queda disponible para asignación | E1 |
+| US5 | Creación de Rutas | Como administrador, quiero trazar rutas y paradas, para optimizar el tiempo | **Given** el mapa de configuración<br>**When** se seleccionan puntos geográficos en orden<br>**Then** el sistema calcula la duración estimada del trayecto | E1 |
+| US6 | Asignación de Roles | Como administrador, quiero asignar conductores a rutas, para organizar la operación | **Given** una ruta sin asignar<br>**When** se selecciona un conductor disponible<br>**Then** el conductor recibe la ruta en su aplicación | E1 |
+| US7 | Analítica de Flota | Como administrador, quiero ver reportes de rendimiento, para evaluar la eficiencia | **Given** un usuario con Plan Completo<br>**When** accede al dashboard de analítica<br>**Then** el sistema muestra métricas de puntualidad y combustible | E1 |
+| **E2** | **Operación del Conductor** | Herramientas para la ejecución del servicio | N/A | N/A |
+| US8 | Inicio de Trayecto | Como conductor, quiero activar la ruta, para que los padres sepan que voy en camino | **Given** una ruta programada<br>**When** el conductor presiona "Iniciar Viaje"<br>**Then** el sistema cambia el estado de la ruta a "En Ruta" | E2 |
+| US9 | Marcación de Abordaje | Como conductor, quiero registrar el abordaje, para confirmar la presencia del alumno | **Given** el vehículo está en la parada correspondiente<br>**When** el conductor marca el check de abordaje<br>**Then** el sistema actualiza el estado del alumno en la nube | E2 |
+| US10 | Reporte de Incidencias | Como conductor, quiero informar problemas, para que el administrador tome medidas | **Given** una eventualidad (tráfico, falla mecánica)<br>**When** se selecciona el tipo de incidencia<br>**Then** el sistema lo registra en la bitácora detallada | E2 |
+| US11 | Botón de Pánico | Como conductor, quiero usar el botón de pánico, para emergencias críticas | **Given** una situación de peligro real<br>**When** se mantiene presionado el botón SOS<br>**Then** se envía una alerta con ubicación GPS al administrador | E2 |
+| US12 | Finalización de Ruta | Como conductor, quiero cerrar la sesión de ruta, para concluir el turno | **Given** todas las paradas han sido procesadas<br>**When** se confirma el fin del trayecto<br>**Then** el sistema deja de transmitir la ubicación GPS | E2 |
+| US13 | Bitácora de Viajes | Como conductor, quiero ver mi historial, para revisar mis recorridos pasados | **Given** el historial de servicios del conductor<br>**When** consulta fechas anteriores<br>**Then** el sistema muestra las paradas y tiempos registrados | E2 |
+| **E3** | **Monitoreo y Seguridad (Padres)** | Visibilidad y tranquilidad para la familia | N/A | N/A |
+| US14 | Rastreo en Tiempo Real | Como padre, quiero ver el bus en el mapa, para calcular la hora de llegada | **Given** el transporte está en ruta activa<br>**When** el padre abre el mapa de la app<br>**Then** se visualiza el icono del vehículo moviéndose en vivo | E3 |
+| US15 | Alerta de Proximidad | Como padre, quiero recibir un aviso previo, para bajar a la parada a tiempo | **Given** el bus está a 500 metros de la parada<br>**When** el sistema detecta la geovalla<br>**Then** se envía una notificación push al dispositivo del padre | E3 |
+| US16 | Confirmación de Llegada | Como padre, quiero saber si mi hijo llegó al colegio, para estar tranquilo | **Given** el bus llega al destino final<br>**When** el conductor cierra la ruta<br>**Then** el padre recibe una notificación de "Llegada a destino" | E3 |
+| US17 | Acceso a Cámara | Como padre, quiero ver el interior del bus, para verificar la seguridad | **Given** un usuario con Plan Intermedio<br>**When** solicita el streaming de video<br>**Then** el sistema muestra la cámara interior del vehículo | E3 |
+| US18 | Historial de Asistencia | Como padre, quiero ver los días que mi hijo abordó, para control mensual | **Given** la sección de asistencia del alumno<br>**When** se selecciona el mes<br>**Then** el sistema muestra el calendario con checks de abordaje | E3 |
+| **E4** | **Landing Page (Visitantes)** | Información y conversión de clientes | N/A | N/A |
+| US19 | Visualización de Hero | Como visitante, quiero ver la propuesta de valor, para entender qué es SafeRoute | **Given** el acceso a la URL principal<br>**When** carga el sitio<br>**Then** el sistema muestra el mensaje "Transporte escolar seguro y digital" | E4 |
+| US20 | Navegación de Funciones | Como visitante, quiero ver las funcionalidades, para conocer el alcance técnico | **Given** la sección de funcionalidades de la landing<br>**When** el usuario hace scroll<br>**Then** visualiza las tarjetas de gestión, monitoreo y alertas | E4 |
+| US21 | Detalle de Roles | Como visitante, quiero conocer las vistas por perfil, para ver qué recibo | **Given** la sección "Una plataforma, tres experiencias"<br>**When** revisa los puntos por rol<br>**Then** comprende las tareas de Admin, Conductor y Padre | E4 |
+| US22 | Consulta de Precios | Como visitante, quiero ver los costos, para evaluar mi presupuesto | **Given** la sección de planes de la landing<br>**When** compara los niveles de escala<br>**Then** identifica el precio y características de cada suscripción | E4 |
+| US23 | Sección "¿Cómo funciona?" | Como visitante, quiero ver los pasos iniciales, para saber cómo empezar | **Given** el flujo de 5 pasos en la landing<br>**When** lee la secuencia de digitalización<br>**Then** comprende el proceso desde el contrato hasta el monitoreo | E4 |
+| **E5** | **SafeRoute RESTful API** | Integraciones para desarrolladores | N/A | N/A |
+| US24 | API: Obtener Alumnos | Como developer, quiero listar alumnos por ruta, para integraciones externas | **Given** una petición GET a `/api/v1/routes/{id}/students`<br>**When** el token es válido<br>**Then** retorna 200 OK con la lista de alumnos | E5 |
+| US25 | API: Registro GPS | Como developer, quiero enviar coordenadas, para actualizar la posición del bus | **Given** una petición POST a `/api/v1/tracking`<br>**When** el payload incluye latitud/longitud<br>**Then** el sistema actualiza la base de datos y retorna 201 | E5 |
+
 
 ### 3.2. Impact Mapping
 
@@ -505,10 +707,12 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 
 ## Bibliografía
 
+
 - Autoridad de Transporte Urbano para Lima y Callao. (2024). *Cifra de movilidades escolares autorizadas disminuyó en 25% en un año*. El Comercio. Recuperado el 9 de abril de 2026, de https://elcomercio.pe/lima/cifra-de-movilidades-escolares-autorizadas-disminuyo-en-25-en-un-ano-a-que-se-debe-esta-reduccion-informe-movilidad-escolar-noticia/
 
 - Ministerio de Educación. (2023). *Resultados del Censo Educativo 2022*. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
 
 - Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías. (2024). *Sutran (MTC) sensibilizó a más de 47 000 escolares sobre seguridad vial*. Gob.pe. Recuperado el 9 de abril de 2026, de https://www.gob.pe/institucion/sutran/noticias/1255228-sutran-mtc-sensibilizo-a-mas-de-47-000-escolares-sobre-seguridad-vial-en-lo-que-va-del-2025
+
 
 ## Anexos
