@@ -1156,6 +1156,21 @@ Cambio de Contraseña Formulario de seguridad que permite restablecer el acceso 
 <img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/password-change.png" width="900px" alt="password-change">
 
 
+#### Versión Mobile Mockups - Administradores
+
+##### Configuración y Gestión Administrativa
+
+Panel de Inicio y Navegación (US20)
+
+Dashboard central que organiza todos los módulos del sistema a través de un sidebar lateral, facilitando el salto entre la gestión de rutas, alumnos y reportes.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/home-dashboard.png" width="900px" alt="home-dashboard"> 
+
+Asignación de Roles (US6)
+
+Módulo exclusivo para el administrador donde se definen los permisos específicos de cada usuario registrado, garantizando la integridad de los datos.
+
+<img src="assets/images/ChapterIV/WebApp/Mockups/Mobile/role-assignment.png" width="400px" alt="role-assignment">
 
 
 
