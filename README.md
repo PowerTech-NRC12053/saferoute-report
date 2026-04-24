@@ -671,9 +671,7 @@ y asegurando que solo el contenido validado fuera integrado a la rama develop.
 
 **Recomendaciones**
 
-- Se recomienda priorizar en el Sprint 2 la implementación de los endpoints core del backend, 
-especialmente los relacionados con el módulo de IAM y la gestión de rutas, dado que estos son la base sobre la que se apoyan los demás bounded contexts y su ausencia representa el principal riesgo técnico del proyecto en este momento.
-
+- Se recomienda mantener el repositorio actualizado conforme avance cada sprint, evitando acumular secciones pendientes para el último momento y reduciendo la carga de trabajo en las semanas de entrega.
 
 - Se recomienda que el equipo establezca una rutina de revisión de pull requests entre pares antes de mergear cualquier rama feature a develop,
 con el objetivo de reducir errores de integración, mantener la consistencia del informe y asegurar que todos los integrantes estén alineados con el avance general del proyecto.
@@ -681,6 +679,7 @@ con el objetivo de reducir errores de integración, mantener la consistencia del
 
 - Se recomienda iniciar las entrevistas con usuarios reales del segmento objetivo (padres de familia y transportistas) a la brevedad, 
 con el fin de validar las hipótesis planteadas en el Lean UX Canvas y ajustar las funcionalidades del producto antes de invertir mayor esfuerzo de desarrollo en el frontend y backend.
+
 ### Video About-the-Team
 
 ## Bibliografía
