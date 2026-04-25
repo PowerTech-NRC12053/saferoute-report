@@ -63,7 +63,7 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/FiveTe
 |                Foto                | Apellidos y Nombres         |    Código     | Carrera                | Resumen                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | :--------------------------------: | :-------------------------- | :-----------: | :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |              ![foto](assets/images/Team/MathiasFt.jpg)               | De la Cruz De los Santos, Mathias Marcelo    | [U202424059] | Ingeniería de Software | [Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el 5to ciclo de la carrera en la Universidad Peruana de Ciencias Aplicadas. Me considero un fanático de la programación, del futbol y los videojuegos. Considero que puedo aportar al equipo y al proyecto mis conocimientos técnicos, además de considerarme una persona disciplinada, responsable y que valora el trabajo en equipo.]                                                                                                                                                                                                                                                                                                                                                                             |
-|              ![foto]               | [Apellido 2], [Nombre 2]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
+|              ![Jose Ortega](./assets/images/Team/JoseOrtega.jpeg)                | Ortega Quintana, Jose Zacarias  | [U202316852] | Ingeniería de Software | Soy Jose Ortega, estudiante de Ingenieria de Software en la Universidad Peruana de Ciencias Aplicadas. Actualmente con 21 años disfruto de los pequeños momentos de tranquilidad para aprovechra en meditar, dibujar o practicar. Deseo apoyar a mi equipo lo mejor posible para poder afrontar cualquier adversidad o contratiempo en este trabajo.                                                                                                                                                                                                                                                                                                                                                                     |
 | ![foto](assets/images/Team/frankFT.png) | Quispe Serrano, Julio Frank | [U20241D922]  | Ingeniería de Software | Mi nombre es Julio Frank Quispe Serrano, tengo 20 años,actualmente estoy cursando el 5to ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Soy un apasionado por la programación, el gym y explorador de música en distintos géneros. Mi aporte en este grupo será el de brindar soluciones prácticas y eficientes ante situaciones de adversidad que estanquen la fluidez de la elaboración del trabajo. |
 ![foto](assets/images/nickolas.png) | Ramirez Ruiz, Nickolas      | [U202415551]  | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del quinto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto.                                                               |
 | ![foto](assets/images/Team/perfil-fabio-vallejo.png) | Vallejo Trujillo, Fabio Cesar    | [U20211D989] | Ingeniería de Software | Soy Fabio, estudiante de ingenieria de software en quinto ciclo. Me gusta aprender nuevas tecnologías de programación y mantener buenas prácticas. Puedo aportar al proyecto con mis conocimientos técnicos en las multiples areas de programación y mejorando la organización de los entregables.       
@@ -166,39 +166,773 @@ SafeRoute está dirigido a dos segmentos que forman parte del ecosistema del tra
 
 ## Capítulo II: Requirements Elicitation & Analysis
 ### 2.1. Competidores
+### Identificación de Competidores
+
+En esta sección se describen los principales competidores (directos e indirectos) con modelos de negocio basados en productos digitales similares o servicios complementarios de monitoreo.
+
+#### Life360
+**Descripción:** Aplicación de rastreo familiar líder a nivel global que permite compartir la ubicación en tiempo real entre miembros de un grupo, así como recibir alertas de llegada y salida de lugares definidos. Está orientada a mejorar la seguridad y comunicación entre familias mediante funciones de geolocalización avanzada.
+
+* **Enfoque:** Seguridad familiar general.
+* **URL:** [https://www.life360.com/](https://www.life360.com/)
+
+#### Find My Kids
+**Descripción:** Aplicación de monitoreo parental diseñada para que los padres conozcan la ubicación en tiempo real de sus hijos mediante GPS. Permite revisar el historial de movimientos, escuchar el entorno en caso de emergencia y recibir alertas. Se destaca por su integración con relojes inteligentes (smartwatches) para niños.
+
+* **Enfoque:** Monitoreo infantil y seguridad parental.
+* **URL:** [https://findmykids.org/](https://findmykids.org/)
+
+#### OnTrack School
+**Descripción:** Sistema digital integral enfocado específicamente en la gestión y monitoreo del transporte escolar. Permite el seguimiento de vehículos en tiempo real, envío de notificaciones automáticas a los padres y control administrativo de rutas y conductores. Está orientado principalmente a instituciones educativas y flotas de transporte escolar.
+
+* **Enfoque:** Gestión logística y transporte escolar corporativo.
+* **URL:** [https://ontrack.global/school/](https://ontrack.global/school/)
+
+---
 #### 2.1.1. Análisis competitivo
-#### 2.1.2. Estrategias y tácticas frente a competidores
+![Análisis Competitivo](./assets/images/Landscape-competidores.png)
+
+**¿Por qué llevar a cabo este análisis?**
+El objetivo es contrastar SafeRoute con soluciones líderes de geolocalización familiar y gestión escolar, identificando oportunidades para posicionarnos como la herramienta preferida de los transportistas independientes en Lima que buscan profesionalizar su servicio.
+| Categoría | Detalle | **SafeRoute** | **Life360** | **Find My Kids** | **OnTrack School** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Perfil** | **Overview** | Gestión y monitoreo especializado en transporte escolar. | App de seguridad familiar y rastreo GPS general. | App de monitoreo infantil enfocada en smartwatches. | Plataforma integral de logística para transporte escolar. |
+| **Perfil** | **Ventaja competitiva** | Roles específicos (Conductor/Padre) y flujo de abordaje manual. | Círculos familiares privados y detección de choques. | Escucha ambiental y compatibilidad con relojes GPS. | Optimización de rutas avanzada para flotas de colegios. |
+| **Marketing** | **Mercado objetivo** | Padres y conductores independientes en Lima. | Familias con adolescentes y adultos mayores. | Padres con niños pequeños (5-12 años). | Colegios privados y empresas de transporte masivo. |
+| **Marketing** | **Estrategias** | Seguridad digital y profesionalización del sector. | Marketing masivo de "Tranquilidad familiar". | Enfoque en seguridad infantil y prevención de extravíos. | Ventas corporativas (B2B) y eventos educativos. |
+| **Producto** | **Productos & Servicios** | App, Dashboard Web, Alertas IoT y API para devs. | App móvil, asistencia en carretera y alertas de velocidad. | App móvil, rastreadores físicos y notificaciones SOS. | Software de logística, portal para padres y conductores. |
+| **Producto** | **Precios & Costos** | Suscripción mensual ($9.99 - $49.99). | Freemium (Suscripciones Gold/Platinum desde $14.99). | Suscripción mensual o pago único de por vida. | Cotización personalizada por número de rutas/colegios. |
+| **Producto** | **Canales de distribución**| Web (Landing Page) y tiendas de apps. | App Store, Play Store y web global. | App Store, Play Store y fabricantes de smartwatches. | Web corporativa y equipo de ventas directas. |
+| **SWOT** | **Fortalezas** | Sistema especializado con control de abordaje y registro de incidencias para estructurar el servicio informal. | Alta precisión en rastreo en tiempo real . | Especialización en el segmento de niños pequeños. | Robustez técnica y algoritmos de optimización. |
+| **SWOT** | **Debilidades** | Marca nueva en un mercado con desconfianza. | No está diseñada para el flujo de transporte escolar. | Funcionalidades limitadas si el niño no tiene reloj. | Costo elevado y difícil implementación para independientes. |
+| **SWOT** | **Oportunidades** | Nicho desatendido de transportistas independientes en Perú que buscan organización y confianza. | Creciente preocupación por la seguridad familiar | Crecimiento del mercado de wearables infantiles. | Digitalización de colegios en mercados emergentes. |
+| **SWOT** | **Amenazas** | Informalidad que prefiere usar solo WhatsApp. | Mejoras en los sistemas nativos de Google/Apple. | Regulaciones estrictas de privacidad infantil (COPPA). | Nuevas startups locales con precios de introducción bajos. |
+
+---
+
+### 2.1.2 Estrategias y tácticas frente a competidores
+
+En base al análisis competitivo y SWOT realizado, SafeRoute plantea las siguientes estrategias y tácticas para diferenciarse aprovechando las debilidades de la competencia y el contexto local:
+
+#### Enfoque en especialización del problema
+- SafeRoute se posicionará como una solución especializada en transporte escolar, integrando funcionalidades específicas como control de abordaje, gestión de rutas y registro de incidencias.
+- Esto permitirá cubrir necesidades logísticas que las soluciones genéricas de GPS ignoran.
+
+#### Estrategia de digitalización del sector no estructurado
+- Enfoque en transportistas independientes que actualmente dependen de WhatsApp y procesos manuales.
+- Oferta de una plataforma simple e intuitiva para una transición digital sin fricciones técnicas.
+
+#### Diferenciación por simplicidad y accesibilidad
+- Priorización de facilidad de uso y costos accesibles frente a soluciones corporativas complejas como OnTrack School.
+- Experiencia de usuario optimizada para minimizar la carga operativa del conductor durante el trayecto.
+
+#### Estrategia de confianza y seguridad para padres
+- Reducción de la incertidumbre mediante notificaciones automáticas de abordaje y alertas en tiempo real.
+- Reemplazo de la comunicación informal por una estructura de datos confiable y profesional.
+
+#### Estrategia de crecimiento progresivo (escalabilidad)
+- Modelo de planes escalables (Básico, Intermedio, Completo) que acompaña el crecimiento de la flota del cliente.
+- Facilita la adopción inicial con un ticket de entrada bajo.
+
+#### Estrategia de posicionamiento local
+- Adaptación a las dinámicas operativas y geográficas de Lima Metropolitana antes de escalar a otras ciudades del Perú.
+
+#### Estrategia de preparación tecnológica futura
+- Arquitectura preparada para la integración de sensores y cámaras IoT en etapas posteriores, garantizando competitividad a largo plazo.
+
 ### 2.2. Entrevistas
 #### 2.2.1. Diseño de entrevistas
+##### Guion de Entrevistas - Proyecto SafeRoute
 
+###### **Segmento Objetivo 1: Conductor**
+
+1. ¿Cuál es tu nombre?
+2. ¿Cuál es tu edad?
+3. ¿Podrías contarme un poco sobre tu entorno familiar? Por ejemplo, si vives con una familia o tienes hijos.
+4. ¿En qué distrito o zona sueles trabajar?
+5. ¿Podrías contarme un poco sobre tu trabajo como conductor de transporte escolar?
+6. ¿Trabajas de manera independiente o en coordinación con otro grupo de personas o empresa?
+7. En tu día a día, ¿qué herramientas o medios utilizas para organizar tu trabajo?
+8. Cuéntame cómo realizas normalmente el proceso de recoger y dejar a los alumnos.
+9. Durante el recorrido, ¿cómo llevas el control de los alumnos?
+10. ¿Qué suele pasar cuando ocurre algún cambio o imprevisto en la ruta?
+11. ¿Cómo te comunicas con los padres durante el servicio?
+12. ¿Qué partes de tu trabajo sientes que requieren más atención o te generan mayor carga?
+13. ¿Qué tan organizado sientes que es tu proceso actual de trabajo?
+14. Si pudieras mejorar algún aspecto de tu trabajo diario, ¿cuál sería y por qué?
+15. ¿Qué tipo de información te ayudaría a sentir mayor control durante el recorrido?
+16. ¿Qué preocupaciones tendrías al usar algún tipo de sistema durante el trayecto?
+17. ¿Cómo te gustaría que fuera la comunicación con los padres para que no interfiera con tu conducción?
+18. ¿Qué tendría que tener una herramienta así para que realmente la uses?
+19. ¿Qué tan dispuesto estarías a usar una herramienta que te ayude a organizar y monitorear tu trabajo? ¿Por qué?
+
+---
+
+###### **Segmento Objetivo 2: Padre de Familia**
+
+1. Para comenzar, ¿podrías indicarme tu nombre?
+2. ¿Cuál es tu edad?
+3. ¿En qué distrito o zona resides?
+4. ¿Podrías contarme un poco sobre tu entorno familiar?
+5. ¿Qué edades tienen tus hijos que utilizan transporte escolar?
+6. ¿Qué rol cumple el transporte escolar dentro de tu día a día?
+7. ¿Qué tan cómodo(a) te sientes utilizando tecnología en tu vida diaria?
+8. Cuéntame cómo haces actualmente para saber que tu hijo llegó bien a su destino.
+9. ¿Qué es lo que más te preocupa cuando tu hijo está en el transporte escolar?
+10. ¿Cómo te comunicas normalmente con el conductor o responsable del transporte?
+11. ¿Recuerdas alguna situación en la que hayas sentido preocupación o falta de información? ¿Qué ocurrió?
+12. ¿Qué tipo de información sientes que hoy no tienes y te gustaría tener?
+13. ¿Qué aspectos del servicio de transporte actual te generan más desconfianza o incomodidad?
+14. Si pudieras mejorar alguna parte del servicio de transporte escolar, ¿cuál sería y por qué?
+15. ¿Qué opinas de una herramienta que te permita tener mayor visibilidad del transporte escolar de tu hijo?
+16. ¿En qué aspectos crees que una solución así podría ayudarte en tu día a día?
+17. ¿Qué preocupaciones tendrías al usar una herramienta digital para monitorear este servicio?
+18. Para finalizar, ¿qué consideras indispensable para sentirte tranquilo(a) con el transporte de tu hijo?
+    
 #### 2.2.2. Registro de entrevistas
+### Entrevista 1: Arturo Núñez
 
-##### Segmento 1: Transportistas Escolares
+| Campo | Detalle |
+| :--- | :--- |
+| Nombre y Apellidos | Arturo Núñez |
+| Edad | 28 años |
+| Distrito / Zona de trabajo | San Miguel y Miraflores, Lima |
+| Segmento | Conductor de Transporte Escolar |
+| Inicio en video | 00:15 |
+| Duración | 07:19 |
+| URL del video | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
 
-###### Entrevista 1
+#### Screenshot
+![SegmentoObjetivo1](./assets/images/ArturoNunez-SegmentoObjetivo1.png)
 
-**Nombre:** Arturo Nuñez  
-**Edad:** 28 años  
-**Distrito:** San Miguel  
+---
 
-**Resumen**: Arturo Nuñez, conductor independiente de transporte escolar, gestiona sus rutas mediante una libreta y su memoria, utilizando WhatsApp para comunicarse con los padres.
+## Resumen Descriptivo de la Entrevista
 
-Su proceso actual es funcional, pero depende fuertemente de la coordinación con los padres y de su organización personal, lo que genera problemas ante cambios imprevistos o falta de comunicación oportuna. La comunicación constante por WhatsApp durante el trayecto representa una carga y una distracción.
+### Características Objetivas y Entorno
 
-El entrevistado valora una solución que le permita automatizar la comunicación, conocer con anticipación la asistencia de los alumnos y reducir la necesidad de interactuar con el celular mientras conduce. También considera importante que los padres puedan visualizar el estado del recorrido.
+Arturo Núñez es un conductor de transporte escolar independiente de 28 años, con aproximadamente seis años de experiencia en el rubro. Opera principalmente en los distritos de San Miguel y Miraflores, zonas urbanas con alto flujo vehicular. Gestiona su propia unidad móvil y administra directamente la captación de clientes, organización de rutas y comunicación con padres de familia.
 
-Está dispuesto a usar una herramienta siempre que sea simple, rápida y no interfiera con su conducción.
+Su rutina diaria consiste en recoger estudiantes en sus domicilios, trasladarlos al colegio y retornarlos posteriormente según el turno escolar.
 
-![ImpactMapping1](./assets/images/ChapterII/entrevista-arturo-nuñez.png)
+### Herramientas, Tecnología y Canales de Interacción
+
+Actualmente utiliza herramientas informales para operar:
+
+- WhatsApp como canal principal de comunicación con padres
+- Libreta física para horarios y direcciones
+- Google Maps para navegación y rutas alternas
+- Smartphone como dispositivo principal de trabajo
+
+El uso del teléfono móvil es constante durante la jornada. Se evidencia familiaridad con aplicaciones digitales de uso cotidiano.
+
+### Características Subjetivas y Personalidad
+
+Arturo presenta un perfil pragmático, independiente y orientado a resultados. Busca mantener el orden operativo, aunque reconoce limitaciones de su sistema actual. Muestra preocupación por la seguridad vial y estrés cuando debe responder mensajes mientras conduce.
+
+También demuestra apertura al cambio tecnológico siempre que la solución sea sencilla, rápida y útil.
+
+### Pain Points Detectados
+
+- Exceso de mensajes durante la conducción
+- Distracción al responder consultas de padres
+- Dependencia de memoria personal
+- Falta de sistema formal de asistencia
+- Cambios de ruta difíciles de comunicar
+- Estrés operativo en horas punta
+
+### Oportunidades Identificadas
+
+El entrevistado valora altamente una plataforma que permita:
+
+- Ubicación en tiempo real para padres
+- Notificaciones automáticas
+- Lista diaria de alumnos asistentes
+- Registro rápido de abordaje
+- Operación con pocos pasos
+- Uso estable con señal limitada
+
+### Validación del Arquetipo
+La entrevista confirma que el segmento conductor necesita reducir carga operativa, profesionalizar su servicio y automatizar comunicaciones sin comprometer la seguridad al volante. Esto respalda directamente el User Persona definido para SafeRoute.
+
+---
+### Entrevista 2: Carla Peláez
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Nombre y Apellidos** | Carla Peláez |
+| **Edad** | 38 años |
+| **Distrito / Zona de residencia** | Santiago de Surco, Lima |
+| **Segmento** | Padre de Familia |
+| **Inicio en video** | 07:42 |
+| **Duración** | 04:80 |
+| **URL del video** | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
+
+#### **Screenshot**
+![SegmentoObjetivo2](./assets/images/CarlaPelaez-SegmentoObjetivo2.png)
+
+> *Captura de pantalla de la entrevista realizada al segmento Padre de Familia.*
+
+---
+
+#### **Resumen Descriptivo de la Entrevista**
+
+### **Características Objetivas y Entorno**
+
+Carla Peláez es una madre de familia de 38 años residente en el distrito de Santiago de Surco. Vive con su esposo y sus cuatro hijos, de los cuales dos utilizan actualmente servicio de transporte escolar. Representa a familias urbanas con alta responsabilidad logística diaria, donde el traslado escolar cumple un rol clave para compatibilizar horarios familiares, laborales y educativos.
+
+El transporte escolar forma parte importante de su rutina diaria, ya que permite asegurar la asistencia puntual de sus hijos al centro educativo.
+
+### **Perfil Tecnológico y Hábitos Digitales**
+
+La entrevistada demuestra una actitud positiva frente al uso de tecnología y asocia las herramientas digitales con mayor seguridad y tranquilidad. Está acostumbrada a recibir información mediante canales digitales institucionales y mensajería móvil.
+
+Actualmente utiliza:
+
+* Teléfono móvil como principal dispositivo de comunicación  
+* WhatsApp para contacto con responsables del transporte  
+* Sistema digital del colegio para validar asistencia diaria  
+
+Esto evidencia un perfil digital intermedio, con apertura a nuevas soluciones tecnológicas siempre que sean simples y confiables.
+
+### **Proceso Actual y Canales de Interacción**
+
+Para confirmar que sus hijos llegaron correctamente a destino, Carla depende de dos mecanismos externos:
+
+* Confirmación verbal de la responsable de movilidad escolar  
+* Confirmación de asistencia enviada por el colegio mediante su sistema interno  
+
+Cuando existe demora o falta de confirmación, se comunica directamente con el colegio para validar la llegada de sus hijos.
+
+Actualmente la comunicación con el conductor o responsable se realiza principalmente por:
+
+* Llamadas telefónicas  
+* WhatsApp  
+
+
+### **Pain Points (Problemas Detectados)**
+
+Durante la entrevista se identificaron preocupaciones relevantes:
+
+* Angustia cuando la movilidad se retrasa  
+* Ansiedad cuando no llega la confirmación del colegio  
+* Falta de visibilidad en tiempo real durante el trayecto  
+* Dependencia de terceros para validar información  
+* Percepción de inseguridad en el contexto actual de transporte urbano  
+* Menor confianza cuando la movilidad no pertenece directamente al colegio  
+
+Estos puntos reflejan una necesidad clara de trazabilidad, confianza y comunicación inmediata.
+
+
+### **Necesidades y Oportunidades Detectadas**
+
+Carla mostró alta aceptación hacia una plataforma digital que le permita:
+
+* Ver la ruta del vehículo en tiempo real  
+* Conocer si ocurrió algún inconveniente durante el trayecto  
+* Recibir confirmación automática de llegada  
+* Saber la ubicación permanente de sus hijos  
+* Reducir ansiedad e incertidumbre diaria  
+* Incrementar confianza en el servicio contratado  
+
+Para Carla, el atributo más importante para sentirse tranquila es:
+
+“Saber en dónde está en todo momento”.
+
+### **Características Subjetivas y Personalidad**
+
+A partir de sus respuestas, se identifica un perfil:
+
+* Protector y orientado al bienestar familiar  
+* Preventivo frente a riesgos externos  
+* Receptivo a herramientas digitales útiles  
+* Sensible a la falta de información  
+* Altamente motivado por la seguridad de sus hijos  
+
+### **Validación del Arquetipo**
+Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto SafeRoute. Se confirma que este segmento prioriza:
+
+* Seguridad del estudiante  
+* Monitoreo en tiempo real  
+* Alertas automáticas  
+* Comunicación confiable  
+* Reducción de ansiedad durante el traslado escolar  
+
+Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tranquilidad, confianza y visibilidad operacional para las familias usuarias.
+
+---
+
+### Entrevista 3: Marío Villarreyes
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Nombre y Apellidos** | Marío Villarreyes |
+| **Edad** | 49 años |
+| **Distrito / Zona de residencia** | Pueblo Libre, Lima |
+| **Segmento** | Padre de Familia |
+| **Inicio en video** | 12:31 |
+| **Duración** | 07:33 |
+| **URL del video** | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
+
+#### **Screenshot**
+![SegmentoObjetivo2](assets/images/MarioVillarreyes-SegmentoObjetivo2.png)
+
+
+## **Resumen Descriptivo de la Entrevista**
+
+### **Características Objetivas y Entorno**
+
+Mario Humberto Villarreyes Quinoza es un padre de familia de 49 años residente en Pueblo Libre, Lima. Vive con su esposa actual y dos de sus hijos: Ciara de 12 años y León de 7 años. Representa a familias urbanas que requieren apoyo logístico complementario para equilibrar responsabilidades familiares, laborales y escolares.
+
+En su caso, el transporte escolar no se utiliza diariamente como servicio institucional fijo, sino principalmente para el recojo de su hija cuando tiene horarios extendidos o actividades adicionales en el colegio.
+
+### **Perfil Tecnológico y Hábitos Digitales**
+
+El entrevistado demuestra familiaridad funcional con herramientas digitales orientadas a resolver necesidades cotidianas. Utiliza tecnología principalmente para coordinar servicios y validar información relevante antes de contratar.
+
+Actualmente utiliza:
+
+* WhatsApp como principal canal de coordinación  
+* Teléfono móvil para contacto inmediato  
+* Búsqueda digital de antecedentes e información vehicular  
+
+Esto evidencia un perfil digital práctico, orientado a la utilidad, seguridad y rapidez de respuesta.
+
+### **Proceso Actual y Canales de Interacción**
+
+Actualmente contrata un servicio particular tipo taxi privado para recoger a su hija cuando lo necesita. La coordinación se realiza mediante una persona de confianza (señora Ana), quien contacta al conductor encargado del traslado.
+
+La comunicación con el conductor o responsable del servicio se realiza principalmente por:
+
+* WhatsApp  
+* Coordinación indirecta mediante tercero de confianza  
+
+Esto refleja un modelo operativo informal, altamente dependiente de referencias personales.
+
+### **Pain Points (Problemas Detectados)**
+
+Durante la entrevista se identificaron preocupaciones importantes:
+
+* Falta de visibilidad previa sobre antecedentes del conductor  
+* Dificultad para validar papeletas, sanciones o historial de manejo  
+* Incertidumbre sobre propiedad y condiciones del vehículo  
+* Conducción imprudente o exceso de velocidad en movilidades escolares  
+* Uso inadecuado del claxon y presión por llegar a tiempo  
+* Sobrecarga de pasajeros por encima del aforo permitido  
+* Escasa capacitación percibida en algunos conductores  
+
+Estos hallazgos muestran que la principal preocupación no es solo la ubicación, sino la seguridad integral y calidad del operador.
+
+### **Necesidades y Oportunidades Detectadas**
+
+Mario mostró interés en una plataforma digital que permita:
+
+* Ver antecedentes del conductor antes de contratar  
+* Consultar papeletas o faltas registradas  
+* Validar experiencia del conductor  
+* Revisar comentarios y reputación del servicio  
+* Conocer información completa del vehículo  
+* Confirmar cumplimiento de aforo permitido  
+* Elegir opciones confiables antes de contratar  
+
+Valora especialmente la transparencia previa a la contratación.
+
+### **Características Subjetivas y Personalidad**
+
+A partir de sus respuestas, se identifica un perfil:
+
+* Preventivo y orientado a la seguridad familiar  
+* Analítico al momento de contratar servicios  
+* Exigente con estándares de conducción  
+* Crítico frente a informalidad del sector  
+* Receptivo a soluciones digitales con información verificable  
+
+### **Validación del Arquetipo**
+
+Los datos recolectados validan los supuestos del segmento Padre de Familia dentro del proyecto SafeRoute. Se confirma que este segmento prioriza:
+
+* Seguridad física de sus hijos  
+* Transparencia del conductor y vehículo  
+* Información verificable antes de contratar  
+* Buenas prácticas de conducción  
+* Confianza operativa del servicio  
+
+---
+## Entrevista 4: Máximo Quevedo
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Nombre y Apellidos** | Máximo Quevedo |
+| **Edad** | 25 años |
+| **Distrito / Zona de residencia** | Callería, Pucallpa |
+| **Segmento** | Padre de Familia |
+| **Inicio en video** | 20:03 |
+| **Duración** | 08:04 |
+| **URL del video** | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
+
+#### **Screenshot**
+![SegmentoObjetivo2](./assets/images/MaximoQuevedo-SegmentoObjetivo2.png)
+
+
+---
+
+## Resumen Descriptivo de la Entrevista
+
+### Características Objetivas y Entorno
+
+Máximo Quevedo es un padre de familia de 25 años residente en el distrito de Callería, ciudad de Pucallpa. Tiene hijos de 6 y 7 años que utilizan transporte escolar institucional brindado por el colegio mediante rutas establecidas.
+
+Para él, el transporte escolar cumple principalmente una función de **seguridad, organización y ahorro de tiempo**, ya que permite asegurar el traslado diario de sus hijos mientras la familia mantiene sus actividades cotidianas.
+
+Actualmente el servicio es administrado por la institución educativa, y la comunicación relacionada con el transporte se realiza principalmente mediante directivos o responsables del colegio.
+
+---
+
+### Herramientas y Proceso Actual
+
+En la actualidad, el entrevistado no cuenta con herramientas digitales específicas para monitorear el trayecto del transporte escolar. El seguimiento se basa en mecanismos tradicionales:
+
+- Llamadas telefónicas al director o encargado del colegio  
+- Espera pasiva de confirmación de llegada  
+- Confianza en la institución educativa  
+- Comunicación indirecta con el conductor  
+
+No existe visibilidad en tiempo real del recorrido, ni acceso directo a información del vehículo o conductor.
+
+---
+
+### Problemas Detectados (Pain Points)
+
+Máximo identifica varios problemas relevantes en el servicio actual:
+
+- Falta de seguimiento en tiempo real del bus escolar  
+- Incertidumbre sobre la llegada segura de sus hijos  
+- Demora o ausencia de respuesta por parte de directivos  
+- Escasa información sobre conductor y unidad vehicular  
+- Ansiedad cuando no recibe confirmaciones oportunas  
+- Dependencia total del colegio como intermediario de comunicación  
+
+Además, expresa preocupación por riesgos potenciales como accidentes o emergencias durante el trayecto.
+
+---
+
+### Necesidades y Oportunidades
+
+El entrevistado muestra una percepción altamente positiva hacia una solución digital especializada para transporte escolar. Considera valioso que la plataforma incluya:
+
+- Seguimiento GPS en tiempo real  
+- Identificación del bus asignado  
+- Datos visibles del conductor responsable  
+- Confirmaciones automáticas de llegada  
+- Canal rápido ante emergencias  
+- Comunicación directa y ordenada con responsables  
+
+También menciona que una herramienta así podría reducir ansiedad familiar y aumentar la confianza en el servicio.
+
+---
+
+### Aspectos Subjetivos y Comportamiento
+
+Máximo presenta un perfil orientado a la protección familiar. Sus decisiones están fuertemente influenciadas por la seguridad de sus hijos y la tranquilidad emocional del hogar.
+
+Valora:
+
+- Seguridad por encima del precio o comodidad  
+- Transparencia en la información  
+- Rapidez de respuesta ante incidentes  
+- Control preventivo del trayecto  
+- Bienestar emocional de sus hijos durante el viaje  
+
+Su reacción ante nuevas tecnologías es positiva, siempre que sean confiables y precisas.
+
+---
+
+### Tecnología y Riesgos Percibidos
+
+Aunque muestra aceptación hacia herramientas digitales, también expresa una preocupación clara: que el sistema falle o entregue información errónea.
+
+Esto evidencia que para este segmento no basta con innovar, sino que la solución debe transmitir:
+
+- Precisión de datos  
+- Estabilidad técnica  
+- Buena conectividad  
+- Información actualizada en tiempo real  
+- Confianza operacional  
+
+---
+
+### Validación del Arquetipo
+
+Los hallazgos obtenidos validan el arquetipo del segmento **Padre de Familia Protector y Ansioso por la Seguridad**, definido previamente en la investigación.
+
+Se confirma que este segmento necesita una solución digital enfocada en:
+
+- Seguridad infantil  
+- Monitoreo en tiempo real  
+- Reducción de incertidumbre  
+- Comunicación confiable  
+- Transparencia del servicio escolar  
+
+Esto respalda directamente las User Stories relacionadas con rastreo GPS, alertas automáticas, confirmación de llegada y acceso a información del trayecto dentro de SafeRoute.
 
 #### 2.2.3. Análisis de entrevistas
+## Segmento Objetivo 1: Conductores de Transporte Escolar
+
+El presente análisis corresponde a una muestra inicial de 1 entrevista válida del segmento conductor, por lo que los porcentajes reflejan únicamente los hallazgos preliminares del entrevistado y serán refinados con futuras entrevistas.
+### Características Objetivas del Segmento
+
+| Característica | Resultado | Sustento |
+|---|---|---|
+| Edad joven-adulta (25 a 35 años) | 100% | Arturo tiene 28 años |
+| Trabajo independiente | 100% | Indica operar con unidad propia y captar clientes directamente |
+| Experiencia en el rubro mayor a 5 años | 100% | Señala 6 años trabajando en transporte escolar |
+| Opera en zonas urbanas congestionadas | 100% | Trabaja en San Miguel y Miraflores |
+| Manejo de ruta diaria fija | 100% | Realiza recojo, traslado al colegio y retorno |
+
+### Hallazgo
+
+El segmento conductor evaluado corresponde a microoperadores independientes que administran su propio servicio y requieren herramientas de gestión simples, móviles y rápidas.
+
+### Uso de Tecnología y Herramientas Actuales
+
+| Herramienta / Canal | Porcentaje |
+|---|---|
+| WhatsApp como canal principal con padres | 100% |
+| Libreta física para horarios/direcciones | 100% |
+| Google Maps para navegación | 100% |
+| Uso combinado de herramientas manuales + digitales | 100% |
+
+### Principales Problemas Detectados (Pain Points)
+
+| Problema identificado | Porcentaje |
+|---|---|
+| Exceso de mensajes durante la conducción | 100% |
+| Distracción por responder padres en ruta | 100% |
+| Dependencia de memoria personal | 100% |
+| Estrés ante tráfico o cambios imprevistos | 100% |
+| Falta de visibilidad para padres genera presión | 100% |
+
+### Necesidades Funcionales Prioritarias
+
+| Necesidad mencionada | Porcentaje |
+|---|---|
+| Ubicación visible para padres sin escribir al conductor | 100% |
+| Notificaciones automáticas de abordaje/llegada | 100% |
+| Lista digital de alumnos del día | 100% |
+| Confirmación previa de asistencia | 100% |
+| App sencilla e intuitiva | 100% |
+| Funcionamiento con señal limitada | 100% |
+
+
+### Características Subjetivas del Segmento
+
+| Rasgo detectado | Porcentaje |
+|---|---|
+| Alta disposición a adoptar tecnología útil | 100% |
+| Mentalidad pragmática | 100% |
+| Valora eficiencia y orden | 100% |
+| Sensible a distracciones durante manejo | 100% |
+| Busca profesionalizar su servicio | 100% |
+
+----
+## Segmento Objetivo 2: Padres de Familia
+El presente análisis corresponde a una muestra de 3 entrevistas válidas del segmento padres de familia. Los porcentajes representan hallazgos identificados en Carla Peláez, Máximo Quevedo y Mario Villarreyes, permitiendo construir un perfil más sólido del segmento objetivo.
+
+### Características Objetivas del Segmento
+
+| Característica | Resultado | Sustento |
+|---|---|---|
+| Adultos responsables entre 25 y 49 años | 100% | Entrevistados de 38, 25 y 49 años |
+| Residen en zonas urbanas | 100% | Surco, Pucallpa urbana y Pueblo Libre |
+| Hogares con hijos en etapa escolar | 100% | Todos cuentan con hijos usuarios del servicio |
+| Uso actual de transporte escolar o particular escolar | 100% | Todos utilizan alguna modalidad de traslado |
+| Alta responsabilidad logística familiar | 100% | Coordinan horarios, recojo y seguimiento diario |
+
+Este hallazgo está compuesto por padres y madres responsables de la organización familiar que delegan el traslado escolar, pero desean mantener control, seguridad y visibilidad constante del proceso.
+
+### Uso de Tecnología y Herramientas Actuales
+
+| Herramienta / Canal | Porcentaje |
+|---|---|
+| WhatsApp como canal principal de comunicación | 100% |
+| Teléfono móvil como dispositivo principal | 100% |
+| Llamadas telefónicas como respaldo | 67% |
+| Dependencia de terceros para confirmar llegada | 100% |
+| Uso de sistemas del colegio o encargado institucional | 67% |
+
+Actualmente el segmento resuelve el seguimiento mediante canales informales y fragmentados, principalmente WhatsApp, llamadas y confirmaciones externas.
+
+### Principales Problemas Detectados (Pain Points)
+
+| Problema identificado | Porcentaje |
+|---|---|
+| Temor a accidentes o incidentes de seguridad | 100% |
+| Falta de información en tiempo real | 100% |
+| Ansiedad cuando no responde el encargado o conductor | 67% |
+| Desconfianza hacia conductores no validados | 67% |
+| Falta de datos del vehículo o conductor | 67% |
+| Demoras sin explicación clara | 67% |
+| Percepción de informalidad del servicio | 67% |
+
+La principal fricción no es solo logística, sino emocional: incertidumbre, riesgo percibido y falta de transparencia del operador.
+
+### Necesidades Funcionales Prioritarias
+
+| Necesidad mencionada | Porcentaje |
+|---|---|
+| Ubicación en tiempo real del transporte | 100% |
+| Confirmación automática de llegada | 100% |
+| Alertas ante retrasos o emergencias | 100% |
+| Información validada del conductor | 67% |
+| Información del vehículo | 67% |
+| Historial / reputación del servicio | 33% |
+| Herramienta simple desde celular | 100% |
+
+El segmento espera una solución móvil sencilla que combine monitoreo en vivo con confianza previa a la contratación.
+
+### Características Subjetivas del Segmento
+
+| Rasgo detectado | Porcentaje |
+|---|---|
+| Alta preocupación por seguridad infantil | 100% |
+| Alta receptividad hacia soluciones digitales útiles | 100% |
+| Busca reducir ansiedad diaria | 100% |
+| Valora confianza institucional | 67% |
+| Perfil práctico orientado a familia | 100% |
+| Conducta preventiva antes de contratar | 67% |
+
+La conclusión del segmento es que los padres de familia no buscan únicamente tecnología, sino tranquilidad y confianza. Valoran una plataforma que les permita saber dónde están sus hijos, recibir alertas automáticas y verificar que el conductor y vehículo sean seguros.
+
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
+En esta sección se presentan los arquetipos de usuario diseñados para representar los segmentos objetivo de SafeRoute: el conductor de transporte escolar independiente y el padre de familia. 
+
+La elaboración de estas fichas es el resultado de una síntesis detallada entre el análisis de la competencia y el proceso de Needfinding. Se han identificado características críticas como la alta dependencia de herramientas informales (WhatsApp/Llamadas), la ansiedad generada por la incertidumbre del tráfico en Lima y la necesidad de profesionalizar un sector mayoritariamente no estructurado.
+
+###### **Segmento Objetivo 1: Conductor **
+![UserPersona1](./assets/images/UserPersona1.png)
+
+---
+###### **Segmento Objetivo 2: Padre de Familia**
+![UserPersona2](./assets/images/UserPersona2.png)
+
 #### 2.3.2. User Task Matrix
+En esta sección se presenta la matriz de tareas de usuario , la cual consolida las actividades fundamentales que tanto el conductor (Carlos Ramírez) como el padre de familia (Rosita Nery) ejecutan para asegurar un traslado escolar exitoso. 
+
+Es importante destacar que estas tareas representan necesidades y procesos intrínsecos del servicio que existen independientemente de la existencia de una solución de software; el objetivo de SafeRoute es optimizar y digitalizar estas interacciones para reducir la carga operativa y la incertidumbre.
+
+#### Cuadro: User Task Matrix
+
+| Tarea (User Task) | Conductor - Frecuencia | Conductor - Importancia | Padre - Frecuencia | Padre - Importancia |
+|:---|:---:|:---:|:---:|:---:|
+| Verificar lista de asistencia de alumnos | Alta | Alta | N/A | N/A |
+| Identificar alumnos en el punto de recojo | Alta | Alta | N/A | N/A |
+| Confirmar el abordaje seguro del alumno | Alta | Crítica | Alta | Crítica |
+| Gestionar comunicación entre conductores y padres | Alta | Alta | Alta | Alta |
+| Notificar retrasos o imprevistos en la ruta | Media | Alta | Alta | Crítica |
+| Monitorear el progreso del trayecto | Media | Media | Alta | Alta |
+| Confirmar llegada al destino final | Alta | Crítica | Alta | Crítica |
+| Registrar la entrega del alumno al responsable | Alta | Crítica | Alta | Crítica |
+| Coordinar cambios de último momento en el servicio | Baja | Media | Baja | Alta |
+| Reportar incidencias de seguridad o salud | Baja | Crítica | Baja | Crítica |
+| Consultar el estado actual del servicio | Media | Media | Alta | Alta |
+| Revisar historial de trayectos realizados | Baja | Media | Media | Media |
+| Organizar y optimizar rutas y paradas | Alta | Alta | N/A | N/A |
+
+---
+
+#### Análisis y Explicación de la Matriz
+
+Tras el análisis de la matriz, se desprenden las siguientes conclusiones clave sobre el comportamiento y necesidades de los segmentos:
+
+* **Coincidencias en Tareas Críticas:** Existe una convergencia total en las tareas de "Confirmar abordaje", "Confirmar llegada" y "Registrar entrega". Para ambos segmentos, estas acciones representan la columna vertebral de la confianza en el servicio, manteniendo una importancia **Crítica** debido a que involucran la seguridad directa del menor.
+* **Diferencias de Rol:** La carga operativa de planificación y ejecución (verificación de listas y organización de rutas) recae exclusivamente en el conductor. Por el contrario, el padre de familia se enfoca en tareas de supervisión pasiva como "Monitorear el progreso", que tiene una frecuencia alta debido a la ansiedad constante que genera el tráfico de la ciudad.
+* **Gestión de Incidencias:** Se observa que tareas como "Reportar incidencias" tienen una frecuencia baja, pero su importancia es crítica. Esto valida la necesidad de que SafeRoute ofrezca canales de comunicación prioritarios que garanticen que, ante un imprevisto, la información fluya sin errores.
+* **Fricción en la Comunicación:** La tarea de "Notificar retrasos" es de frecuencia media para el conductor pero de importancia crítica para el padre, lo que resalta el mayor punto de fricción actual: la necesidad de información en tiempo real para reducir el estrés parental.
+
 #### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los User Journey Maps en versión As-Is correspondientes a los dos segmentos objetivo definidos previamente: conductor escolar y padre de familia. El propósito es comprender la experiencia actual del servicio de transporte escolar, identificando emociones, fricciones operativas, puntos críticos de comunicación y oportunidades de mejora antes de la implementación de SafeRoute.
+A continuación, se presentan los diagramas detallados para cada User Persona, vinculando sus objetivos y puntos de dolor con las etapas del proceso actual.
+
+User Journey Map: Carlos Ramírez (Conductor-Segmento Objetivo 1)
+![UserJourneyMap1](./assets/images/UserJourneyMap-Carlos.png)
+
+----
+User Journey Map: Rosita Nery (Padre de Familia-Segmento Objetivo 2)
+![UserJourneyMap2](./assets/images/UserJourneyMap-Rosita.png)
+
 #### 2.3.4. Empathy Mapping
+En esta sección se presenta el análisis de empatía realizado para nuestros segmentos objetivo buscando responder las preguntas ¿Con quién estamos empatizando? ¿Qué necesita hacer? ¿Qué está
+diciendo? ¿Qué está viendo? ¿Qué está haciendo? ¿Qué está escuchando? ¿Cómo sesiente y qué piensa? E identificando sus Pains y Gains.
+
+Segmento Objetivo 1: Conductor 
+![EmpathyMapping1](./assets/images/EmpathyMapping-Carlos.png)
+
+---
+Segmento Objetivo 2: Padre de familia 
+![EmpathyMapping2](./assets/images/EmpathyMapping-Rosita.png)
+
 ### 2.4. Big Picture Event Storming
+En esta sección, se presenta el desarrollo y los resultados de la sesión de Big Picture Event Storming realizada por el equipo para el proyecto SafeRoute. Este proceso consistió en una sesión colaborativa de modelado dirigida al dominio, donde el equipo se enfocó en comprender el ecosistema del negocio de movilidad escolar de manera integral.
+
+A través de esta dinámica, se logró plasmar los eventos significativos y sus interrelaciones, construyendo una primera aproximación visual de alto nivel que explora el landscape completo del negocio.
+
+![BigPictureEventStorming](./assets/images/EventStorming.jpg)
+* **URL:** [[https://miro.com/app/board/uXjVGhc-MhA=/](https://miro.com/app/board/uXjVGhc-MhA=/)]
+
 ### 2.5. Ubiquitous Language
+
+En esta sección se presenta el glosario de términos de negocio utilizados dentro del dominio de SafeRoute. 
+| Term (English) | Equivalente en Español | Definición |
+|---|---|---|
+| Administrator | Administrador | Persona o entidad responsable de la gestión operativa del servicio de movilidad escolar. Administra usuarios, rutas, vehículos, estudiantes y suscripciones. |
+| Driver | Conductor | Responsable de operar la unidad de transporte escolar y ejecutar el viaje diario. Registra eventos como inicio de trayecto, abordaje, incidencias y cierre de ruta. |
+| Parent | Padre de familia / Tutor | Usuario final que monitorea el recorrido del estudiante, recibe notificaciones y valida la seguridad del servicio. |
+| Student | Estudiante / Alumno | Beneficiario del servicio de transporte escolar. Su estado de abordaje, traslado y entrega representa el núcleo operativo del sistema. |
+| Visitor | Visitante | Usuario no registrado que accede a la Landing Page para conocer el servicio, consultar precios o solicitar una demostración. |
+| Subscription | Suscripción | Acuerdo comercial que habilita el acceso a la plataforma SafeRoute según un plan contratado y vigente. |
+| Plan | Plan | Oferta comercial (Basic, Intermediate, Premium) que determina funcionalidades, límites operativos y capacidad de uso del sistema. |
+| Billing Cycle | Ciclo de facturación | Periodo de tiempo en el que se cobra y renueva la suscripción del cliente (mensual o anual). |
+| Payment | Pago | Transacción económica realizada por el Administrador para activar o renovar una suscripción. |
+| Invoice | Factura / Comprobante | Documento emitido luego de un pago exitoso como constancia de la transacción realizada. |
+| Route | Ruta | Definición logística que incluye origen, destino, paradas y secuencia del recorrido escolar. |
+| Stop | Parada | Punto físico autorizado donde el vehículo recoge o entrega estudiantes. |
+| Checkpoint | Punto de control | Referencia geográfica dentro de la ruta utilizada para validar avance y calcular tiempos estimados. |
+| Trip | Viaje / Trayecto | Ejecución en tiempo real de una ruta programada en una fecha y horario determinados. |
+| Scheduled Trip | Viaje programado | Viaje previamente configurado para una fecha, conductor, vehículo y ruta específica. |
+| Boarding | Abordaje | Acción física y registro digital del momento en que el estudiante sube al vehículo. |
+| Boarding Status | Estado de abordaje | Estado operativo del estudiante durante el viaje (Boarded, Absent, Delivered, Pending). |
+| Absence | Ausencia | Evento registrado cuando el estudiante no aborda la unidad en la parada correspondiente. |
+| Delivery | Entrega | Confirmación de que el estudiante fue dejado de forma segura en destino autorizado. |
+| Vehicle | Vehículo / Unidad | Medio de transporte asignado a rutas específicas dentro de la operación escolar. |
+| Fleet | Flota | Conjunto de vehículos administrados por una misma organización o administrador. |
+| Driver Assignment | Asignación de conductor | Acción mediante la cual un conductor queda vinculado a una ruta o viaje programado. |
+| Vehicle Assignment | Asignación de vehículo | Acción mediante la cual una unidad queda vinculada a una ruta o viaje programado. |
+| Manifest | Manifiesto | Lista oficial de estudiantes asignados a una ruta o grupo para control operativo y asistencia. |
+| Group | Grupo | Conjunto de estudiantes relacionados a una ruta, zona o servicio común. |
+| Live Tracking | Monitoreo en tiempo real | Visualización dinámica de la ubicación actual del vehículo durante el viaje. |
+| ETA (Estimated Time of Arrival) | Tiempo estimado de llegada | Predicción del tiempo restante para llegar a una parada o destino. |
+| Incident | Incidente | Evento no planificado reportado durante el trayecto, como retrasos, tráfico, avería o emergencia. |
+| Delay | Retraso | Desviación del horario esperado del viaje respecto a la planificación original. |
+| Emergency Alert | Alerta de emergencia | Notificación prioritaria generada ante una situación crítica que requiere atención inmediata. |
+| Notification | Notificación | Comunicación automática enviada al usuario sobre eventos relevantes del servicio. |
+| Push Notification | Notificación push | Mensaje inmediato enviado al dispositivo móvil del usuario. |
+| Announcement | Comunicado | Mensaje masivo emitido por la administración hacia padres o usuarios registrados. |
+| Dashboard | Panel de control | Vista de gestión donde el Administrador monitorea operaciones, métricas y configuraciones. |
+| Attendance | Asistencia | Registro histórico de abordajes y ausencias del estudiante. |
+| Attendance Report | Reporte de asistencia | Resumen periódico del historial de presencia de estudiantes en el servicio. |
+| Trip History | Historial de viajes | Registro consolidado de trayectos ejecutados anteriormente. |
+| Security Validation | Validación de seguridad | Confirmación de identidad o permisos para acceder a funciones sensibles del servicio. |
+| Account Provisioning | Habilitación de cuenta | Proceso de creación y activación de acceso para un usuario del sistema. |
+| Role | Rol | Perfil funcional del usuario dentro del negocio (Administrator, Driver, Parent). |
+| Capacity Limit | Límite de capacidad | Restricción operativa determinada por el plan contratado, como número de rutas o conductores permitidos. |
+| Renewal | Renovación | Extensión de una suscripción al completar un nuevo pago. |
+| Suspension | Suspensión | Estado en el que se restringe el acceso al sistema por falta de pago o incumplimiento. |
+| Landing Page | Página informativa principal | Sitio web orientado a captación comercial donde se presenta la propuesta de valor del servicio. |
+| Demo Request | Solicitud de demostración | Petición comercial realizada por un visitante interesado en conocer el producto. |
+| Pricing | Precios / Tarifario | Información pública de costos y beneficios asociados a cada plan disponible. |
+| Trust Signal | Señal de confianza | Elemento comercial que incrementa credibilidad, como testimonios, alianzas o certificaciones. |
 
 ---
 
