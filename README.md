@@ -3551,20 +3551,21 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 ##### 5.2.1.1. Sprint Planning 1
 En la reunión de planificación del Sprint 1, el equipo definió como objetivo principal establecer la presencia digital de SafeRoute y la estructura base del sistema.
 
-| Sprint # | Sprint 1 |
-|----------|----------|
-| **Sprint Planning Background** | |
-| **Date** | 2026-04-06 |
-| **Time** | 14:30 PM (GMT-5) |
-| **Location** | Modalidad remota mediante la plataforma Discord |
-| **Prepared By** | Ramirez Ruiz, Nickolas |
-| **Attendees (to planning meeting)** | De La Cruz, Mathias / Ortega, José / Quispe, Julio / Ramirez, Nickolas / Vallejo, Fabio |
-| **Sprint 0 Review Summary** | N/A - Sprint inicial enfocado en la definición del modelo de negocio y perfiles de usuario. |
-| **Sprint 0 Retrospective Summary** | N/A - Configuración inicial de la organización en GitHub y Trello. |
-| **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | **Nuestro propósito es** diseñar y desplegar la versión inicial de la Landing Page de SafeRoute e implementar la estructura base del backend bajo DDD. **Creemos que esto aportará** visibilidad clara de nuestra solución a padres y transportistas. **Esto se confirmará cuando** la Landing Page sea accesible públicamente y se valide el primer endpoint del Shared Kernel. |
-| **Sprint 1 Velocity** | 22 Story Points |
-| **Sum of Story Points** | 22 Story Points |
+| US Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US25 | Visualización de Hero | T01 | Setup Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | Done |
+| US30 | Implementación i18n | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 10 | Mathias | Done |
+| US26 | Sección Funcionalidades | T03 | Componente Funcionalidades | Maquetar las 6 tarjetas de funcionalidades de la plataforma. | 6 | Fabio | Done |
+| US27 | Sección Roles | T04 | Componente Roles | Implementar la sección de los tres perfiles del sistema. | 6 | Mathias | Done |
+| US28 | Consulta de Precios | T05 | Sección Planes | Maquetar los tres planes de suscripción con sus funcionalidades. | 6 | Fabio | Done |
+| US29 | ¿Cómo funciona? | T06 | Sección Onboarding | Crear el componente de los 5 pasos del flujo de uso. | 6 | Fabio | Done |
+| --- | Arquitectura DDD | T07 | Bounded Contexts | Documentar los 6 bounded contexts del sistema. | 10 | Frank | Done |
+| --- | Diagramas C4 | T08 | Diagramas de Arquitectura | Elaborar diagramas de contexto, contenedores y componentes. | 10 | Frank | Done |
+| --- | Diseño UX/UI | T09 | Wireframes Desktop/Mobile | Elaborar wireframes para los tres perfiles de usuario. | 12 | Mathias | Done |
+| --- | Diseño UX/UI | T10 | Mockups Desktop/Mobile | Elaborar mockups para los tres perfiles de usuario. | 12 | Nickolas | Done |
+| --- | Capítulo 2 | T11 | Entrevistas y Needfinding | Documentar entrevistas, user personas y análisis de requerimientos. | 10 | José | Done |
+| --- | Documentación | T12 | Sprint Planning y Backlog | Documentar la planificación y gestión del Sprint 1. | 6 | Nickolas | Done |
+| --- | Despliegue | T13 | GitHub Pages Deploy | Configurar y desplegar la Landing Page en GitHub Pages. | 4 | Fabio | Done |
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
