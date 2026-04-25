@@ -1221,7 +1221,7 @@ La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript, y será desp
 5. Seleccionar la rama `main` (o `master`) y la carpeta raíz (`/`) como fuente.
 6. GitHub generará automáticamente una URL pública para acceder a la landing page.
 
-**URL desplegada:** Pendiente
+**URL desplegada:** [Landing Page SafeRoute](https://powertech-nrc12053.github.io/saferoute-website/)
 
 ---
 
