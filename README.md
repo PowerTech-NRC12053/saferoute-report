@@ -1900,27 +1900,27 @@ En esta sección se definen las convenciones de nombres y codificación adoptada
 
 ### JavaScript (Vue.js)
 
-- Los archivos terminan en `.js`.
-- Se utiliza **camelCase** para variables y funciones:
-  - `getRoutes`, `calculateDistance`.
-- Se prioriza el uso de `const` y `let`, evitando `var`.
-- Los componentes de Vue siguen una estructura modular y reutilizable.
-- Se mantiene separación clara entre lógica, presentación y datos.
-- Se utilizan nombres descriptivos para props, métodos y eventos.
+* Los archivos terminan en `.js`.
+* Se utiliza **camelCase** para variables y funciones:
+  * `getRoutes`, `calculateDistance`.
+* Se prioriza el uso de `const` y `let`, evitando `var`.
+* Los componentes de Vue siguen una estructura modular y reutilizable.
+* Se mantiene separación clara entre lógica, presentación y datos.
+* Se utilizan nombres descriptivos para props, métodos y eventos.
 
 ---
 
 ### C#
 
-- Se sigue la convención estándar de **PascalCase**:
-  - Clases: `StudentService`, `RouteController`.
-  - Métodos: `GetStudents()`, `CreateRoute()`.
-- Variables locales en **camelCase**:
-  - `studentList`, `routeId`.
-- Uso de sufijos por responsabilidad:
-  - `Controller`, `Service`, `Repository`.
-- Se mantiene una arquitectura organizada por capas (por ejemplo: Controllers, Services, Models).
-- Se aplican buenas prácticas como separación de responsabilidades y reutilización de código.
+* Se sigue la convención estándar de **PascalCase**:
+  * Clases: `StudentService`, `RouteController`.
+  * Métodos: `GetStudents()`, `CreateRoute()`.
+* Variables locales en **camelCase**:
+  * `studentList`, `routeId`.
+* Uso de sufijos por responsabilidad:
+  * `Controller`, `Service`, `Repository`.
+* Se mantiene una arquitectura organizada por capas (por ejemplo: Controllers, Services, Models).
+* Se aplican buenas prácticas como separación de responsabilidades y reutilización de código.
 
 ---
 
@@ -1941,7 +1941,7 @@ La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript, y será desp
 5. Seleccionar la rama `main` (o `master`) y la carpeta raíz (`/`) como fuente.
 6. GitHub generará automáticamente una URL pública para acceder a la landing page.
 
-**URL desplegada:** [Landing Page SafeRoute](https://powertech-nrc12053.github.io/saferoute-website/)
+**URL desplegada:** Pendiente
 
 ---
 
@@ -1956,7 +1956,7 @@ El frontend de la aplicación, desarrollado con Vue.js, será desplegado utiliza
 3. Configurar el entorno de despliegue (framework Vue.js).
 4. Ejecutar el despliegue automático desde Vercel.
 5. Obtener la URL pública generada para el acceso a la aplicación.
-
+ 
 **URL desplegada:** Pendiente
 
 ---
@@ -1978,20 +1978,237 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 ---
 
 ### 5.2. Landing Page, Services & Applications Implementation
-#### 5.2.X. Sprint n
-##### 5.2.X.1. Sprint Planning n
-##### 5.2.X.2. Aspect Leaders and Collaborators
-##### 5.2.X.3. Sprint Backlog n
-##### 5.2.X.4. Development Evidence for Sprint Review
-##### 5.2.X.5. Execution Evidence for Sprint Review
-##### 5.2.X.6. Services Documentation Evidence for Sprint Review
-##### 5.2.X.7. Software Deployment Evidence for Sprint Review
-##### 5.2.X.8. Team Collaboration Insights during Sprint
+
+##### Despliegue de Landing Page
+
+##### 5.2.1.1. Sprint Planning 1
+En la reunión de planificación del Sprint 1, el equipo definió como objetivo principal establecer la presencia digital de SafeRoute y la estructura base del sistema.
+
+| Sprint # | Sprint 1 |
+|----------|----------|
+| **Sprint Planning Background** | |
+| **Date** | 2026-04-06 |
+| **Time** | 14:30 PM (GMT-5) |
+| **Location** | Modalidad remota mediante la plataforma Discord |
+| **Prepared By** | Ramirez Ruiz, Nickolas |
+| **Attendees (to planning meeting)** | De La Cruz, Mathias / Ortega, José / Quispe, Julio / Ramirez, Nickolas / Vallejo, Fabio |
+| **Sprint 0 Review Summary** | N/A - Sprint inicial enfocado en la definición del modelo de negocio y perfiles de usuario. |
+| **Sprint 0 Retrospective Summary** | N/A - Configuración inicial de la organización en GitHub y Trello. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 1 Goal** | **Nuestro propósito es** diseñar y desplegar la versión inicial de la Landing Page de SafeRoute e implementar la estructura base del backend bajo DDD. **Creemos que esto aportará** visibilidad clara de nuestra solución a padres y transportistas. **Esto se confirmará cuando** la Landing Page sea accesible públicamente y se valide el primer endpoint del Shared Kernel. |
+| **Sprint 1 Velocity** | 22 Story Points |
+| **Sum of Story Points** | 22 Story Points |
+
+##### 5.2.1.2. Aspect Leaders and Collaborators
+De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
+
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
+|-------------------------------------|-----------------|-------------------|---------------------------|-------------------|---------------------|
+| Quispe Serrano, Julio Frank | FraSe_JQ | C | C | L | C |
+| Ortega Quintana, José Zacarías | AgoxX61 | L | C | C | C |
+| De La Cruz, Mathias Marcelo | Dela050406 | C | C | L | C |
+| Vallejo Trujillo, Fabio Cesar | fabiovallejo | C | L | C | C |
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | C | C | L |
+
+
+### **5.2.1.3. Sprint Backlog 1**
+
+**Objetivo del Sprint:**
+Establecer la infraestructura base de SafeRoute mediante el desarrollo de una Landing Page bilingüe que comunique la propuesta de valor, la implementación del sistema de gestión de usuarios (padres, conductores y alumnos) y la configuración de los servicios de geolocalización esenciales para el monitoreo de rutas.
+
+**Board de Trello :**
+*( captura )*
+
+**URL del Board:** [ enlace ]
+
+| US Id | User Story Title        | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| :--- |:------------------------| :--- | :--- | :--- | :--- | :--- | :--- |
+| **US25** | Visualización de Hero   | T01 | Setup de Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | To-do |
+| **US30** | Implementación i18n     | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 12 | Mathias | To-do |
+| **US19** | Alerta de Proximidad    | T03 | Lógica de Geofencing | Desarrollar el algoritmo de proximidad (500m) en el backend. | 14 | Mathias | To-do |
+| **US1** | Contratar Plan          | T04 | API de Suscripciones | Crear endpoints para selección de planes y validación de límites. | 12 | Nickolas | To-do |
+| **US5** | Creación de Rutas       | T05 | Módulo de Trazado | Implementar lógica para definir puntos A/B y paradas intermedias. | 16 | Nickolas | To-do |
+| **US6** | Asignación de Roles     | T06 | Gestión de Permisos | Desarrollar la lógica de vinculación Conductor-Ruta-Vehículo. | 10 | Nickolas | To-do |
+| **US23** | Sección ¿Cómo funciona? | T07 | Onboarding Visual | Crear el componente de infografía interactiva en la Landing. | 6 | Nickolas | To-do |
+| **US4** | Alta de Alumnos         | T08 | CRUD Alumnos | Implementar el registro de menores y almacenamiento de fotos. | 10 | Nickolas | To-do |
+| **US22** | Consulta de Precios     | T09 | Tabla de Planes | Maquetar la sección de costos y descuentos anuales en la web. | 8 | Chris | To-do |
+| **US2** | Registro de Conductores | T10 | Registro de Flota | Desarrollar validaciones de licencia y creación de cuentas driver. | 12 | Chris | To-do |
+| **US3** | Registro de Padres      | T11 | Gestión de Apoderados | Implementar el flujo de invitaciones y registro de padres. | 10 | Renzo | To-do |
+| **US14** | Finalización de Ruta    | T12 | Cierre de Sesión Operativa | Lógica para detener GPS y validar que el bus esté vacío al finalizar. | 8 | Renzo | To-do |
+| **US25** | API: Registro GPS       | T13 | Ingesta de Coordenadas | Desarrollar el endpoint de alta frecuencia para recibir datos GPS. | 15 | Fabio | To-do |
+| **US8** | Inicio de Trayecto      | T14 | Activación de Ruta | Implementar el trigger que notifica el inicio del viaje a los padres. | 8 | Fabio | To-do |
+| **---** | **Constraint General**  | T15 | Setup Arquitectónico | Configuración de BD SQL Server y estructura modular en C#. | 12 | Chris | To-do |
+
+**URL desplegada:** [Landing Page SafeRoute](https://powertech-nrc12053.github.io/saferoute-website/)
+
+Durante el Sprint 1, el equipo realizó commits principalmente sobre el repositorio del informe (SafeRoute-report), abarcando la documentación de los capítulos I al V, incluyendo el diseño de producto, arquitectura de software, wireframes, mockups y la configuración del entorno de desarrollo.
+
+| Repository       | Branch                                       | Commit Id | Commit Message                                                                 | Committed By  | Date       |
+|------------------|----------------------------------------------|-----------|--------------------------------------------------------------------------------|---------------|------------|
+| SafeRoute-report | develop                                      | ec0d2ce   | Initial commit                                                                 | SafeDriveTech | 2026-04-06 |
+| SafeRoute-report | develop                                      | 2bb2eef   | docs: initial report                                                           | FraSe-JQ      | 2026-04-07 |
+| SafeRoute-report | develop                                      | 45ec948   | docs: add startup profile and lean ux process for chapter 1                    | FraSe-JQ      | 2026-04-10 |
+| SafeRoute-report | develop                                      | 5f04c0e   | docs(report): add project cover page                                           | fabiovallejo  | 2026-04-10 |
+| SafeRoute-report | develop                                      | 1c099f8   | docs: add deployment section (5.1.4)                                           | fabiovallejo  | 2026-04-10 |
+| SafeRoute-report | develop                                      | aaadbc7   | docs(team): add personal profile and photo                                     | Bynickram02   | 2026-04-23 |
+| SafeRoute-report | develop                                      | 03ab198   | docs(chapter-5): ##### 5.2.1.1. Sprint Planning 1                              | Bynickram02   | 2026-04-23 |
+| SafeRoute-report | develop                                      | bd757c0   | docs(chapter-5): add update 5.2.1.1. Sprint Planning 1                         | Bynickram02   | 2026-04-23 |
+| SafeRoute-report | develop                                      | 236cc21   | docs(chapter-5): add 5.2.1.2. Aspect Leaders and Collaborators                 | Bynickram02   | 2026-04-23 |
+| SafeRoute-report | develop                                      | 6163f14   | docs(chapter-5): add 5.2.1.3. Sprint Backlog 1                                 | Bynickram02   | 2026-04-23 |
+| SafeRoute-report | develop                                      | 73494b0   | docs(chapter-5): update 5.2.1.3. Sprint Backlog 1                              | Bynickram02   | 2026-04-23 |
+| SafeRoute-report | feature/chapter-3-Requirements-Specification | 225a479   | chore: restruct images assets                                                  | Dela050406    | 2026-04-22 |
+| SafeRoute-report | feature/chapter4-ddd-architecture            | 84c85f7   | add: diagrams C4 and details                                                   | FraSe-JQ      | 2026-04-21 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | c040825   | docs: modify section Web Style Guidelines                                      | Dela050406    | 2026-04-19 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | f7930e2   | docs: add Landing Page Wireframes                                              | Dela050406    | 2026-04-19 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | 972597e   | docs: add section 4.3.2 section Landing Page Mock-up                           | Dela050406    | 2026-04-19 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | f48cfbe   | docs: update mockup                                                            | Dela050406    | 2026-04-19 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | ca0f82d   | docs: add mobile wireframes in section 4.3.1 and update wireframes             | Dela050406    | 2026-04-19 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | 9edd809   | docs: add mockup mobile in section 4.3.2                                       | Dela050406    | 2026-04-19 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | 40074e4   | docs: modified some concept about wireframes and mock-ups                      | Dela050406    | 2026-04-19 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | d855868   | docs: modify section 4.3.2 Landing Page Mock-up                                | Dela050406    | 2026-04-20 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | c3ca181   | docs: update section 4.4.1                                                     | Dela050406    | 2026-04-23 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | e3d18b0   | docs: add section 4.4.2 Web Application Mockups Desktop and Mobile             | Dela050406    | 2026-04-23 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | b6dfac2   | docs: update wireframe                                                         | Dela050406    | 2026-04-23 |
+| SafeRoute-report | feature/chapter4-ProductDesignn              | 87839ff   | docs: update Mockups and Wireframes WebApp                                     | Dela050406    | 2026-04-24 |
+| SafeRoute-report | develop                                      | 96e3eed   | docs: added web applications desktop wireframes for chapter 4                  | fabiovallejo  | 2026-04-24 |
+| SafeRoute-report | develop                                      | 9f0afc8   | docs: added universal mobile wireframes for chapter 4                          | fabiovallejo  | 2026-04-24 |
+| SafeRoute-report | develop                                      | fadb83a   | add software architecture and database design diagrams for chapter 4           | FraSe-JQ      | 2026-04-20 |
+| SafeRoute-report | develop                                      | a363651   | change: URL                                                                    | FraSe-JQ      | 2026-04-20 |
+| SafeRoute-report | develop                                      | b2a7212   | change Diagrams                                                                | FraSe-JQ      | 2026-04-20 |
+| SafeRoute-report | develop                                      | 32b401f   | docs(chapter-5): update add 5.2.1.1. Sprint Planning 1                         | Bynickram02   | 2026-04-24 |
+| SafeRoute-report | develop                                      | f83a826   | docs(chapter-5): update add 5.2.1.2. Aspect Leaders and Collaborators 1        | Bynickram02   | 2026-04-24 |
+
+* Por el momento el avance es ese, en proximos avances se ira enriqueciendo los commits y la estructura del trabajo.
+
+##### 5.2.1.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de SafeRoute, accesible en [https://powertech-nrc12053.github.io/saferoute-website/](https://powertech-nrc12053.github.io/saferoute-website/).
+
+La Landing Page presenta la propuesta de valor del producto, las funcionalidades principales, los roles del sistema, los planes de suscripción y el flujo de uso, con soporte de internacionalización (ES/EN). A continuación se presentan las capturas de las secciones implementadas.
+
+**Sección Hero**
+
+Se implementó la sección principal con el mensaje de valor "Transporte escolar seguro y digital", una ilustración del sistema en funcionamiento y dos botones de llamada a la acción: "Ver planes" y "¿Cómo funciona?". 
+El navbar incluye navegación a las secciones principales y el selector de idioma ES/EN.
+
+
+![Hero Section](assets/images/Chapter-5/Sprint1/landing-hero.png)
 
 ---
 
-## Conclusiones
-### Conclusiones y recomendaciones
+**Sección Funcionalidades**
+
+Se implementó la sección "Todo lo que necesitas para gestionar tu flota", presentando las seis funcionalidades principales de la plataforma mediante tarjetas con ícono y descripción: Gestión de rutas y paradas, Monitoreo en tiempo real, Control de abordaje, Reporte de incidencias, Historial y reportes, y Notificaciones de estado.
+
+
+![Funcionalidades Section](assets/images/Chapter-5/Sprint1/landing-funcionalidades.png)
+
+---
+
+**Sección Roles del Sistema**
+
+Se implementó la sección "Una plataforma, tres experiencias", que presenta las vistas y permisos diferenciados para los tres perfiles del sistema: Administrador, Conductor y Padre de Familia, cada uno con su lista de funciones disponibles.
+
+![Roles Section](assets/images/Chapter-5/Sprint1/landing-roles.png)
+
+---
+
+**Sección Planes**
+
+Se implementó la sección "Escala según tu operación", que presenta los tres planes de suscripción disponibles: Básico (9.99 dolares/mes), Intermedio (24.99 dolares/mes) y Completo (49.99 dolares/mes),
+con sus respectivas funcionalidades y botones de contratación.
+
+![Planes Section](assets/images/Chapter-5/Sprint1/landing-planes.png)
+ 
+---
+
+**Sección ¿Cómo funciona?**
+
+Se implementó la sección "De la configuración al primer viaje", que presenta en cinco pasos el flujo completo de uso de la plataforma: desde la contratación del plan por el administrador hasta el monitoreo en tiempo real por parte de los padres.
+
+
+![Como Funciona Section](assets/images/Chapter-5/Sprint1/landing-como-funciona.png)
+ 
+---
+**Sección Call to Action y Footer**
+
+Se implementó la sección final de cierre "¿Listo para digitalizar tu operación?", con botones de conversión hacia los planes y la sección de cómo funciona, junto con el footer de la plataforma.
+
+
+![CTA y Footer Section](assets/images/Chapter-5/Sprint1/landing-cta-footer.png)
+
+
+##### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+
+Durante el Sprint 1, el equipo se enfocó en el diseño y despliegue de la Landing Page de SafeRoute, así como en la documentación de la arquitectura base del sistema bajo el enfoque Domain-Driven Design (DDD). En consecuencia, no se implementaron ni desplegaron servicios web (Web Services / RESTful API) durante este sprint.
+La documentación de endpoints, contratos de API y evidencia de consumo de servicios será abordada a partir del Sprint 3, una vez que se inicie la implementación del backend en ASP.NET Core.
+
+| Recurso      | Acción implementada   | Método HTTP | URL / Endpoint | Link de repositorio                                        |
+|--------------|-----------------------|-------------|------------|------------------------------------------------------------|
+| Landing Page | Visualización inicial | GET         |            | https://github.com/PowerTech-NRC12053/saferoute-report.git |
+##### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 1 se realizó el despliegue de la Landing Page de SafeRoute
+utilizando GitHub Pages como plataforma de hosting estático.
+
+1. Se activó GitHub Pages en el repositorio `saferoute-website`, configurando
+   la rama `main` como fuente de publicación.
+
+   ![GitHub Pages](assets/images/Chapter-5/Sprint1/public.png)
+
+
+2. Se verificó la accesibilidad pública de la Landing Page.
+   **URL:** 
+
+
+https://powertech-nrc12053.github.io/saferoute-website/
+
+
+   ![Landing Live](assets/images/Chapter-5/Sprint1/landing-hero.png)
+
+
+##### 5.2.1.8. Team Collaboration Insights during Sprint
+
+![Pulse Insights](assets/images/Chapter-5/Sprint1/pulse.png)
+---
+
+### Despliegue de Backend Services
+
+El backend del sistema, desarrollado en C#, será desplegado utilizando Railway, una plataforma que permite exponer servicios y APIs en la nube.
+
+#### Pasos de despliegue:
+
+1. Crear el repositorio del backend en GitHub.
+2. Vincular el repositorio con Railway.
+3. Configurar las variables de entorno necesarias para la ejecución del backend.
+4. Configurar el servicio para exponer endpoints API.
+5. Desplegar el servicio y obtener la URL pública del backend.
+
+**URL desplegada:** Pendiente
+
+**Conclusiones**
+
+- El Sprint 1 permitió consolidar la identidad visual y comunicacional de SafeRoute mediante el despliegue de la Landing Page, logrando presentar de forma clara la propuesta de valor del producto a los segmentos objetivo. La implementación de secciones como Hero, Funcionalidades, Roles y Planes demostró que el equipo tiene una visión coherente del producto, alineada con los problemas identificados en el levantamiento de requerimientos.
+
+
+- La elaboración de los wireframes y mockups tanto en versión desktop como mobile para los tres perfiles de usuario (Administrador, Conductor y Padre de Familia) evidencia un diseño centrado en el usuario que anticipa los flujos críticos del sistema. Este trabajo de diseño previo representa una base sólida que reducirá el tiempo de desarrollo del frontend en los siguientes sprints al tener ya definidas las interfaces y la lógica de navegación.
+
+
+- La adopción de Domain-Driven Design como enfoque arquitectónico del backend permitió al equipo identificar y documentar correctamente los seis bounded contexts del sistema (IAM, Subscriptions, Stakeholders, Fleet, Trip y Notifications), estableciendo contratos claros entre dominios que facilitarán la implementación progresiva del backend en ASP.NET Core a partir del Sprint 2.
+
+
+**Recomendaciones**
+
+- Se recomienda mantener el repositorio actualizado conforme avance cada sprint, evitando acumular secciones pendientes para el último momento y reduciendo la carga de trabajo en las semanas de entrega.
+
+- Se recomienda que el equipo establezca una rutina de revisión de pull requests entre pares antes de mergear cualquier rama feature a develop,
+con el objetivo de reducir errores de integración, mantener la consistencia del informe y asegurar que todos los integrantes estén alineados con el avance general del proyecto.
+
+
+- Se recomienda iniciar las entrevistas con usuarios reales del segmento objetivo (padres de familia y transportistas) a la brevedad, 
+con el fin de validar las hipótesis planteadas en el Lean UX Canvas y ajustar las funcionalidades del producto antes de invertir mayor esfuerzo de desarrollo en el frontend y backend.
+
 ### Video About-the-Team
 
 ## Bibliografía
