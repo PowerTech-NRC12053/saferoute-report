@@ -1699,6 +1699,12 @@ A continuación, se incluirá un screenshot extraído de un video por cada tipo 
 
 <img src="assets/images/prototype.png" width="900px" alt="Protoype">
 
+#### Web Applications Desktop:
+
+[Desktop Prototype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202424059_upc_edu_pe/IQDD8jX45qD1TLdrlv1viH8AAe4MI-VfTCxWpwzvXAHEW78?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AMYnCI)
+
+<img src="assets/images/prototype2.png" width="900px" alt="Protoype">
+
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
