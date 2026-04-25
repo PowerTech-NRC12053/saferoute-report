@@ -66,7 +66,7 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/FiveTe
 |              ![foto]               | [Apellido 2], [Nombre 2]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
 | ![foto](assets/images/Team/frankFT.png) | Quispe Serrano, Julio Frank | [U20241D922]  | Ingeniería de Software | Mi nombre es Julio Frank Quispe Serrano, tengo 20 años,actualmente estoy cursando el 5to ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Soy un apasionado por la programación, el gym y explorador de música en distintos géneros. Mi aporte en este grupo será el de brindar soluciones prácticas y eficientes ante situaciones de adversidad que estanquen la fluidez de la elaboración del trabajo. |
 |              ![foto]               | [Apellido 4], [Nombre 4]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
-|              ![foto]               | [Apellido 5], [Nombre 5]    | [U20XXXXXXXX] | Ingeniería de Software | [Descripción de conocimientos técnicos y habilidades que aporta al equipo]                                                                                                                                                                                                                                                                                                                                                                             |
+| ![foto](assets/images/Team/perfil-fabio-vallejo.png) | Vallejo Trujillo, Fabio Cesar    | [U20211D989] | Ingeniería de Software | Soy Fabio, estudiante de ingenieria de software en quinto ciclo. Me gusta aprender nuevas tecnologías de programación y mantener buenas prácticas. Puedo aportar al proyecto con mis conocimientos técnicos en las multiples areas de programación y mejorando la organización de los entregables.                                                                                                                                                                                                                                                                                       |
 
 ### 1.2. Solution Profile
 #### 1.2.1 Antecedentes y problemática
@@ -170,7 +170,27 @@ SafeRoute está dirigido a dos segmentos que forman parte del ecosistema del tra
 #### 2.1.2. Estrategias y tácticas frente a competidores
 ### 2.2. Entrevistas
 #### 2.2.1. Diseño de entrevistas
+
 #### 2.2.2. Registro de entrevistas
+
+##### Segmento 1: Transportistas Escolares
+
+###### Entrevista 1
+
+**Nombre:** Arturo Nuñez  
+**Edad:** 28 años  
+**Distrito:** San Miguel  
+
+**Resumen**: Arturo Nuñez, conductor independiente de transporte escolar, gestiona sus rutas mediante una libreta y su memoria, utilizando WhatsApp para comunicarse con los padres.
+
+Su proceso actual es funcional, pero depende fuertemente de la coordinación con los padres y de su organización personal, lo que genera problemas ante cambios imprevistos o falta de comunicación oportuna. La comunicación constante por WhatsApp durante el trayecto representa una carga y una distracción.
+
+El entrevistado valora una solución que le permita automatizar la comunicación, conocer con anticipación la asistencia de los alumnos y reducir la necesidad de interactuar con el celular mientras conduce. También considera importante que los padres puedan visualizar el estado del recorrido.
+
+Está dispuesto a usar una herramienta siempre que sea simple, rápida y no interfiera con su conducción.
+
+![ImpactMapping1](./assets/images/ChapterII/entrevista-arturo-nuñez.png)
+
 #### 2.2.3. Análisis de entrevistas
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
