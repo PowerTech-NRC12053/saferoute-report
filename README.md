@@ -2697,6 +2697,11 @@ Este diagrama expone las 4 capas transversales (Building Blocks) que fundamentan
 
 **FrontEnd**
 
+<<<<<<< HEAD
+=======
+**FrontEnd**
+
+>>>>>>> e322928824764a64d525dcadc3de76cbab3bd5eb
 - Single Page 
 
 ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_SPA-dark%20(1).png)
