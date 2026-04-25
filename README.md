@@ -2173,20 +2173,6 @@ https://powertech-nrc12053.github.io/saferoute-website/
 ![Pulse Insights](assets/images/Chapter-5/Sprint1/pulse.png)
 ---
 
-### Despliegue de Backend Services
-
-El backend del sistema, desarrollado en C#, será desplegado utilizando Railway, una plataforma que permite exponer servicios y APIs en la nube.
-
-#### Pasos de despliegue:
-
-1. Crear el repositorio del backend en GitHub.
-2. Vincular el repositorio con Railway.
-3. Configurar las variables de entorno necesarias para la ejecución del backend.
-4. Configurar el servicio para exponer endpoints API.
-5. Desplegar el servicio y obtener la URL pública del backend.
-
-**URL desplegada:** Pendiente
-
 **Conclusiones**
 
 - El Sprint 1 permitió consolidar la identidad visual y comunicacional de SafeRoute mediante el despliegue de la Landing Page, logrando presentar de forma clara la propuesta de valor del producto a los segmentos objetivo. La implementación de secciones como Hero, Funcionalidades, Roles y Planes demostró que el equipo tiene una visión coherente del producto, alineada con los problemas identificados en el levantamiento de requerimientos.
