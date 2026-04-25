@@ -322,7 +322,7 @@ En base al análisis competitivo y SWOT realizado, SafeRoute plantea las siguien
 | Segmento | Conductor de Transporte Escolar |
 | Inicio en video | 00:15 |
 | Duración | 07:19 |
-| URL del video | [[https://youtu.be/V0uneeO5sFQ](https://youtu.be/V0uneeO5sFQ)][[https://1drv.ms/v/c/f647ccc757f760c7/IQAVffXPiVroSJbblZ6_3uoTAetjl1xIO23c6V_l0aviUGg?e=KJhdzW](https://1drv.ms/v/c/f647ccc757f760c7/IQAVffXPiVroSJbblZ6_3uoTAetjl1xIO23c6V_l0aviUGg?e=KJhdzW)] |
+| URL del video | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
 
 #### Screenshot
 ![SegmentoObjetivo1](./assets/images/ArturoNunez-SegmentoObjetivo1.png)
@@ -388,7 +388,7 @@ La entrevista confirma que el segmento conductor necesita reducir carga operativ
 | **Segmento** | Padre de Familia |
 | **Inicio en video** | 07:42 |
 | **Duración** | 04:80 |
-| **URL del video** | [https://youtu.be/V0uneeO5sFQ](https://youtu.be/V0uneeO5sFQ)][[https://1drv.ms/v/c/f647ccc757f760c7/IQAVffXPiVroSJbblZ6_3uoTAetjl1xIO23c6V_l0aviUGg?e=KJhdzW](https://1drv.ms/v/c/f647ccc757f760c7/IQAVffXPiVroSJbblZ6_3uoTAetjl1xIO23c6V_l0aviUGg?e=KJhdzW)] |
+| **URL del video** | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
 
 #### **Screenshot**
 ![SegmentoObjetivo2](./assets/images/CarlaPelaez-SegmentoObjetivo2.png)
@@ -492,100 +492,210 @@ Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tra
 | **Edad** | 49 años |
 | **Distrito / Zona de residencia** | Pueblo Libre, Lima |
 | **Segmento** | Padre de Familia |
-| **Inicio en video** | 00:09 |
+| **Inicio en video** | 12:31 |
 | **Duración** | 07:33 |
-| **URL del video** | [[Youtube](https://youtu.be/NhtjkSpnv3k?si=tg0VZ5xNxyN6yhRy)][[MicrosoftStream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202315968_upc_edu_pe/IQCFcKSMHqnMRpxySd5Z7SzwAebsgh4yqTjlfgDpPLZLbx0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1n8JEB)] |
+| **URL del video** | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
 
 #### **Screenshot**
 ![SegmentoObjetivo2](assets/images/MarioVillarreyes-SegmentoObjetivo2.png)
 
 
-#### **Resumen Descriptivo de la Entrevista**
+## **Resumen Descriptivo de la Entrevista**
 
 ### **Características Objetivas y Entorno**
 
-Marío Villarreyes es una madre de familia de 49 años residente en el distrito de Pueblo Libre. Vive con su esposa y sus dos hijos, los dos utilizan transporte escolar para regresar a su casa. Representa a las familias urbanas con alta responsabilidad logística diaria, donde el traslado escolar cumple un rol clave para mantener una mejor organización de horarios familiares, laborales y educativos.
+Mario Humberto Villarreyes Quinoza es un padre de familia de 49 años residente en Pueblo Libre, Lima. Vive con su esposa actual y dos de sus hijos: Ciara de 12 años y León de 7 años. Representa a familias urbanas que requieren apoyo logístico complementario para equilibrar responsabilidades familiares, laborales y escolares.
 
-El transporte escolar forma parte importante de su rutina diaria, ya que permite asegurar la asistencia puntual de sus hijos al centro educativo. Sin que se vea perjudicado en su trabajo.
+En su caso, el transporte escolar no se utiliza diariamente como servicio institucional fijo, sino principalmente para el recojo de su hija cuando tiene horarios extendidos o actividades adicionales en el colegio.
 
 ### **Perfil Tecnológico y Hábitos Digitales**
 
-La entrevistada demuestra una actitud positiva y proactiva frente al uso de tecnología y asocia las herramientas digitales con mayor seguridad,tranquilidad y confianza. Está acostumbrada a recibir información mediante canales digitales, institucionales y mensajería móvil.
+El entrevistado demuestra familiaridad funcional con herramientas digitales orientadas a resolver necesidades cotidianas. Utiliza tecnología principalmente para coordinar servicios y validar información relevante antes de contratar.
 
 Actualmente utiliza:
 
-* Teléfono móvil como principal dispositivo de comunicación  
-* Laptop como dispositivo laboral principal y tambien de comunicación secundario
-* WhatsApp para contacto con responsables del transporte   
+* WhatsApp como principal canal de coordinación  
+* Teléfono móvil para contacto inmediato  
+* Búsqueda digital de antecedentes e información vehicular  
 
-Esto evidencia un perfil digital Avanzado, con apertura a nuevas soluciones tecnológicas siempre que sean comprensibles, confiables y rapidas.
+Esto evidencia un perfil digital práctico, orientado a la utilidad, seguridad y rapidez de respuesta.
 
 ### **Proceso Actual y Canales de Interacción**
 
-Para confirmar que sus hijos llegaron correctamente a destino, Marío depende de dos mecanismos externos:
+Actualmente contrata un servicio particular tipo taxi privado para recoger a su hija cuando lo necesita. La coordinación se realiza mediante una persona de confianza (señora Ana), quien contacta al conductor encargado del traslado.
 
-* Confirmación verbal o escrita de la responsable de la movilidad escolar  
-* Confirmación de salida enviada por el colegio mediante su sistema interna  
+La comunicación con el conductor o responsable del servicio se realiza principalmente por:
 
-Cuando existe demora o falta de confirmación, se comunica directamente con el colegio para validar la llegada de sus hijos.
-
-Actualmente la comunicación con el conductor o responsable se realiza principalmente por:
-
-* Llamadas telefónicas  
 * WhatsApp  
+* Coordinación indirecta mediante tercero de confianza  
 
+Esto refleja un modelo operativo informal, altamente dependiente de referencias personales.
 
 ### **Pain Points (Problemas Detectados)**
 
-Durante la entrevista se identificaron preocupaciones relevantes:
+Durante la entrevista se identificaron preocupaciones importantes:
 
-* Ansiedad cuando no llega la confirmación del colegio  
-* Falta de visibilidad en tiempo real durante el trayecto  
-* Dependencia de terceros para validar información del conductor y vehiculo 
-* Percepción de inseguridad en el contexto actual de transporte urbano e inseguridad en la pista 
-* Menor confianza cuando la movilidad no pertenece directamente al colegio  
+* Falta de visibilidad previa sobre antecedentes del conductor  
+* Dificultad para validar papeletas, sanciones o historial de manejo  
+* Incertidumbre sobre propiedad y condiciones del vehículo  
+* Conducción imprudente o exceso de velocidad en movilidades escolares  
+* Uso inadecuado del claxon y presión por llegar a tiempo  
+* Sobrecarga de pasajeros por encima del aforo permitido  
+* Escasa capacitación percibida en algunos conductores  
 
-Estos puntos reflejan una necesidad clara de monitoreao, confianza y comunicación inmediata.
-
+Estos hallazgos muestran que la principal preocupación no es solo la ubicación, sino la seguridad integral y calidad del operador.
 
 ### **Necesidades y Oportunidades Detectadas**
 
-Marío mostró alta aceptación hacia una plataforma digital que le permita:
+Mario mostró interés en una plataforma digital que permita:
 
-* Ver la ruta del vehículo en tiempo real  
-* Conocer si ocurrió algún inconveniente durante el trayecto  
-* Saber la información del vehiculo
-* Verificar las credenciales del conductor
-* Saber la ubicación permanente de sus hijos  
-* Reducir ansiedad e incertidumbre diaria  
-* Incrementar confianza en el servicio contratado  
+* Ver antecedentes del conductor antes de contratar  
+* Consultar papeletas o faltas registradas  
+* Validar experiencia del conductor  
+* Revisar comentarios y reputación del servicio  
+* Conocer información completa del vehículo  
+* Confirmar cumplimiento de aforo permitido  
+* Elegir opciones confiables antes de contratar  
 
-Para Marío, el atributo más importante para sentirse tranquila es:
-
-“Qué el transporte tenga todas las seguridades”.
+Valora especialmente la transparencia previa a la contratación.
 
 ### **Características Subjetivas y Personalidad**
 
 A partir de sus respuestas, se identifica un perfil:
 
-* Protector y orientado al bienestar familiar  
-* Preventivo frente a riesgos externos  
-* Apoyo a las herramientas digitales   
-* Sensible y temeroso ante la falta de información  
-* Altamente motivado por la seguridad de sus hijos
+* Preventivo y orientado a la seguridad familiar  
+* Analítico al momento de contratar servicios  
+* Exigente con estándares de conducción  
+* Crítico frente a informalidad del sector  
+* Receptivo a soluciones digitales con información verificable  
 
 ### **Validación del Arquetipo**
-Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto SafeRoute. Se confirma que este segmento prioriza:
 
-* Seguridad del estudiante  
-* Monitoreo en tiempo real  
-* Alertas automáticas 
-* Comunicación confiable  
-* Reducción de ansiedad durante el traslado escolar  
+Los datos recolectados validan los supuestos del segmento Padre de Familia dentro del proyecto SafeRoute. Se confirma que este segmento prioriza:
 
-Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tranquilidad, confianza y visibilidad operacional para las familias usuarias.
+* Seguridad física de sus hijos  
+* Transparencia del conductor y vehículo  
+* Información verificable antes de contratar  
+* Buenas prácticas de conducción  
+* Confianza operativa del servicio  
 
 ---
+## Entrevista 4: Máximo Quevedo
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Nombre y Apellidos** | Máximo Quevedo |
+| **Edad** | 25 años |
+| **Distrito / Zona de residencia** | Callería, Pucallpa |
+| **Segmento** | Padre de Familia |
+| **Inicio en video** | 20:03 |
+| **Duración** | 08:04 |
+| **URL del video** | [[[https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)] |
+
+#### **Screenshot**
+![SegmentoObjetivo2](./assets/images/MaximoQuevedo-SegmentoObjetivo2.png)
+
+
+---
+
+## Resumen Descriptivo de la Entrevista
+
+### Características Objetivas y Entorno
+
+Máximo Quevedo es un padre de familia de 25 años residente en el distrito de Callería, ciudad de Pucallpa. Tiene hijos de 6 y 7 años que utilizan transporte escolar institucional brindado por el colegio mediante rutas establecidas.
+
+Para él, el transporte escolar cumple principalmente una función de **seguridad, organización y ahorro de tiempo**, ya que permite asegurar el traslado diario de sus hijos mientras la familia mantiene sus actividades cotidianas.
+
+Actualmente el servicio es administrado por la institución educativa, y la comunicación relacionada con el transporte se realiza principalmente mediante directivos o responsables del colegio.
+
+---
+
+### Herramientas y Proceso Actual
+
+En la actualidad, el entrevistado no cuenta con herramientas digitales específicas para monitorear el trayecto del transporte escolar. El seguimiento se basa en mecanismos tradicionales:
+
+- Llamadas telefónicas al director o encargado del colegio  
+- Espera pasiva de confirmación de llegada  
+- Confianza en la institución educativa  
+- Comunicación indirecta con el conductor  
+
+No existe visibilidad en tiempo real del recorrido, ni acceso directo a información del vehículo o conductor.
+
+---
+
+### Problemas Detectados (Pain Points)
+
+Máximo identifica varios problemas relevantes en el servicio actual:
+
+- Falta de seguimiento en tiempo real del bus escolar  
+- Incertidumbre sobre la llegada segura de sus hijos  
+- Demora o ausencia de respuesta por parte de directivos  
+- Escasa información sobre conductor y unidad vehicular  
+- Ansiedad cuando no recibe confirmaciones oportunas  
+- Dependencia total del colegio como intermediario de comunicación  
+
+Además, expresa preocupación por riesgos potenciales como accidentes o emergencias durante el trayecto.
+
+---
+
+### Necesidades y Oportunidades
+
+El entrevistado muestra una percepción altamente positiva hacia una solución digital especializada para transporte escolar. Considera valioso que la plataforma incluya:
+
+- Seguimiento GPS en tiempo real  
+- Identificación del bus asignado  
+- Datos visibles del conductor responsable  
+- Confirmaciones automáticas de llegada  
+- Canal rápido ante emergencias  
+- Comunicación directa y ordenada con responsables  
+
+También menciona que una herramienta así podría reducir ansiedad familiar y aumentar la confianza en el servicio.
+
+---
+
+### Aspectos Subjetivos y Comportamiento
+
+Máximo presenta un perfil orientado a la protección familiar. Sus decisiones están fuertemente influenciadas por la seguridad de sus hijos y la tranquilidad emocional del hogar.
+
+Valora:
+
+- Seguridad por encima del precio o comodidad  
+- Transparencia en la información  
+- Rapidez de respuesta ante incidentes  
+- Control preventivo del trayecto  
+- Bienestar emocional de sus hijos durante el viaje  
+
+Su reacción ante nuevas tecnologías es positiva, siempre que sean confiables y precisas.
+
+---
+
+### Tecnología y Riesgos Percibidos
+
+Aunque muestra aceptación hacia herramientas digitales, también expresa una preocupación clara: que el sistema falle o entregue información errónea.
+
+Esto evidencia que para este segmento no basta con innovar, sino que la solución debe transmitir:
+
+- Precisión de datos  
+- Estabilidad técnica  
+- Buena conectividad  
+- Información actualizada en tiempo real  
+- Confianza operacional  
+
+---
+
+### Validación del Arquetipo
+
+Los hallazgos obtenidos validan el arquetipo del segmento **Padre de Familia Protector y Ansioso por la Seguridad**, definido previamente en la investigación.
+
+Se confirma que este segmento necesita una solución digital enfocada en:
+
+- Seguridad infantil  
+- Monitoreo en tiempo real  
+- Reducción de incertidumbre  
+- Comunicación confiable  
+- Transparencia del servicio escolar  
+
+Esto respalda directamente las User Stories relacionadas con rastreo GPS, alertas automáticas, confirmación de llegada y acceso a información del trayecto dentro de SafeRoute.
 
 #### 2.2.3. Análisis de entrevistas
 
@@ -649,52 +759,59 @@ El segmento conductor evaluado corresponde a microoperadores independientes que 
 
 ----
 ## Segmento Objetivo 2: Padres de Familia
-
-El presente análisis corresponde a una muestra inicial de 1 entrevista válida del segmento padres de familia, por lo que los porcentajes reflejan únicamente los hallazgos preliminares de la entrevistada y serán refinados con futuras entrevistas.
+El presente análisis corresponde a una muestra de 3 entrevistas válidas del segmento padres de familia. Los porcentajes representan hallazgos identificados en Carla Peláez, Máximo Quevedo y Mario Villarreyes, permitiendo construir un perfil más sólido del segmento objetivo.
 
 ### Características Objetivas del Segmento
 
 | Característica | Resultado | Sustento |
 |---|---|---|
-| Adulto responsable entre 35 y 45 años | 100% | Carla tiene 38 años |
-| Reside en zona urbana consolidada | 100% | Vive en Surco, Lima |
-| Hogar con hijos en etapa escolar | 100% | Indica tener cuatro hijos |
-| Uso recurrente de transporte escolar | 100% | Señala que el servicio es importante para asistir al centro de estudios |
-| Necesidad diaria de coordinación familiar | 100% | Gestiona traslado y seguimiento de varios hijos |
+| Adultos responsables entre 25 y 49 años | 100% | Entrevistados de 38, 25 y 49 años |
+| Residen en zonas urbanas | 100% | Surco, Pucallpa urbana y Pueblo Libre |
+| Hogares con hijos en etapa escolar | 100% | Todos cuentan con hijos usuarios del servicio |
+| Uso actual de transporte escolar o particular escolar | 100% | Todos utilizan alguna modalidad de traslado |
+| Alta responsabilidad logística familiar | 100% | Coordinan horarios, recojo y seguimiento diario |
 
-### Hallazgo
-
-El segmento evaluado corresponde a padres de familia con alta responsabilidad logística diaria, que valoran la seguridad, la información oportuna y la tranquilidad emocional durante el traslado escolar.
+Este hallazgo está compuesto por padres y madres responsables de la organización familiar que delegan el traslado escolar, pero desean mantener control, seguridad y visibilidad constante del proceso.
 
 ### Uso de Tecnología y Herramientas Actuales
 
 | Herramienta / Canal | Porcentaje |
 |---|---|
-| WhatsApp / Teléfono para comunicación con movilidad | 100% |
-| Sistema del colegio para confirmar asistencia | 100% |
-| Uso de smartphone como canal principal | 100% |
-| Dependencia de terceros para recibir información | 100% |
+| WhatsApp como canal principal de comunicación | 100% |
+| Teléfono móvil como dispositivo principal | 100% |
+| Llamadas telefónicas como respaldo | 67% |
+| Dependencia de terceros para confirmar llegada | 100% |
+| Uso de sistemas del colegio o encargado institucional | 67% |
+
+Actualmente el segmento resuelve el seguimiento mediante canales informales y fragmentados, principalmente WhatsApp, llamadas y confirmaciones externas.
 
 ### Principales Problemas Detectados (Pain Points)
 
 | Problema identificado | Porcentaje |
 |---|---|
-| Ansiedad cuando la movilidad demora | 100% |
-| Preocupación si no llega confirmación del colegio | 100% |
-| Falta de ubicación en tiempo real | 100% |
 | Temor a accidentes o incidentes de seguridad | 100% |
-| Desconfianza hacia servicios externos no afiliados al colegio | 100% |
+| Falta de información en tiempo real | 100% |
+| Ansiedad cuando no responde el encargado o conductor | 67% |
+| Desconfianza hacia conductores no validados | 67% |
+| Falta de datos del vehículo o conductor | 67% |
+| Demoras sin explicación clara | 67% |
+| Percepción de informalidad del servicio | 67% |
+
+La principal fricción no es solo logística, sino emocional: incertidumbre, riesgo percibido y falta de transparencia del operador.
 
 ### Necesidades Funcionales Prioritarias
 
 | Necesidad mencionada | Porcentaje |
 |---|---|
-| Ver ubicación en tiempo real del transporte | 100% |
+| Ubicación en tiempo real del transporte | 100% |
 | Confirmación automática de llegada | 100% |
-| Alertas ante retrasos o inconvenientes | 100% |
-| Mayor visibilidad de la ruta diaria | 100% |
+| Alertas ante retrasos o emergencias | 100% |
+| Información validada del conductor | 67% |
+| Información del vehículo | 67% |
+| Historial / reputación del servicio | 33% |
 | Herramienta simple desde celular | 100% |
-| Sentir tranquilidad y control del proceso | 100% |
+
+El segmento espera una solución móvil sencilla que combine monitoreo en vivo con confianza previa a la contratación.
 
 ### Características Subjetivas del Segmento
 
@@ -703,12 +820,11 @@ El segmento evaluado corresponde a padres de familia con alta responsabilidad lo
 | Alta preocupación por seguridad infantil | 100% |
 | Alta receptividad hacia soluciones digitales útiles | 100% |
 | Busca reducir ansiedad diaria | 100% |
-| Valora confianza institucional | 100% |
+| Valora confianza institucional | 67% |
 | Perfil práctico orientado a familia | 100% |
+| Conducta preventiva antes de contratar | 67% |
 
-### Conclusión del Segmento
-
-El perfil preliminar evidencia que los padres no buscan solo tecnología, sino tranquilidad. Una solución digital será valorada si reduce incertidumbre, mejora la confianza y entrega información clara sin depender de llamadas o mensajes manuales.
+La conclusión del segmento es que los padres de familia no buscan únicamente tecnología, sino tranquilidad y confianza. Valoran una plataforma que les permita saber dónde están sus hijos, recibir alertas automáticas y verificar que el conductor y vehículo sean seguros.
 
 ### 2.3. Needfinding
 
