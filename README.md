@@ -484,6 +484,21 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 
 ##### 5.2.1.3. Sprint Backlog 1
+| US Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US25 | Visualización de Hero | T01 | Setup Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | Done |
+| US30 | Implementación i18n | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 10 | Mathias | Done |
+| US26 | Sección Funcionalidades | T03 | Componente Funcionalidades | Maquetar las 6 tarjetas de funcionalidades de la plataforma. | 6 | Fabio | Done |
+| US27 | Sección Roles | T04 | Componente Roles | Implementar la sección de los tres perfiles del sistema. | 6 | Mathias | Done |
+| US28 | Consulta de Precios | T05 | Sección Planes | Maquetar los tres planes de suscripción con sus funcionalidades. | 6 | Fabio | Done |
+| US29 | ¿Cómo funciona? | T06 | Sección Onboarding | Crear el componente de los 5 pasos del flujo de uso. | 6 | Fabio | Done |
+| --- | Arquitectura DDD | T07 | Bounded Contexts | Documentar los 6 bounded contexts del sistema. | 10 | Frank | Done |
+| --- | Diagramas C4 | T08 | Diagramas de Arquitectura | Elaborar diagramas de contexto, contenedores y componentes. | 10 | Frank | Done |
+| --- | Diseño UX/UI | T09 | Wireframes Desktop/Mobile | Elaborar wireframes para los tres perfiles de usuario. | 12 | Mathias | Done |
+| --- | Diseño UX/UI | T10 | Mockups Desktop/Mobile | Elaborar mockups para los tres perfiles de usuario. | 12 | Nickolas | Done |
+| --- | Capítulo 2 | T11 | Entrevistas y Needfinding | Documentar entrevistas, user personas y análisis de requerimientos. | 10 | José | Done |
+| --- | Documentación | T12 | Sprint Planning y Backlog | Documentar la planificación y gestión del Sprint 1. | 6 | Nickolas | Done |
+| --- | Despliegue | T13 | GitHub Pages Deploy | Configurar y desplegar la Landing Page en GitHub Pages. | 4 | Fabio | Done |
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
 
