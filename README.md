@@ -35,7 +35,7 @@
 ---
 
 ## Project Report Collaboration Insights
-El equipo ha utilizado un flujo de trabajo en github: [https://github.com/FiveTech-NRC11896/SafeRoute-report](https://github.com/FiveTech-NRC11896/SafeRoute-report)
+El equipo ha utilizado un flujo de trabajo en github: [https://github.com/PowerTech-NRC12053/saferoute-report](https://github.com/PowerTech-NRC12053/saferoute-report)
 
 ---
 
@@ -2481,7 +2481,7 @@ A continuación, se incluirá un screenshot extraído de un video por cada tipo 
 
 Este contexto gestiona los planes comerciales y el estado de suscripción de cada organización. La tabla `plans` es un catálogo con `INT` PK que define los tiers disponibles y sus cuotas (`max_routes`, `max_drivers`, `price`). `subscriptions` vincula una organización a un plan mediante FK y registra el ciclo de vida de la suscripción a través de `state`, `start_date` y `end_date` (nullable, ya que una suscripción activa no tiene fecha de fin definida).
 
-![DataBase](/assets/images/ChapterIV/DataBase/DbSubscription.png)
+![DataBase](./assets/images/ChapterIV/DataBase/DbSubscription.png)
 
 ---
 
@@ -2489,7 +2489,7 @@ Este contexto gestiona los planes comerciales y el estado de suscripción de cad
 
 Este contexto persiste los actores humanos del sistema. `parents` y `drivers` referencian tanto `organization_id` como `user_id` (FK hacia IAM), separando los datos de perfil de las credenciales de acceso. `children` pertenece exclusivamente a un padre mediante `parent_id` FK. `student_groups` agrupa referencias lógicas a hijos a través de la tabla de unión `student_group_children`, que resuelve la relación muchos a muchos entre grupos y niños con `student_group_id` + `child_id` como clave compuesta.
 
-![DataBase](/assets/images/ChapterIV/DataBase/DbStakeHolder.png)
+![DataBase](./assets/images/ChapterIV/DataBase/DbStakeHolder.png)
 
 ---
 
@@ -2497,7 +2497,7 @@ Este contexto persiste los actores humanos del sistema. `parents` y `drivers` re
 
 Este contexto modela la infraestructura operativa de transporte. `vehicles` pertenece a una organización y se asigna a rutas mediante FK en `routes`. `routes` almacena `departure_time` como `TIME` y `service_days` como `VARCHAR` serializado. `stops` define los puntos geográficos de cada ruta con coordenadas decimales de alta precisión (`DECIMAL(10,8)` y `DECIMAL(11,8)`) y un `stop_order` para secuenciamiento. `assignments` relaciona una ruta con un conductor en cardinalidad 1:1, y `assignment_children` resuelve la relación muchos a muchos entre asignaciones y niños.
 
-![DataBase](/assets/images/ChapterIV/DataBase/DbFleet.png)
+![DataBase](./assets/images/ChapterIV/DataBase/DbFleet.png)
 
 ---
 
@@ -2505,7 +2505,7 @@ Este contexto modela la infraestructura operativa de transporte. `vehicles` pert
 
 Este contexto registra la ejecución operativa de cada viaje. `trips` referencia `organization_id`, `route_id` y `driver_id` como FK, con `start_time` y `end_time` nullable dado que el viaje puede estar en curso. `attendances` registra el estado de embarque de cada niño por viaje (`trip_id` + `child_id`), con `boarded_at` nullable para casos de ausencia. `incidents` referencia tanto `trip_id` como `route_id`, permitiendo trazabilidad del incidente tanto al viaje específico como a la ruta afectada.
 
-![DataBase](/assets/images/ChapterIV/DataBase/DbTrip.png)
+![DataBase](./assets/images/ChapterIV/DataBase/DbTrip.png)
 
 ---
 
@@ -2513,7 +2513,7 @@ Este contexto registra la ejecución operativa de cada viaje. `trips` referencia
 
 Este contexto gestiona la comunicación hacia los padres. `notifications` referencia `organization_id`, `parent_id` y `trip_id`, registrando `category`, `delivery_state` y `message` con `sent_at` obligatorio. `alerts` pertenece a una notificación mediante `notification_id` FK y registra el momento exacto del disparo. `announcements` extiende la notificación con una referencia adicional a `route_id`, permitiendo comunicados asociados a una ruta específica con su propio `message` y `published_at`.
 
-![DataBase](/assets/images/ChapterIV/DataBase/DbNotifications.png)
+![DataBase](./assets/images/ChapterIV/DataBase/DbNotifications.png)
 
 
 
