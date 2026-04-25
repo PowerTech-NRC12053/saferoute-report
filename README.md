@@ -104,7 +104,7 @@ Este panorama se ve agravado por una reducción en la oferta formal del servicio
 Respecto a la seguridad, la Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías (SUTRAN, 2024) ejecutó campañas de sensibilización que alcanzaron a más de 47,000 escolares, evidenciando que la seguridad en el transporte escolar continúa siendo una preocupación activa para las autoridades. Sin embargo, no se dispone públicamente de cifras desagregadas de incidentes específicos en este sector entre 2022 y 2025.
 
 **Figura 1** Distribución de estudiantes de Educación Inicial y Primaria en instituciones privadas y zonas urbanas en el Perú
-![CensoEstudiantil](./assets/images/CensoEstudiantil.png)
+![CensoEstudiantil](./assets/images/ChapterI/CensoEstudiantil.png)
 _Nota._ Adaptado de Resultados del Censo Educativo 2022 (p. 12), por Ministerio de Educación, 2023.
 
 #### 1.2.2 Lean UX Process
