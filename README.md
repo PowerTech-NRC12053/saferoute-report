@@ -2652,88 +2652,84 @@ Los contextos delimitados organizan los agregados en dominios de negocio indepen
 #### 4.6.2. Software Architecture Context Diagram
 Este diagrama proporciona una vista de alto nivel de SafeRoute y su entorno. Ilustra cómo los actores principales (Administrador, Conductor, Padre/Tutor) y los sistemas externos (como PayPal para pagos, Leaflet para mapas y Resend para correos) interactúan lógicamente con la plataforma de gestión de transporte escolar.
 
-![ContextDiagram](/assets/images/ChapterIV/C4/SystemContext.png)
+![ContextDiagram](./assets/images/ChapterIV/C4/SystemContext.png)
 
 #### 4.6.3. Software Architecture Container Diagrams
 Aquí se detallan las unidades de despliegue principales del sistema. El diagrama muestra cómo SafeRoute se divide en una Landing Page, una aplicación interactiva en el cliente (SPA desarrollada en Vue 3), una API backend modularizada (Web Service en ASP.NET Core) y un repositorio persistente central (Base de Datos MySQL).
 
-![ContainerDiagram](/assets/images/ChapterIV/C4/ContainerDiagram-dark.png)
+![ContainerDiagram](./assets/images/ChapterIV/C4/ContainerDiagram-dark.png)
 
 #### 4.6.4. Software Architecture Components Diagrams
 
-**BackEnd**
-
-![WebServices](/assets/images/ChapterIV/C4/WebServiceComponents.png)
-Este diagrama ofrece la visión macro del backend. Demuestra cómo el monolito de ASP.NET Core está organizado lógicamente en siete Bounded Contexts independientes y un Shared Kernel (núcleo compartido de Value Objects), asegurando una separación clara de responsabilidades a nivel de dominio.
-
-
-- Identity & Access Management:
-Desglosa el módulo de identidad en su arquitectura interna de 4 capas (API, Application, Domain, Infrastructure). Ilustra cómo se maneja la autenticación de usuarios, la provisión de cuentas y la emisión de tokens de seguridad de forma aislada.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_IAM-dark.png)
-
-- Subscription & Plan Management:
-Muestra la estructura interna de 4 capas del contexto encargado de la monetización. Detalla el flujo desde el controlador REST hasta la infraestructura que se integra con PayPal para gestionar el ciclo de vida de los planes y pagos.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Subscription-dark.png)
-
-- Stakeholder & Asset Management:
-Representa las capas internas del dominio que administra la información core del negocio: la creación y vinculación de perfiles para conductores, padres de familia y estudiantes.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Stakeholder-dark.png)
-
-- Route Planning & Execution:
-Detalla la arquitectura modular (Controlador, Servicio, Dominio, Repositorio) encargada de la logística. Maneja toda la configuración previa al viaje, como la definición de paradas, asignación de vehículos y diseño de rutas mediante coordenadas GPS.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Route-dark.png)
-
-- Notifications & Communication:
-Describe el módulo dedicado a la comunicación asíncrona en sus 4 capas. Orquesta la recepción de eventos internos (como un estudiante abordando) y utiliza su capa de infraestructura para emitir alertas y correos mediante el proveedor externo Resend.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Notification-dark.png)
-
-- Trip Execution & Monitoring:
-Ilustra el núcleo operativo del sistema en sus 4 capas. Muestra cómo se procesa la lógica en tiempo real durante la ejecución del viaje, gestionando el registro de abordajes y el estado de la ruta del transporte escolar.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Trip-dark.png)
-
-- Shared Kernel:
-Este diagrama expone las 4 capas transversales (Building Blocks) que fundamentan la arquitectura limpia del monolito. Detalla cómo se proveen clases base y utilidades compartidas: Middlewares en la capa API, interfaces y DTOs base en Application, Value Objects globales (TripId, StudentId) en Domain, y repositorios genéricos en Infrastructure, evitando la duplicidad de código en el resto de los Bounded Contexts.
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_SharedKernel-dark.png)
-
 **FrontEnd**
 
-<<<<<<< HEAD
-=======
-**FrontEnd**
-
->>>>>>> e322928824764a64d525dcadc3de76cbab3bd5eb
 - Single Page 
 
-![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_SPA-dark%20(1).png)
+![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_SPA-dark.png)
 La SPA está desarrollada con Angular, Angular Material y TypeScript, organizada en módulos por bounded context. Cada módulo sigue una estructura interna de cuatro capas: Model (DTOs del dominio), Assembler (transforma respuestas del API), API Service (consume el backend vía HttpClient), y Store (estado reactivo con Angular Signals). La navegación entre módulos es gestionada por la Navigation Bar del módulo Shared, mientras que el HTTP Service centraliza todas las llamadas REST y el Map Service gestiona la integración con Leaflet.
-
-- Identity & Access Management:
-  Desglosa el módulo de identidad del frontend en sus 4 capas internas. Ilustra cómo la Identity View gestiona los formularios de login y registro, el Pinia Store administra el estado de sesión y rol del usuario activo, y el IAM Service despacha las peticiones de autenticación hacia el Web Service adjuntando y almacenando el token JWT.
-  ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_IAM-dark%20(1).png)
-
-- Subscription & Plan Management:
-  Muestra la arquitectura interna de 4 capas del módulo encargado de la monetización en el cliente. Detalla el flujo desde la Subscriptions View que presenta los planes disponibles, el Pinia Store que mantiene el estado del plan activo y sus cuotas, hasta el Subscription Service que se comunica con el Web Service para gestionar el ciclo de vida del pago.
-  ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Subscription-dark%20(1).png)
-
-- Stakeholder & Asset Management:
-  Representa las 4 capas del módulo que administra la información core del negocio en el frontend. Gestiona las vistas de creación y vinculación de perfiles para conductores, padres, estudiantes y vehículos, con un Pinia Store que centraliza el estado de los grupos y asignaciones por organización.
-  ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Stakeholder-dark%20(1).png)
-
-- Route Planning & Execution:
-  Detalla las 4 capas del módulo encargado de la logística previa al viaje en el cliente. Maneja la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores, y la definición de horarios, con el Route Store sincronizando el estado de configuración hacia el Web Service.
-  ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Route-dark%20(1).png)
-
-- Notifications & Communication:
-  Describe el módulo dedicado a la comunicación hacia el usuario en sus 4 capas. La Notifications View presenta alertas, confirmaciones de abordaje y anuncios en tiempo real, mientras el Pinia Store administra el conteo de no leídos y el Notification Service consulta periódicamente el Web Service para mantener el estado actualizado.
-  ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Notification-dark%20(1).png)
 
 - Trip Execution & Monitoring:
   Ilustra el núcleo operativo del frontend en sus 4 capas. Muestra cómo la Trip View procesa la ejecución del viaje en tiempo real, el Pinia Store mantiene el estado de abordajes e incidentes activos, y el Trip Service registra cada evento hacia el Web Service, que a su vez dispara las notificaciones correspondientes.
-  ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Trip-dark%20(1).png)
+  ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Trip-dark%20(1).png)
+
+  - Route Planning & Execution:
+  Detalla las 4 capas del módulo encargado de la logística previa al viaje en el cliente. Maneja la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores, y la definición de horarios, con el Route Store sincronizando el estado de configuración hacia el Web Service.
+  ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Route-dark%20(1).png)
+
+  - Stakeholder & Asset Management:
+  Representa las 4 capas del módulo que administra la información core del negocio en el frontend. Gestiona las vistas de creación y vinculación de perfiles para conductores, padres, estudiantes y vehículos, con un Pinia Store que centraliza el estado de los grupos y asignaciones por organización.
+  ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Stakeholder-dark%20(1).png)
+
+- Notifications & Communication:
+  Describe el módulo dedicado a la comunicación hacia el usuario en sus 4 capas. La Notifications View presenta alertas, confirmaciones de abordaje y anuncios en tiempo real, mientras el Pinia Store administra el conteo de no leídos y el Notification Service consulta periódicamente el Web Service para mantener el estado actualizado.
+  ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Notification-dark%20(1).png)
 
 - Shared Kernel:
   Detalla las 4 capas transversales del frontend que fundamentan todos los bounded context modules. Expone el Navigation Bar en la capa de presentación, el HTTP Service centralizado con interceptores JWT en la capa de aplicación, los DTOs e interfaces base en dominio, y el Map Service que integra Leaflet y OpenRouteService en la capa de infraestructura.
-  ![WebServices](/assets/images/ChapterIV/C4/ComponentDiagram_Shared-dark.png)
+  ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Shared-dark.png)
+
+- Identity & Access Management:
+  Desglosa el módulo de identidad del frontend en sus 4 capas internas. Ilustra cómo la Identity View gestiona los formularios de login y registro, el Pinia Store administra el estado de sesión y rol del usuario activo, y el IAM Service despacha las peticiones de autenticación hacia el Web Service adjuntando y almacenando el token JWT.
+  ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_IAM-dark%20(1).png)
+
+- Subscription & Plan Management:
+  Muestra la arquitectura interna de 4 capas del módulo encargado de la monetización en el cliente. Detalla el flujo desde la Subscriptions View que presenta los planes disponibles, el Pinia Store que mantiene el estado del plan activo y sus cuotas, hasta el Subscription Service que se comunica con el Web Service para gestionar el ciclo de vida del pago.
+  ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Subscription-dark%20(1).png)
+
+
+**BackEnd**
+
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_API-dark.png)
+Este diagrama ofrece la visión macro del backend. Demuestra cómo el monolito de ASP.NET Core está organizado lógicamente en siete Bounded Contexts independientes y un Shared Kernel (núcleo compartido de Value Objects), asegurando una separación clara de responsabilidades a nivel de dominio.
+
+
+- Trip Execution & Monitoring:
+Ilustra el núcleo operativo del sistema en sus 4 capas. Muestra cómo se procesa la lógica en tiempo real durante la ejecución del viaje, gestionando el registro de abordajes y el estado de la ruta del transporte escolar.
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_Trip-dark%20(1).png)
+
+- Route Planning & Execution:
+Detalla la arquitectura modular (Controlador, Servicio, Dominio, Repositorio) encargada de la logística. Maneja toda la configuración previa al viaje, como la definición de paradas, asignación de vehículos y diseño de rutas mediante coordenadas GPS.
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_Route-dark%20(1).png)
+
+- Stakeholder & Asset Management:
+Representa las capas internas del dominio que administra la información core del negocio: la creación y vinculación de perfiles para conductores, padres de familia y estudiantes.
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_Stakeholder-dark%20(1).png)
+
+- Notifications & Communication:
+Describe el módulo dedicado a la comunicación asíncrona en sus 4 capas. Orquesta la recepción de eventos internos (como un estudiante abordando) y utiliza su capa de infraestructura para emitir alertas y correos mediante el proveedor externo Resend.
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_Notification-dark%20(1).png)
+
+- Shared Kernel:
+Este diagrama expone las 4 capas transversales (Building Blocks) que fundamentan la arquitectura limpia del monolito. Detalla cómo se proveen clases base y utilidades compartidas: Middlewares en la capa API, interfaces y DTOs base en Application, Value Objects globales (TripId, StudentId) en Domain, y repositorios genéricos en Infrastructure, evitando la duplicidad de código en el resto de los Bounded Contexts.
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_SharedKernel-dark%20(1).png)
+
+- Identity & Access Management:
+Desglosa el módulo de identidad en su arquitectura interna de 4 capas (API, Application, Domain, Infrastructure). Ilustra cómo se maneja la autenticación de usuarios, la provisión de cuentas y la emisión de tokens de seguridad de forma aislada.
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_IAM-dark%20(1).png)
+
+- Subscription & Plan Management:
+Muestra la estructura interna de 4 capas del contexto encargado de la monetización. Detalla el flujo desde el controlador REST hasta la infraestructura que se integra con PayPal para gestionar el ciclo de vida de los planes y pagos.
+![WebServices](./assets/images/ChapterIV/C4/Back/ComponentDiagram_Subscription-dark%20(1).png)
 
 
 ### 4.7. Software Object-Oriented Design
@@ -2741,6 +2737,55 @@ La SPA está desarrollada con Angular, Angular Material y TypeScript, organizada
 #### 4.7.1. Class Diagrams
 
 **BackEnd**
+
+- Trip Execution & Monitoring: 
+
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-trip.puml)
+
+Gestiona la ejecución de viajes, asistencia e incidentes.
+Trip (AggregateRoot) — Atributos: id, organizationId, routeId, driverId, tripState, startTime, endTime, -attendances: List<Attendance> e -incidents: List<Incident>. Métodos: Start(), Complete(), RecordBoarding(childId, state), ReportIncident(description), GetAttendanceSummary(), GetIncidentLog(). Composición 1:0..* con ambas entidades hijas.
+Attendance (Entity) — Atributos: id, childId, -boardingState: BoardingState, boardedAt. Métodos: UpdateBoardingState(), IsBoarded(), GetBoardingTime(). Referencia al ChildId compartido (tracks) con multiplicidad 1:1.
+Incident (Entity) — Atributos: id, -description: IncidentDescription, reportedAt. Métodos: Report(), GetDescription(), GetReportedAt(). Asociada 1:1 con IncidentDescription (described by).
+Value Objects propios: TripState (pending/inProgress/completed), BoardingState (boarded/missing/omitted), IncidentDescription (con validación).
+
+- Fleet & Route Planning: 
+
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-fleet.puml)
+
+Gestiona rutas, vehículos, paradas y asignaciones.
+Route (AggregateRoot) — Atributos: id, organizationId, name, routeState, departureTime, serviceDays, vehicle, assignment y -stops: List<Stop>. Métodos: DefineRoute(), AddStop(), RemoveStop(), Activate(), Deactivate(), GetStopSequence(). Tiene composición 1:1..* con Stop (has): una ruta requiere al menos una parada. Se relaciona 1:1 con Vehicle y Assignment.
+Stop (Entity) — Atributos: id, name, coordinates: Coordinates, -stopOrder: StopOrder. Métodos: GetNextStop(), IsFirst(), IsLast(), UpdateCoordinates(). Asociada a Coordinates del shared kernel.
+Vehicle (Entity) — Atributos: id, organizationId, plate, model, capacity: int, brand. Métodos: IsAvailable(), GetPlate(), GetCapacity(), UpdateDetails().
+Assignment (Entity) — Atributos: id, -driverId: DriverId, -children: List<ChildId>. Métodos: AssignDriver(), AssignChild(), RemoveChild(). Referencia 1:1..* a ChildId compartido (includes).
+Value Objects propios: RouteState (draft/active/inactive), StopOrder (posición entera), DepartureTime (TimeSpan), ServiceDays (lista de días).
+
+- Stakeholder & Asset Management: 
+
+![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
+
+
+Modela a los actores humanos del sistema: padres, conductores, hijos y grupos de estudiantes.
+Parent (AggregateRoot) — Atributos privados: id, organizationId, userId, fullName, email, phoneNumber y -children: List<Child>. Métodos públicos: AddChild(), RemoveChild(), GetChildren(). Composición 1:1..* con Child (has): un Parent debe tener al menos un hijo.
+Driver (Entity) — Similar a Parent pero agrega -licenseNumber: LicenseNumber. Métodos: IsAvailable(), GetLicenseNumber(), UpdatePhoneNumber(). Sin composición propia, referenciado desde otros contextos vía DriverId compartido.
+Child (Entity, compuesta dentro de Parent) — Atributos: id, fullName, age: int y -enrollmentState: ChildEnrollmentState. Métodos: Enroll(), Unenroll(), IsEnrolled().
+StudentGroup (Entity) — Agrupa referencias a hijos (-children: List<ChildId>) sin poseerlos directamente. Métodos: AddChild(), RemoveChild(), Finalize(), IsFinalized(). Relación 1:1..* con ChildId compartido (groups).
+
+- Notifications & Communication:
+
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-notifications.puml)
+
+Gestiona el envío de notificaciones hacia padres de familia.
+Notification (AggregateRoot) — Atributos: id, organizationId, parentId, tripId, -category: NotificationCategory, -deliveryState: NotificationDeliveryState, -message: NotificationMessage, sentAt, -alerts: List<Alert> y -announcements: List<Announcement>. Métodos: Queue(), Dispatch(), MarkDelivered(), IsDelivered(), GetCategory(), GetMessage(). Composición 1:0..* con Alert y 1:0..* con Announcement.
+Alert (Entity) — Atributos: id, triggeredAt. Métodos: Trigger(), GetTriggeredAt(), IsPanic(). Representa un evento de alerta puntual dentro de una notificación.
+Announcement (Entity) — Atributos: id, routeId, -message: NotificationMessage, publishedAt. Métodos: Publish(), GetMessage(), GetPublishedAt(). Referencia RouteId del shared kernel (belongs to) con multiplicidad 1:1.
+Value Objects propios: NotificationCategory (boarding/arrival/incident/panic), NotificationDeliveryState (queued/dispatched/delivered), NotificationMessage (encapsula contenido con validación).
+
+- Shared:
+
+![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-shared.puml)
+
+Este módulo no pertenece a un bounded context específico sino que actúa como kernel compartido. Contiene exclusivamente Value Objects reutilizables a lo largo de toda la aplicación: OrganizationId, UserId, ParentId, DriverId, ChildId, RouteId, TripId, SubscriptionId, PlanId, FullName y Coordinates. Todos son inmutables, encapsulan un valor primitivo (Guid, string o double) con scope privado, y exponen métodos públicos como New(), Equals() y ToString(). FullName es el único con dos atributos (firstName, lastName) y agrega GetFullName() e IsValid(). Coordinates encapsula latitude y longitude como double con validación geoespacial.
+
 - Identity and Access Management:
 
 ![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-iam.puml)
@@ -2760,55 +2805,61 @@ Subscription (AggregateRoot) — Atributos: id, organizationId, planId, -state: 
 Plan (AggregateRoot) — Atributos: id, -planTier: PlanTier, -routeQuota: RouteQuota, -driverQuota: DriverQuota, price: decimal. Métodos: GetPlanName(), GetRouteLimit(), GetDriverLimit(), IsWithinRouteQuota(), IsWithinDriverQuota(). Asociado 1:1 con PlanTier, RouteQuota y DriverQuota.
 Value Objects propios: SubscriptionState (active/expired/cancelled), PlanTier (basic/intermediate/complete), RouteQuota y DriverQuota (encapsulan límites enteros con validación de cuota).
 
-- Stakeholder & Asset Management: 
-
-![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
 
 
-Modela a los actores humanos del sistema: padres, conductores, hijos y grupos de estudiantes.
-Parent (AggregateRoot) — Atributos privados: id, organizationId, userId, fullName, email, phoneNumber y -children: List<Child>. Métodos públicos: AddChild(), RemoveChild(), GetChildren(). Composición 1:1..* con Child (has): un Parent debe tener al menos un hijo.
-Driver (Entity) — Similar a Parent pero agrega -licenseNumber: LicenseNumber. Métodos: IsAvailable(), GetLicenseNumber(), UpdatePhoneNumber(). Sin composición propia, referenciado desde otros contextos vía DriverId compartido.
-Child (Entity, compuesta dentro de Parent) — Atributos: id, fullName, age: int y -enrollmentState: ChildEnrollmentState. Métodos: Enroll(), Unenroll(), IsEnrolled().
-StudentGroup (Entity) — Agrupa referencias a hijos (-children: List<ChildId>) sin poseerlos directamente. Métodos: AddChild(), RemoveChild(), Finalize(), IsFinalized(). Relación 1:1..* con ChildId compartido (groups).
 
-- Fleet & Route Planning: 
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-fleet.puml)
-
-Gestiona rutas, vehículos, paradas y asignaciones.
-Route (AggregateRoot) — Atributos: id, organizationId, name, routeState, departureTime, serviceDays, vehicle, assignment y -stops: List<Stop>. Métodos: DefineRoute(), AddStop(), RemoveStop(), Activate(), Deactivate(), GetStopSequence(). Tiene composición 1:1..* con Stop (has): una ruta requiere al menos una parada. Se relaciona 1:1 con Vehicle y Assignment.
-Stop (Entity) — Atributos: id, name, coordinates: Coordinates, -stopOrder: StopOrder. Métodos: GetNextStop(), IsFirst(), IsLast(), UpdateCoordinates(). Asociada a Coordinates del shared kernel.
-Vehicle (Entity) — Atributos: id, organizationId, plate, model, capacity: int, brand. Métodos: IsAvailable(), GetPlate(), GetCapacity(), UpdateDetails().
-Assignment (Entity) — Atributos: id, -driverId: DriverId, -children: List<ChildId>. Métodos: AssignDriver(), AssignChild(), RemoveChild(). Referencia 1:1..* a ChildId compartido (includes).
-Value Objects propios: RouteState (draft/active/inactive), StopOrder (posición entera), DepartureTime (TimeSpan), ServiceDays (lista de días).
+**FrontEnd**
 
 - Trip Execution & Monitoring: 
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-trip.puml)
+![vue-saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-trip.puml)
 
-Gestiona la ejecución de viajes, asistencia e incidentes.
-Trip (AggregateRoot) — Atributos: id, organizationId, routeId, driverId, tripState, startTime, endTime, -attendances: List<Attendance> e -incidents: List<Incident>. Métodos: Start(), Complete(), RecordBoarding(childId, state), ReportIncident(description), GetAttendanceSummary(), GetIncidentLog(). Composición 1:0..* con ambas entidades hijas.
-Attendance (Entity) — Atributos: id, childId, -boardingState: BoardingState, boardedAt. Métodos: UpdateBoardingState(), IsBoarded(), GetBoardingTime(). Referencia al ChildId compartido (tracks) con multiplicidad 1:1.
-Incident (Entity) — Atributos: id, -description: IncidentDescription, reportedAt. Métodos: Report(), GetDescription(), GetReportedAt(). Asociada 1:1 con IncidentDescription (described by).
-Value Objects propios: TripState (pending/inProgress/completed), BoardingState (boarded/missing/omitted), IncidentDescription (con validación).
+Pantallas operativas para el control en tiempo real de los viajes.
+
+Presentation & Domain: El Layout compone TripDashboard, AttendanceChecklist e IncidentForm. Estos componentes renderizan el estado de la operación basándose en los modelos centrales del dominio (Trip, Attendance, Incident) y notifican cambios en tiempo real mediante eventos como boardingUpdated() o incidentReported().
+
+Application & Infrastructure: TripStore centraliza el viaje en curso, asistencias e incidentes. Delega la sincronización al backend mediante TripApi y transforma las respuestas en entidades del dominio usando los Assemblers.
+
+- Fleet & Route Planning: 
+
+![vue-saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-fleet.puml)
+
+Interfaz para armar la logística de rutas, vehículos y asignaciones.
+
+Presentation & Domain: El Layout compone RouteForm, StopList, VehicleList y AssignmentForm. La interfaz gráfica se alimenta estrictamente de las entidades de dominio (Route, Stop, Vehicle, Assignment) para garantizar la precisión de los datos logísticos, emitiendo eventos clave como routeCreated() o stopsReordered().
+
+Application & Infrastructure: FleetStore orquesta el estado de rutas, vehículos y paradas. Las peticiones pasan por FleetApi y son transformadas por los Assemblers para que la aplicación solo trabaje con modelos de negocio limpios.
+
+- Stakeholder & Asset Management: 
+
+![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
+
+Controla las vistas de listado y gestión de los actores operativos del sistema.
+
+Presentation & Domain: El Layout compone las listas interactivas (ParentList, DriverList, ChildList, StudentGroupList). Estas vistas dependen exclusivamente de los modelos de dominio (Parent, Driver, Child, StudentGroup) para renderizar los datos y exponen eventos como parentDeleted() o groupFinalized() para interactuar con el Store.
+
+Application & Infrastructure: StakeholderStore centraliza las listas de actores. Delega las operaciones CRUD a la StakeholderApi y convierte los recursos asíncronos en modelos puros utilizando las clases *Assembler correspondientes.
 
 - Notifications & Communication:
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-notifications.puml)
+![vue-saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-notifications.puml)
 
-Gestiona el envío de notificaciones hacia padres de familia.
-Notification (AggregateRoot) — Atributos: id, organizationId, parentId, tripId, -category: NotificationCategory, -deliveryState: NotificationDeliveryState, -message: NotificationMessage, sentAt, -alerts: List<Alert> y -announcements: List<Announcement>. Métodos: Queue(), Dispatch(), MarkDelivered(), IsDelivered(), GetCategory(), GetMessage(). Composición 1:0..* con Alert y 1:0..* con Announcement.
-Alert (Entity) — Atributos: id, triggeredAt. Métodos: Trigger(), GetTriggeredAt(), IsPanic(). Representa un evento de alerta puntual dentro de una notificación.
-Announcement (Entity) — Atributos: id, routeId, -message: NotificationMessage, publishedAt. Métodos: Publish(), GetMessage(), GetPublishedAt(). Referencia RouteId del shared kernel (belongs to) con multiplicidad 1:1.
-Value Objects propios: NotificationCategory (boarding/arrival/incident/panic), NotificationDeliveryState (queued/dispatched/delivered), NotificationMessage (encapsula contenido con validación).
+Centraliza la visualización y envío de notificaciones y alertas.
+
+Presentation & Domain: El Layout compone NotificationList, AlertPanel y AnnouncementForm. Las vistas consumen exclusivamente los modelos de dominio (Notification, Alert, Announcement) para mostrar los mensajes y alertas a los usuarios, gestionando interacciones mediante eventos como notificationRead() o panicTriggered().
+
+Application & Infrastructure: NotificationsStore maneja los arreglos reactivos de notificaciones y alertas. Utiliza NotificationsApi para las operaciones HTTP y sus respectivos Assemblers para mantener el dominio libre de dependencias de infraestructura.
 
 - Shared:
 
-![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-platform/main/saferoute-asp-net-developer/Safer-Route-Platform/docs/saferoute-shared.puml)
+![vue-saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-shared.puml)
 
-Este módulo no pertenece a un bounded context específico sino que actúa como kernel compartido. Contiene exclusivamente Value Objects reutilizables a lo largo de toda la aplicación: OrganizationId, UserId, ParentId, DriverId, ChildId, RouteId, TripId, SubscriptionId, PlanId, FullName y Coordinates. Todos son inmutables, encapsulan un valor primitivo (Guid, string o double) con scope privado, y exponen métodos públicos como New(), Equals() y ToString(). FullName es el único con dos atributos (firstName, lastName) y agrega GetFullName() e IsValid(). Coordinates encapsula latitude y longitude como double con validación geoespacial.
+Actúa como el núcleo común de infraestructura y componentes base para toda la aplicación Vue.
 
-**FrontEnd**
+Presentation & Domain: Contiene los identificadores y objetos de valor inmutables del dominio (ej. OrganizationId, FullName, Coordinates). Además, a nivel de presentación, el componente raíz App utiliza el Layout maestro, el cual encapsula elementos de navegación globales como NavBar, LanguageSwitcher y Footer.
+
+Application & Infrastructure: Provee el cliente HTTP genérico (ApiClient) que utilizan los demás módulos para centralizar la configuración de red (get, post, put, delete).
 
 - Identity and Access Management:
 
@@ -2831,162 +2882,210 @@ Presentation & Domain: El Layout compone PlanSelector y SubscriptionStatus. Esto
 
 Application & Infrastructure: SubscriptionStore maneja el estado de subscription y plans. Se comunica con SubscriptionApi para cargar o modificar datos, transformando las respuestas en entidades del dominio a través de sus respectivos Assemblers.
 
-- Stakeholder & Asset Management: 
-
-![vue-saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-stakeholder.puml)
-
-Controla las vistas de listado y gestión de los actores operativos del sistema.
-
-Presentation & Domain: El Layout compone las listas interactivas (ParentList, DriverList, ChildList, StudentGroupList). Estas vistas dependen exclusivamente de los modelos de dominio (Parent, Driver, Child, StudentGroup) para renderizar los datos y exponen eventos como parentDeleted() o groupFinalized() para interactuar con el Store.
-
-Application & Infrastructure: StakeholderStore centraliza las listas de actores. Delega las operaciones CRUD a la StakeholderApi y convierte los recursos asíncronos en modelos puros utilizando las clases *Assembler correspondientes.
-
-- Fleet & Route Planning: 
-
-![vue-saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-fleet.puml)
-
-Interfaz para armar la logística de rutas, vehículos y asignaciones.
-
-Presentation & Domain: El Layout compone RouteForm, StopList, VehicleList y AssignmentForm. La interfaz gráfica se alimenta estrictamente de las entidades de dominio (Route, Stop, Vehicle, Assignment) para garantizar la precisión de los datos logísticos, emitiendo eventos clave como routeCreated() o stopsReordered().
-
-Application & Infrastructure: FleetStore orquesta el estado de rutas, vehículos y paradas. Las peticiones pasan por FleetApi y son transformadas por los Assemblers para que la aplicación solo trabaje con modelos de negocio limpios.
-
-- Trip Execution & Monitoring: 
-
-![vue-saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-trip.puml)
-
-Pantallas operativas para el control en tiempo real de los viajes.
-
-Presentation & Domain: El Layout compone TripDashboard, AttendanceChecklist e IncidentForm. Estos componentes renderizan el estado de la operación basándose en los modelos centrales del dominio (Trip, Attendance, Incident) y notifican cambios en tiempo real mediante eventos como boardingUpdated() o incidentReported().
-
-Application & Infrastructure: TripStore centraliza el viaje en curso, asistencias e incidentes. Delega la sincronización al backend mediante TripApi y transforma las respuestas en entidades del dominio usando los Assemblers.
-
-- Notifications & Communication:
-
-![vue-saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-notifications.puml)
-
-Centraliza la visualización y envío de notificaciones y alertas.
-
-Presentation & Domain: El Layout compone NotificationList, AlertPanel y AnnouncementForm. Las vistas consumen exclusivamente los modelos de dominio (Notification, Alert, Announcement) para mostrar los mensajes y alertas a los usuarios, gestionando interacciones mediante eventos como notificationRead() o panicTriggered().
-
-Application & Infrastructure: NotificationsStore maneja los arreglos reactivos de notificaciones y alertas. Utiliza NotificationsApi para las operaciones HTTP y sus respectivos Assemblers para mantener el dominio libre de dependencias de infraestructura.
-
-- Shared:
-
-![vue-saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/PowerTech-NRC12053/saferoute-webapp/main/saferoute/docs/vue-saferoute-shared.puml)
-
-Actúa como el núcleo común de infraestructura y componentes base para toda la aplicación Vue.
-
-Presentation & Domain: Contiene los identificadores y objetos de valor inmutables del dominio (ej. OrganizationId, FullName, Coordinates). Además, a nivel de presentación, el componente raíz App utiliza el Layout maestro, el cual encapsula elementos de navegación globales como NavBar, LanguageSwitcher y Footer.
-
-Application & Infrastructure: Provee el cliente HTTP genérico (ApiClient) que utilizan los demás módulos para centralizar la configuración de red (get, post, put, delete).
-
 
 ### 4.8. Database Design
-**- Identity & Access Management**
 
-Este bounded context gestiona la seguridad perimetral del sistema. La tabla `organizations` actúa como raíz estructural, siendo referenciada por prácticamente todos los demás contextos. `users` centraliza las credenciales de autenticación (`email` UNIQUE, `password_hash`) y se vincula a `organizations` y `roles` mediante FK. `roles` es una tabla de catálogo con clave `INT` que define los niveles de acceso disponibles: administrador, conductor y padre de familia.
 
-**Tabla: organizations**
-| Atributo   | Tipo         |
-|------------|--------------|
-| id         | CHAR(36) (PK)|
-| name       | VARCHAR(100) |
-| status     | VARCHAR(20)  |
-| created_at | DATETIME     |
+**- Trip Execution & Monitoring**
 
-**Métodos**
-| Método        | Descripción                          |
-|---------------|--------------------------------------|
-| Create()      | Crea una nueva organización.         |
-| Activate()    | Activa la organización.              |
-| Suspend()     | Suspende la organización.            |
-| IsActive()    | Verifica si la organización está activa. |
+Este bounded context es el núcleo operativo del servicio. La tabla `trips` registra cada ejecución real de una ruta, con `start_time` y `end_time` nullable dado que el viaje puede estar en curso. `attendances` captura el estado de abordaje de cada estudiante por viaje, con `boarded_at` nullable para casos de ausencia. `incidents` referencia tanto `trip_id` como `route_id`, permitiendo trazabilidad del evento al viaje específico y a la ruta afectada.
 
----
-
-**Tabla: roles**
-| Atributo | Tipo        |
-|----------|-------------|
-| id       | INT (PK)    |
-| name     | VARCHAR(20) |
-
-**Métodos**
-| Método         | Descripción                        |
-|----------------|------------------------------------|
-| GetRoleName()  | Retorna el nombre del rol.         |
-| IsAdmin()      | Verifica si el rol es administrador.|
-| IsDriver()     | Verifica si el rol es conductor.   |
-| IsParent()     | Verifica si el rol es padre.       |
-
----
-
-**Tabla: users**
+**Tabla: trips**
 | Atributo        | Tipo         |
 |-----------------|--------------|
 | id              | CHAR(36) (PK)|
 | organization_id | CHAR(36) (FK)|
-| role_id         | INT (FK)     |
-| first_name      | VARCHAR(100) |
-| last_name       | VARCHAR(100) |
-| email           | VARCHAR(255) |
-| password_hash   | VARCHAR(255) |
-| created_at      | DATETIME     |
+| route_id        | CHAR(36) (FK)|
+| driver_id       | CHAR(36) (FK)|
+| trip_state      | VARCHAR(20)  |
+| start_time      | DATETIME     |
+| end_time        | DATETIME     |
 
 **Métodos**
-| Método                      | Descripción                              |
-|-----------------------------|------------------------------------------|
-| Register()                  | Registra un nuevo usuario.               |
-| Authenticate(password)      | Autentica al usuario con su contraseña.  |
-| ChangeRole(role)            | Cambia el rol asignado al usuario.       |
-| GetEmail()                  | Retorna el email del usuario.            |
+| Método                          | Descripción                                       |
+|---------------------------------|---------------------------------------------------|
+| Start()                         | Inicia el viaje.                                  |
+| Complete()                      | Completa el viaje.                                |
+| RecordBoarding(childId, state)  | Registra el estado de abordaje de un estudiante.  |
+| IsInProgress()                  | Verifica si el viaje está en curso.               |
+
+---
+
+**Tabla: attendances**
+| Atributo       | Tipo         |
+|----------------|--------------|
+| id             | CHAR(36) (PK)|
+| trip_id        | CHAR(36) (FK)|
+| child_id       | CHAR(36) (FK)|
+| boarding_state | VARCHAR(20)  |
+| boarded_at     | DATETIME     |
+
+**Métodos**
+| Método                       | Descripción                                     |
+|------------------------------|-------------------------------------------------|
+| UpdateBoardingState(state)   | Actualiza el estado de abordaje del estudiante. |
+| IsBoarded()                  | Verifica si el estudiante abordó.               |
+| GetBoardingTime()            | Retorna la hora de abordaje.                    |
+
+---
+
+**Tabla: incidents**
+| Atributo    | Tipo         |
+|-------------|--------------|
+| id          | CHAR(36) (PK)|
+| trip_id     | CHAR(36) (FK)|
+| route_id    | CHAR(36) (FK)|
+| description | TEXT         |
+| reported_at | DATETIME     |
+
+**Métodos**
+| Método             | Descripción                             |
+|--------------------|-----------------------------------------|
+| Report()           | Registra el incidente.                  |
+| GetDescription()   | Retorna la descripción del incidente.   |
+| GetReportedAt()    | Retorna la fecha de reporte.            |
 
 
 ---
 
-**- Subscription & Plan Management**
 
-Este bounded context administra el ciclo de vida comercial del servicio. La tabla `plans` es un catálogo que define los tiers disponibles y sus cuotas operativas. La tabla `subscriptions` vincula una organización a un plan y registra su estado, fecha de inicio y fecha de fin nullable, ya que una suscripción activa no tiene fecha de término definida.
+**- Notifications & Communication**
 
-**Tabla: plans**
-| Atributo    | Tipo          |
-|-------------|---------------|
-| id          | INT (PK)      |
-| plan_tier   | VARCHAR(20)   |
-| max_routes  | INT           |
-| max_drivers | INT           |
-| price       | DECIMAL(10,2) |
-
-**Métodos**
-| Método                    | Descripción                                  |
-|---------------------------|----------------------------------------------|
-| GetPlanName()             | Retorna el nombre del tier del plan.         |
-| GetRouteLimit()           | Retorna el límite de rutas del plan.         |
-| IsWithinRouteQuota(n)     | Verifica si el valor está dentro de la cuota de rutas. |
-| IsWithinDriverQuota(n)    | Verifica si el valor está dentro de la cuota de conductores. |
-
----
-
-**Tabla: subscriptions**
-| Atributo        | Tipo        |
-|-----------------|-------------|
+**Tabla: notifications**
+| Atributo        | Tipo         |
+|-----------------|--------------|
 | id              | CHAR(36) (PK)|
 | organization_id | CHAR(36) (FK)|
-| plan_id         | INT (FK)    |
-| state           | VARCHAR(20) |
-| start_date      | DATETIME    |
-| end_date        | DATETIME    |
+| parent_id       | CHAR(36) (FK)|
+| trip_id         | CHAR(36) (FK)|
+| category        | VARCHAR(20)  |
+| delivery_state  | VARCHAR(20)  |
+| message         | TEXT         |
+| sent_at         | DATETIME     |
 
 **Métodos**
-| Método            | Descripción                                  |
-|-------------------|----------------------------------------------|
-| Activate()        | Activa la suscripción.                       |
-| Upgrade(planId)   | Cambia el plan de la suscripción.            |
-| Cancel()          | Cancela la suscripción.                      |
-| GetRemainingDays()| Retorna los días restantes de la suscripción.|
+| Método           | Descripción                                        |
+|------------------|----------------------------------------------------|
+| Queue()          | Encola la notificación para su envío.              |
+| Dispatch()       | Despacha la notificación al destinatario.          |
+| MarkDelivered()  | Marca la notificación como entregada.              |
+| GetCategory()    | Retorna la categoría de la notificación.           |
+
+---
+
+**Tabla: alerts**
+| Atributo        | Tipo         |
+|-----------------|--------------|
+| id              | CHAR(36) (PK)|
+| notification_id | CHAR(36) (FK)|
+| triggered_at    | DATETIME     |
+
+**Métodos**
+| Método            | Descripción                            |
+|-------------------|----------------------------------------|
+| Trigger()         | Activa la alerta.                      |
+| IsPanic()         | Verifica si la alerta es de pánico.    |
+| GetTriggeredAt()  | Retorna la hora en que se activó.      |
+
+---
+
+**Tabla: announcements**
+| Atributo        | Tipo         |
+|-----------------|--------------|
+| id              | CHAR(36) (PK)|
+| notification_id | CHAR(36) (FK)|
+| route_id        | CHAR(36) (FK)|
+| message         | TEXT         |
+| published_at    | DATETIME     |
+
+**Métodos**
+| Método            | Descripción                                   |
+|-------------------|-----------------------------------------------|
+| Publish()         | Publica el comunicado.                        |
+| GetMessage()      | Retorna el contenido del comunicado.          |
+| GetPublishedAt()  | Retorna la fecha de publicación.              |
 
 
 ---
+
+
+**- Route Planning & Execution**
+
+Este bounded context coordina la planificación técnica de las rutas de transporte escolar. La tabla `routes` define cada ruta con su vehículo asignado, horario de salida y días de servicio. `stops` almacena los paraderos georreferenciados con coordenadas de alta precisión y orden de parada. `assignments` vincula una ruta con un conductor en cardinalidad 1:1, y `assignment_children` resuelve la relación muchos a muchos entre asignaciones y estudiantes.
+
+**Tabla: routes**
+| Atributo        | Tipo         |
+|-----------------|--------------|
+| id              | CHAR(36) (PK)|
+| organization_id | CHAR(36) (FK)|
+| vehicle_id      | CHAR(36) (FK)|
+| name            | VARCHAR(100) |
+| route_state     | VARCHAR(20)  |
+| departure_time  | TIME         |
+| service_days    | VARCHAR(100) |
+
+**Métodos**
+| Método              | Descripción                                  |
+|---------------------|----------------------------------------------|
+| Activate()          | Activa la ruta para operación.               |
+| Deactivate()        | Desactiva la ruta.                           |
+| AddStop(stop)       | Agrega un paradero a la ruta.                |
+| GetStopSequence()   | Retorna la secuencia ordenada de paraderos.  |
+
+---
+
+**Tabla: stops**
+| Atributo   | Tipo          |
+|------------|---------------|
+| id         | CHAR(36) (PK) |
+| route_id   | CHAR(36) (FK) |
+| name       | VARCHAR(100)  |
+| latitude   | DECIMAL(10,8) |
+| longitude  | DECIMAL(11,8) |
+| stop_order | INT           |
+
+**Métodos**
+| Método                       | Descripción                                  |
+|------------------------------|----------------------------------------------|
+| IsFirst()                    | Verifica si es el primer paradero.           |
+| IsLast()                     | Verifica si es el último paradero.           |
+| UpdateCoordinates(coords)    | Actualiza las coordenadas del paradero.      |
+| GetPosition()                | Retorna la posición del paradero en la ruta. |
+
+---
+
+**Tabla: assignments**
+| Atributo  | Tipo         |
+|-----------|--------------|
+| id        | CHAR(36) (PK)|
+| route_id  | CHAR(36) (FK)|
+| driver_id | CHAR(36) (FK)|
+
+**Métodos**
+| Método                  | Descripción                                   |
+|-------------------------|-----------------------------------------------|
+| AssignDriver(driverId)  | Asigna un conductor a la ruta.                |
+| AssignChild(childId)    | Agrega un estudiante a la asignación.         |
+| RemoveChild(childId)    | Elimina un estudiante de la asignación.       |
+| GetChildCount()         | Retorna la cantidad de estudiantes asignados. |
+
+---
+
+**Tabla: assignment_children**
+| Atributo      | Tipo         |
+|---------------|--------------|
+| assignment_id | CHAR(36) (FK)|
+| child_id      | CHAR(36) (FK)|
+
+**Métodos**
+| Método         | Descripción                                          |
+|----------------|------------------------------------------------------|
+| AssignChild()  | Asocia un estudiante a una asignación de ruta.       |
+| RemoveChild()  | Desvincula un estudiante de una asignación de ruta.  |
+
+
+---
+
 
 **- Stakeholder & Asset Management**
 
@@ -3108,218 +3207,125 @@ Este bounded context maneja los perfiles de los actores críticos y los recursos
 
 ---
 
-**- Route Planning & Execution**
 
-Este bounded context coordina la planificación técnica de las rutas de transporte escolar. La tabla `routes` define cada ruta con su vehículo asignado, horario de salida y días de servicio. `stops` almacena los paraderos georreferenciados con coordenadas de alta precisión y orden de parada. `assignments` vincula una ruta con un conductor en cardinalidad 1:1, y `assignment_children` resuelve la relación muchos a muchos entre asignaciones y estudiantes.
+**- Identity & Access Management**
 
-**Tabla: routes**
+Este bounded context gestiona la seguridad perimetral del sistema. La tabla `organizations` actúa como raíz estructural, siendo referenciada por prácticamente todos los demás contextos. `users` centraliza las credenciales de autenticación (`email` UNIQUE, `password_hash`) y se vincula a `organizations` y `roles` mediante FK. `roles` es una tabla de catálogo con clave `INT` que define los niveles de acceso disponibles: administrador, conductor y padre de familia.
+
+**Tabla: organizations**
+| Atributo   | Tipo         |
+|------------|--------------|
+| id         | CHAR(36) (PK)|
+| name       | VARCHAR(100) |
+| status     | VARCHAR(20)  |
+| created_at | DATETIME     |
+
+**Métodos**
+| Método        | Descripción                          |
+|---------------|--------------------------------------|
+| Create()      | Crea una nueva organización.         |
+| Activate()    | Activa la organización.              |
+| Suspend()     | Suspende la organización.            |
+| IsActive()    | Verifica si la organización está activa. |
+
+---
+
+**Tabla: roles**
+| Atributo | Tipo        |
+|----------|-------------|
+| id       | INT (PK)    |
+| name     | VARCHAR(20) |
+
+**Métodos**
+| Método         | Descripción                        |
+|----------------|------------------------------------|
+| GetRoleName()  | Retorna el nombre del rol.         |
+| IsAdmin()      | Verifica si el rol es administrador.|
+| IsDriver()     | Verifica si el rol es conductor.   |
+| IsParent()     | Verifica si el rol es padre.       |
+
+---
+
+**Tabla: users**
 | Atributo        | Tipo         |
 |-----------------|--------------|
 | id              | CHAR(36) (PK)|
 | organization_id | CHAR(36) (FK)|
-| vehicle_id      | CHAR(36) (FK)|
-| name            | VARCHAR(100) |
-| route_state     | VARCHAR(20)  |
-| departure_time  | TIME         |
-| service_days    | VARCHAR(100) |
+| role_id         | INT (FK)     |
+| first_name      | VARCHAR(100) |
+| last_name       | VARCHAR(100) |
+| email           | VARCHAR(255) |
+| password_hash   | VARCHAR(255) |
+| created_at      | DATETIME     |
 
 **Métodos**
-| Método              | Descripción                                  |
-|---------------------|----------------------------------------------|
-| Activate()          | Activa la ruta para operación.               |
-| Deactivate()        | Desactiva la ruta.                           |
-| AddStop(stop)       | Agrega un paradero a la ruta.                |
-| GetStopSequence()   | Retorna la secuencia ordenada de paraderos.  |
-
----
-
-**Tabla: stops**
-| Atributo   | Tipo          |
-|------------|---------------|
-| id         | CHAR(36) (PK) |
-| route_id   | CHAR(36) (FK) |
-| name       | VARCHAR(100)  |
-| latitude   | DECIMAL(10,8) |
-| longitude  | DECIMAL(11,8) |
-| stop_order | INT           |
-
-**Métodos**
-| Método                       | Descripción                                  |
-|------------------------------|----------------------------------------------|
-| IsFirst()                    | Verifica si es el primer paradero.           |
-| IsLast()                     | Verifica si es el último paradero.           |
-| UpdateCoordinates(coords)    | Actualiza las coordenadas del paradero.      |
-| GetPosition()                | Retorna la posición del paradero en la ruta. |
-
----
-
-**Tabla: assignments**
-| Atributo  | Tipo         |
-|-----------|--------------|
-| id        | CHAR(36) (PK)|
-| route_id  | CHAR(36) (FK)|
-| driver_id | CHAR(36) (FK)|
-
-**Métodos**
-| Método                  | Descripción                                   |
-|-------------------------|-----------------------------------------------|
-| AssignDriver(driverId)  | Asigna un conductor a la ruta.                |
-| AssignChild(childId)    | Agrega un estudiante a la asignación.         |
-| RemoveChild(childId)    | Elimina un estudiante de la asignación.       |
-| GetChildCount()         | Retorna la cantidad de estudiantes asignados. |
-
----
-
-**Tabla: assignment_children**
-| Atributo      | Tipo         |
-|---------------|--------------|
-| assignment_id | CHAR(36) (FK)|
-| child_id      | CHAR(36) (FK)|
-
-**Métodos**
-| Método         | Descripción                                          |
-|----------------|------------------------------------------------------|
-| AssignChild()  | Asocia un estudiante a una asignación de ruta.       |
-| RemoveChild()  | Desvincula un estudiante de una asignación de ruta.  |
+| Método                      | Descripción                              |
+|-----------------------------|------------------------------------------|
+| Register()                  | Registra un nuevo usuario.               |
+| Authenticate(password)      | Autentica al usuario con su contraseña.  |
+| ChangeRole(role)            | Cambia el rol asignado al usuario.       |
+| GetEmail()                  | Retorna el email del usuario.            |
 
 
 ---
 
-**- Trip Execution & Monitoring**
 
-Este bounded context es el núcleo operativo del servicio. La tabla `trips` registra cada ejecución real de una ruta, con `start_time` y `end_time` nullable dado que el viaje puede estar en curso. `attendances` captura el estado de abordaje de cada estudiante por viaje, con `boarded_at` nullable para casos de ausencia. `incidents` referencia tanto `trip_id` como `route_id`, permitiendo trazabilidad del evento al viaje específico y a la ruta afectada.
+**- Subscription & Plan Management**
 
-**Tabla: trips**
-| Atributo        | Tipo         |
-|-----------------|--------------|
+Este bounded context administra el ciclo de vida comercial del servicio. La tabla `plans` es un catálogo que define los tiers disponibles y sus cuotas operativas. La tabla `subscriptions` vincula una organización a un plan y registra su estado, fecha de inicio y fecha de fin nullable, ya que una suscripción activa no tiene fecha de término definida.
+
+**Tabla: plans**
+| Atributo    | Tipo          |
+|-------------|---------------|
+| id          | INT (PK)      |
+| plan_tier   | VARCHAR(20)   |
+| max_routes  | INT           |
+| max_drivers | INT           |
+| price       | DECIMAL(10,2) |
+
+**Métodos**
+| Método                    | Descripción                                  |
+|---------------------------|----------------------------------------------|
+| GetPlanName()             | Retorna el nombre del tier del plan.         |
+| GetRouteLimit()           | Retorna el límite de rutas del plan.         |
+| IsWithinRouteQuota(n)     | Verifica si el valor está dentro de la cuota de rutas. |
+| IsWithinDriverQuota(n)    | Verifica si el valor está dentro de la cuota de conductores. |
+
+---
+
+**Tabla: subscriptions**
+| Atributo        | Tipo        |
+|-----------------|-------------|
 | id              | CHAR(36) (PK)|
 | organization_id | CHAR(36) (FK)|
-| route_id        | CHAR(36) (FK)|
-| driver_id       | CHAR(36) (FK)|
-| trip_state      | VARCHAR(20)  |
-| start_time      | DATETIME     |
-| end_time        | DATETIME     |
+| plan_id         | INT (FK)    |
+| state           | VARCHAR(20) |
+| start_date      | DATETIME    |
+| end_date        | DATETIME    |
 
 **Métodos**
-| Método                          | Descripción                                       |
-|---------------------------------|---------------------------------------------------|
-| Start()                         | Inicia el viaje.                                  |
-| Complete()                      | Completa el viaje.                                |
-| RecordBoarding(childId, state)  | Registra el estado de abordaje de un estudiante.  |
-| IsInProgress()                  | Verifica si el viaje está en curso.               |
-
----
-
-**Tabla: attendances**
-| Atributo       | Tipo         |
-|----------------|--------------|
-| id             | CHAR(36) (PK)|
-| trip_id        | CHAR(36) (FK)|
-| child_id       | CHAR(36) (FK)|
-| boarding_state | VARCHAR(20)  |
-| boarded_at     | DATETIME     |
-
-**Métodos**
-| Método                       | Descripción                                     |
-|------------------------------|-------------------------------------------------|
-| UpdateBoardingState(state)   | Actualiza el estado de abordaje del estudiante. |
-| IsBoarded()                  | Verifica si el estudiante abordó.               |
-| GetBoardingTime()            | Retorna la hora de abordaje.                    |
-
----
-
-**Tabla: incidents**
-| Atributo    | Tipo         |
-|-------------|--------------|
-| id          | CHAR(36) (PK)|
-| trip_id     | CHAR(36) (FK)|
-| route_id    | CHAR(36) (FK)|
-| description | TEXT         |
-| reported_at | DATETIME     |
-
-**Métodos**
-| Método             | Descripción                             |
-|--------------------|-----------------------------------------|
-| Report()           | Registra el incidente.                  |
-| GetDescription()   | Retorna la descripción del incidente.   |
-| GetReportedAt()    | Retorna la fecha de reporte.            |
+| Método            | Descripción                                  |
+|-------------------|----------------------------------------------|
+| Activate()        | Activa la suscripción.                       |
+| Upgrade(planId)   | Cambia el plan de la suscripción.            |
+| Cancel()          | Cancela la suscripción.                      |
+| GetRemainingDays()| Retorna los días restantes de la suscripción.|
 
 
 ---
 
-**- Notifications & Communication**
-
-**Tabla: notifications**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| organization_id | CHAR(36) (FK)|
-| parent_id       | CHAR(36) (FK)|
-| trip_id         | CHAR(36) (FK)|
-| category        | VARCHAR(20)  |
-| delivery_state  | VARCHAR(20)  |
-| message         | TEXT         |
-| sent_at         | DATETIME     |
-
-**Métodos**
-| Método           | Descripción                                        |
-|------------------|----------------------------------------------------|
-| Queue()          | Encola la notificación para su envío.              |
-| Dispatch()       | Despacha la notificación al destinatario.          |
-| MarkDelivered()  | Marca la notificación como entregada.              |
-| GetCategory()    | Retorna la categoría de la notificación.           |
-
----
-
-**Tabla: alerts**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| notification_id | CHAR(36) (FK)|
-| triggered_at    | DATETIME     |
-
-**Métodos**
-| Método            | Descripción                            |
-|-------------------|----------------------------------------|
-| Trigger()         | Activa la alerta.                      |
-| IsPanic()         | Verifica si la alerta es de pánico.    |
-| GetTriggeredAt()  | Retorna la hora en que se activó.      |
-
----
-
-**Tabla: announcements**
-| Atributo        | Tipo         |
-|-----------------|--------------|
-| id              | CHAR(36) (PK)|
-| notification_id | CHAR(36) (FK)|
-| route_id        | CHAR(36) (FK)|
-| message         | TEXT         |
-| published_at    | DATETIME     |
-
-**Métodos**
-| Método            | Descripción                                   |
-|-------------------|-----------------------------------------------|
-| Publish()         | Publica el comunicado.                        |
-| GetMessage()      | Retorna el contenido del comunicado.          |
-| GetPublishedAt()  | Retorna la fecha de publicación.              |
 
 #### 4.8.1. Database Diagrams
 Esta sección presenta y explica los Database Diagrams para cada bounded context de SafeRoute. Los diagramas modelan la persistencia relacional del sistema, especificando tablas, columnas, tipos de dato, constraints (PK, FK, NOT NULL, UNIQUE) y las relaciones entre tablas con su cardinalidad. Todos los identificadores primarios utilizan `CHAR(36)` para soportar UUIDs, a excepción de catálogos fijos como `roles` y `plans` que usan `INT`. Las relaciones entre bounded contexts se materializan mediante columnas FK que referencian los IDs del contexto origen.
 ![DataBase](/assets/images/ChapterIV/DataBase/SafeRoute-DataBase.png)
 
-**Identity and Access Management**
-
-El bounded context de IAM persiste las entidades centrales de identidad y acceso. La tabla `organizations` actúa como raíz del sistema, siendo referenciada por prácticamente todos los demás contextos. `users` centraliza las credenciales de autenticación (`email` UNIQUE, `password_hash`) y se vincula a `organizations` y `roles` mediante FK. `roles` es una tabla de catálogo con clave `INT` que define los niveles de acceso disponibles en el sistema.
-
-![DataBase](/assets/images/ChapterIV/DataBase/DbIAM.png)
-
 ---
 
-**SafeRoute.Subscription**
+**Trip Execution & Monitoring**
 
-Este contexto gestiona los planes comerciales y el estado de suscripción de cada organización. La tabla `plans` es un catálogo con `INT` PK que define los tiers disponibles y sus cuotas (`max_routes`, `max_drivers`, `price`). `subscriptions` vincula una organización a un plan mediante FK y registra el ciclo de vida de la suscripción a través de `state`, `start_date` y `end_date` (nullable, ya que una suscripción activa no tiene fecha de fin definida).
+Este contexto registra la ejecución operativa de cada viaje. `trips` referencia `organization_id`, `route_id` y `driver_id` como FK, con `start_time` y `end_time` nullable dado que el viaje puede estar en curso. `attendances` registra el estado de embarque de cada niño por viaje (`trip_id` + `child_id`), con `boarded_at` nullable para casos de ausencia. `incidents` referencia tanto `trip_id` como `route_id`, permitiendo trazabilidad del incidente tanto al viaje específico como a la ruta afectada.
 
-![DataBase](./assets/images/ChapterIV/DataBase/DbSubscription.png)
+![DataBase](./assets/images/ChapterIV/DataBase/DbTrip.png)
 
 ---
 
@@ -3339,23 +3345,30 @@ Este contexto modela la infraestructura operativa de transporte. `vehicles` pert
 
 ---
 
-**Trip Execution & Monitoring**
-
-Este contexto registra la ejecución operativa de cada viaje. `trips` referencia `organization_id`, `route_id` y `driver_id` como FK, con `start_time` y `end_time` nullable dado que el viaje puede estar en curso. `attendances` registra el estado de embarque de cada niño por viaje (`trip_id` + `child_id`), con `boarded_at` nullable para casos de ausencia. `incidents` referencia tanto `trip_id` como `route_id`, permitiendo trazabilidad del incidente tanto al viaje específico como a la ruta afectada.
-
-![DataBase](./assets/images/ChapterIV/DataBase/DbTrip.png)
-
----
-
 **Notifications & Communication**
 
 Este contexto gestiona la comunicación hacia los padres. `notifications` referencia `organization_id`, `parent_id` y `trip_id`, registrando `category`, `delivery_state` y `message` con `sent_at` obligatorio. `alerts` pertenece a una notificación mediante `notification_id` FK y registra el momento exacto del disparo. `announcements` extiende la notificación con una referencia adicional a `route_id`, permitiendo comunicados asociados a una ruta específica con su propio `message` y `published_at`.
 
 ![DataBase](./assets/images/ChapterIV/DataBase/DbNotifications.png)
 
+---
 
+**Identity and Access Management**
+
+El bounded context de IAM persiste las entidades centrales de identidad y acceso. La tabla `organizations` actúa como raíz del sistema, siendo referenciada por prácticamente todos los demás contextos. `users` centraliza las credenciales de autenticación (`email` UNIQUE, `password_hash`) y se vincula a `organizations` y `roles` mediante FK. `roles` es una tabla de catálogo con clave `INT` que define los niveles de acceso disponibles en el sistema.
+
+![DataBase](/assets/images/ChapterIV/DataBase/DbIAM.png)
 
 ---
+
+**SafeRoute.Subscription**
+
+Este contexto gestiona los planes comerciales y el estado de suscripción de cada organización. La tabla `plans` es un catálogo con `INT` PK que define los tiers disponibles y sus cuotas (`max_routes`, `max_drivers`, `price`). `subscriptions` vincula una organización a un plan mediante FK y registra el ciclo de vida de la suscripción a través de `state`, `start_date` y `end_date` (nullable, ya que una suscripción activa no tiene fecha de fin definida).
+
+![DataBase](./assets/images/ChapterIV/DataBase/DbSubscription.png)
+
+---
+
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 ### 5.1. Software Configuration Management
