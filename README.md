@@ -886,7 +886,7 @@ En esta sección, se presenta el desarrollo y los resultados de la sesión de Bi
 
 A través de esta dinámica, se logró plasmar los eventos significativos y sus interrelaciones, construyendo una primera aproximación visual de alto nivel que explora el landscape completo del negocio.
 
-![BigPictureEventStorming](./assets/images/EventStorming.jpg)
+![BigPictureEventStorming](./assets/images/EventStorming1.jpg)
 * **URL:** [[https://miro.com/app/board/uXjVGhc-MhA=/](https://miro.com/app/board/uXjVGhc-MhA=/)]
 
 ### 2.5. Ubiquitous Language
@@ -2470,7 +2470,7 @@ A continuación, se incluirá un screenshot extraído de un video por cada tipo 
 #### 4.6.1. Design-Level Event Storming
 
 Plantilla de colores:
-![Plantilla](assets/images/ChapterIV/EventStorming/ColorPosit.png)
+![Plantilla](assets/images/ChapterIV/EventStorming/ColorPosit1.png)
 
 1. Unstructured Exploration
    ![BigPicture](assets/images/ChapterIV/EventStorming/BigPicture.png)
@@ -2545,7 +2545,7 @@ Completación de Viaje: Marca el fin de la responsabilidad operativa del conduct
 Estos puntos son determinantes para la continuidad y el éxito de la movilidad escolar, ya que aseguran que cada fase del proceso se cumpla antes de pasar a la siguiente.
 
 5. Commands
-   ![Commands](assets/images/ChapterIV/EventStorming/Commands.png)
+   ![Commands](assets/images/ChapterIV/EventStorming/Commands1.png)
 
 Los comandos representan las acciones o intenciones de los usuarios que desencadenan eventos en el sistema. Los principales comandos identificados son:
 
@@ -2562,7 +2562,7 @@ Los comandos representan las acciones o intenciones de los usuarios que desencad
 - Comunicación y Notificaciones: Preparar notificación push, despachar alerta a padres, publicar mensaje de difusión (broadcast), mostrar mensaje en línea de tiempo.
 
 6. Policies
-   ![Policies](assets/images/ChapterIV/EventStorming/Polices.png)
+   ![Policies](assets/images/ChapterIV/EventStorming/Polices1.png)
 
 Las políticas automatizan la lógica de negocio y aseguran la coherencia del sistema ante eventos críticos. Las políticas clave incluyen:
 
@@ -2581,7 +2581,7 @@ Las políticas automatizan la lógica de negocio y aseguran la coherencia del si
 - Cuando falla el registro de un stakeholder → Enviar una notificación de error con los detalles de validación al administrador.
 
 7. Read Models
-   ![ReadModels](assets/images/ChapterIV/EventStorming/ReadModels.png)
+   ![ReadModels](assets/images/ChapterIV/EventStorming/ReadModels1.png)
 
 Los principales modelos de lectura identificados para garantizar la visibilidad del sistema son:
 
@@ -2600,7 +2600,7 @@ Los principales modelos de lectura identificados para garantizar la visibilidad 
 - Directorio de Stakeholders: Lista completa de perfiles de usuarios (padres, conductores y administradores) con sus respectivos roles y privilegios de acceso.
 
 8. External Systems
-   ![ExternalSystems](assets/images/ChapterIV/EventStorming/ExternalSystems.png)
+   ![ExternalSystems](assets/images/ChapterIV/EventStorming/ExternalSystems1.png)
 
 Las integraciones identificadas para la solución incluyen:
 
@@ -2613,7 +2613,7 @@ Las integraciones identificadas para la solución incluyen:
 - MySQL (Gestión de Base de Datos): Actúa como el sistema externo de persistencia relacional encargado de almacenar y organizar toda la estructura de usuarios, rutas, vehículos y registros operativos.
 
 9. Aggregates
-   ![Aggregates](assets/images/ChapterIV/EventStorming/Aggregates.png)
+   ![Aggregates](assets/images/ChapterIV/EventStorming/Aggregates1.png)
 
 Basado en los dominios operativos identificados, los agregados son:
 
@@ -2632,7 +2632,7 @@ Route (Raíz): Coordina la definición logística del recorrido, incluyendo la c
 Trip (Raíz): Controla la ejecución operativa en tiempo real, registrando el inicio del trayecto, los cambios en el estado de abordaje de los estudiantes y el log de incidentes generados durante el viaje.
 
 10. Bounded Contexts
-    ![BoundedContexts](assets/images/ChapterIV/EventStorming/BoundedContexts.png)
+    ![BoundedContexts](assets/images/ChapterIV/EventStorming/BoundedContext.png)
 
 Los contextos delimitados organizan los agregados en dominios de negocio independientes, permitiendo que cada uno evolucione de manera autónoma para facilitar la escalabilidad del sistema:
 
