@@ -2562,7 +2562,7 @@ Los comandos representan las acciones o intenciones de los usuarios que desencad
 - Comunicación y Notificaciones: Preparar notificación push, despachar alerta a padres, publicar mensaje de difusión (broadcast), mostrar mensaje en línea de tiempo.
 
 6. Policies
-   ![Policies](./assets/images/ChapterIV/EventStorming/Polices1.png)
+   ![Policies](./assets/images/ChapterIV/EventStorming/Policies1.png)
 
 Las políticas automatizan la lógica de negocio y aseguran la coherencia del sistema ante eventos críticos. Las políticas clave incluyen:
 
@@ -2581,7 +2581,7 @@ Las políticas automatizan la lógica de negocio y aseguran la coherencia del si
 - Cuando falla el registro de un stakeholder → Enviar una notificación de error con los detalles de validación al administrador.
 
 7. Read Models
-   ![ReadModels](./assets/images/ChapterIV/EventStorming/ReadModels1.png)
+   ![ReadModels](./assets/images/ChapterIV/EventStorming/ReadModels.png)
 
 Los principales modelos de lectura identificados para garantizar la visibilidad del sistema son:
 
