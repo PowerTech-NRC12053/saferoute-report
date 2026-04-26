@@ -2663,10 +2663,10 @@ Aquí se detallan las unidades de despliegue principales del sistema. El diagram
 
 **FrontEnd**
 
-- Single Page 
+- Single Page Application (SPA)
 
 ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_SPA-dark.png)
-La SPA está desarrollada con Angular, Angular Material y TypeScript, organizada en módulos por bounded context. Cada módulo sigue una estructura interna de cuatro capas: Model (DTOs del dominio), Assembler (transforma respuestas del API), API Service (consume el backend vía HttpClient), y Store (estado reactivo con Angular Signals). La navegación entre módulos es gestionada por la Navigation Bar del módulo Shared, mientras que el HTTP Service centraliza todas las llamadas REST y el Map Service gestiona la integración con Leaflet.
+La SPA está desarrollada con Vue 3, PrimeVue y JavaScript, organizada en módulos por bounded context. Cada módulo sigue una estructura interna de cuatro capas DDD: Presentation (vistas y componentes Vue), Application (estado reactivo), Domain (clases y DTOs del dominio), e Infrastructure (consume el backend vía Axios). La navegación entre módulos es gestionada por la Navigation Bar del módulo Shared, mientras que el HTTP Service centraliza todas las llamadas REST y el Map Service gestiona la integración con Leaflet.
 
 - Trip Execution & Monitoring:
   Ilustra el núcleo operativo del frontend en sus 4 capas. Muestra cómo la Trip View procesa la ejecución del viaje en tiempo real, el Pinia Store mantiene el estado de abordajes e incidentes activos, y el Trip Service registra cada evento hacia el Web Service, que a su vez dispara las notificaciones correspondientes.
