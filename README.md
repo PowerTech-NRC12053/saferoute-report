@@ -886,7 +886,7 @@ En esta sección, se presenta el desarrollo y los resultados de la sesión de Bi
 
 A través de esta dinámica, se logró plasmar los eventos significativos y sus interrelaciones, construyendo una primera aproximación visual de alto nivel que explora el landscape completo del negocio.
 
-![BigPictureEventStorming](./assets/images/EventStorming1.jpg)
+![BigPictureEventStorming](./assets/images/EventStorming1.png)
 * **URL:** [[https://miro.com/app/board/uXjVGhc-MhA=/](https://miro.com/app/board/uXjVGhc-MhA=/)]
 
 ### 2.5. Ubiquitous Language
@@ -2562,7 +2562,7 @@ Los comandos representan las acciones o intenciones de los usuarios que desencad
 - Comunicación y Notificaciones: Preparar notificación push, despachar alerta a padres, publicar mensaje de difusión (broadcast), mostrar mensaje en línea de tiempo.
 
 6. Policies
-   ![Policies](assets/images/ChapterIV/EventStorming/Polices1.png)
+   ![Policies](assets/images/ChapterIV/EventStorming/Policies1.png)
 
 Las políticas automatizan la lógica de negocio y aseguran la coherencia del sistema ante eventos críticos. Las políticas clave incluyen:
 
