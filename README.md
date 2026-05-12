@@ -2707,29 +2707,53 @@ La SPA está desarrollada con Vue 3, PrimeVue y JavaScript, organizada en módul
   Ilustra el núcleo operativo del frontend en sus 4 capas. Muestra cómo la Trip View procesa la ejecución del viaje en tiempo real, el Pinia Store mantiene el estado de abordajes e incidentes activos, y el Trip Service registra cada evento hacia el Web Service, que a su vez dispara las notificaciones correspondientes.
   ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Trip-dark%20(1).png)
 
+    -Presentation trip:  
+  ![WebServices](./assets/images/ChapterIV/C4/Front/Presentation/ComponentDiagram_Trip-dark%20(1).png)
+
+
   - Route Planning & Execution:
   Detalla las 4 capas del módulo encargado de la logística previa al viaje en el cliente. Maneja la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores, y la definición de horarios, con el Route Store sincronizando el estado de configuración hacia el Web Service.
   ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Route-dark%20(1).png)
 
+    -Presentation route:  
+  ![WebServices](./assets/images/ChapterIV/C4/Front/Presentation/ComponentDiagram_Route-dark%20(1).png)
+
+
   - Stakeholder & Asset Management:
   Representa las 4 capas del módulo que administra la información core del negocio en el frontend. Gestiona las vistas de creación y vinculación de perfiles para conductores, padres, estudiantes y vehículos, con un Pinia Store que centraliza el estado de los grupos y asignaciones por organización.
   ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Stakeholder-dark%20(1).png)
+  
+    -Presentation stakeholder:  
+  ![WebServices](./assets/images/ChapterIV/C4/Front/Presentation/ComponentDiagram_Stakeholder-dark%20(1).png)
+
 
 - Notifications & Communication:
   Describe el módulo dedicado a la comunicación hacia el usuario en sus 4 capas. La Notifications View presenta alertas, confirmaciones de abordaje y anuncios en tiempo real, mientras el Pinia Store administra el conteo de no leídos y el Notification Service consulta periódicamente el Web Service para mantener el estado actualizado.
   ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Notification-dark%20(1).png)
 
+    -Presentation notifications:  
+  ![WebServices](./assets/images/ChapterIV/C4/Front/Presentation/ComponentDiagram_Notification-dark%20(1).png)
+
 - Shared Kernel:
   Detalla las 4 capas transversales del frontend que fundamentan todos los bounded context modules. Expone el Navigation Bar en la capa de presentación, el HTTP Service centralizado con interceptores JWT en la capa de aplicación, los DTOs e interfaces base en dominio, y el Map Service que integra Leaflet y OpenRouteService en la capa de infraestructura.
   ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Shared-dark.png)
+
+    -Presentation shared:  
+  ![WebServices](./assets/images/ChapterIV/C4/Front/Presentation/ComponentDiagram_Shared-dark.png)
 
 - Identity & Access Management:
   Desglosa el módulo de identidad del frontend en sus 4 capas internas. Ilustra cómo la Identity View gestiona los formularios de login y registro, el Pinia Store administra el estado de sesión y rol del usuario activo, y el IAM Service despacha las peticiones de autenticación hacia el Web Service adjuntando y almacenando el token JWT.
   ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_IAM-dark%20(1).png)
 
+    -Presentation IAM:  
+  ![WebServices](./assets/images/ChapterIV/C4/Front/Presentation/ComponentDiagram_IAM-dark%20(1).png)
+
 - Subscription & Plan Management:
   Muestra la arquitectura interna de 4 capas del módulo encargado de la monetización en el cliente. Detalla el flujo desde la Subscriptions View que presenta los planes disponibles, el Pinia Store que mantiene el estado del plan activo y sus cuotas, hasta el Subscription Service que se comunica con el Web Service para gestionar el ciclo de vida del pago.
   ![WebServices](./assets/images/ChapterIV/C4/Front/ComponentDiagram_Subscription-dark%20(1).png)
+
+    -Presentation subscription:  
+  ![WebServices](./assets/images/ChapterIV/C4/Front/Presentation/ComponentDiagram_Subscription-dark%20(1).png)
 
 
 **BackEnd**
