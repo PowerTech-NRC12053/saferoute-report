@@ -3819,6 +3819,75 @@ https://upc-pre-202610-1asi0730-12053-powertech.github.io/saferoute-website/
 
 ![Pulse Insights](assets/images/Chapter-5/Sprint1/pulse.png)
 ---
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+En la reunión de planificación del Sprint 2, el equipo definió como objetivo principal desarrollar y desplegar la primera versión funcional de la Frontend Web Application de SafeRoute, implementando los módulos core del sistema para los tres perfiles de usuario.
+
+| Sprint # | Sprint 2 |
+|:---|:---|
+| **Sprint Planning Background** | |
+| Date | 2026-05-05 |
+| Time | 07:00 PM |
+| Location | Reunión virtual vía Discord |
+| Prepared By | Ramirez Ruiz, Nickolas |
+| Attendees (to planning meeting) | De La Cruz De Los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Quispe Serrano, Julio Frank / Ramirez Ruiz, Nickolas / Vallejo Trujillo, Fabio Cesar |
+| Sprint 1 Review Summary | En el Sprint 1 se desplegó exitosamente la Landing Page bilingüe (ES/EN) de SafeRoute con todas sus secciones: Hero, Funcionalidades, Roles, Planes, ¿Cómo funciona? y Footer. Se estableció la arquitectura base del sistema bajo DDD con 6 bounded contexts documentados y diagramas C4 elaborados. |
+| Sprint 1 Retrospective Summary | El equipo identificó como acierto la organización mediante GitFlow y el uso de ramas feature por sección. Como oportunidad de mejora se destacó iniciar la implementación del frontend con mayor anticipación para evitar acumulación de trabajo al final del sprint. |
+| **Sprint Goal  & User Stories** |
+| Sprint 2 Goal | Our focus is on delivering a functional web application for SafeRoute's three user profiles. We believe it delivers a first operational experience to administrators, drivers and parents. This will be confirmed when administrators can register drivers, parents and students, drivers can start and complete trips with boarding check, and parents can view real-time tracking of the school bus, all deployed on Vercel. |
+| Sprint 2 Velocity | 60 |
+| Sum of Story Points | 58 |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Para el Sprint 2, los principales aspectos de trabajo se organizaron en torno al desarrollo de los módulos del frontend por bounded context, la infraestructura de autenticación y el despliegue de la aplicación.
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM & Auth (L/C) | Admin Module (L/C) | Driver Module (L/C) | Parent Module (L/C) | Deployment (L/C) |
+|-------------------------------------|-----------------|------------------|--------------------|---------------------|---------------------|------------------|
+| Quispe Serrano, Julio Frank | FraSe_JQ | C | C | L | C | C |
+| Ortega Quintana, Jose Zacarias | AgoxX61 | C | L | C | C | C |
+| De La Cruz, Mathias Marcelo | Dela050406 | L | C | C | C | C |
+| Vallejo Trujillo, Fabio Cesar | fabiovallejo | C | C | C | C | L |
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | C | C | L | C |
+
+
+### 5.2.2.3. Sprint Backlog 2
+
+El objetivo del Sprint 2 fue desarrollar y desplegar la primera versión funcional de la Frontend Web Application de SafeRoute en Vue.js, implementando los módulos core del sistema: Shared Kernel como base arquitectónica, IAM y Subscriptions como subdominios genéricos, Stakeholder para gestión de perfiles, Routes para la planificación logística y Trip para la ejecución y monitoreo en tiempo real del trayecto escolar.
+
+![Sprint Backlog 2](assets/images/Chapter-5/Sprint2/trello-sprint2.png)
+
+
+**URL del Board:** Por definir
+
+| Sprint # | Sprint 2 | | | | | | |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| — | Arquitectura Base | T01 | Setup Shared Kernel | Generar las interfaces y clases abstractas base del Shared Kernel (base-entity, base-api, value objects compartidos) que servirán de base para el resto de módulos. | 6 | Julio Frank | Done |
+| US20 | Confirmación de Llegada | T02 | Módulo Notifications | Desarrollar el flujo de notificaciones e incidentes, incluyendo alertas de abordaje, llegada y emergencias hacia los padres. | 6 | Julio Frank | Done |
+| TS1 | Implementación JWT Authentication | T03 | Módulo IAM | Implementar el flujo de login, registro y manejo de tokens JWT para los tres perfiles del sistema (Administrador, Conductor, Padre). | 6 | Mathias | Done |
+| US1 | Contratar Plan | T04 | Módulo Subscription | Desarrollar la lógica de planes de suscripción (Básico, Intermedio, Completo) incluyendo selección y activación de plan. | 6 | Mathias | Done |
+| US2, US3, US4 | Registro de Conductores, Padres y Alta de Alumnos | T05 | Módulo Stakeholder - Estudiantes y Grupos | Construir los CRUDs de estudiantes y grupos, incluyendo registro de alumnos, padres y conductores con sus relaciones. | 8 | José | Done |
+| US6 | Asignación de Roles | T06 | Módulo Stakeholder - Asignación de Vehículos | Implementar la asignación de vehículos a conductores y gestión de roles dentro del sistema. | 6 | José | Done |
+| US5 | Creación de Rutas | T07 | Módulo Routes - Paradas y Trazado | Desarrollar el motor de creación de paradas y trazado de rutas con integración de Leaflet Maps (route-builder). | 8 | Fabio | Done |
+| TS2 | Integración Leaflet Maps | T08 | Módulo Routes - Fleet Management | Implementar la gestión administrativa de la flota física, incluyendo registro y asignación de vehículos a rutas. | 6 | Fabio | Done |
+| US18 | Rastreo en Tiempo Real | T09 | Módulo Trip - Live Monitor | Implementar el monitoreo en vivo del viaje con visualización del bus en mapa en tiempo real para el perfil padre. | 8 | Nickolas | Done |
+| US10, US14 | Inicio y Finalización de Trayecto | T10 | Módulo Trip - Control de Estado | Desarrollar el control de estado del viaje (iniciado, en curso, finalizado) incluyendo inicio y cierre de trayecto para conductores. | 6 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T11 | Módulo Trip - Boarding Scanner | Implementar el componente crítico de escaneo y marcación de abordaje de alumnos por parada durante el trayecto. | 6 | Nickolas | Done |
+| — | Despliegue Frontend | T12 | Deploy en Vercel | Configurar y desplegar la aplicación Vue.js en Vercel con integración continua desde GitHub. | 4 | Fabio | Done |
+| — | Documentación Sprint 2 | T13 | Sprint Planning y Backlog | Documentar la planificación, backlog y evidencias del Sprint 2 en el informe del proyecto. | 6 | Nickolas | Done |
+### 5.2.2.4. Development Evidence for Sprint Review
+
+### 5.2.2.5. Execution Evidence for Sprint Review
+
+### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+### 5.2.2.8. Team Collaboration Insights during Sprint
 
 **Conclusiones**
 
