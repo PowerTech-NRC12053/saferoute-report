@@ -37,6 +37,8 @@
 ## Project Report Collaboration Insights
 El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report](https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report)
 
+![Report](assets/images/Chapter-5/Sprint1/pulse.png)
+
 ---
 
 ## Contenido
@@ -3629,20 +3631,20 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 En la reunión de planificación del Sprint 1, el equipo definió como objetivo principal establecer la presencia digital de SafeRoute y la estructura base del sistema.
 
 | US Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|---|---|---|
-| US25 | Visualización de Hero | T01 | Setup Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | Done |
-| US30 | Implementación i18n | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 10 | Mathias | Done |
-| US26 | Sección Funcionalidades | T03 | Componente Funcionalidades | Maquetar las 6 tarjetas de funcionalidades de la plataforma. | 6 | Fabio | Done |
-| US27 | Sección Roles | T04 | Componente Roles | Implementar la sección de los tres perfiles del sistema. | 6 | Mathias | Done |
-| US28 | Consulta de Precios | T05 | Sección Planes | Maquetar los tres planes de suscripción con sus funcionalidades. | 6 | Fabio | Done |
-| US29 | ¿Cómo funciona? | T06 | Sección Onboarding | Crear el componente de los 5 pasos del flujo de uso. | 6 | Fabio | Done |
-| --- | Arquitectura DDD | T07 | Bounded Contexts | Documentar los 6 bounded contexts del sistema. | 10 | Frank | Done |
-| --- | Diagramas C4 | T08 | Diagramas de Arquitectura | Elaborar diagramas de contexto, contenedores y componentes. | 10 | Frank | Done |
-| --- | Diseño UX/UI | T09 | Wireframes Desktop/Mobile | Elaborar wireframes para los tres perfiles de usuario. | 12 | Mathias | Done |
-| --- | Diseño UX/UI | T10 | Mockups Desktop/Mobile | Elaborar mockups para los tres perfiles de usuario. | 12 | Nickolas | Done |
-| --- | Capítulo 2 | T11 | Entrevistas y Needfinding | Documentar entrevistas, user personas y análisis de requerimientos. | 10 | José | Done |
-| --- | Documentación | T12 | Sprint Planning y Backlog | Documentar la planificación y gestión del Sprint 1. | 6 | Nickolas | Done |
-| --- | Despliegue | T13 | GitHub Pages Deploy | Configurar y desplegar la Landing Page en GitHub Pages. | 4 | Fabio | Done |
+|---|---|---|---|---|--------------------|---|---|
+| US25 | Visualización de Hero | T01 | Setup Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 4                  | Fabio | Done |
+| US30 | Implementación i18n | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 4                  | Mathias | Done |
+| US26 | Sección Funcionalidades | T03 | Componente Funcionalidades | Maquetar las 6 tarjetas de funcionalidades de la plataforma. | 6                  | Fabio | Done |
+| US27 | Sección Roles | T04 | Componente Roles | Implementar la sección de los tres perfiles del sistema. | 6                  | Mathias | Done |
+| US28 | Consulta de Precios | T05 | Sección Planes | Maquetar los tres planes de suscripción con sus funcionalidades. | 6                  | Fabio | Done |
+| US29 | ¿Cómo funciona? | T06 | Sección Onboarding | Crear el componente de los 5 pasos del flujo de uso. | 6                  | Fabio | Done |
+| --- | Arquitectura DDD | T07 | Bounded Contexts | Documentar los 6 bounded contexts del sistema. | 6                  | Frank | Done |
+| --- | Diagramas C4 | T08 | Diagramas de Arquitectura | Elaborar diagramas de contexto, contenedores y componentes. | 8                  | Frank | Done |
+| --- | Diseño UX/UI | T09 | Wireframes Desktop/Mobile | Elaborar wireframes para los tres perfiles de usuario. | 4                  | Mathias | Done |
+| --- | Diseño UX/UI | T10 | Mockups Desktop/Mobile | Elaborar mockups para los tres perfiles de usuario. | 8                  | Nickolas | Done |
+| --- | Capítulo 2 | T11 | Entrevistas y Needfinding | Documentar entrevistas, user personas y análisis de requerimientos. | 4                  | José | Done |
+| --- | Documentación | T12 | Sprint Planning y Backlog | Documentar la planificación y gestión del Sprint 1. | 6                  | Nickolas | Done |
+| --- | Despliegue | T13 | GitHub Pages Deploy | Configurar y desplegar la Landing Page en GitHub Pages. | 4                  | Fabio | Done |
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
@@ -3658,31 +3660,31 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 
 ### **5.2.1.3. Sprint Backlog 1**
 
-**Objetivo del Sprint:**
-Establecer la infraestructura base de SafeRoute mediante el desarrollo de una Landing Page bilingüe que comunique la propuesta de valor, la implementación del sistema de gestión de usuarios (padres, conductores y alumnos) y la configuración de los servicios de geolocalización esenciales para el monitoreo de rutas.
 
-**Board de Trello :**
-*( captura )*
+El objetivo del Sprint 1 fue establecer la presencia digital de SafeRoute mediante el diseño y despliegue de la Landing Page bilingüe (ES/EN), comunicando la propuesta de valor del producto a los segmentos objetivo: padres de familia y transportistas escolares. Adicionalmente, se sentaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design.
 
-**URL del Board:** [ enlace ]
+![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/trello-sprint1.png)
 
-| US Id | User Story Title        | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
-| :--- |:------------------------| :--- | :--- | :--- | :--- | :--- | :--- |
-| **US25** | Visualización de Hero   | T01 | Setup de Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 8 | Fabio | To-do |
-| **US30** | Implementación i18n     | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 12 | Mathias | To-do |
-| **US19** | Alerta de Proximidad    | T03 | Lógica de Geofencing | Desarrollar el algoritmo de proximidad (500m) en el backend. | 14 | Mathias | To-do |
-| **US1** | Contratar Plan          | T04 | API de Suscripciones | Crear endpoints para selección de planes y validación de límites. | 12 | Nickolas | To-do |
-| **US5** | Creación de Rutas       | T05 | Módulo de Trazado | Implementar lógica para definir puntos A/B y paradas intermedias. | 16 | Nickolas | To-do |
-| **US6** | Asignación de Roles     | T06 | Gestión de Permisos | Desarrollar la lógica de vinculación Conductor-Ruta-Vehículo. | 10 | Nickolas | To-do |
-| **US23** | Sección ¿Cómo funciona? | T07 | Onboarding Visual | Crear el componente de infografía interactiva en la Landing. | 6 | Nickolas | To-do |
-| **US4** | Alta de Alumnos         | T08 | CRUD Alumnos | Implementar el registro de menores y almacenamiento de fotos. | 10 | Nickolas | To-do |
-| **US22** | Consulta de Precios     | T09 | Tabla de Planes | Maquetar la sección de costos y descuentos anuales en la web. | 8 | Chris | To-do |
-| **US2** | Registro de Conductores | T10 | Registro de Flota | Desarrollar validaciones de licencia y creación de cuentas driver. | 12 | Chris | To-do |
-| **US3** | Registro de Padres      | T11 | Gestión de Apoderados | Implementar el flujo de invitaciones y registro de padres. | 10 | Renzo | To-do |
-| **US14** | Finalización de Ruta    | T12 | Cierre de Sesión Operativa | Lógica para detener GPS y validar que el bus esté vacío al finalizar. | 8 | Renzo | To-do |
-| **US25** | API: Registro GPS       | T13 | Ingesta de Coordenadas | Desarrollar el endpoint de alta frecuencia para recibir datos GPS. | 15 | Fabio | To-do |
-| **US8** | Inicio de Trayecto      | T14 | Activación de Ruta | Implementar el trigger que notifica el inicio del viaje a los padres. | 8 | Fabio | To-do |
-| **---** | **Constraint General**  | T15 | Setup Arquitectónico | Configuración de BD SQL Server y estructura modular en C#. | 12 | Chris | To-do |
+**URL del Board:** [SafeRoute - Sprint 1](https://trello.com/invite/b/6a02d95d58090e5e29224ade/ATTIb1de195162b53134aa7fea0f41b39b97BE3E0DB6/saferoute-sprint-1)
+
+| Sprint # | Sprint 1 | | | |                        | | |
+|:---|:---|:---|:---|:---|:-----------------------|:---|:---|
+| **User Story** | | **Work-Item / Task** | | |                        | | |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US25 | Visualización de Hero | T01 | Setup Landing & Hero Section | Maquetar la sección principal con propuesta de valor, ilustración del sistema y botones CTA en Vue.js. | 4                      | Fabio | Done |
+| US30 | Implementación i18n | T02 | Configuración Vue-i18n | Implementar Vue-i18n y diccionarios ES/EN para soporte bilingüe completo de la Landing Page. | 4                      | Mathias | Done |
+| US26 | Navegación de Funciones | T03 | Componente Funcionalidades | Maquetar las 6 tarjetas de funcionalidades principales de la plataforma con íconos y descripciones. | 6                      | Fabio | Done |
+| US27 | Detalle de Roles | T04 | Componente Roles del Sistema | Implementar la sección con los tres perfiles del sistema (Administrador, Conductor, Padre de Familia). | 6                      | Mathias | Done |
+| US28 | Consulta de Precios | T05 | Sección Planes de Suscripción | Maquetar los tres planes (Básico, Intermedio, Completo) con funcionalidades y precios. | 6                      | Fabio | Done |
+| US29 | Sección ¿Cómo funciona? | T06 | Componente Onboarding de 5 pasos | Crear el componente visual con los 5 pasos del flujo de uso de la plataforma. | 6                      | Fabio | Done |
+| US31 | Testimonios Reales | T07 | Sección Testimonios | Implementar la sección de reseñas y calificaciones con datos de muestra. | 4                      | Nickolas | Done |
+| US40 | Verificación de SSL | T08 | Configuración HTTPS | Verificar y habilitar certificado SSL para la Landing Page desplegada. | 2                      | Fabio | Done |
+| — | Arquitectura DDD | T09 | Definición de Bounded Contexts | Documentar los 6 bounded contexts del sistema y sus agregados principales. | 6                      | Frank | Done |
+| — | Diagramas C4 | T10 | Diagramas de Contexto y Contenedores | Elaborar diagramas de contexto, contenedores y componentes bajo el modelo C4. | 4                      | Frank | Done |
+| — | Diseño UX/UI | T11 | Wireframes Desktop y Mobile | Elaborar wireframes para los tres perfiles de usuario en versión desktop y mobile. | 6                      | Mathias | Done |
+| — | Diseño UX/UI | T12 | Mockups Desktop y Mobile | Elaborar mockups de alta fidelidad para los tres perfiles en versión desktop y mobile. | 6                      | Nickolas | Done |
+| — | Capítulo II | T13 | Entrevistas y Needfinding | Documentar entrevistas, user personas, journey maps y análisis de requerimientos. | 6                      | José | Done |
+| — | Despliegue | T14 | GitHub Pages Deploy | Configurar y desplegar la Landing Page en GitHub Pages con rama main como fuente. | 4                      | Fabio | Done |
 
 **URL desplegada:** [Landing Page SafeRoute](https://upc-pre-202610-1asi0730-12053-powertech.github.io/saferoute-website/)
 
