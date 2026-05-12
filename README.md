@@ -3860,7 +3860,8 @@ El objetivo del Sprint 2 fue desarrollar y desplegar la primera versión funcion
 ![Sprint Backlog 2](assets/images/Chapter-5/Sprint2/trello-sprint2.png)
 
 
-**URL del Board:** Por definir
+**URL del Board:** https://trello.com/invite/b/6a039c6fedc318910e775250/ATTI095b53f960877c725150d2e6f6820377E27FB291/sprint-2-saferoute
+
 
 | Sprint # | Sprint 2 | | | | | | |
 |:---|:---|:---|:---|:---|:---|:---|:---|
