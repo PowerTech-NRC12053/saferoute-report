@@ -3628,23 +3628,25 @@ El backend del sistema, desarrollado en C#, será desplegado utilizando Railway,
 ##### Despliegue de Landing Page
 
 ##### 5.2.1.1. Sprint Planning 1
-En la reunión de planificación del Sprint 1, el equipo definió como objetivo principal establecer la presencia digital de SafeRoute y la estructura base del sistema.
 
-| US Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|--------------------|---|---|
-| US25 | Visualización de Hero | T01 | Setup Landing & Hero | Maquetar la sección principal con la propuesta de valor en Vue.js. | 4                  | Fabio | Done |
-| US30 | Implementación i18n | T02 | Configuración i18n | Implementar Vue-i18n y diccionarios para soporte ES/EN. | 4                  | Mathias | Done |
-| US26 | Sección Funcionalidades | T03 | Componente Funcionalidades | Maquetar las 6 tarjetas de funcionalidades de la plataforma. | 6                  | Fabio | Done |
-| US27 | Sección Roles | T04 | Componente Roles | Implementar la sección de los tres perfiles del sistema. | 6                  | Mathias | Done |
-| US28 | Consulta de Precios | T05 | Sección Planes | Maquetar los tres planes de suscripción con sus funcionalidades. | 6                  | Fabio | Done |
-| US29 | ¿Cómo funciona? | T06 | Sección Onboarding | Crear el componente de los 5 pasos del flujo de uso. | 6                  | Fabio | Done |
-| --- | Arquitectura DDD | T07 | Bounded Contexts | Documentar los 6 bounded contexts del sistema. | 6                  | Frank | Done |
-| --- | Diagramas C4 | T08 | Diagramas de Arquitectura | Elaborar diagramas de contexto, contenedores y componentes. | 8                  | Frank | Done |
-| --- | Diseño UX/UI | T09 | Wireframes Desktop/Mobile | Elaborar wireframes para los tres perfiles de usuario. | 4                  | Mathias | Done |
-| --- | Diseño UX/UI | T10 | Mockups Desktop/Mobile | Elaborar mockups para los tres perfiles de usuario. | 8                  | Nickolas | Done |
-| --- | Capítulo 2 | T11 | Entrevistas y Needfinding | Documentar entrevistas, user personas y análisis de requerimientos. | 4                  | José | Done |
-| --- | Documentación | T12 | Sprint Planning y Backlog | Documentar la planificación y gestión del Sprint 1. | 6                  | Nickolas | Done |
-| --- | Despliegue | T13 | GitHub Pages Deploy | Configurar y desplegar la Landing Page en GitHub Pages. | 4                  | Fabio | Done |
+
+En la reunión de planificación del Sprint 1, el equipo definió como objetivo principal establecer la presencia digital de SafeRoute mediante el despliegue de la Landing Page bilingüe y la documentación de la arquitectura base del sistema.
+
+| Sprint # | Sprint 1 |
+|:---|:---|
+| **Sprint Planning Background** | |
+| Date | 2026-04-05 |
+| Time | 07:00 PM |
+| Location | Reunión virtual vía Discord |
+| Prepared By | Ramirez Ruiz, Nickolas |
+| Attendees (to planning meeting) | De La Cruz De Los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Quispe Serrano, Julio Frank / Ramirez Ruiz, Nickolas / Vallejo Trujillo, Fabio Cesar |
+| Sprint 1 Review Summary | Este es el primer sprint del proyecto, por lo que no existe un sprint anterior que revisar. |
+| Sprint 1 Retrospective Summary | Este es el primer sprint del proyecto, por lo que no existe una retrospectiva previa. |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | We are creating a bilingual website for SafeRoute to show parents and school transport drivers what we offer. We will know it's ready when the site is live and working in both Spanish and English. |
+| Sprint 1 Velocity | 50 |
+| Sum of Story Points | 47 |
+
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
