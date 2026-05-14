@@ -3838,7 +3838,7 @@ En la reunión de planificación del Sprint 2, el equipo definió como objetivo 
 | Sprint 1 Review Summary | En el Sprint 1 se desplegó exitosamente la Landing Page bilingüe (ES/EN) de SafeRoute con todas sus secciones: Hero, Funcionalidades, Roles, Planes, ¿Cómo funciona? y Footer. Se estableció la arquitectura base del sistema bajo DDD con 6 bounded contexts documentados y diagramas C4 elaborados. |
 | Sprint 1 Retrospective Summary | El equipo identificó como acierto la organización mediante GitFlow y el uso de ramas feature por sección. Como oportunidad de mejora se destacó iniciar la implementación del frontend con mayor anticipación para evitar acumulación de trabajo al final del sprint. |
 | **Sprint Goal  & User Stories** |
-| Sprint 2 Goal | Our focus is on delivering a functional web application for SafeRoute's three user profiles. We believe it delivers a first operational experience to administrators, drivers and parents. This will be confirmed when administrators can register drivers, parents and students, drivers can start and complete trips with boarding check, and parents can view real-time tracking of the school bus, all deployed on Vercel. |
+| Sprint 2 Goal |We are focusing on launching a working app for SafeRoute's administrators, drivers, and parents. We will know it is ready when admins can register users, drivers can manage trips, and parents can track the bus in real time. |
 | Sprint 2 Velocity | 60 |
 | Sum of Story Points | 58 |
 
