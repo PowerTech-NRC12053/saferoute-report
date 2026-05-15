@@ -3890,6 +3890,67 @@ El objetivo del Sprint 2 fue desarrollar y desplegar la primera versión funcion
 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 2, el equipo desarrolló e implementó la primera versión funcional de la Frontend Web Application de SafeRoute en Vue.js, desplegada en Microsoft Azure. La aplicación integra los módulos core del sistema bajo el enfoque DDD, cubriendo los flujos críticos para los tres perfiles de usuario: Administrador, Conductor y Padre de Familia.
+
+A continuación se presenta la evidencia de ejecución por bounded context implementado.
+
+**Módulo IAM (Identity & Access Management)**
+
+Se implementó el flujo completo de autenticación mediante JWT, incluyendo registro de organización, login diferenciado por rol (Administrador, Conductor, Padre) y recuperación de contraseña. El módulo persiste el token en el cliente y valida sesiones activas en cada navegación protegida.
+
+[![IAM Login Module](assets/images/Chapter-5/Sprint2/iam-login.png)](assets/images/Chapter-5/Sprint2/iam-login.png)
+
+
+---
+
+**Módulo Subscription & Plan Management**
+
+Se desarrolló la vista de selección y contratación de planes (Básico, Intermedio, Completo) para el perfil Administrador. El módulo consulta los planes disponibles, gestiona la activación y refleja las cuotas operativas (rutas y conductores) habilitadas según el plan contratado.
+
+[![Subscription Module](assets/images/Chapter-5/Sprint2/subscription-plans.png)](assets/images/Chapter-5/Sprint2/subscription-plans.png)
+
+[![Subscription Module](assets/images/Chapter-5/Sprint2/subscription-plans1.png)](assets/images/Chapter-5/Sprint2/subscription-plans1.png)
+
+---
+
+**Módulo Stakeholder & Asset Management**
+
+Se implementaron los CRUDs de gestión de actores y activos: registro de conductores con número de licencia, registro de padres con vinculación a estudiantes, alta de alumnos y agrupación en student groups. Asimismo, se desarrolló la asignación de vehículos a conductores dentro del panel administrativo.
+
+[![Stakeholder Module](assets/images/Chapter-5/Sprint2/stakeholder-management.png)](assets/images/Chapter-5/Sprint2/stakeholder-management.png)
+
+
+---
+
+**Módulo Routes (Fleet & Route Planning)**
+
+Se desarrolló el constructor visual de rutas con integración de Leaflet Maps, permitiendo al Administrador trazar paradas georreferenciadas, definir el orden de la secuencia, establecer horarios de salida y vincular la ruta con un vehículo y conductor asignado.
+
+[![Routes Builder Module](assets/images/Chapter-5/Sprint2/routes-builder.png)](assets/images/Chapter-5/Sprint2/routes-builder.png)
+
+---
+
+**Módulo Trip Execution & Monitoring**
+
+Se implementaron los tres componentes críticos de la ejecución del viaje. El conductor accede al control de estado del trayecto (iniciar, en curso, finalizar) y al boarding scanner para marcar el abordaje de los alumnos por parada. El padre de familia accede al live monitor con la visualización en tiempo real del vehículo sobre el mapa.
+
+[![Trip Driver Control](assets/images/Chapter-5/Sprint2/trip-driver-control.png)](assets/images/Chapter-5/Sprint2/trip-driver-control.png)
+
+[![Trip Parent Live Monitor](assets/images/Chapter-5/Sprint2/trip-parent-monitor.png)](assets/images/Chapter-5/Sprint2/trip-parent-monitor.png)
+[![Trip Parent Live Monitor](assets/images/Chapter-5/Sprint2/trip-parent-monitor1.png)](assets/images/Chapter-5/Sprint2/trip-parent-monitor1.png)
+---
+
+**Módulo Notifications & Communication**
+
+Se desarrolló el flujo de notificaciones automáticas hacia los padres ante eventos críticos del viaje: confirmación de abordaje, alerta de proximidad a la parada y confirmación de llegada al destino. Las notificaciones se renderizan en una timeline dentro del dashboard del perfil padre.
+
+[![Notifications Module](assets/images/Chapter-5/Sprint2/notifications-timeline.png)](assets/images/Chapter-5/Sprint2/notifications-timeline.png)
+
+---[![Notifications Module](assets/images/Chapter-5/Sprint2/notifications-timeline1.png)](assets/images/Chapter-5/Sprint2/notifications-timeline1.png)
+
+
+**URL desplegada en Azure:** [Pendiente de incluir]
+
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
