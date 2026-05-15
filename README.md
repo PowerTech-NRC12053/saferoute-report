@@ -4013,9 +4013,10 @@ El repositorio del informe registró el mayor volumen de commits durante el spri
 
 [![Report Pulse Sprint 2](assets/images/Chapter-5/Sprint2/report-pulse.png)](assets/images/Chapter-5/Sprint2/report-pulse.png)
 
+
 ---
 
-**Repositorio del Frontend (`saferoute-frontend-applications`)**
+**Repositorio del Frontend (`https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-webapp`)**
 
 El repositorio del frontend registró actividad moderada y sostenida durante el sprint, correspondiente al desarrollo iterativo de los módulos por bounded context. Cada integrante trabajó en ramas feature dedicadas a su módulo asignado, integrando cambios mediante pull requests hacia la rama `develop`.
 
@@ -4032,29 +4033,34 @@ El repositorio del frontend registró actividad moderada y sostenida durante el 
 La distribución del trabajo se mantuvo alineada con la **Leadership and Collaboration Matrix (LACX)** definida al inicio del sprint, donde cada integrante asumió la responsabilidad principal de un módulo del frontend mientras colaboraba en los módulos restantes mediante revisiones de código y soporte técnico. El uso consistente de GitFlow, junto con la convención de Conventional Commits, permitió mantener un historial trazable y profesional en ambos repositorios del proyecto.
 
 
-
-
 **Conclusiones**
 
 - El Sprint 1 permitió consolidar la identidad visual y comunicacional de SafeRoute mediante el despliegue de la Landing Page, logrando presentar de forma clara la propuesta de valor del producto a los segmentos objetivo. La implementación de secciones como Hero, Funcionalidades, Roles y Planes demostró que el equipo tiene una visión coherente del producto, alineada con los problemas identificados en el levantamiento de requerimientos.
 
-
 - La elaboración de los wireframes y mockups tanto en versión desktop como mobile para los tres perfiles de usuario (Administrador, Conductor y Padre de Familia) evidencia un diseño centrado en el usuario que anticipa los flujos críticos del sistema. Este trabajo de diseño previo representa una base sólida que reducirá el tiempo de desarrollo del frontend en los siguientes sprints al tener ya definidas las interfaces y la lógica de navegación.
 
+- La adopción de Domain-Driven Design como enfoque arquitectónico del backend permitió al equipo identificar y documentar correctamente los seis bounded contexts del sistema (IAM, Subscriptions, Stakeholders, Fleet, Trip y Notifications), estableciendo contratos claros entre dominios que facilitarán la implementación progresiva del backend en ASP.NET Core a partir del Sprint 3.
 
-- La adopción de Domain-Driven Design como enfoque arquitectónico del backend permitió al equipo identificar y documentar correctamente los seis bounded contexts del sistema (IAM, Subscriptions, Stakeholders, Fleet, Trip y Notifications), estableciendo contratos claros entre dominios que facilitarán la implementación progresiva del backend en ASP.NET Core a partir del Sprint 2.
+- El Sprint 2 permitió materializar el diseño previo en una Frontend Web Application funcional desplegada en Microsoft Azure, integrando los seis bounded contexts del sistema en una experiencia coherente para los tres perfiles de usuario. La implementación de los módulos core (IAM, Subscription, Stakeholder, Routes, Trip y Notifications) demuestra que el equipo logró traducir exitosamente la arquitectura DDD documentada en el Sprint 1 a una solución de software operativa.
 
+- El uso de una Fake REST API local mediante json-server durante el Sprint 2 resultó una decisión técnica acertada, ya que permitió validar los flujos de interacción, los DTOs y el modelo de dominio en el cliente antes de la implementación del backend real en ASP.NET Core. Esta estrategia desacopla el desarrollo del frontend del backend, facilitando avances paralelos y reduciendo riesgos de integración en el Sprint 3.
+
+- La integración de Leaflet Maps en el módulo Routes constituye un hito técnico relevante del Sprint 2, dado que habilita la funcionalidad core del producto: la planificación y monitoreo geográfico del transporte escolar. La validación temprana de esta integración asegura que el componente más crítico del sistema esté técnicamente viable antes de conectarse al backend real.
 
 **Recomendaciones**
 
 - Se recomienda mantener el repositorio actualizado conforme avance cada sprint, evitando acumular secciones pendientes para el último momento y reduciendo la carga de trabajo en las semanas de entrega.
 
-- Se recomienda que el equipo establezca una rutina de revisión de pull requests entre pares antes de mergear cualquier rama feature a develop,
-con el objetivo de reducir errores de integración, mantener la consistencia del informe y asegurar que todos los integrantes estén alineados con el avance general del proyecto.
+- Se recomienda que el equipo establezca una rutina de revisión de pull requests entre pares antes de mergear cualquier rama feature a develop, con el objetivo de reducir errores de integración, mantener la consistencia del informe y asegurar que todos los integrantes estén alineados con el avance general del proyecto.
 
+- Se recomienda iniciar las entrevistas con usuarios reales del segmento objetivo (padres de familia y transportistas) a la brevedad, con el fin de validar las hipótesis planteadas en el Lean UX Canvas y ajustar las funcionalidades del producto antes de invertir mayor esfuerzo de desarrollo en el frontend y backend.
 
-- Se recomienda iniciar las entrevistas con usuarios reales del segmento objetivo (padres de familia y transportistas) a la brevedad, 
-con el fin de validar las hipótesis planteadas en el Lean UX Canvas y ajustar las funcionalidades del producto antes de invertir mayor esfuerzo de desarrollo en el frontend y backend.
+- Se recomienda priorizar el inicio del desarrollo del Backend Web Services en ASP.NET Core desde la primera semana del Sprint 3, definiendo claramente los contratos de API que ya están siendo consumidos por la Fake API actual, para asegurar una migración fluida del frontend desde json-server hacia el backend real sin requerir refactors mayores en los módulos ya implementados.
+
+- Se recomienda configurar pipelines de CI/CD automatizados en Azure tanto para el frontend como para el futuro backend, de modo que cada merge a la rama `develop` o `main` despliegue automáticamente la última versión estable, reduciendo el riesgo de errores manuales en los despliegues y agilizando la validación de cambios entre sprints.
+
+- Se recomienda realizar pruebas de usabilidad con usuarios reales sobre el frontend ya desplegado en Azure durante el Sprint 3, aprovechando que la aplicación es funcional con datos mock, para detectar fricciones de UX antes de invertir esfuerzo en la integración con el backend.
+
 
 ### Video About-the-Team
 
