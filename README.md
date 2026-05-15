@@ -4019,7 +4019,11 @@ El repositorio del informe registró el mayor volumen de commits durante el spri
 
 El repositorio del frontend registró actividad moderada y sostenida durante el sprint, correspondiente al desarrollo iterativo de los módulos por bounded context. Cada integrante trabajó en ramas feature dedicadas a su módulo asignado, integrando cambios mediante pull requests hacia la rama `develop`.
 
+
 [![Frontend Pulse Sprint 2](assets/images/Chapter-5/Sprint2/frontend-pulse.png)](assets/images/Chapter-5/Sprint2/frontend-pulse.png)
+
+
+
 
 ---
 
