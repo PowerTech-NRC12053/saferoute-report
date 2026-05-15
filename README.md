@@ -3888,6 +3888,66 @@ El objetivo del Sprint 2 fue desarrollar y desplegar la primera versión funcion
 | — | Documentación Sprint 2 | T13 | Sprint Planning y Backlog | Documentar la planificación, backlog y evidencias del Sprint 2 en el informe del proyecto. | 6 | Nickolas | Done |
 ### 5.2.2.4. Development Evidence for Sprint Review
 
+
+Durante el Sprint 2, el equipo realizó commits sobre los repositorios `saferoute-report` y `saferoute-webapp`, abarcando la documentación del Sprint 2 en el informe y la implementación de los módulos core del frontend (IAM, Subscription, Stakeholder, Routes, Trip y Notifications) sobre Vue.js bajo el enfoque DDD, así como el despliegue de la aplicación en Microsoft Azure.
+
+| Repository | Branch | Commit Id | Commit Message | Committed By | Date |
+|------------|--------|-----------|----------------|--------------|------|
+| saferoute-webapp | feature/iam | 609f990 | feat: add organization entity into domain | Dela050406 | 2026-05-15 |
+| saferoute-webapp | feature/iam | 85c2143 | feat: add user entity into domain | Dela050406 | 2026-05-15 |
+| saferoute-webapp | feature/iam | 2483d67 | feat: update bounded name/ refactor | Dela050406 | 2026-05-15 |
+| saferoute-webapp | feature/iam | 1a47ca5 | feat: add db json | Dela050406 | 2026-05-15 |
+| saferoute-webapp | develop | 86efb77 | chore: bounded notifications | FraSe-JQ | 2026-05-15 |
+| saferoute-webapp | develop | ed9a9e7 | Merge branch 'develop' of saferoute-webapp into develop | FraSe-JQ | 2026-05-15 |
+| saferoute-webapp | develop | f84aaee | chore: bounded shared | FraSe-JQ | 2026-05-15 |
+| saferoute-webapp | develop | 45cf172 | Merge pull request #1 from feature/trip | Bynickram02 | 2026-05-15 |
+| saferoute-webapp | feature/trip | c41f44e | feature/trip: add comments | Bynickram02 | 2026-05-15 |
+| saferoute-webapp | feature/trip | b6753d8 | feature/trip: add update-style | Bynickram02 | 2026-05-15 |
+| saferoute-webapp | feature/trip | 7378b7c | feature/trip: add update-presentation-views-trip-routes | Bynickram02 | 2026-05-15 |
+| saferoute-webapp | feature/trip | 7d887c6 | feature/trip: add update-presentation-views-trip-monitoring | Bynickram02 | 2026-05-15 |
+| saferoute-webapp | feature/trip | efaec60 | feature/trip: add update-presentation-views-trip-list | Bynickram02 | 2026-05-15 |
+| saferoute-webapp | feature/trip | 225a670 | feature/trip: add update-presentation-views-trip-form | Bynickram02 | 2026-05-15 |
+| saferoute-webapp | develop | a99718f | Merge branch 'develop' | FraSe-JQ | 2026-05-15 |
+| saferoute-webapp | develop | 64e0665 | fix: deploy azure | FraSe-JQ | 2026-05-15 |
+| saferoute-webapp | develop | 14de1fc | Merge pull request #6 from feature/iam | Dela050406 | 2026-05-15 |
+| saferoute-webapp | feature/subscription | 0cb75c4 | feat: add Subscription presentation components and views | Dela050406 | 2026-05-15 |
+| saferoute-webapp | feature/subscription | e97cb5c | feat: add Subscription infrastructure | Dela050406 | 2026-05-15 |
+| saferoute-webapp | feature/subscription | c33bd46 | feat: add entities into Subscription domain | Dela050406 | 2026-05-15 |
+| saferoute-webapp | feature/subscription | 4179e43 | feat: update bounded suscription name | Dela050406 | 2026-05-15 |
+| saferoute-webapp | develop | c5e8278 | Merge pull request #5 from feature/stakeholder-and-asset-management | AgoxX61 | 2026-05-15 |
+| saferoute-webapp | develop | 9de1e55 | Merge pull request #4 from feature/stakeholder-and-asset-management | AgoxX61 | 2026-05-14 |
+| saferoute-webapp | feature/stakeholder-and-asset-management | 749fe26 | Implement_stakeholder_management_UI | AgoxX61 | 2026-05-14 |
+| saferoute-webapp | feature/stakeholder-and-asset-management | 582c0ba | Add_stakeholder_infrastructure_services | AgoxX61 | 2026-05-14 |
+| saferoute-webapp | feature/stakeholder-and-asset-management | c7d7d94 | add entities for domain/model | AgoxX61 | 2026-05-14 |
+| saferoute-webapp | feature/stakeholder-and-asset-management | 78b1b0c | Update stakeholder.store.js | AgoxX61 | 2026-05-14 |
+| saferoute-report | feature/add-pointV | cfc291c | Merge pull request #24 from feature/add-pointV | Bynickram02 | 2026-05-15 |
+| saferoute-report | feature/add-pointV | c5a0039 | feature/add-pointV: add-update1 | Bynickram02 | 2026-05-15 |
+| saferoute-report | feature/add-pointV | 0da14ad | feature/add-pointV: add-update | Bynickram02 | 2026-05-15 |
+| saferoute-report | feature/add-pointV | 4de3462 | feature/add-pointV: add update-5.2.2.8 | Bynickram02 | 2026-05-15 |
+| saferoute-report | feature/add-pointV | 0b95577 | Merge pull request #23 from feature/add-pointV | Bynickram02 | 2026-05-15 |
+| saferoute-report | feature/add-pointV | 166c60c | feature/add-pointV: add update-5.2.2.7 | Bynickram02 | 2026-05-15 |
+| saferoute-report | feature/add-pointV | b99787f | feature/add-pointV: add update-5.2.2.6 | Bynickram02 | 2026-05-15 |
+| saferoute-report | feature/add-pointV | 618229f | fix(links): updated repository links in software development configuration for chapter 5 | fabiovallejo | 2026-05-15 |
+| saferoute-report | feature/add-pointV | 52b2a65 | feature/add-pointV: add update-5.2.2.5 | Bynickram02 | 2026-05-15 |
+| saferoute-report | develop | b293f63 | docs: update url for event storming | AgoxX61 | 2026-05-14 |
+| saferoute-report | develop | bc2ba29 | docs: add end time | AgoxX61 | 2026-05-14 |
+| saferoute-report | develop | 544bc7f | docs: update date | AgoxX61 | 2026-05-14 |
+| saferoute-report | develop | 9537964 | Revise Sprint 2 Goal for clarity and conciseness | Bynickram02 | 2026-05-14 |
+| saferoute-report | develop | c252575 | docs(chapter-5): add update sprint planning 1 | Bynickram02 | 2026-05-14 |
+| saferoute-report | develop | c777fbf | Add files via upload | AgoxX61 | 2026-05-13 |
+| saferoute-report | develop | df3cedc | docs: update url image | AgoxX61 | 2026-05-13 |
+| saferoute-report | develop | 486800f | Add files via upload | AgoxX61 | 2026-05-13 |
+| saferoute-report | develop | d46b884 | update link trello | Bynickram02 | 2026-05-12 |
+| saferoute-report | develop | c2002b0 | Merge pull request #21 from feature/chapter-5-aggregation-of-points | Bynickram02 | 2026-05-12 |
+| saferoute-report | develop | 6e1f2d9 | docs(chapter-5): updates-points-chapter-5 | Bynickram02 | 2026-05-12 |
+| saferoute-report | develop | 621c6e4 | Merge branch 'develop' of saferoute-report into develop | FraSe-JQ | 2026-05-12 |
+| saferoute-report | develop | 0d95a6f | Merge branch 'feature/chapter4-ddd-architecture' into develop | FraSe-JQ | 2026-05-12 |
+| saferoute-report | develop | d0866f1 | chore: add C4 presentations | FraSe-JQ | 2026-05-12 |
+| saferoute-report | develop | f3a4ae8 | docs(chapter-05): updatesAV1 | Bynickram02 | 2026-05-12 |
+| saferoute-report | develop | 1cd9691 | Merge pull request #20 from feature/updateAV1 | Bynickram02 | 2026-05-12 |
+
+*El listado completo de commits del Sprint 2 se encuentra disponible en los repositorios oficiales del equipo en GitHub.*
+
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 2, el equipo desarrolló e implementó la primera versión funcional de la Frontend Web Application de SafeRoute en Vue.js, desplegada en Microsoft Azure. La aplicación integra los módulos core del sistema bajo el enfoque DDD, cubriendo los flujos críticos para los tres perfiles de usuario: Administrador, Conductor y Padre de Familia.
