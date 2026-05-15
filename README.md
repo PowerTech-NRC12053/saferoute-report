@@ -3678,14 +3678,34 @@ El objetivo del Sprint 1 fue establecer la presencia digital de SafeRoute median
 |:---|:---|:---|:---|:---|:-----------------------|:---|:---|
 | **User Story** | | **Work-Item / Task** | | |                        | | |
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US25 | Visualización de Hero | T01 | Setup Landing & Hero Section | Maquetar la sección principal con propuesta de valor, ilustración del sistema y botones CTA en Vue.js. | 4                      | Fabio | Done |
-| US30 | Implementación i18n | T02 | Configuración Vue-i18n | Implementar Vue-i18n y diccionarios ES/EN para soporte bilingüe completo de la Landing Page. | 4                      | Mathias | Done |
-| US26 | Navegación de Funciones | T03 | Componente Funcionalidades | Maquetar las 6 tarjetas de funcionalidades principales de la plataforma con íconos y descripciones. | 6                      | Fabio | Done |
-| US27 | Detalle de Roles | T04 | Componente Roles del Sistema | Implementar la sección con los tres perfiles del sistema (Administrador, Conductor, Padre de Familia). | 6                      | Mathias | Done |
-| US28 | Consulta de Precios | T05 | Sección Planes de Suscripción | Maquetar los tres planes (Básico, Intermedio, Completo) con funcionalidades y precios. | 6                      | Fabio | Done |
-| US29 | Sección ¿Cómo funciona? | T06 | Componente Onboarding de 5 pasos | Crear el componente visual con los 5 pasos del flujo de uso de la plataforma. | 6                      | Fabio | Done |
-| US31 | Testimonios Reales | T07 | Sección Testimonios | Implementar la sección de reseñas y calificaciones con datos de muestra. | 4                      | Nickolas | Done |
-| US40 | Verificación de SSL | T08 | Configuración HTTPS | Verificar y habilitar certificado SSL para la Landing Page desplegada. | 2                      | Fabio | Done |
+| US25 | Visualización de Hero | T01 | Crear estructura base de Landing Page | Configurar la estructura inicial de la página principal en Vue.js. | 2 | Fabio | Done |
+| US25 | Visualización de Hero | T02 | Maquetar Hero Section | Implementar la sección principal con propuesta de valor de SafeRoute. | 2 | Fabio | Done |
+| US25 | Visualización de Hero | T03 | Implementar botones CTA | Agregar botones de llamada a la acción para registro, contacto o navegación. | 1 | Fabio | Done |
+| US25 | Visualización de Hero | T04 | Aplicar responsive al Hero | Adaptar la sección Hero para vista desktop y mobile. | 2 | Fabio | Done |
+| US30 | Implementación i18n | T05 | Configurar Vue-i18n | Instalar y configurar Vue-i18n dentro del proyecto. | 2 | Mathias | Done |
+| US30 | Implementación i18n | T06 | Crear diccionario en español | Definir textos principales de la Landing Page en español. | 2 | Mathias | Done |
+| US30 | Implementación i18n | T07 | Crear diccionario en inglés | Definir traducciones de la Landing Page en inglés. | 2 | Mathias | Done |
+| US30 | Implementación i18n | T08 | Implementar selector de idioma | Agregar cambio de idioma ES/EN en la interfaz. | 2 | Mathias | Done |
+| US26 | Navegación de Funciones | T09 | Diseñar sección de funcionalidades | Crear la estructura visual de la sección de funciones principales. | 2 | Fabio | Done |
+| US26 | Navegación de Funciones | T10 | Implementar tarjetas de funcionalidades | Maquetar las tarjetas con íconos, títulos y descripciones. | 3 | Fabio | Done |
+| US26 | Navegación de Funciones | T11 | Aplicar estilos responsive a funcionalidades | Adaptar las tarjetas para desktop y mobile. | 1 | Fabio | Done |
+| US27 | Detalle de Roles | T12 | Crear estructura de sección Roles | Diseñar la sección para presentar perfiles del sistema. | 2 | Mathias | Done |
+| US27 | Detalle de Roles | T13 | Implementar rol Administrador | Agregar descripción visual del perfil administrador. | 1 | Mathias | Done |
+| US27 | Detalle de Roles | T14 | Implementar rol Conductor | Agregar descripción visual del perfil conductor. | 1 | Mathias | Done |
+| US27 | Detalle de Roles | T15 | Implementar rol Padre de Familia | Agregar descripción visual del perfil padre de familia. | 1 | Mathias | Done |
+| US28 | Consulta de Precios | T16 | Diseñar cards de planes | Crear estructura visual para los planes de suscripción. | 2 | Fabio | Done |
+| US28 | Consulta de Precios | T17 | Agregar planes Básico, Intermedio y Completo | Incluir características y diferencias de cada plan. | 2 | Fabio | Done |
+| US28 | Consulta de Precios | T18 | Implementar precios y beneficios | Mostrar precios, beneficios y límites de cada plan. | 1 | Fabio | Done |
+| US28 | Consulta de Precios | T19 | Agregar CTA en planes | Añadir botones de acción para contratar o solicitar información. | 1 | Fabio | Done |
+| US29 | Sección ¿Cómo funciona? | T20 | Diseñar flujo de onboarding | Definir visualmente los pasos del funcionamiento de SafeRoute. | 2 | Fabio | Done |
+| US29 | Sección ¿Cómo funciona? | T21 | Implementar pasos del proceso | Crear los cinco pasos del flujo de uso de la plataforma. | 3 | Fabio | Done |
+| US29 | Sección ¿Cómo funciona? | T22 | Aplicar estilos a la sección | Dar formato visual y responsive al componente de onboarding. | 1 | Fabio | Done |
+| US31 | Testimonios Reales | T23 | Diseñar sección de testimonios | Crear estructura visual para reseñas de usuarios. | 2 | Nickolas | Done |
+| US31 | Testimonios Reales | T24 | Agregar datos de muestra | Incluir nombres, comentarios y calificaciones de ejemplo. | 1 | Nickolas | Done |
+| US31 | Testimonios Reales | T25 | Maquetar cards de reseñas | Implementar cards visuales para testimonios. | 1 | Nickolas | Done |
+| US40 | Verificación de SSL | T26 | Verificar despliegue HTTPS | Comprobar que la landing cargue con protocolo HTTPS. | 1 | Fabio | Done |
+| US40 | Verificación de SSL | T27 | Validar candado de seguridad | Revisar que el navegador muestre conexión segura. | 1 | Fabio | Done |
+| US40 | Verificación de SSL | T28 | Probar navegación segura | Validar que las secciones y formularios funcionen bajo HTTPS. | 1 | Fabio | Done |
 | — | Arquitectura DDD | T09 | Definición de Bounded Contexts | Documentar los 6 bounded contexts del sistema y sus agregados principales. | 6                      | Frank | Done |
 | — | Diagramas C4 | T10 | Diagramas de Contexto y Contenedores | Elaborar diagramas de contexto, contenedores y componentes bajo el modelo C4. | 4                      | Frank | Done |
 | — | Diseño UX/UI | T11 | Wireframes Desktop y Mobile | Elaborar wireframes para los tres perfiles de usuario en versión desktop y mobile. | 6                      | Mathias | Done |
