@@ -3489,10 +3489,11 @@ En esta sección se describen las herramientas y tecnologías utilizadas para el
 Para el manejo del código fuente, utilizamos GitHub para colaborar entre miembros de equipo en multiples repositorios. A continuación se listan los enlaces de cada repositorio utilizado.
 
 - Organización: <https://github.com/upc-pre-202610-1asi0730-12053-powertech>
-- Repositorio de Landing Page: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/SafeRoute-landing-page>
+- Repositorio de Landing Page: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-website>
 - Repositorio del informe: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/SafeRoute-report>
-- Repositorio del frontend: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/SafeRoute-frontend-applications>
-- Repositorio del backend: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/SafeRoute-web-services>
+- Repositorio del frontend: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-webapp>
+- Repositorio de Fake API: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/SafeRouteAPI-12053>
+- Repositorio del backend: <https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-platform>
 
 En el repositorio del informe se seguirá un esquema de trabajo basado en GitFlow. La rama main almacenará la versión estable del informe correspondiente a cada entregable del trabajo, mientras que la rama develop concentrará la integración de avances validados por cada integrante antes de su consolidación final. A partir de develop, cada integrante creará ramas feature de trabajo para las secciones asignadas. Las ramas feature seguirán una nomenclatura asociada al capítulo o bloque trabajado, por ejemplo: feature/chapter-1-introduction-and-lean-ux, o feature/chapter-5-software-configuration-management. Esta convención permite identificar con claridad qué parte del informe está siendo desarrollada y reduce el riesgo de conflictos entre los miembros del equipo.
 
