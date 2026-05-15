@@ -4158,9 +4158,9 @@ A continuación se documentan los recursos consumidos por el frontend desde la F
 
 Durante el Sprint 2 se realizó el despliegue de la Frontend Web Application de SafeRoute utilizando Microsoft Azure como plataforma de hosting en la nube, conectada directamente con el repositorio de GitHub para habilitar la integración y despliegue continuo (CI/CD).
 
-1. Se configuró el servicio de Azure Static Web Apps vinculado al repositorio `saferoute-frontend-applications`, estableciendo la rama `main` como fuente de publicación y `develop` como rama de integración previa.
+1. Se configuró el servicio de Azure Static Web Apps vinculado al repositorio `saferoute-webapp`, estableciendo la rama `main` como fuente de publicación y `develop` como rama de integración previa.
 
-   [![Azure Deployment Configuration](assets/images/Chapter-5/Sprint2/landing-commits.png)](assets/images/Chapter-5/Sprint2/landing-commits.png)
+   [![Azure Deployment Configuration](assets/images/Chapter-5/Sprint2/frontend-pulse.png)](assets/images/Chapter-5/Sprint2/frontend-pulse.png)
 
 
 
