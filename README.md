@@ -3441,10 +3441,13 @@ Este contexto gestiona los planes comerciales y el estado de suscripción de cad
 
 En esta sección se describen las herramientas y tecnologías utilizadas para el desarrollo del proyecto.
 
-##### UX/UI Design
+##### UX/UI Design & Project Management
 
 - **Figma**  
   Herramienta de diseño colaborativo utilizada para la creación de wireframes, mockups, prototipos y diseño de interfaces de usuario. Permite trabajar en equipo en tiempo real, facilitando la validación temprana de la experiencia del usuario.
+
+- **Trello**  
+  Herramienta de gestión de proyectos utilizada para organizar las tareas del equipo mediante tableros, listas y tarjetas. Permite dar seguimiento al avance de las actividades del Sprint, asignar responsabilidades y visualizar el estado de cada tarea.
 
 ---
 
@@ -3453,8 +3456,11 @@ En esta sección se describen las herramientas y tecnologías utilizadas para el
 - **JetBrains Rider**  
   Entorno de desarrollo integrado (IDE) utilizado para el desarrollo del backend en C#.
 
+- **WebStorm**  
+  Entorno de desarrollo integrado de JetBrains utilizado para el desarrollo frontend con Vue.js y JavaScript, facilitando la edición de componentes, navegación del proyecto y soporte para herramientas modernas de desarrollo web.
+
 - **Visual Studio Code**  
-  Editor de código ligero utilizado como herramienta complementaria para el desarrollo frontend y edición de archivos del proyecto.
+  Editor de código ligero utilizado como herramienta complementaria para el desarrollo frontend, edición de archivos del proyecto y revisión rápida de código.
 
 - **GitHub**  
   Plataforma de control de versiones utilizada para la gestión del código fuente y colaboración del equipo, implementando la metodología GitFlow para la organización del desarrollo.
@@ -3478,11 +3484,11 @@ En esta sección se describen las herramientas y tecnologías utilizadas para el
 - **GitHub Pages**  
   Servicio utilizado para el despliegue de la landing page del proyecto.
 
-- **Vercel**  
-  Plataforma utilizada para el despliegue del frontend desarrollado en Vue.js, permitiendo una integración continua y despliegue automatizado.
+- **Azure Static Web Apps**  
+  Servicio utilizado para el despliegue del frontend desarrollado en Vue.js, permitiendo publicar aplicaciones web estáticas con integración continua desde GitHub.
 
-- **Railway**  
-  Plataforma utilizada para el despliegue de servicios backend y APIs, facilitando la conexión entre frontend y backend en un entorno accesible en la nube.
+- **Azure App Service**  
+  Servicio utilizado para el despliegue de la Fake API del proyecto, permitiendo exponer un servicio Node.js en la nube y conectarlo con el repositorio de GitHub mediante despliegue continuo.
 
 #### 5.1.2. Source Code Management
 
@@ -3577,7 +3583,7 @@ En esta sección se definen las convenciones de nombres y codificación adoptada
 
 #### 5.1.4. Software Deployment Configuration
 
-En esta sección se describe la configuración necesaria para el despliegue de los principales componentes del proyecto: Landing Page, Frontend Web Application y Backend.
+En esta sección se describe la configuración necesaria para el despliegue de los principales componentes del proyecto: Landing Page, Frontend Web Application y Fake API.
 
 ##### Despliegue de Landing Page
 
@@ -3589,42 +3595,58 @@ La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript, y será desp
 2. Subir el código fuente (HTML, CSS, JS y recursos estáticos) al repositorio.
 3. Asegurar que el archivo principal se denomine `index.html` y se encuentre en la raíz del proyecto.
 4. Acceder a la sección **Settings > Pages** del repositorio.
-5. Seleccionar la rama `main` (o `master`) y la carpeta raíz (`/`) como fuente.
+5. Seleccionar la rama `main` y la carpeta raíz (`/`) como fuente.
 6. GitHub generará automáticamente una URL pública para acceder a la landing page.
 
-**URL desplegada:** [Landing Page SafeRoute](https://upc-pre-202610-1asi0730-12053-powertech.github.io/saferoute-website/)
+**URL desplegada:** <https://upc-pre-202610-1asi0730-12053-powertech.github.io/saferoute-website/>
 
 ---
 
 ##### Despliegue de Frontend Web Application
 
-El frontend de la aplicación, desarrollado con Vue.js, será desplegado utilizando la plataforma Vercel, la cual permite integración continua y despliegue automatizado.
+El frontend de la aplicación, desarrollado con Vue.js, fue desplegado utilizando **Azure Static Web Apps**. Esta plataforma permite publicar aplicaciones web estáticas y conectarlas directamente con un repositorio de GitHub para habilitar despliegue continuo.
 
 ###### Pasos de despliegue
 
-1. Crear o seleccionar el repositorio del frontend en GitHub.
-2. Vincular el repositorio con la plataforma Vercel.
-3. Configurar el entorno de despliegue (framework Vue.js).
-4. Ejecutar el despliegue automático desde Vercel.
-5. Obtener la URL pública generada para el acceso a la aplicación.
- 
-**URL desplegada:** Pendiente
+1. Acceder al portal de Azure.
+2. Seleccionar el servicio **Static Web Apps**.
+3. Crear un nuevo recurso y seleccionar el **Plan Estándar**.
+4. Conectar la cuenta de GitHub y seleccionar el repositorio del frontend.
+5. Seleccionar **Vue** como framework de construcción.
+6. Configurar la carpeta de salida como `dist`.
+7. Seleccionar una región de despliegue.
+8. Crear el recurso y esperar la ejecución del flujo de despliegue.
+9. Acceder a **Información general** del recurso para obtener la dirección URL pública.
+
+**URL desplegada:** <https://happy-river-0e93e8e0f.7.azurestaticapps.net/identity-and-access-management/sign-in?redirect=/home>
 
 ---
 
-### Despliegue de Backend Services
+##### Despliegue de Fake API
 
-El backend del sistema, desarrollado en C#, será desplegado utilizando Railway, una plataforma que permite exponer servicios y APIs en la nube.
+La Fake API del proyecto fue desplegada utilizando **Azure App Service**, configurada como una Web App basada en Node.js. Este despliegue permite exponer una API simulada en la nube para que el frontend pueda consumir datos durante la etapa de desarrollo y validación del Sprint.
 
-#### Pasos de despliegue:
+###### Pasos de despliegue
 
-1. Crear el repositorio del backend en GitHub.
-2. Vincular el repositorio con Railway.
-3. Configurar las variables de entorno necesarias para la ejecución del backend.
-4. Configurar el servicio para exponer endpoints API.
-5. Desplegar el servicio y obtener la URL pública del backend.
+1. Acceder al portal de Azure.
+2. Seleccionar **App Services** y crear una nueva **Web App**.
+3. Configurar el entorno de ejecución con **Node 24 LTS**.
+4. Seleccionar una región de despliegue.
+5. Habilitar la opción de **Implementación Continua**.
+6. Conectar la cuenta de GitHub y seleccionar el repositorio de la Fake API.
+7. Crear el recurso y esperar la configuración inicial.
+8. Ir al recurso creado y acceder a la sección **Configuration**.
+9. Activar **SCM Basic Auth Publishing Credentials**.
+10. Descargar el perfil de publicación desde Azure.
+11. Ir al repositorio de GitHub de la Fake API.
+12. Acceder a **Settings > Secrets and variables > Actions**.
+13. Crear un nuevo repository secret con el nombre `AZURE_WEBAPP_PUBLISH_PROFILE`.
+14. Pegar como valor el contenido del perfil de publicación descargado desde Azure.
+15. Ir a **Actions** en GitHub y volver a ejecutar el workflow de despliegue.
+16. Esperar que el proceso finalice correctamente.
+17. Acceder al enlace de dominio predeterminado generado por Azure App Service.
 
-**URL desplegada:** Pendiente
+**URL desplegada:** <https://saferoute-db.azurewebsites.net>
 
 ---
 
