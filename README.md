@@ -3670,7 +3670,7 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 
 El objetivo del Sprint 1 fue establecer la presencia digital de SafeRoute mediante el diseño y despliegue de la Landing Page bilingüe (ES/EN), comunicando la propuesta de valor del producto a los segmentos objetivo: padres de familia y transportistas escolares. Adicionalmente, se sentaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design.
 
-![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/trello-sprint1.png)
+![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/trello-sprint1_1.png)
 
 **URL del Board:** [SafeRoute - Sprint 1](https://trello.com/invite/b/6a02d95d58090e5e29224ade/ATTIb1de195162b53134aa7fea0f41b39b97BE3E0DB6/saferoute-sprint-1)
 
