@@ -59,6 +59,8 @@ TB1:
 6. [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
 7. [Conclusiones](#conclusiones)
 8. [Bibliografía](#bibliografía)
+9. [Anexos](#anexos)
+
 ---
 
 ## Student Outcome
@@ -4237,19 +4239,25 @@ La distribución del trabajo se mantuvo alineada con la **Leadership and Collabo
 
 ## Anexos
 
-#### a. Enlaces del Proyecto
+#### A. Links Importantes
 
 **1. Despliegues y Servicios API**
-* **Web Application (Frontend):** [PowerTech WebApp](https://happy-river-0e93e8e0f.7.azurestaticapps.net/identity-and-access-management/sign-in?redirect=/home)
-* **Landing Page:** [PowerTech Landing Page](https://upc-pre-202610-1asi0730-12053-powertech.github.io/saferoute-website/)
-* **JSON Server (Mock API):** [PowerTech API](https://saferoute-db.azurewebsites.net/api/v1)
+
+- **Web Application (Frontend):** [https://saferoute-webapp.vercel.app](https://saferoute-webapp.vercel.app)
+- **Landing Page:** [https://upc-pre-202610-1asi0730-12053-powertech.github.io/saferoute-website/](https://upc-pre-202610-1asi0730-12053-powertech.github.io/saferoute-website/)
 
 **2. Repositorios de GitHub**
-* **Organización Principal:** [Organización PowerTech](https://github.com/upc-pre-202610-1asi0730-12053-powertech)
-* **Landing Page Source:** [SafeRoute Website Repo](https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-website)
-*(Nota: Asegúrate de incluir aquí los links al resto de repositorios de la nueva organización si ya los migraron)*
+
+- **Organización Principal:** [https://github.com/upc-pre-202610-1asi0730-12053-powertech](https://github.com/upc-pre-202610-1asi0730-12053-powertech)
+- **Informe del Proyecto:** [https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report](https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report)
+- **Landing Page Source:** [https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-website](https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-website)
+- **Web Application Source:** [https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-webapp](https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-webapp)
 
 **3. Diseño y Prototipado**
-* **Big Picture Event Storming (Miro):** [Board de Diseño de Dominio](https://miro.com/welcomeonboard/Q0xsbTlRVkpDQmlwdWJLUHl6dVBWSHQ4NnJQTVVCSUpTUWwzZHBncHAzM0taZWJDYngzTFYrQmdyY1crZS9mWWJ2K0NOTzlHbzd2V3BPdDB4SnpVR2owTTNCZkpZeDBCYWM1ZndITktNNjVhNWYvc1JESUkzenhtRE51ODV1cXdzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=806628004318)
-* **Prototipo Web App (Mobile):** [Video Demostración Mobile](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202424059_upc_edu_pe/IQCDqzq68kRMRogrt6F6iHPZAZkNB9gRKAXanMCpVvneuY0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hMciwr)
-* **Prototipo Web App (Desktop):** [Video Demostración Desktop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202424059_upc_edu_pe/IQDD8jX45qD1TLdrlv1viH8AAe4MI-VfTCxWpwzvXAHEW78?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AMYnCI)
+
+- **Big Picture Event Storming (Miro):** [https://miro.com/welcomeonboard/Q0xsbTlRVkpDQmlwdWJLUHl6dVBWSHQ4NnJQTVVCSUpTUWwzZHBncHAzM0taZWJDYngzTFYrQmdyY1crZS9mWWJ2K0NOTzlHbzd2V3BPdDB4SnpVR2owTTNCZkpZeDBCYWM1ZndITktNNjVhNWYvc1JESUkzenhtRE51ODV1cXdzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=806628004318](https://miro.com/welcomeonboard/Q0xsbTlRVkpDQmlwdWJLUHl6dVBWSHQ4NnJQTVVCSUpTUWwzZHBncHAzM0taZWJDYngzTFYrQmdyY1crZS9mWWJ2K0NOTzlHbzd2V3BPdDB4SnpVR2owTTNCZkpZeDBCYWM1ZndITktNNjVhNWYvc1JESUkzenhtRE51ODV1cXdzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=806628004318)
+- **Figma – UX/UI Design:** [https://www.figma.com/design/x30GjOLycF1yUG7fZfLXOk/Avances-2026-10?node-id=99-520&t=qdtagch7QHL2iL1a-0](https://www.figma.com/design/x30GjOLycF1yUG7fZfLXOk/Avances-2026-10?node-id=99-520&t=qdtagch7QHL2iL1a-0)
+
+**4. Entrevistas y Evidencias**
+
+- **Entrevistas de Segmentos:** [https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h)
