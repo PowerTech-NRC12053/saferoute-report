@@ -3670,7 +3670,7 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 
 El objetivo del Sprint 1 fue establecer la presencia digital de SafeRoute mediante el diseño y despliegue de la Landing Page bilingüe (ES/EN), comunicando la propuesta de valor del producto a los segmentos objetivo: padres de familia y transportistas escolares. Adicionalmente, se sentaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design.
 
-![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/trello-sprint1.png)
+![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/trello-sprint1_1.png)
 
 **URL del Board:** [SafeRoute - Sprint 1](https://trello.com/invite/b/6a02d95d58090e5e29224ade/ATTIb1de195162b53134aa7fea0f41b39b97BE3E0DB6/saferoute-sprint-1)
 
@@ -3894,19 +3894,75 @@ El objetivo del Sprint 2 fue desarrollar y desplegar la primera versión funcion
 |:---|:---|:---|:---|:---|:---|:---|:---|
 | **User Story** | | **Work-Item / Task** | | | | | |
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| — | Arquitectura Base | T01 | Setup Shared Kernel | Generar las interfaces y clases abstractas base del Shared Kernel (base-entity, base-api, value objects compartidos) que servirán de base para el resto de módulos. | 6 | Julio Frank | Done |
-| US20 | Confirmación de Llegada | T02 | Módulo Notifications | Desarrollar el flujo de notificaciones e incidentes, incluyendo alertas de abordaje, llegada y emergencias hacia los padres. | 6 | Julio Frank | Done |
-| TS1 | Implementación JWT Authentication | T03 | Módulo IAM | Implementar el flujo de login, registro y manejo de tokens JWT para los tres perfiles del sistema (Administrador, Conductor, Padre). | 6 | Mathias | Done |
-| US1 | Contratar Plan | T04 | Módulo Subscription | Desarrollar la lógica de planes de suscripción (Básico, Intermedio, Completo) incluyendo selección y activación de plan. | 6 | Mathias | Done |
-| US2, US3, US4 | Registro de Conductores, Padres y Alta de Alumnos | T05 | Módulo Stakeholder - Estudiantes y Grupos | Construir los CRUDs de estudiantes y grupos, incluyendo registro de alumnos, padres y conductores con sus relaciones. | 8 | José | Done |
-| US6 | Asignación de Roles | T06 | Módulo Stakeholder - Asignación de Vehículos | Implementar la asignación de vehículos a conductores y gestión de roles dentro del sistema. | 6 | José | Done |
-| US5 | Creación de Rutas | T07 | Módulo Routes - Paradas y Trazado | Desarrollar el motor de creación de paradas y trazado de rutas con integración de Leaflet Maps (route-builder). | 8 | Fabio | Done |
-| TS2 | Integración Leaflet Maps | T08 | Módulo Routes - Fleet Management | Implementar la gestión administrativa de la flota física, incluyendo registro y asignación de vehículos a rutas. | 6 | Fabio | Done |
-| US18 | Rastreo en Tiempo Real | T09 | Módulo Trip - Live Monitor | Implementar el monitoreo en vivo del viaje con visualización del bus en mapa en tiempo real para el perfil padre. | 8 | Nickolas | Done |
-| US10, US14 | Inicio y Finalización de Trayecto | T10 | Módulo Trip - Control de Estado | Desarrollar el control de estado del viaje (iniciado, en curso, finalizado) incluyendo inicio y cierre de trayecto para conductores. | 6 | Nickolas | Done |
-| US11 | Marcación de Abordaje | T11 | Módulo Trip - Boarding Scanner | Implementar el componente crítico de escaneo y marcación de abordaje de alumnos por parada durante el trayecto. | 6 | Nickolas | Done |
-| — | Despliegue Frontend | T12 | Deploy en Vercel | Configurar y desplegar la aplicación Vue.js en Vercel con integración continua desde GitHub. | 4 | Fabio | Done |
-| — | Documentación Sprint 2 | T13 | Sprint Planning y Backlog | Documentar la planificación, backlog y evidencias del Sprint 2 en el informe del proyecto. | 6 | Nickolas | Done |
+| — | Arquitectura Base | T01.1 | Crear estructura del Shared Kernel | Organizar la base compartida del proyecto para reutilizar clases, servicios y utilidades comunes. | 2 | Julio Frank | Done |
+| — | Arquitectura Base | T01.2 | Implementar base-entity | Crear la clase base para entidades del dominio reutilizables por los bounded contexts. | 1 | Julio Frank | Done |
+| — | Arquitectura Base | T01.3 | Implementar base-api | Crear la clase base para centralizar el consumo HTTP desde los módulos. | 1 | Julio Frank | Done |
+| — | Arquitectura Base | T01.4 | Definir value objects compartidos | Implementar objetos de valor comunes para mantener consistencia en el modelo. | 1 | Julio Frank | Done |
+| — | Arquitectura Base | T01.5 | Validar reutilización del Shared Kernel | Verificar que los módulos puedan consumir clases y servicios compartidos. | 1 | Julio Frank | Done |
+| US20 | Confirmación de Llegada | T02.1 | Definir flujo de notificaciones | Diseñar el flujo de eventos que generan notificaciones para padres y usuarios del sistema. | 1 | Julio Frank | Done |
+| US20 | Confirmación de Llegada | T02.2 | Implementar alertas de abordaje | Registrar la notificación enviada cuando un alumno aborda la movilidad. | 2 | Julio Frank | Done |
+| US20 | Confirmación de Llegada | T02.3 | Implementar alertas de llegada | Registrar la notificación cuando el alumno llega al colegio o destino final. | 1 | Julio Frank | Done |
+| US20 | Confirmación de Llegada | T02.4 | Implementar alertas de emergencia | Agregar soporte visual para eventos críticos o incidentes durante el trayecto. | 1 | Julio Frank | Done |
+| US20 | Confirmación de Llegada | T02.5 | Validar visualización de notificaciones | Probar que las notificaciones se muestren correctamente en la interfaz. | 1 | Julio Frank | Done |
+| TS1 | Implementación JWT Authentication | T03.1 | Crear estructura del módulo IAM | Organizar las carpetas del bounded context Identity and Access Management. | 1 | Mathias | Done |
+| TS1 | Implementación JWT Authentication | T03.2 | Implementar flujo de login | Crear la lógica de inicio de sesión para usuarios del sistema. | 2 | Mathias | Done |
+| TS1 | Implementación JWT Authentication | T03.3 | Implementar registro de usuarios | Crear el flujo de registro para perfiles de administrador, conductor o padre. | 1 | Mathias | Done |
+| TS1 | Implementación JWT Authentication | T03.4 | Gestionar token JWT | Almacenar y utilizar el token JWT para mantener sesiones autenticadas. | 1 | Mathias | Done |
+| TS1 | Implementación JWT Authentication | T03.5 | Probar rutas protegidas | Verificar que las vistas privadas requieran autenticación. | 1 | Mathias | Done |
+| US1 | Contratar Plan | T04.1 | Crear estructura del módulo Subscription | Organizar el bounded context de suscripciones y planes. | 1 | Mathias | Done |
+| US1 | Contratar Plan | T04.2 | Definir planes disponibles | Registrar los planes Básico, Intermedio y Completo dentro del sistema. | 1 | Mathias | Done |
+| US1 | Contratar Plan | T04.3 | Implementar selección de plan | Permitir que el administrador seleccione un plan de suscripción. | 2 | Mathias | Done |
+| US1 | Contratar Plan | T04.4 | Implementar activación de plan | Registrar el plan seleccionado como suscripción activa. | 1 | Mathias | Done |
+| US1 | Contratar Plan | T04.5 | Validar persistencia de suscripción | Verificar que la suscripción se mantenga en la aplicación. | 1 | Mathias | Done |
+| US2, US3, US4 | Registro de Conductores, Padres y Alta de Alumnos | T05.1 | Crear estructura del módulo Stakeholder | Organizar el bounded context Stakeholder and Asset Management. | 1 | José | Done |
+| US2 | Registro de Conductores | T05.2 | Implementar registro de conductores | Crear formulario y lógica para registrar conductores. | 2 | José | Done |
+| US3 | Registro de Padres | T05.3 | Implementar registro de padres | Crear formulario y lógica para registrar padres de familia. | 1 | José | Done |
+| US4 | Alta de Alumnos | T05.4 | Implementar registro de alumnos | Crear formulario y lógica para registrar alumnos. | 1 | José | Done |
+| US4 | Alta de Alumnos | T05.5 | Crear gestión de grupos de estudiantes | Implementar agrupación de alumnos mediante student groups. | 1 | José | Done |
+| US3, US4 | Registro de Padres y Alta de Alumnos | T05.6 | Relacionar padres con alumnos | Vincular alumnos registrados con sus padres correspondientes. | 1 | José | Done |
+| US2, US3, US4 | Gestión de Stakeholders | T05.7 | Validar formularios y persistencia | Verificar campos requeridos, formatos y almacenamiento correcto de datos. | 1 | José | Done |
+| US6 | Asignación de Roles | T06.1 | Definir flujo de asignación de vehículos | Diseñar la relación entre conductores, vehículos y rutas. | 1 | José | Done |
+| US6 | Asignación de Roles | T06.2 | Implementar relación conductor-vehículo | Permitir asignar una unidad vehicular a un conductor. | 2 | José | Done |
+| US6 | Asignación de Roles | T06.3 | Implementar relación vehículo-ruta | Asociar vehículos disponibles con rutas planificadas. | 1 | José | Done |
+| US6 | Asignación de Roles | T06.4 | Gestionar roles dentro del módulo | Controlar responsabilidades de usuarios dentro del sistema. | 1 | José | Done |
+| US6 | Asignación de Roles | T06.5 | Validar asignación en interfaz | Comprobar que la asignación se visualice correctamente en la web app. | 1 | José | Done |
+| US5 | Creación de Rutas | T07.1 | Crear estructura del módulo Routes | Organizar el bounded context Fleet and Route Planning. | 1 | Fabio | Done |
+| US5 | Creación de Rutas | T07.2 | Implementar creación de rutas | Crear formulario o flujo para registrar rutas escolares. | 2 | Fabio | Done |
+| US5 | Creación de Rutas | T07.3 | Implementar registro de paradas | Permitir agregar paradas asociadas a una ruta. | 2 | Fabio | Done |
+| TS2 | Integración Leaflet Maps | T07.4 | Integrar Leaflet Maps | Agregar el mapa interactivo para visualizar rutas y paradas. | 2 | Fabio | Done |
+| US5, TS2 | Creación de Rutas e Integración Leaflet | T07.5 | Validar flujo de creación de rutas | Probar que la ruta, sus paradas y el mapa se visualicen correctamente. | 1 | Fabio | Done |
+| TS2 | Integración Leaflet Maps | T08.1 | Crear estructura de gestión de flota | Organizar la sección de vehículos dentro del módulo Routes/Fleet Management. | 1 | Fabio | Done |
+| TS2 | Integración Leaflet Maps | T08.2 | Implementar registro de vehículos | Crear formulario para registrar unidades vehiculares. | 2 | Fabio | Done |
+| TS2 | Integración Leaflet Maps | T08.3 | Implementar edición de vehículos | Permitir actualizar información de vehículos registrados. | 1 | Fabio | Done |
+| TS2 | Integración Leaflet Maps | T08.4 | Asignar vehículos a rutas | Relacionar unidades vehiculares con rutas disponibles. | 1 | Fabio | Done |
+| TS2 | Integración Leaflet Maps | T08.5 | Validar visualización de flota | Comprobar que la flota registrada se muestre correctamente. | 1 | Fabio | Done |
+| US18 | Rastreo en Tiempo Real | T09.1 | Crear estructura del módulo Trip Monitoring | Organizar las vistas y servicios del monitoreo de trayectos. | 1 | Nickolas | Done |
+| US18 | Rastreo en Tiempo Real | T09.2 | Implementar vista de monitoreo en vivo | Crear interfaz para visualizar el viaje activo. | 2 | Nickolas | Done |
+| US18 | Rastreo en Tiempo Real | T09.3 | Mostrar ubicación del vehículo en mapa | Representar la posición del bus dentro del mapa. | 2 | Nickolas | Done |
+| US18 | Rastreo en Tiempo Real | T09.4 | Actualizar estado visual del viaje | Mostrar cambios de estado durante el trayecto. | 1 | Nickolas | Done |
+| US18 | Rastreo en Tiempo Real | T09.5 | Mostrar información para padres | Visualizar datos relevantes como ruta, estado y llegada estimada. | 1 | Nickolas | Done |
+| US18 | Rastreo en Tiempo Real | T09.6 | Validar seguimiento del trayecto | Probar que el monitoreo se comporte correctamente en la interfaz. | 1 | Nickolas | Done |
+| US10, US14 | Inicio y Finalización de Trayecto | T10.1 | Definir estados del viaje | Establecer estados como iniciado, en curso y finalizado. | 1 | Nickolas | Done |
+| US10 | Inicio de Trayecto | T10.2 | Implementar inicio de trayecto | Permitir que el conductor inicie una ruta. | 2 | Nickolas | Done |
+| US10 | Inicio de Trayecto | T10.3 | Actualizar viaje a estado en curso | Cambiar el estado del viaje luego de iniciarlo. | 1 | Nickolas | Done |
+| US14 | Finalización de Ruta | T10.4 | Implementar finalización de trayecto | Permitir que el conductor cierre una ruta activa. | 1 | Nickolas | Done |
+| US10, US14 | Inicio y Finalización de Trayecto | T10.5 | Validar cambios de estado | Verificar que los estados del viaje se actualicen correctamente. | 1 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T11.1 | Crear componente de abordaje | Implementar la interfaz para registrar abordajes de alumnos. | 1 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T11.2 | Listar alumnos por parada | Mostrar los alumnos correspondientes a cada parada. | 1 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T11.3 | Implementar confirmación de abordaje | Permitir marcar a un alumno como abordado. | 2 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T11.4 | Registrar asistencia del alumno | Guardar el estado de asistencia durante el trayecto. | 1 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T11.5 | Validar errores de alumno no asignado | Mostrar advertencia si el alumno no pertenece a la parada o ruta. | 1 | Nickolas | Done |
+| — | Despliegue Frontend | T12.1 | Preparar aplicación para producción | Revisar configuración del proyecto antes del despliegue. | 1 | Fabio | Done |
+| — | Despliegue Frontend | T12.2 | Configurar hosting en Vercel | Configurar el entorno de despliegue de la Frontend Web Application. | 1 | Fabio | Done |
+| — | Despliegue Frontend | T12.3 | Conectar repositorio con Vercel | Vincular el repositorio de GitHub para despliegue continuo. | 1 | Fabio | Done |
+| — | Despliegue Frontend | T12.4 | Ejecutar build y validar acceso público | Generar versión de producción y comprobar que la web app funcione correctamente. | 1 | Fabio | Done |
+| — | Documentación Sprint 2 | T13.1 | Documentar objetivo del Sprint 2 | Registrar el propósito y alcance del Sprint 2 en el informe. | 1 | Nickolas | Done |
+| — | Documentación Sprint 2 | T13.2 | Actualizar Sprint Backlog 2 | Incluir tareas, responsables, estimaciones y estados del sprint. | 2 | Nickolas | Done |
+| — | Documentación Sprint 2 | T13.3 | Registrar responsables por tarea | Asociar cada tarea con el integrante correspondiente. | 1 | Nickolas | Done |
+| — | Documentación Sprint 2 | T13.4 | Agregar evidencias de desarrollo | Incorporar capturas, commits y enlaces relacionados al avance. | 1 | Nickolas | Done |
+| — | Documentación Sprint 2 | T13.5 | Actualizar estado de tareas a Done | Verificar que las tareas del Sprint 2 figuren como completadas. | 1 | Nickolas | Done |
+
+
 ### 5.2.2.4. Development Evidence for Sprint Review
 
 
