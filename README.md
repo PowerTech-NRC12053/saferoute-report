@@ -3985,6 +3985,22 @@ A continuación se documentan los recursos consumidos por el frontend desde la F
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
+
+Durante el Sprint 2 se realizó el despliegue de la Frontend Web Application de SafeRoute utilizando Microsoft Azure como plataforma de hosting en la nube, conectada directamente con el repositorio de GitHub para habilitar la integración y despliegue continuo (CI/CD).
+
+1. Se configuró el servicio de Azure Static Web Apps vinculado al repositorio `saferoute-frontend-applications`, estableciendo la rama `main` como fuente de publicación y `develop` como rama de integración previa.
+
+   [![Azure Deployment Configuration](assets/images/Chapter-5/Sprint2/landing-commits.png)](assets/images/Chapter-5/Sprint2/landing-commits.png)
+
+
+
+2. Se verificó la accesibilidad pública de la Frontend Web Application desplegada, validando el correcto funcionamiento de los módulos implementados (IAM, Subscription, Stakeholder, Routes, Trip y Notifications) consumiendo la Fake REST API local.
+
+   **URL desplegada en Azure:** Pendiente de incluir
+
+
+
+   [![Frontend Web App Live](assets/images/Chapter-5/Sprint2/frontend-deployed.png)](assets/images/Chapter-5/Sprint2/frontend-deployed.png) pendiente
 ### 5.2.2.8. Team Collaboration Insights during Sprint
 
 **Conclusiones**
