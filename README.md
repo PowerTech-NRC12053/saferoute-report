@@ -3891,11 +3891,149 @@ El objetivo del Sprint 2 fue desarrollar y desplegar la primera versión funcion
 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
-### 5.2.2.6. Services Documentation Evidence for Sprint Review
+Durante el Sprint 2, el equipo desarrolló e implementó la primera versión funcional de la Frontend Web Application de SafeRoute en Vue.js, desplegada en Microsoft Azure. La aplicación integra los módulos core del sistema bajo el enfoque DDD, cubriendo los flujos críticos para los tres perfiles de usuario: Administrador, Conductor y Padre de Familia.
+
+A continuación se presenta la evidencia de ejecución por bounded context implementado.
+
+**Módulo IAM (Identity & Access Management)**
+
+Se implementó el flujo completo de autenticación mediante JWT, incluyendo registro de organización, login diferenciado por rol (Administrador, Conductor, Padre) y recuperación de contraseña. El módulo persiste el token en el cliente y valida sesiones activas en cada navegación protegida.
+
+[![IAM Login Module](assets/images/Chapter-5/Sprint2/iam-login.png)](assets/images/Chapter-5/Sprint2/iam-login.png)
+
+
+---
+
+**Módulo Subscription & Plan Management**
+
+Se desarrolló la vista de selección y contratación de planes (Básico, Intermedio, Completo) para el perfil Administrador. El módulo consulta los planes disponibles, gestiona la activación y refleja las cuotas operativas (rutas y conductores) habilitadas según el plan contratado.
+
+[![Subscription Module](assets/images/Chapter-5/Sprint2/subscription-plans.png)](assets/images/Chapter-5/Sprint2/subscription-plans.png)
+
+[![Subscription Module](assets/images/Chapter-5/Sprint2/subscription-plans1.png)](assets/images/Chapter-5/Sprint2/subscription-plans1.png)
+
+---
+
+**Módulo Stakeholder & Asset Management**
+
+Se implementaron los CRUDs de gestión de actores y activos: registro de conductores con número de licencia, registro de padres con vinculación a estudiantes, alta de alumnos y agrupación en student groups. Asimismo, se desarrolló la asignación de vehículos a conductores dentro del panel administrativo.
+
+[![Stakeholder Module](assets/images/Chapter-5/Sprint2/stakeholder-management.png)](assets/images/Chapter-5/Sprint2/stakeholder-management.png)
+
+
+---
+
+**Módulo Routes (Fleet & Route Planning)**
+
+Se desarrolló el constructor visual de rutas con integración de Leaflet Maps, permitiendo al Administrador trazar paradas georreferenciadas, definir el orden de la secuencia, establecer horarios de salida y vincular la ruta con un vehículo y conductor asignado.
+
+[![Routes Builder Module](assets/images/Chapter-5/Sprint2/routes-builder.png)](assets/images/Chapter-5/Sprint2/routes-builder.png)
+
+---
+
+**Módulo Trip Execution & Monitoring**
+
+Se implementaron los tres componentes críticos de la ejecución del viaje. El conductor accede al control de estado del trayecto (iniciar, en curso, finalizar) y al boarding scanner para marcar el abordaje de los alumnos por parada. El padre de familia accede al live monitor con la visualización en tiempo real del vehículo sobre el mapa.
+
+[![Trip Driver Control](assets/images/Chapter-5/Sprint2/trip-driver-control.png)](assets/images/Chapter-5/Sprint2/trip-driver-control.png)
+
+[![Trip Parent Live Monitor](assets/images/Chapter-5/Sprint2/trip-parent-monitor.png)](assets/images/Chapter-5/Sprint2/trip-parent-monitor.png)
+[![Trip Parent Live Monitor](assets/images/Chapter-5/Sprint2/trip-parent-monitor1.png)](assets/images/Chapter-5/Sprint2/trip-parent-monitor1.png)
+---
+
+**Módulo Notifications & Communication**
+
+Se desarrolló el flujo de notificaciones automáticas hacia los padres ante eventos críticos del viaje: confirmación de abordaje, alerta de proximidad a la parada y confirmación de llegada al destino. Las notificaciones se renderizan en una timeline dentro del dashboard del perfil padre.
+
+[![Notifications Module](assets/images/Chapter-5/Sprint2/notifications-timeline.png)](assets/images/Chapter-5/Sprint2/notifications-timeline.png)
+
+---[![Notifications Module](assets/images/Chapter-5/Sprint2/notifications-timeline1.png)](assets/images/Chapter-5/Sprint2/notifications-timeline1.png)
+
+
+**URL desplegada en Azure:** [Pendiente de incluir]
+
+
+##### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo se enfocó en el desarrollo y despliegue de la Frontend Web Application de SafeRoute en Vue.js sobre Microsoft Azure, implementando los módulos core del sistema bajo el enfoque Domain-Driven Design. En este sprint, el frontend opera consumiendo una **Fake REST API local** servida mediante `json-server` sobre un archivo `db.json`, que simula los endpoints y respuestas del backend real. Esta estrategia permitió validar los flujos de interacción, la navegación entre vistas, la estructura de los DTOs y la consistencia del modelo de dominio en el cliente antes de la integración con el Web Service definitivo.
+
+En consecuencia, durante el Sprint 2 **no se implementaron ni desplegaron servicios web (Web Services / RESTful API) en ASP.NET Core**, ya que la implementación del backend real se encuentra planificada para el Sprint 3. La documentación formal de endpoints, contratos de API, configuración de Swagger/OpenAPI y evidencia de consumo desde el frontend hacia el servicio desplegado será abordada en dicho sprint.
+
+A continuación se documentan los recursos consumidos por el frontend desde la Fake API local durante el Sprint 2:
+
+| Recurso | Acción implementada | Método HTTP | URL / Endpoint (Fake API) | Bounded Context |
+|---------|---------------------|-------------|---------------------------|-----------------|
+| Users | Autenticación y registro | POST | `http://localhost:3000/users` | IAM |
+| Organizations | Registro de organización | POST | `http://localhost:3000/organizations` | IAM |
+| Plans | Listado de planes disponibles | GET | `http://localhost:3000/plans` | Subscription |
+| Subscriptions | Contratación de plan | POST | `http://localhost:3000/subscriptions` | Subscription |
+| Drivers | CRUD de conductores | GET / POST / PUT / DELETE | `http://localhost:3000/drivers` | Stakeholder |
+| Parents | CRUD de padres de familia | GET / POST / PUT / DELETE | `http://localhost:3000/parents` | Stakeholder |
+| Children | Alta y gestión de alumnos | GET / POST / PUT / DELETE | `http://localhost:3000/children` | Stakeholder |
+| Vehicles | Gestión de flota | GET / POST / PUT / DELETE | `http://localhost:3000/vehicles` | Stakeholder |
+| Routes | Creación y trazado de rutas | GET / POST / PUT / DELETE | `http://localhost:3000/routes` | Routes |
+| Stops | Gestión de paradas por ruta | GET / POST / PUT / DELETE | `http://localhost:3000/stops` | Routes |
+| Trips | Inicio, ejecución y cierre de viaje | GET / POST / PUT | `http://localhost:3000/trips` | Trip |
+| Attendances | Marcación de abordaje | POST / PUT | `http://localhost:3000/attendances` | Trip |
+| Notifications | Listado de notificaciones del padre | GET | `http://localhost:3000/notifications` | Notifications |
+
+**Repositorios relacionados:**
+
+| Componente | Repositorio                                                                 | Estado al cierre del Sprint 2 |
+|------------|-----------------------------------------------------------------------------|-------------------------------|
+| Frontend Web Application | https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-webapp | Desplegado en Azure (URL pendiente de incluir) |
+| Backend Web Services | pendiente                                                                   | No implementado - planificado para Sprint 3 |
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
+
+Durante el Sprint 2 se realizó el despliegue de la Frontend Web Application de SafeRoute utilizando Microsoft Azure como plataforma de hosting en la nube, conectada directamente con el repositorio de GitHub para habilitar la integración y despliegue continuo (CI/CD).
+
+1. Se configuró el servicio de Azure Static Web Apps vinculado al repositorio `saferoute-frontend-applications`, estableciendo la rama `main` como fuente de publicación y `develop` como rama de integración previa.
+
+   [![Azure Deployment Configuration](assets/images/Chapter-5/Sprint2/landing-commits.png)](assets/images/Chapter-5/Sprint2/landing-commits.png)
+
+
+
+2. Se verificó la accesibilidad pública de la Frontend Web Application desplegada, validando el correcto funcionamiento de los módulos implementados (IAM, Subscription, Stakeholder, Routes, Trip y Notifications) consumiendo la Fake REST API local.
+
+   **URL desplegada en Azure:** Pendiente de incluir
+
+
+
+   [![Frontend Web App Live](assets/images/Chapter-5/Sprint2/frontend-deployed.png)](assets/images/Chapter-5/Sprint2/frontend-deployed.png) pendiente
 ### 5.2.2.8. Team Collaboration Insights during Sprint
+
+
+
+Durante el Sprint 2, el equipo mantuvo una colaboración activa distribuida en los dos repositorios principales del proyecto: el repositorio del informe y el repositorio de la Frontend Web Application. La actividad principal se concentró en el repositorio del informe, donde se documentaron los avances de planificación, backlog y evidencias del sprint. La actividad en el repositorio del frontend se mantuvo en un nivel moderado, correspondiente a la implementación progresiva de los módulos core del sistema (IAM, Subscription, Stakeholder, Routes, Trip y Notifications).
+
+**Repositorio del Informe (`https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report`)**
+
+El repositorio del informe registró el mayor volumen de commits durante el sprint, abarcando la documentación de la planificación, sprint backlog, evidencias de ejecución, documentación de servicios y configuración de despliegue del Sprint 2.
+
+[![Report Pulse Sprint 2](assets/images/Chapter-5/Sprint2/report-pulse.png)](assets/images/Chapter-5/Sprint2/report-pulse.png)
+
+---
+
+**Repositorio del Frontend (`saferoute-frontend-applications`)**
+
+El repositorio del frontend registró actividad moderada y sostenida durante el sprint, correspondiente al desarrollo iterativo de los módulos por bounded context. Cada integrante trabajó en ramas feature dedicadas a su módulo asignado, integrando cambios mediante pull requests hacia la rama `develop`.
+
+
+[![Frontend Pulse Sprint 2](assets/images/Chapter-5/Sprint2/frontend-pulse.png)](assets/images/Chapter-5/Sprint2/frontend-pulse.png)
+
+
+
+
+---
+
+**Resumen de colaboración del equipo:**
+
+La distribución del trabajo se mantuvo alineada con la **Leadership and Collaboration Matrix (LACX)** definida al inicio del sprint, donde cada integrante asumió la responsabilidad principal de un módulo del frontend mientras colaboraba en los módulos restantes mediante revisiones de código y soporte técnico. El uso consistente de GitFlow, junto con la convención de Conventional Commits, permitió mantener un historial trazable y profesional en ambos repositorios del proyecto.
+
+
+
 
 **Conclusiones**
 
