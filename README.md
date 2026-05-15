@@ -22,7 +22,7 @@
 - U202415551 - Ramirez Ruiz, Nickolas
 - U20211D989 - Vallejo Trujillo, Fabio Cesar
 
-**Abril, 2026**
+**Mayo, 2026**
 
 ---
 
