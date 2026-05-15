@@ -4003,6 +4003,33 @@ Durante el Sprint 2 se realizó el despliegue de la Frontend Web Application de 
    [![Frontend Web App Live](assets/images/Chapter-5/Sprint2/frontend-deployed.png)](assets/images/Chapter-5/Sprint2/frontend-deployed.png) pendiente
 ### 5.2.2.8. Team Collaboration Insights during Sprint
 
+
+
+Durante el Sprint 2, el equipo mantuvo una colaboración activa distribuida en los dos repositorios principales del proyecto: el repositorio del informe y el repositorio de la Frontend Web Application. La actividad principal se concentró en el repositorio del informe, donde se documentaron los avances de planificación, backlog y evidencias del sprint. La actividad en el repositorio del frontend se mantuvo en un nivel moderado, correspondiente a la implementación progresiva de los módulos core del sistema (IAM, Subscription, Stakeholder, Routes, Trip y Notifications).
+
+**Repositorio del Informe (`https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report`)**
+
+El repositorio del informe registró el mayor volumen de commits durante el sprint, abarcando la documentación de la planificación, sprint backlog, evidencias de ejecución, documentación de servicios y configuración de despliegue del Sprint 2.
+
+[![Report Pulse Sprint 2](assets/images/Chapter-5/Sprint2/report-pulse.png)](assets/images/Chapter-5/Sprint2/report-pulse.png)
+
+---
+
+**Repositorio del Frontend (`saferoute-frontend-applications`)**
+
+El repositorio del frontend registró actividad moderada y sostenida durante el sprint, correspondiente al desarrollo iterativo de los módulos por bounded context. Cada integrante trabajó en ramas feature dedicadas a su módulo asignado, integrando cambios mediante pull requests hacia la rama `develop`.
+
+[![Frontend Pulse Sprint 2](assets/images/Chapter-5/Sprint2/frontend-pulse.png)](assets/images/Chapter-5/Sprint2/frontend-pulse.png)
+
+---
+
+**Resumen de colaboración del equipo:**
+
+La distribución del trabajo se mantuvo alineada con la **Leadership and Collaboration Matrix (LACX)** definida al inicio del sprint, donde cada integrante asumió la responsabilidad principal de un módulo del frontend mientras colaboraba en los módulos restantes mediante revisiones de código y soporte técnico. El uso consistente de GitFlow, junto con la convención de Conventional Commits, permitió mantener un historial trazable y profesional en ambos repositorios del proyecto.
+
+
+
+
 **Conclusiones**
 
 - El Sprint 1 permitió consolidar la identidad visual y comunicacional de SafeRoute mediante el despliegue de la Landing Page, logrando presentar de forma clara la propuesta de valor del producto a los segmentos objetivo. La implementación de secciones como Hero, Funcionalidades, Roles y Planes demostró que el equipo tiene una visión coherente del producto, alineada con los problemas identificados en el levantamiento de requerimientos.
