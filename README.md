@@ -38,7 +38,15 @@
 ## Project Report Collaboration Insights
 El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report](https://github.com/upc-pre-202610-1asi0730-12053-powertech/saferoute-report)
 
+AV1:
+
 ![Report](assets/images/Chapter-5/Sprint1/pulse.png)
+
+TB1:
+
+[![Report Pulse Report Collaboration Insights](assets/images/Chapter-5/Sprint2/report-pulse.png)](assets/images/Chapter-5/Sprint2/report-pulse.png)
+
+[![Frontend Pulse Web Application Collaboration Insights](assets/images/Chapter-5/Sprint2/frontend-pulse.png)](assets/images/Chapter-5/Sprint2/frontend-pulse.png)
 
 ---
 
