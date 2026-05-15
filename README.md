@@ -3887,8 +3887,7 @@ El objetivo del Sprint 2 fue desarrollar y desplegar la primera versión funcion
 | US11 | Marcación de Abordaje | T11 | Módulo Trip - Boarding Scanner | Implementar el componente crítico de escaneo y marcación de abordaje de alumnos por parada durante el trayecto. | 6 | Nickolas | Done |
 | — | Despliegue Frontend | T12 | Deploy en Vercel | Configurar y desplegar la aplicación Vue.js en Vercel con integración continua desde GitHub. | 4 | Fabio | Done |
 | — | Documentación Sprint 2 | T13 | Sprint Planning y Backlog | Documentar la planificación, backlog y evidencias del Sprint 2 en el informe del proyecto. | 6 | Nickolas | Done |
-### 5.2.2.4. Development Evidence for Sprint Review
-
+### 5.2.2.4. Development Evidence for Sprint Review 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 2, el equipo desarrolló e implementó la primera versión funcional de la Frontend Web Application de SafeRoute en Vue.js, desplegada en Microsoft Azure. La aplicación integra los módulos core del sistema bajo el enfoque DDD, cubriendo los flujos críticos para los tres perfiles de usuario: Administrador, Conductor y Padre de Familia.
